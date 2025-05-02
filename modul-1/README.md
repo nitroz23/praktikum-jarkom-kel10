@@ -21,7 +21,7 @@ Tetangga beda kampung ngobrol = WAN (Wide Area Network)
 ### Kenapa Komputer Harus Terhubung ke Jaringan
 "Pengandaian ngirim file kayak dari flashdisk mending pake jaringan"
 
-### Jenis-Jenis Jaringan
+## Jenis-Jenis Jaringan
 
 Ada LAN, WAN, MAN
 
