@@ -38,3 +38,13 @@ Alamat apa nih? Misalkan rumahmu punyua nomor dan temanmu mau ke rumahmu jadi ka
 
 Identitas Komputer itu disebut IP Address
 
+## MASUK KE IP ADDRESS
+
+## MASUK KE IPv4
+
+## KONEKNYA PAKE APA (KABEL LAN)
+### CRIMPING
+
+### ROUTING PAKE ROUTER
+
+#### STATIS DAN DINAMIS
