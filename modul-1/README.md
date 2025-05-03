@@ -278,7 +278,7 @@ Secara sederhana proses kerja DHCP dibagi menjadi 4 langkah:
 
 
 
-### 1.4 Semua Komputer memiliki Alamat
+### 1.4 Semua Komputer memiliki Alamat (dikerjain Tabitha)
 Alamat apa nih? Misalkan rumahmu punyua nomor dan temanmu mau ke rumahmu jadi kamu kasih tau nomor rumahnya. Konsep jaringan komputer juga sama.
 
 Identitas Komputer itu disebut IP Address
@@ -290,7 +290,7 @@ Kalau alamat komputer itu ada dua: make address dan IP address
 ## 3 MASUK KE IPv4
 
 ## 4 KONEKTIVITAS KABEL LAN
-### 4.1 CRIMPING
+### 4.1 CRIMPING (dikerjain Tabitha)
 
 ### 4.2 ROUTING PAKE ROUTER
 
