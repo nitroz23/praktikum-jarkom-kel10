@@ -1,5 +1,18 @@
 # Crimping & Routing IPv4
-## Dasar Jaringan Protokol
+## Daftar Isi
+- 1. Dasar Jaringan Protokol
+    - Kenapa Komputer Harus Terhubung ke Jaringan
+    - Jenis-Jenis Jaringan
+    - Jaringan Komputer Punya Aturan?
+    - Semua Komputer Memiliki Alamat
+- 2. Masuk ke IP Address
+- 3. Masuk ke IPv4
+- 4. Kenektivitas Kabel LAN
+    - Crimpring
+    - Routing Menggunakan Router
+        - Statis
+        - Dinamis
+## 1 Dasar Jaringan Protokol
 Apa Itu Jaringan Komputer?
 "Bayangkan kamu tinggal di sebuah komplek perumahan. Tiap rumah punya keluarga yang ingin saling ngobrol, kirim surat, atau pinjam gula. Nah, kalau mereka saling terkoneksi, itu disebut jaringan."
 
@@ -18,14 +31,14 @@ Tetangga ngobrol langsung = LAN (Local Area Network)
 
 Tetangga beda kampung ngobrol = WAN (Wide Area Network)
 
-### Kenapa Komputer Harus Terhubung ke Jaringan
+### 1.1 Kenapa Komputer Harus Terhubung ke Jaringan
 "Pengandaian ngirim file kayak dari flashdisk mending pake jaringan"
 
-### Jenis-Jenis Jaringan
+### 1.2 Jenis-Jenis Jaringan
 
 Ada LAN, WAN, MAN
 
-### Jaringan Komputer Punya Aturan??
+### 1.3 Jaringan Komputer Punya Aturan??
 IYA, disebut protokol komunikasi
 contoh :
 - TCP/IP
@@ -33,18 +46,20 @@ contoh :
 - FTP
 - DHCP
 
-### Semua Komputer memiliki Alamat
+### 1.4 Semua Komputer memiliki Alamat
 Alamat apa nih? Misalkan rumahmu punyua nomor dan temanmu mau ke rumahmu jadi kamu kasih tau nomor rumahnya. Konsep jaringan komputer juga sama.
 
 Identitas Komputer itu disebut IP Address
 
-## MASUK KE IP ADDRESS
+## 2 MASUK KE IP ADDRESS
 
-## MASUK KE IPv4
+## 3 MASUK KE IPv4
 
-## KONEKNYA PAKE APA (KABEL LAN)
-### CRIMPING
+## 4 KONEKTIVITAS KABEL LAN
+### 4.1 CRIMPING
 
-### ROUTING PAKE ROUTER
+### 4.2 ROUTING PAKE ROUTER
 
-#### STATIS DAN DINAMIS
+#### 4.2.1 STATIS 
+
+#### 4.2.2 DINAMIS
