@@ -1,11 +1,11 @@
 # Fdb version 4
-["biber LA"] 1746272100.36395 "LA.bcf" "LA.bbl" "LA" 1746273095.45798 0
-  "LA.bcf" 1746273095 106504 4a69faaccbaf3ba542fa2261d5927214 "pdflatex"
+["biber LA"] 1746272100.36395 "LA.bcf" "LA.bbl" "LA" 1746273309.88697 0
+  "LA.bcf" 1746273309 106504 4a69faaccbaf3ba542fa2261d5927214 "pdflatex"
   (generated)
   "LA.bbl"
   "LA.blg"
   (rewritten before read)
-["pdflatex"] 1746273092.90125 "c:/zafaa/[2024] LAB MIOT/[2025] ASPRAK JARKOM/praktikum-jarkom/Template Laporan Akhir/LA.tex" "LA.pdf" "LA" 1746273095.45889 0
+["pdflatex"] 1746273307.81849 "c:/zafaa/[2024] LAB MIOT/[2025] ASPRAK JARKOM/praktikum-jarkom/Template Laporan Akhir/LA.tex" "LA.pdf" "LA" 1746273309.88802 0
   "C:/Users/zafaw/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1746268324 121421 986c656c18d5dae14116b93751df729f ""
   "C:/Users/zafaw/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1734151074 24225047 e44cc325b38c0f2b72f1c4ebf0b49cd5 ""
   "C:/Users/zafaw/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/tex-gyre/q-ec.enc" 1525740614 2457 aaabbccba4df2a7f7371410ee4e075a3 ""
@@ -130,12 +130,12 @@
   "Cover/img/footer.png" 1746267902 28618 7e563268718746d34d6e0293ee851b55 ""
   "Cover/img/logodepart.png" 1746267901 37002 0f7871c228b1de42912bcfe0dae05fc4 ""
   "Cover/img/miot.png" 1746267545 13325 9f73d680988fc58aae95c8b21181dad3 ""
-  "LA.aux" 1746273095 1262 6c6783b9eb5758a4dd5dc4f63767b8af "pdflatex"
+  "LA.aux" 1746273309 1262 6c6783b9eb5758a4dd5dc4f63767b8af "pdflatex"
   "LA.bbl" 1746272103 0 d41d8cd98f00b204e9800998ecf8427e "biber LA"
-  "LA.out" 1746273095 1011 766ae0bdb69ff7f9e0360be4c72349dd "pdflatex"
-  "LA.run.xml" 1746273095 2276 806fa917134bf096fadbd6a2548269f0 "pdflatex"
+  "LA.out" 1746273309 1011 766ae0bdb69ff7f9e0360be4c72349dd "pdflatex"
+  "LA.run.xml" 1746273309 2276 806fa917134bf096fadbd6a2548269f0 "pdflatex"
   "LA.tex" 1746272163 2728 65ac982c14e214e5563c8c4498dd5447 ""
-  "P1/crimping.tex" 1746273090 1687 8e6280cca21c2b9a8e54ffc08e35d6a6 ""
+  "P1/crimping.tex" 1746273307 1705 9558c091d7b8ea1686fb489f6fa62fc8 ""
   "c:/zafaa/[2024] LAB MIOT/[2025] ASPRAK JARKOM/praktikum-jarkom/Template Laporan Akhir/LA.tex" 1746272163 2728 65ac982c14e214e5563c8c4498dd5447 ""
   "miot.png" 1746267545 13325 9f73d680988fc58aae95c8b21181dad3 ""
   (generated)
