@@ -1,1 +1,1 @@
-# Praktikum Jarkom 2025
+# Praktikum Jaringan Kelompok 2025

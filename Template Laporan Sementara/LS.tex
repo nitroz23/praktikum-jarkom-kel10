@@ -1,6 +1,7 @@
 \documentclass[titlepage,11pt]{article}
 \usepackage{comment}
 \usepackage{enumitem}
+\usepackage{transparent} % Untuk transparansi gambar
 \usepackage{listings}
 \usepackage{amsmath}
 \usepackage{graphicx}
@@ -23,6 +24,23 @@
 \definecolor{codegray}{rgb}{0.5,0.5,0.5}
 \definecolor{codepurple}{rgb}{0.58,0,0.82}
 \definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\usepackage{eso-pic} % Untuk menambahkan elemen ke seluruh halaman
+
+\newcommand\BackgroundPic{
+  \put(0,0){
+    \parbox[b][\paperheight]{\paperwidth}{
+      \vfill
+      \centering
+      \transparent{0.1}
+      \includegraphics[width=0.4\paperwidth,keepaspectratio]{miot.png}
+      \vfill
+    }
+  }
+}
+
+\newcommand\BackgroundAllPages{ \AddToShipoutPicture*{\BackgroundPic} }
+\newcommand\BackgroundNone{ \ClearShipoutPicture } % hilangkan background
 
 \lstdefinestyle{mystyle}{
 	backgroundcolor=\color{backcolour}, commentstyle=\color{codegreen},
@@ -62,15 +80,20 @@
 \def\lab{Multimedia dan Internet of Things}
 \def\departemen{Departemen Teknik Komputer}
 \def\institut{Institut Teknologi Sepuluh Nopember}
-\def\praktikum{Laporan Akhir \\ Praktikum Jaringan Komputer}
-\def\nama{Fredi Samba - 5024221123}
+\def\praktikum{Laporan Sementara \\ Praktikum Jaringan Komputer}
+\def\nama{Muhammad Ibnu - 5024231123}
 % Ubah Judul sesuai dengan modul
-\def\judul{Crimping dan Routing IPVv4}
+\def\judul{Crimping dan Routing IPv4}
 \def\tanggal{2025}
 \begin{document}
 % Ubah Bahasa sesuai dengan keinginan
 \selectlanguage{bahasa}
+
+\BackgroundNone
 \input{Cover/Header.tex}
+
+\BackgroundAllPages
 % Pilih Modul yang akan di build
-\input{P1/ADC.tex}
+\input{P1/crimping.tex}
+
 \end{document}
