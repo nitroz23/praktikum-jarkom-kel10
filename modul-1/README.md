@@ -32,11 +32,11 @@ Tetangga ngobrol langsung = LAN (Local Area Network)
 Tetangga beda kampung ngobrol = WAN (Wide Area Network)
 
 ### 1.1 Kenapa Komputer Harus Terhubung ke Jaringan
-Bayangkan kamu ingin mengirim file dari satu komputer ke komputer lain *tanpa jaringan*, kamu harus meng-copy file tersebut ke flashdisk terlebih dahulu. Lalu mencabut dan mencolokkannya ke komputer tujuan. 
+Bayangkan kamu ingin mengirim file dari satu komputer ke komputer lain **tanpa jaringan**, kamu harus meng-copy file tersebut ke flashdisk terlebih dahulu. Lalu mencabut dan mencolokkannya ke komputer tujuan. 
 
 [Gambar meme nggak sih]
 
-Bisa dibayangkan proses manual tersebut memakan waktu dan memiliki keterbatasan jarak. Bahkan risiko kerusakan atau kehilangan data. Namun, dengan pemanfaatan *jaringan* pengiriman file tidak perlu mengandalkan alat eksternal seperti flashdisk. Selain itu pemindahan file dapat dalam hitungan detik dan tanpa kamu berpindah tempat.
+Bisa dibayangkan proses manual tersebut memakan waktu dan memiliki keterbatasan jarak. Bahkan risiko kerusakan atau kehilangan data. Namun, dengan pemanfaatan **jaringan** pengiriman file tidak perlu mengandalkan alat eksternal seperti flashdisk. Selain itu pemindahan file dapat dalam hitungan detik dan tanpa kamu berpindah tempat.
 
 Jadi kids koneksi jaringan bukan sebagai kebutuhan tambahan aja, no no no. Karena tanpa jaringan kemampuan komputer menjadi terbatas.
 
@@ -45,7 +45,11 @@ Jadi kids koneksi jaringan bukan sebagai kebutuhan tambahan aja, no no no. Karen
 ![Jenis-Jenis Jaringan Komputer](images/1.2_Network.png)
 
 1.2.1 Personal Area Network (PAN)
+![PAN](images/1.2.1_PAN.png)
 
+PAN atay *Personal Area Network* ibarat jaringan kecil yang hanya mengelilingi satu orang. PAN ini khusus buat menghubungkan perangkat pribadi kamu yang jaraknya deket-deket, sekitar 1-100 meter.
+
+![MemePAN](images/1.2.1_MemePAN.jpg)
 ### 1.3 Jaringan Komputer Punya Aturan??
 IYA, disebut protokol komunikasi
 contoh :
