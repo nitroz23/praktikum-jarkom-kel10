@@ -106,7 +106,7 @@ Teknologi CAN sama dengan LAN yang menggunakan Ethernet dan jika Wi-Fi.
 | **Efisien Biaya**: Setup dan perawatan sedang, bisa pakai WiFi untuk menghemat kabel.                | **Bisa Overload**: Jika terlalu banyak pengguna aktif dan tidak diatur dengan baik.           |
 
 #### 1.2.4 Metropolitan Area Network (MAN)
-![MAN](images/1.2.4_WAN.png)
+![MAN](images/1.2.4_MAN.png)
 
 **MAN** atau *Metropolitan Area Network* adalah jaringan komputer yang ukurannya **lebih besar dari CAN**, tapi masih **lebih kecil dari WAN**. Jaringan ini digunakan untuk menghubungkan komputer-komputer dalam satu kota dengan jarak efektivitas 5-50 km.
 
@@ -170,7 +170,7 @@ Protokol yang mengatur **cara pertukaran data antar perangkat**. Mereka memastik
 
 HTTP dapan merespon halaman web, gambar, video atau file lain. HTTP bersifat *stateless*, artinya setiap permintaan HTTP dianggap sebagai transaksi yang terpisah. Contohnya kamu *klik* dua *link* berbeda di satu web, server akan mengganggap bahwa kamu adalah dua *user* yang berbeda.
 
-**Metode HTTP**
+**Metode HTTP**\\
 HTTP punya berbagai metode permintaan sesuai dengan fungsinya:
 | Metode  | Fungsi                                                             |
 |---------|--------------------------------------------------------------------|
@@ -179,7 +179,7 @@ HTTP punya berbagai metode permintaan sesuai dengan fungsinya:
 | PUT     | Mengupdate data yang sudah ada                                     |
 | DELETE  | Menghapus data dari server                                         |
 
-**Kode Status HTTP**
+**Kode Status HTTP**\\
 ![MemeHTTP](images/1.3.1.1_MemeHTTP.png)
 
 Server akan merespon dengan memberikan kode status untuk memberitahu hasilnya. Contoh yang paling umum:
@@ -199,11 +199,42 @@ HTTPS menambahkan lapisan keaman dengan menggunakan protokol enkripsi seperti:
 - TLS (*Transport Layer Security*)
 Jadi kalau pakai enkripsi tadi data-data kayak login, password,info kartu kredit itu nggak bisa dibaca sama pihak ketiga. Bahkan kalaupun disadap, datanya akan kelihatan acak dan nggak bisa dibaca tanpa kunci dekripsi.
 
-Jadi kalau ada pilihan HTTP atau HTTPS pilih yang ada 
+Jadi kalau ada pilihan HTTP atau HTTPS pilih yang ada \\
 ![MemeHTTPS](images/1.3.1.2_MemeHTTPs.jpg)
 
 1.3.1.3 File Transfer Protocol (FTP)
 ![FTP](images/1.3.1.3_FTP.avif)
+
+**FTP** atau *File Transfer Protocol* adalah protokol standar yang digunakan untuk mengirim dan menerima file antar komputer melalui jaringan. FTP digunakan saat ingin meng-upload file server atau download file dari server.
+
+FTP menggunakan mode **client & server**, yang artinya client (user) akan menghubungi  server (komputer tujuan) untuk meminta atau mengirim file.
+
+**FTP punya 2 mode koneksi:**
+1. Active Mode: Client terhubung ke server lewat port 21 dan server akan membuka port lain untuk kirim data.
+2. Passive Mode: Cocok untuk client ada di balik *firewall* atau *router NAT*. Server akan membuka port acak untuk melakukan transfer data, lalu client akan ber-inisiatif mengkoneksi ke port itu.
+
+1.3.1.4 Transmission Control Protocol (TCP)
+![FTP](images/1.3.1.4_TCP.avif)
+
+**TCP** atau *Transmission Control Protocol* adalah salah satu protokol utama di lapisan transport dalam jaringan komputer. Nahh. TCP ini punya tugas untuk memastikan bahwa data yang dikirim dari satu perangkat ke perangkat lain sampai dengan urutan yang benar, lengkap, dan tanpa rusak.
+
+Sebelum mengirim data TCP salalu buat janji dulu nih, jadi TCP akan buat koneksi dulu antara pengirim dan penerima, biasanya dikenal dengan istilah **three-way handshake** kayak gini:
+1. SYN: Pengirim bilang "Aku mau kirim data"
+2. SYN - ACK: Penerima jawab "Ok, aku siap"
+3. ACK: Pengirim konfirmasi "Sip, kirim dimulai"
+Nah baru setelah itu, datanya dikirim.
+
+TCP punya kelebihan komunikasi dua arah alias **full duplex**. Artinyee, saat kamu kirim data, kamu juga bisa menerima data dari lawan bicara secara bersamaan. Contohnyaa waktu kamu video call atau chat. Selain itu TCP bisa melakukan pengecekan error, retransmisi kalau ada data rusak atau hilang, dan pengaturan urutan data agar file atau informasi samapei degnan urutan yang benar
+
+Port number TCP untuk menunjukan apliikasi atau layangan tertentu di perangkat, misalnya:
+1. Port 80: Untuk HTTP
+2. Port 443: Untuk HTTPS
+3. Port 25: Untuk email (SMTP)
+
+1.3.1.5 Internet Protocol (IP)
+![IP](images/1.3.1.5_IP.avif)
+
+**IP** atau *Internet Protocol* adalah tulang punggung dari internet. Kalau TCP adalah kang kurur pakek data yang hati-hati, IP ini GPS-nya yang menentukan ke mana pakek data itu pergi
 
 1.3.2 Protokol Keamanan (*Security Protocols*)
 Protokol komunikasi memastikan **data bisa dikirim**, protokol keamanan memastikan **data itu aman**. Mereka mencegah data dibajak, dibaca orang iseng, atau dimodifikasi saat dikirim.
