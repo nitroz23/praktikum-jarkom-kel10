@@ -35,5 +35,23 @@ Dalam modul-modul praktikum ini, kamu akan mempelajari dan mengimplementasikan b
 
 ---
 
-## 📁 Struktur Repository
+## 🛠 Aplikasi dan Tools yang Dibutuhkan
 
+Untuk menunjang praktikum, kamu perlu menginstal beberapa aplikasi berikut:
+
+- **Winbox**  
+  Untuk konfigurasi router MikroTik secara grafis.
+
+- **Cisco Packet Tracer**  
+  Simulator jaringan untuk latihan konfigurasi topologi jaringan secara virtual.
+
+- **Wireshark**  
+  Alat analisis paket jaringan yang digunakan untuk memantau dan mempelajari lalu lintas jaringan.
+
+- **VirtualBox / VMware (Opsional)**  
+  Digunakan untuk mensimulasikan jaringan antar virtual machine jika diperlukan.
+
+- **Notepad++ / VS Code**  
+  Editor teks untuk mencatat konfigurasi dan dokumentasi.
+
+---
