@@ -99,7 +99,9 @@ Contohnya komputer di lab MIOT yang bisa diakses bersama atau semua komputer kan
 | Risiko Keamanan Data      | Kalau server utama diretas, semua data di jaringan bisa bocor              |
 
 #### 1.2.3 Campus Area Network (CAN)
-**CAN** atau *Campus Area Network* adalah jaringan komputer yang ukurannya lebih besar dari LAN, tetapi masih lebih kecil dari MAN. CAN biasanya digunakan di sekolah, kampus, ataupun beberapa gedung dalam satu kompleks. Jarak konektivitas CAN 1 - 5 km.
+![CAN](images/1.2.3_CAN.png)
+
+**CAN** atau *Campus Area Network* adalah jaringan komputer yang ukurannya **lebih besar dari LAN**, tetapi masih **lebih kecil dari MAN**. CAN biasanya digunakan di sekolah, kampus, ataupun beberapa gedung dalam satu kompleks. Jarak konektivitas CAN 1 - 5 km.
 
 Jadi bisa kamu bayangkan di TW2 ada lab MIOT, lab Robotik, ruang kelas di lantai 6, dan sekretariat di lantai 2 yang dihubungkan dalam satu jaringan—itulah CAN! Paham Ente ? 👊🏻
 
@@ -110,6 +112,52 @@ Teknologi CAN sama dengan LAN yang menggunakan Ethernet dan jika Wi-Fi.
 | **Kecepatan**: Transfer data antarsistem lebih cepat karena menggunakan LAN, bukan internet umum.      | **Jangkauan Terbatas**: Tidak cocok untuk koneksi antar kota atau wilayah yang sangat luas. |
 | **Keamanan**: Admin jaringan bisa mengatur akses dan menjaga jaringan dengan firewall.                | **Butuh Admin Tetap**: Diperlukan admin khusus agar jaringan tetap stabil dan aman.         |
 | **Efisien Biaya**: Setup dan perawatan sedang, bisa pakai WiFi untuk menghemat kabel.                | **Bisa Overload**: Jika terlalu banyak pengguna aktif dan tidak diatur dengan baik.           |
+
+#### 1.2.4 Metropolitan Area Network (MAN)
+![MAN](images/1.2.4_WAN.png)
+
+**MAN** atau *Metropolitan Area Network* adalah jaringan komputer yang ukurannya **lebih besar dari CAN**, tapi masih **lebih kecil dari WAN**. Jaringan ini digunakan untuk menghubungkan komputer-komputer dalam satu kota dengan jarak efektivitas 5-50 km.
+
+Teknologi dibalik MAN ada **FDDI** atau *Fiber Distributed Data Interface*, **CDDI** atau *Copper Distributed Data Interface*, **ATM** atau *Asynchronous Transfer Mode*. Kecepatan MAN sekitar 10-100 Mbps.
+
+**Contoh penerapannya:**
+- Jaringan antar kampus dalam satu kota.
+- Koneksi antar gedung perkontoran pemerintah.
+- Sistem tiket atau informasi transportasi kota.
+- Jaringan rumah sakit dan klinik dalam area kota.
+
+| ✅ Kelebihan                                           | ❌ Kekurangan                                                                                  |
+|--------------------------------------------------------|------------------------------------------------------------------------------------------------|
+| **Koneksi Cepat:** Walaupun luas jangkauannya besar, MAN masih bisa memberikan kecepatan 10–100 Mbps.| **Struktur Kompleks:** Desain dan instalasinya cukup rumit, perlu perencanaan dan teknisi ahli.   |
+| **Tingkat Keamanan Tinggi:** Lebih aman dibandingkan WAN karena lebih dikontrol dan terbatas.        | **Biaya Mahal:** Karena sering pakai fiber optic dan perangkat mahal, biaya awalnya cukup tinggi. |
+| **Transfer Dua Arah (Simultan):** Berkat arsitektur dual bus, bisa kirim data dua arah sekaligus.    | **Toleransi Error Rendah:** Kalau ada masalah di satu titik jaringan, bisa berpengaruh besar.     |
+| **Mendukung Banyak Pengguna Sekaligus:** Cocok untuk institusi besar yang butuh koneksi cepat bareng.| **Transfer Data Bisa Lebih Lambat dari LAN:** Karena jangkauannya lebih luas, kecepatannya bisa turun. |
+| **Manajemen Terpusat:** Jaringan bisa dipantau dan dikendalikan dengan mudah dari satu pusat kontrol.|                                                                                                |
+
+#### Wide Area Network (WAN)
+![MAN](images/1.2.5_WAN.png)
+
+**WAN** atau *Wide Area Network* adalah jaringan komputer yang punya jangkauan paling luas dibandingkan jenis jaringan lainnya seperti LAN dan MAN. 
+
+Kalau LAN untuk satu ruangan, MAN untuk satu kota, nahh WAN ini bisa antar kota, negara, bahkan benua. Jarak jangkauan WAn bisa lebih dari 50 km. Sungkem dulu ente sama WAN 😏
+
+[Masukin meme yang singgasana sama yang ada orang nyembah itu]
+
+Seorang WAN ini bentuk paling umum dan pasti kalian tau adalah internet itu sendiri!
+
+Proses kerja WAN biasanaya dengan menghubungkan jaringan kecil seperti LAN lalu melewati jalur komunikasi bersama seperti *leased line*, Dial-up, dan VPN.
+
+**Contoh Penggunaan WAN:**
+- Internet yang kamu gunakan sehari-hari.
+- Perusahaan multinasional yang menghubungkan kantor pusat dengan cabang di berbagai negara.
+- Kampus atau lembaga pendidikan yang berbagi data dan akses server antar lokasi.
+
+| Kelebihan                                     | Kekurangan                                                                     |
+|-----------------------------------------------|--------------------------------------------------------------------------------|
+| **Jangkauan Sangat Luas:** Cocok untuk perusahaan yang punya banyak cabang di lokasi berbeda.         | **Kemacetan Lalu Lintas Data:** Karena skalanya besar, sering terjadi trafik padat yang bikin lambat. |
+| **Akses Data Terpusat:** Semua data bisa disimpan di satu server pusat dan bisa diakses dari mana saja.| **Toleransi Kesalahan Rendah:** Kalau satu titik terganggu, bisa berdampak ke seluruh jaringan.        |
+| **Hemat Biaya Perjalanan:** Gak perlu kirim orang, cukup hubungkan sistem lewat WAN.                  | **Banyak Gangguan & Error:** Karena banyak titik koneksi, potensi error lebih tinggi.                  |
+| **Terhubung ke Dunia:** WAN memungkinkan komunikasi & bisnis di level global.                         | **Kecepatan Rendah Dibanding LAN:** Semakin jauh & ramai, makin lambat transfer datanya.               |
 
 ### 1.3 Jaringan Komputer Punya Aturan??
 IYA, disebut protokol komunikasi
