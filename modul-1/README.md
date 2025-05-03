@@ -44,6 +44,9 @@ Jadi kids koneksi jaringan bukan sebagai kebutuhan tambahan aja, no no no. Karen
 
 ![Jenis-Jenis Jaringan Komputer](images/1.2_Network.png)
 
+Untuk informasi lebih rinci dapat dilihat di:
+[Jenis-Jenis Jaringan](https://www.geeksforgeeks.org/types-of-computer-networks/)
+
 #### 1.2.1 Personal Area Network (PAN)
 ![PAN](images/1.2.1_PAN.png)
 
@@ -79,24 +82,13 @@ Jaringan ini menghubungkan **dua atau lebih** komputer dalam satu area lokal, pe
 
 Contohnya komputer di lab MIOT yang bisa diakses bersama atau semua komputer kantor yang bisa mengirim file satu sama lain.
 
-**✅ Kelebihan LAN**
-
-| Keunggulan                | Penjelasan                                                                 |
+| Kelebihan                 | Kekurangan                                                                 |
 |-------------------------  |----------------------------------------------------------------------------|
-| Privasi Terjaga           | LAN bersifat privat, jadi tidak diatur oleh badan eksternal tertentu       |
-| Kecepatan Tinggi          | Bisa mencapai 100 Mbps atau lebih, cocok buat transfer file besar          |
-| Banyak Media Transmisi    | Bisa pakai kabel UTP, fiber optic, bahkan Wi-Fi                            |
-| Murah & Gampang Dipasang  | Instalasi, perawatan, dan pengembangannya relatif murah & simpel           |
-| Fleksibel & Scalable      | Bisa ditambah komputer atau perangkat lain dengan mudah                    |
-
-**❌ Kekurangan LAN**
-
-| Kekurangan                | Penjelasan                                                                 |
-|-------------------------  |----------------------------------------------------------------------------|
-| Biaya Awal Lumayan        | Butuh perangkat tambahan seperti switch, router, dan software server       |
-| Privasi Bisa Terganggu    | Admin jaringan bisa akses file pribadi dan history internet kamu           |
-| Jangkauan Terbatas        | Hanya berlaku untuk area lokal, tidak cocok untuk area yang terlalu luas   |
-| Risiko Keamanan Data      | Kalau server utama diretas, semua data di jaringan bisa bocor              |
+| **Privasi Terjaga:** LAN bersifat privat, jadi tidak diatur oleh badan eksternal tertentu           | **Biaya Awal Lumayan:** Butuh perangkat tambahan seperti switch, router, dan software server      |
+| **Kecepatan Tinggi:** Bisa mencapai 100 Mbps atau lebih, cocok buat transfer file besar         | **Privasi Bisa Terganggu:** Admin jaringan bisa akses file pribadi dan history internet kamu          |
+| **Banyak Media Transmisi:** Bisa pakai kabel UTP, fiber optic, bahkan Wi-Fi   | **Jangkauan Terbatas:** Hanya berlaku untuk area lokal, tidak cocok untuk area yang terlalu luas                           |
+| **Murah & Gampang Dipasang:** Instalasi, perawatan, dan pengembangannya relatif murah & simpel | **Risiko Keamanan Data:** Kalau server utama diretas, semua data di jaringan bisa bocor           |
+| **Fleksibel & Scalable:** Bisa ditambah komputer atau perangkat lain dengan mudah     |                     |
 
 #### 1.2.3 Campus Area Network (CAN)
 ![CAN](images/1.2.3_CAN.png)
@@ -114,7 +106,7 @@ Teknologi CAN sama dengan LAN yang menggunakan Ethernet dan jika Wi-Fi.
 | **Efisien Biaya**: Setup dan perawatan sedang, bisa pakai WiFi untuk menghemat kabel.                | **Bisa Overload**: Jika terlalu banyak pengguna aktif dan tidak diatur dengan baik.           |
 
 #### 1.2.4 Metropolitan Area Network (MAN)
-![MAN](images/1.2.4_WAN.png)
+![MAN](images/1.2.4_MAN.png)
 
 **MAN** atau *Metropolitan Area Network* adalah jaringan komputer yang ukurannya **lebih besar dari CAN**, tapi masih **lebih kecil dari WAN**. Jaringan ini digunakan untuk menghubungkan komputer-komputer dalam satu kota dengan jarak efektivitas 5-50 km.
 
@@ -134,14 +126,14 @@ Teknologi dibalik MAN ada **FDDI** atau *Fiber Distributed Data Interface*, **CD
 | **Mendukung Banyak Pengguna Sekaligus:** Cocok untuk institusi besar yang butuh koneksi cepat bareng.| **Transfer Data Bisa Lebih Lambat dari LAN:** Karena jangkauannya lebih luas, kecepatannya bisa turun. |
 | **Manajemen Terpusat:** Jaringan bisa dipantau dan dikendalikan dengan mudah dari satu pusat kontrol.|                                                                                                |
 
-#### Wide Area Network (WAN)
+#### 1.2.5 Wide Area Network (WAN)
 ![MAN](images/1.2.5_WAN.png)
 
 **WAN** atau *Wide Area Network* adalah jaringan komputer yang punya jangkauan paling luas dibandingkan jenis jaringan lainnya seperti LAN dan MAN. 
 
 Kalau LAN untuk satu ruangan, MAN untuk satu kota, nahh WAN ini bisa antar kota, negara, bahkan benua. Jarak jangkauan WAn bisa lebih dari 50 km. Sungkem dulu ente sama WAN 😏
 
-[Masukin meme yang singgasana sama yang ada orang nyembah itu]
+![Meme MAN](images/1.2.5_MemeWAN1.png)
 
 Seorang WAN ini bentuk paling umum dan pasti kalian tau adalah internet itu sendiri!
 
@@ -160,17 +152,104 @@ Proses kerja WAN biasanaya dengan menghubungkan jaringan kecil seperti LAN lalu 
 | **Terhubung ke Dunia:** WAN memungkinkan komunikasi & bisnis di level global.                         | **Kecepatan Rendah Dibanding LAN:** Semakin jauh & ramai, makin lambat transfer datanya.               |
 
 ### 1.3 Jaringan Komputer Punya Aturan??
-IYA, disebut protokol komunikasi
-contoh :
-- TCP/IP
-- HTTP/HTTPS
-- FTP
-- DHCP
+![Jenis-Jenis Protokol Komunikasi](images/1.3_ProtokolKomunikasi.avif)
+
+Untuk informasi lebih rinci dapat dilihat di:
+([Jenis-Jenis Jaringan](https://www.geeksforgeeks.org/types-of-computer-networks/))
+
+Dalam dunia jaringan komputer, **protokol** adalah aturan main yang mengatur bagaimana perangkat bisa berkomunikasi satu sama lain. Tanpa protokol, perangkat seperti laptop, server, atau router nggak akan paham "bahasa" satu sama lain, meskipun sudah terhubung ke jaringan.
+
+**Jenis-Jenis Protokol:**
+1.3.1 Protokol Komunikasi (*Communication Protocols*)
+Protokol yang mengatur **cara pertukaran data antar perangkat**. Mereka memastikan data dikirim dan diterima dengan format dan cara yang benar.
+
+1.3.1.1 Hypertext Transfer Protocol (HTTP)
+![HTTP](images/1.3.1.1_HTTP.avif)
+
+**HTTP** atau *Hypertext Transfer Protocol* adalah bahasa standar yang dipakai untuk mengakses webside di internet seperti Chrome, Firefox, Safari.
+
+HTTP dapan merespon halaman web, gambar, video atau file lain. HTTP bersifat *stateless*, artinya setiap permintaan HTTP dianggap sebagai transaksi yang terpisah. Contohnya kamu *klik* dua *link* berbeda di satu web, server akan mengganggap bahwa kamu adalah dua *user* yang berbeda.
+
+**Metode HTTP**\\
+HTTP punya berbagai metode permintaan sesuai dengan fungsinya:
+| Metode  | Fungsi                                                             |
+|---------|--------------------------------------------------------------------|
+| GET     | Mengambil data dari server (contohnya buka halaman web)            |
+| POST    | Mengirim data ke server (misalnya isi formulir login)              |
+| PUT     | Mengupdate data yang sudah ada                                     |
+| DELETE  | Menghapus data dari server                                         |
+
+**Kode Status HTTP**\\
+![MemeHTTP](images/1.3.1.1_MemeHTTP.png)
+
+Server akan merespon dengan memberikan kode status untuk memberitahu hasilnya. Contoh yang paling umum:
+| Kode | Arti                                      |
+|------|-------------------------------------------|
+| 200  | Berhasil (OK)                             |
+| 404  | Halaman tidak ditemukan (Not Found)       |
+| 500  | Kesalahan dari sisi server                |
+
+1.3.1.2 Hypertext Transfer Protocol Secure (HTTPS)
+![HTTPS](images/1.3.1.2_MemeHTTPS.jpg)
+
+**HTTPS** atau *Hypertext Transfer Protocol Secure* merupakan versi lebih aman dari HTTP. Bedanya, HTTP itu kayak ngobrol di tempat umum, semua orang bisa dengerin. Sementara HTTPS itu kayak ngobrol di ruang tertutup dan dienkripsi–cuma kamu dan server yang tahu isi pembicaraannya.
+
+HTTPS menambahkan lapisan keaman dengan menggunakan protokol enkripsi seperti:
+- SSL (*Secure Socket Layer*)
+- TLS (*Transport Layer Security*)
+Jadi kalau pakai enkripsi tadi data-data kayak login, password,info kartu kredit itu nggak bisa dibaca sama pihak ketiga. Bahkan kalaupun disadap, datanya akan kelihatan acak dan nggak bisa dibaca tanpa kunci dekripsi.
+
+Jadi kalau ada pilihan HTTP atau HTTPS pilih yang ada \\
+![MemeHTTPS](images/1.3.1.2_MemeHTTPs.jpg)
+
+1.3.1.3 File Transfer Protocol (FTP)
+![FTP](images/1.3.1.3_FTP.avif)
+
+**FTP** atau *File Transfer Protocol* adalah protokol standar yang digunakan untuk mengirim dan menerima file antar komputer melalui jaringan. FTP digunakan saat ingin meng-upload file server atau download file dari server.
+
+FTP menggunakan mode **client & server**, yang artinya client (user) akan menghubungi  server (komputer tujuan) untuk meminta atau mengirim file.
+
+**FTP punya 2 mode koneksi:**
+1. Active Mode: Client terhubung ke server lewat port 21 dan server akan membuka port lain untuk kirim data.
+2. Passive Mode: Cocok untuk client ada di balik *firewall* atau *router NAT*. Server akan membuka port acak untuk melakukan transfer data, lalu client akan ber-inisiatif mengkoneksi ke port itu.
+
+1.3.1.4 Transmission Control Protocol (TCP)
+![FTP](images/1.3.1.4_TCP.avif)
+
+**TCP** atau *Transmission Control Protocol* adalah salah satu protokol utama di lapisan transport dalam jaringan komputer. Nahh. TCP ini punya tugas untuk memastikan bahwa data yang dikirim dari satu perangkat ke perangkat lain sampai dengan urutan yang benar, lengkap, dan tanpa rusak.
+
+Sebelum mengirim data TCP salalu buat janji dulu nih, jadi TCP akan buat koneksi dulu antara pengirim dan penerima, biasanya dikenal dengan istilah **three-way handshake** kayak gini:
+1. SYN: Pengirim bilang "Aku mau kirim data"
+2. SYN - ACK: Penerima jawab "Ok, aku siap"
+3. ACK: Pengirim konfirmasi "Sip, kirim dimulai"
+Nah baru setelah itu, datanya dikirim.
+
+TCP punya kelebihan komunikasi dua arah alias **full duplex**. Artinyee, saat kamu kirim data, kamu juga bisa menerima data dari lawan bicara secara bersamaan. Contohnyaa waktu kamu video call atau chat. Selain itu TCP bisa melakukan pengecekan error, retransmisi kalau ada data rusak atau hilang, dan pengaturan urutan data agar file atau informasi samapei degnan urutan yang benar
+
+Port number TCP untuk menunjukan apliikasi atau layangan tertentu di perangkat, misalnya:
+1. Port 80: Untuk HTTP
+2. Port 443: Untuk HTTPS
+3. Port 25: Untuk email (SMTP)
+
+1.3.1.5 Internet Protocol (IP)
+![IP](images/1.3.1.5_IP.avif)
+
+**IP** atau *Internet Protocol* adalah tulang punggung dari internet. Kalau TCP adalah kang kurur pakek data yang hati-hati, IP ini GPS-nya yang menentukan ke mana pakek data itu pergi
+
+1.3.2 Protokol Keamanan (*Security Protocols*)
+Protokol komunikasi memastikan **data bisa dikirim**, protokol keamanan memastikan **data itu aman**. Mereka mencegah data dibajak, dibaca orang iseng, atau dimodifikasi saat dikirim.
+
+1.3.3 Protokol Manajemen (*Management Protocols*)
+Protokol ini dipakai untuk **mengatur** dan **memantau** perangkat dalam jaringan. Biasanya dipakai oleh admin jaringan untuk memastikan semua perangkat berjalan normal.
+
+
 
 ### 1.4 Semua Komputer memiliki Alamat
 Alamat apa nih? Misalkan rumahmu punyua nomor dan temanmu mau ke rumahmu jadi kamu kasih tau nomor rumahnya. Konsep jaringan komputer juga sama.
 
 Identitas Komputer itu disebut IP Address
+
+Kalau alamat komputer itu ada dua: make address dan IP address
 
 ## 2 MASUK KE IP ADDRESS
 
@@ -184,3 +263,7 @@ Identitas Komputer itu disebut IP Address
 #### 4.2.1 STATIS 
 
 #### 4.2.2 DINAMIS
+
+#Referensi
+1.2 [Jenis-Jenis Jaringan](https://www.geeksforgeeks.org/types-of-computer-networks/)
+1.3 [Jenis-Jenis Protokol Komunikasi]([Jenis-Jenis Jaringan](https://www.geeksforgeeks.org/types-of-computer-networks/))
