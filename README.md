@@ -35,22 +35,25 @@ Dalam modul-modul praktikum ini, kamu akan mempelajari dan mengimplementasikan b
 ---
 
 ## 🛠 Aplikasi dan Tools yang Dibutuhkan
+Apa aja sih aplikasi yang kalian butuhkan?
+Nah, untuk melakukan praktikum ini, kamu perlu menginstal aplikasi berikut:
 
-Untuk menunjang praktikum, kamu perlu menginstal beberapa aplikasi berikut:
-
-- **Winbox**  
+- **Winbox 3.41**  
   Untuk konfigurasi router MikroTik secara grafis.
+  Link Download : https://mikrotik.com/download
 
-- **Cisco Packet Tracer**  
+- **Cisco Packet Tracer 8.2.2**  
   Simulator jaringan untuk latihan konfigurasi topologi jaringan secara virtual.
+  Link Download : https://www.netacad.com/resources/lab-downloads?courseLang=en-US
 
 - **Wireshark**  
   Alat analisis paket jaringan yang digunakan untuk memantau dan mempelajari lalu lintas jaringan.
 
-- **VirtualBox / VMware (Opsional)**  
-  Digunakan untuk mensimulasikan jaringan antar virtual machine jika diperlukan.
+- **Aplikasi Ubiquitous?**  
 
-- **Notepad++ / VS Code**  
-  Editor teks untuk mencatat konfigurasi dan dokumentasi.
-
+  
 ---
+## Bagaimana cara membaca modul dan buat laporannya??
+Ada beberapa cara untuk membaca modul yaitu dengan membuka folder modul sesuai modul yang ingin dibaca atau kalian juga bisa download repository ini atau bahkan kalian bisa clone repository ini.
+
+Untuk laporannya kalian dapat download atau clone repository ini
