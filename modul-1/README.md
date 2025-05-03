@@ -298,6 +298,6 @@ Kalau alamat komputer itu ada dua: make address dan IP address
 
 #### 4.2.2 DINAMIS
 
-#Referensi
+# Referensi
 1.2 [Jenis-Jenis Jaringan](https://www.geeksforgeeks.org/types-of-computer-networks/)
 1.3 [Jenis-Jenis Protokol Komunikasi]([Jenis-Jenis Jaringan](https://www.geeksforgeeks.org/types-of-computer-networks/))
