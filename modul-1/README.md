@@ -191,7 +191,7 @@ Server akan merespon dengan memberikan kode status untuk memberitahu hasilnya. C
 | 500  | Kesalahan dari sisi server                |
 
 ##### 1.3.1.2 Hypertext Transfer Protocol Secure (HTTPS)
-![HTTPS](images/1.3.1.2_MemeHTTPS.jpg)
+![HTTPS](images/1.3.1.2_HTTPS.avif)
 
 **HTTPS** atau *Hypertext Transfer Protocol Secure* merupakan versi lebih aman dari HTTP. Bedanya, HTTP itu kayak ngobrol di tempat umum, semua orang bisa dengerin. Sementara HTTPS itu kayak ngobrol di ruang tertutup dan dienkripsi–cuma kamu dan server yang tahu isi pembicaraannya.
 
@@ -201,8 +201,7 @@ HTTPS menambahkan lapisan keaman dengan menggunakan protokol enkripsi seperti:
 Jadi kalau pakai enkripsi tadi data-data kayak login, password,info kartu kredit itu nggak bisa dibaca sama pihak ketiga. Bahkan kalaupun disadap, datanya akan kelihatan acak dan nggak bisa dibaca tanpa kunci dekripsi.
 
 Jadi kalau ada pilihan HTTP atau HTTPS pilih yang ada 
-
-![MemeHTTPS](images/1.3.1.2_MemeHTTPs.jpg)
+![MemesHTTPS](images/1.3.1.2_MemeHTTPS.jpg)
 
 ##### 1.3.1.3 File Transfer Protocol (FTP)
 ![FTP](images/1.3.1.3_FTP.avif)
@@ -276,6 +275,8 @@ Secara sederhana proses kerja DHCP dibagi menjadi 4 langkah:
 | 2. Offer        | Server DHCP (biasanya router) jawab: “Nih, aku punya IP kosong buat kamu.”      |
 | 3. Request      | Perangkat bilang: “Oke, aku mau pakai IP yang kamu tawarkan.”                   |
 | 4. Acknowledge  | Server jawab lagi: “Siap, IP itu sekarang resmi kamu pakai.”                    |
+
+
 
 ### 1.4 Semua Komputer memiliki Alamat
 Alamat apa nih? Misalkan rumahmu punyua nomor dan temanmu mau ke rumahmu jadi kamu kasih tau nomor rumahnya. Konsep jaringan komputer juga sama.
