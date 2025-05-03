@@ -1,0 +1,2 @@
+Kenapa Ada IPv4 dan IPv6?
+"Dulu rumah di kota sedikit, cukup pakai 4 digit angka. Tapi makin lama makin padat, alamat harus lebih panjang. Itulah kenapa lahir IPv6."
