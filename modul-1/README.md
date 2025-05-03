@@ -159,18 +159,18 @@ Untuk informasi lebih rinci dapat dilihat di:
 
 Dalam dunia jaringan komputer, **protokol** adalah aturan main yang mengatur bagaimana perangkat bisa berkomunikasi satu sama lain. Tanpa protokol, perangkat seperti laptop, server, atau router nggak akan paham "bahasa" satu sama lain, meskipun sudah terhubung ke jaringan.
 
-**Jenis-Jenis Protokol:**
-1.3.1 Protokol Komunikasi (*Communication Protocols*)
+#### **Jenis-Jenis Protokol:**
+#### 1.3.1 Protokol Komunikasi (*Communication Protocols*)
 Protokol yang mengatur **cara pertukaran data antar perangkat**. Mereka memastikan data dikirim dan diterima dengan format dan cara yang benar.
 
-1.3.1.1 Hypertext Transfer Protocol (HTTP)
+##### 1.3.1.1 Hypertext Transfer Protocol (HTTP)
 ![HTTP](images/1.3.1.1_HTTP.avif)
 
 **HTTP** atau *Hypertext Transfer Protocol* adalah bahasa standar yang dipakai untuk mengakses webside di internet seperti Chrome, Firefox, Safari.
 
 HTTP dapan merespon halaman web, gambar, video atau file lain. HTTP bersifat *stateless*, artinya setiap permintaan HTTP dianggap sebagai transaksi yang terpisah. Contohnya kamu *klik* dua *link* berbeda di satu web, server akan mengganggap bahwa kamu adalah dua *user* yang berbeda.
 
-**Metode HTTP**\\
+**Metode HTTP**
 HTTP punya berbagai metode permintaan sesuai dengan fungsinya:
 | Metode  | Fungsi                                                             |
 |---------|--------------------------------------------------------------------|
@@ -179,7 +179,8 @@ HTTP punya berbagai metode permintaan sesuai dengan fungsinya:
 | PUT     | Mengupdate data yang sudah ada                                     |
 | DELETE  | Menghapus data dari server                                         |
 
-**Kode Status HTTP**\\
+**Kode Status HTTP**
+
 ![MemeHTTP](images/1.3.1.1_MemeHTTP.png)
 
 Server akan merespon dengan memberikan kode status untuk memberitahu hasilnya. Contoh yang paling umum:
@@ -189,8 +190,8 @@ Server akan merespon dengan memberikan kode status untuk memberitahu hasilnya. C
 | 404  | Halaman tidak ditemukan (Not Found)       |
 | 500  | Kesalahan dari sisi server                |
 
-1.3.1.2 Hypertext Transfer Protocol Secure (HTTPS)
-![HTTPS](images/1.3.1.2_MemeHTTPS.jpg)
+##### 1.3.1.2 Hypertext Transfer Protocol Secure (HTTPS)
+![HTTPS](images/1.3.1.2_HTTPS.avif)
 
 **HTTPS** atau *Hypertext Transfer Protocol Secure* merupakan versi lebih aman dari HTTP. Bedanya, HTTP itu kayak ngobrol di tempat umum, semua orang bisa dengerin. Sementara HTTPS itu kayak ngobrol di ruang tertutup dan dienkripsi–cuma kamu dan server yang tahu isi pembicaraannya.
 
@@ -199,10 +200,10 @@ HTTPS menambahkan lapisan keaman dengan menggunakan protokol enkripsi seperti:
 - TLS (*Transport Layer Security*)
 Jadi kalau pakai enkripsi tadi data-data kayak login, password,info kartu kredit itu nggak bisa dibaca sama pihak ketiga. Bahkan kalaupun disadap, datanya akan kelihatan acak dan nggak bisa dibaca tanpa kunci dekripsi.
 
-Jadi kalau ada pilihan HTTP atau HTTPS pilih yang ada \\
-![MemeHTTPS](images/1.3.1.2_MemeHTTPs.jpg)
+Jadi kalau ada pilihan HTTP atau HTTPS pilih yang ada 
+![MemesHTTPS](images/1.3.1.2_MemeHTTPS.jpg)
 
-1.3.1.3 File Transfer Protocol (FTP)
+##### 1.3.1.3 File Transfer Protocol (FTP)
 ![FTP](images/1.3.1.3_FTP.avif)
 
 **FTP** atau *File Transfer Protocol* adalah protokol standar yang digunakan untuk mengirim dan menerima file antar komputer melalui jaringan. FTP digunakan saat ingin meng-upload file server atau download file dari server.
@@ -213,7 +214,7 @@ FTP menggunakan mode **client & server**, yang artinya client (user) akan menghu
 1. Active Mode: Client terhubung ke server lewat port 21 dan server akan membuka port lain untuk kirim data.
 2. Passive Mode: Cocok untuk client ada di balik *firewall* atau *router NAT*. Server akan membuka port acak untuk melakukan transfer data, lalu client akan ber-inisiatif mengkoneksi ke port itu.
 
-1.3.1.4 Transmission Control Protocol (TCP)
+##### 1.3.1.4 Transmission Control Protocol (TCP)
 ![FTP](images/1.3.1.4_TCP.avif)
 
 **TCP** atau *Transmission Control Protocol* adalah salah satu protokol utama di lapisan transport dalam jaringan komputer. Nahh. TCP ini punya tugas untuk memastikan bahwa data yang dikirim dari satu perangkat ke perangkat lain sampai dengan urutan yang benar, lengkap, dan tanpa rusak.
@@ -231,20 +232,53 @@ Port number TCP untuk menunjukan apliikasi atau layangan tertentu di perangkat, 
 2. Port 443: Untuk HTTPS
 3. Port 25: Untuk email (SMTP)
 
-1.3.1.5 Internet Protocol (IP)
-![IP](images/1.3.1.5_IP.avif)
+##### 1.3.1.5 Internet Protocol (IP)
+![IP](images/1.3.1.5_IP.avif) 
 
-**IP** atau *Internet Protocol* adalah tulang punggung dari internet. Kalau TCP adalah kang kurur pakek data yang hati-hati, IP ini GPS-nya yang menentukan ke mana pakek data itu pergi
+**IP** atau *Internet Protocol* adalah tulang punggung dari internet. Kalau TCP adalah kang kurur pakek data yang hati-hati, IP ini GPS-nya yang menentukan ke mana pakek data itu pergi.
 
-1.3.2 Protokol Keamanan (*Security Protocols*)
+Setiap perangkat yang terhubung ke jaringan **pasti** punya alamat IP, alamat ini dipakai untuk mengenali dan menemukan perangkat tersebut di jaringan. Ada 2 jenis IP address:
+
+| Jenis IP | Contoh Format                      | Keterangan                                   |
+|----------|------------------------------------|----------------------------------------------|
+| IPv4     | 192.168.0.1                        | Umum digunakan, 32-bit (angka desimal)       |
+| IPv6     | 2001:0db8:85a3::8a2e:0370:7334     | Versi baru, 128-bit (angka heksadesimal)     |
+
+Cara IP Bekerja:
+
+![Meme IP](images/1.3.1.5_MemeIP.png)
+
+1. IP memecah data menjadi paket-pakek kecil sebelum dikirim
+2. Tiap paket diberi alamat asal dan tujuan
+3. Router dan switch di jaringan akan membaca alamat IP lalu meneruskan pakek ke jalur yang benar
+IP juga bisa membantu menemukan jalur tercepat dan efisien supaya pakek datang lebih cepat
+
+Berbeda ngan TCP yang perlu buat "janji" dulu, IP itu **connectionless** artinya, nggak perlu buat koneksi dulu buat ngirim data, tiap pakek data dikirim secara independen. Nah contohnya kamu mau ngirim 5 pakek niih dengan ekspedisi yang berbeda-beda, selama asal alamatnya benar, semua pakeknya pasti sampek.
+
+Nah di IP sendiri ada komponen yang penting yaitu **router dan switch** yang fungsinya sebagai navigator IP. Jadi mereka berdua bisa baca alamat IP tujuan, menentukan rute tercepat, dan ngirim paket ke jalur yang tepat.
+
+#### 1.3.2 Protokol Keamanan (*Security Protocols*)
 Protokol komunikasi memastikan **data bisa dikirim**, protokol keamanan memastikan **data itu aman**. Mereka mencegah data dibajak, dibaca orang iseng, atau dimodifikasi saat dikirim.
 
-1.3.3 Protokol Manajemen (*Management Protocols*)
+#### 1.3.3 Protokol Manajemen (*Management Protocols*)
 Protokol ini dipakai untuk **mengatur** dan **memantau** perangkat dalam jaringan. Biasanya dipakai oleh admin jaringan untuk memastikan semua perangkat berjalan normal.
 
+##### 1.3.3.1 Dynamic Host Configuration Protocol (DHCP)
+![DHCP](images/1.3.3.1_DHCP.avif) 
+
+**DHCP** atau *Dynamic Host Configuration Protocol* memiliki peran yang sangat penting untuk IP otomatis. Jadi, kalau kamu pernah nyambung ke Wi-Fi dan langsung bisa internetan tanpa atur IP secara maunal, itu hasil kerjanya DHCP. Selain itu DHCP juga mengatur **subnet mask, default gateway, DNS server**
+
+Secara sederhana proses kerja DHCP dibagi menjadi 4 langkah:
+| Tahap           | Penjelasan                                                                      |
+|---------------- |-----------------------------------------------------------------------------    |
+| 1. Discover     | Perangkat baru bergabung ke jaringan dan “teriak”: “Ada yang bisa kasih IP?”    |
+| 2. Offer        | Server DHCP (biasanya router) jawab: “Nih, aku punya IP kosong buat kamu.”      |
+| 3. Request      | Perangkat bilang: “Oke, aku mau pakai IP yang kamu tawarkan.”                   |
+| 4. Acknowledge  | Server jawab lagi: “Siap, IP itu sekarang resmi kamu pakai.”                    |
 
 
-### 1.4 Semua Komputer memiliki Alamat
+
+### 1.4 Semua Komputer memiliki Alamat (dikerjain Tabitha)
 Alamat apa nih? Misalkan rumahmu punyua nomor dan temanmu mau ke rumahmu jadi kamu kasih tau nomor rumahnya. Konsep jaringan komputer juga sama.
 
 Identitas Komputer itu disebut IP Address
@@ -256,7 +290,7 @@ Kalau alamat komputer itu ada dua: make address dan IP address
 ## 3 MASUK KE IPv4
 
 ## 4 KONEKTIVITAS KABEL LAN
-### 4.1 CRIMPING
+### 4.1 CRIMPING (dikerjain Tabitha)
 
 ### 4.2 ROUTING PAKE ROUTER
 
@@ -264,6 +298,6 @@ Kalau alamat komputer itu ada dua: make address dan IP address
 
 #### 4.2.2 DINAMIS
 
-#Referensi
+# Referensi
 1.2 [Jenis-Jenis Jaringan](https://www.geeksforgeeks.org/types-of-computer-networks/)
 1.3 [Jenis-Jenis Protokol Komunikasi]([Jenis-Jenis Jaringan](https://www.geeksforgeeks.org/types-of-computer-networks/))
