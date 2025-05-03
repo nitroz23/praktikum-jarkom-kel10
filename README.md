@@ -8,29 +8,30 @@ Praktikum ini merupakan bagian dari mata kuliah di **Departemen Teknik Komputer 
 
 Dalam modul-modul praktikum ini, kamu akan mempelajari dan mengimplementasikan beberapa konsep penting, di antaranya:
 
-### 1. **Pengenalan Jaringan Komputer**
-- Konsep dasar jaringan
-- Jenis-jenis jaringan (LAN, WAN, MAN)
+### 1. **Konfigurasi Dasar Jaringan IPv4**
+- Crimping
+- Konfigurasi **routing statis** dan **routing dinamis** IPv4
 - Topologi jaringan
 
-### 2. **Routing**
-- Konfigurasi **routing statis** dan **routing dinamis**
-- Simulasi menggunakan MikroTik dan software seperti Cisco Packet Tracer
+### 2. **Routing & Manajemen IPv6**
+- Konfigurasi **routing statis** dan **routing dinamis** IPv6
+- 
 
-### 3. **Alamat IP dan Subnetting**
-- Penentuan IP Address (IPv4 & IPv6)
-- Teknik subnetting
-- Penerapan dalam konfigurasi perangkat jaringan
+### 3. **Wireless LAN dan Ubiquitous**
+- Konfigurasi Access Point dan Station
+- Point to Point, Point to Multipoint, Wireless Bridge
+- Konfigtuasi jaringan Ubiquitous
 
-### 4. **Penggunaan Mikrotik**
-- Konfigurasi dasar router Mikrotik
-- DHCP, NAT, Firewall dasar
-- Pengaturan bandwidth dan kontrol akses
+### 4. **Firewall & NAT**
+- Filter Rules (Accept, Drop, Reject)
+- NAT (Masquerade, Port Forwarding)
+- Connection Tracking
+- Proteksi router dari akses luar
 
-### 5. **Implementasi Jaringan Praktis**
-- Topologi simulasi jaringan rumah atau kantor
-- Monitoring jaringan
-- Troubleshooting dan analisis jaringan
+### 5. **VPN & QoS**
+- Tunnel (PPTP, L2TP, EOIP)
+- Simple Queue & Queue Tree
+- Bandwidth Limiting dan Prioritas Traffic
 
 ---
 
