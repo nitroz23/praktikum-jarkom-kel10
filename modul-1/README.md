@@ -47,13 +47,13 @@ Jadi kids koneksi jaringan bukan sebagai kebutuhan tambahan aja, no no no. Karen
 #### 1.2.1 Personal Area Network (PAN)
 ![PAN](images/1.2.1_PAN.png)
 
-PAN atau *Personal Area Network* ibarat jaringan kecil yang hanya mengelilingi satu orang. PAN ini khusus buat menghubungkan perangkat pribadi kamu yang jaraknya deket-deket, sekitar 1-100 meter.
+**PAN** atau *Personal Area Network* ibarat jaringan kecil yang hanya mengelilingi satu orang. PAN ini khusus buat menghubungkan perangkat pribadi kamu yang jaraknya deket-deket, sekitar 1-100 meter.
 
 ![MemePAN](images/1.2.1_MemePAN1.jpg)
 
 Contohnya smartphone, laptop, smartwatch, bahkan printer yang kamu pakai sendiri bosa saling terhubung lewat jaringan ini.
 
-Fungsi PAN pada kehidupan sehari-hari:
+**Fungsi PAN pada kehidupan sehari-hari:**
 - Transfer file dari HP ke laptop lewat Bluethooh.
 - Ngeprint dokumen dari laptop ke printer via USB
 
@@ -71,7 +71,7 @@ PAN ada 2 jenis:
 #### 1.2.2 Local Area Network (LAN)
 ![LAN](images/1.2.2_LAN.png)
 
-LAN atau *Local Area Network* adalah jenis jaringan komputer yang paling sering dipakai, terutama di tempat-tempat yang areanya terbatas, kayak di rumah, kator, sekolah, atau lab. Jarak jangkauan LAN maksimal 2 km dengan kecepatan transfer yang tinggi.
+**LAN** atau *Local Area Network* adalah jenis jaringan komputer yang paling sering dipakai, terutama di tempat-tempat yang areanya terbatas, kayak di rumah, kator, sekolah, atau lab. Jarak jangkauan LAN maksimal 2 km dengan kecepatan transfer yang tinggi.
 
 Jaringan ini menghubungkan **dua atau lebih** komputer dalam satu area lokal, pengaplikasian lewat kabel Ethernet atau Wi-Fi. Jika melalui Ethernet berarti menggunakan kabel LAN dan pengaplikasiannya dicolok ke switch atau router. Kalau pakai Wi-Fi nggak perlu pakek kabel dan pengaplukasiannya tinggal menggunakan hotspot
 
@@ -79,7 +79,7 @@ Jaringan ini menghubungkan **dua atau lebih** komputer dalam satu area lokal, pe
 
 Contohnya komputer di lab MIOT yang bisa diakses bersama atau semua komputer kantor yang bisa mengirim file satu sama lain.
 
-✅ Kelebihan LAN
+**✅ Kelebihan LAN**
 
 | Keunggulan                | Penjelasan                                                                 |
 |-------------------------  |----------------------------------------------------------------------------|
@@ -89,7 +89,7 @@ Contohnya komputer di lab MIOT yang bisa diakses bersama atau semua komputer kan
 | Murah & Gampang Dipasang  | Instalasi, perawatan, dan pengembangannya relatif murah & simpel           |
 | Fleksibel & Scalable      | Bisa ditambah komputer atau perangkat lain dengan mudah                    |
 
-❌ Kekurangan LAN
+**❌ Kekurangan LAN**
 
 | Kekurangan                | Penjelasan                                                                 |
 |-------------------------  |----------------------------------------------------------------------------|
@@ -98,6 +98,18 @@ Contohnya komputer di lab MIOT yang bisa diakses bersama atau semua komputer kan
 | Jangkauan Terbatas        | Hanya berlaku untuk area lokal, tidak cocok untuk area yang terlalu luas   |
 | Risiko Keamanan Data      | Kalau server utama diretas, semua data di jaringan bisa bocor              |
 
+#### 1.2.3 Campus Area Network (CAN)
+**CAN** atau *Campus Area Network* adalah jaringan komputer yang ukurannya lebih besar dari LAN, tetapi masih lebih kecil dari MAN. CAN biasanya digunakan di sekolah, kampus, ataupun beberapa gedung dalam satu kompleks. Jarak konektivitas CAN 1 - 5 km.
+
+Jadi bisa kamu bayangkan di TW2 ada lab MIOT, lab Robotik, ruang kelas di lantai 6, dan sekretariat di lantai 2 yang dihubungkan dalam satu jaringan—itulah CAN! Paham Ente ? 👊🏻
+
+Teknologi CAN sama dengan LAN yang menggunakan Ethernet dan jika Wi-Fi.
+
+| ✅ Kelebihan                                                          | ❌ Kekurangan                                                                 |
+|-----------------------------------------------------------------------|--------------------------------------------------------------------------------|
+| **Kecepatan**: Transfer data antarsistem lebih cepat karena menggunakan LAN, bukan internet umum.      | **Jangkauan Terbatas**: Tidak cocok untuk koneksi antar kota atau wilayah yang sangat luas. |
+| **Keamanan**: Admin jaringan bisa mengatur akses dan menjaga jaringan dengan firewall.                | **Butuh Admin Tetap**: Diperlukan admin khusus agar jaringan tetap stabil dan aman.         |
+| **Efisien Biaya**: Setup dan perawatan sedang, bisa pakai WiFi untuk menghemat kabel.                | **Bisa Overload**: Jika terlalu banyak pengguna aktif dan tidak diatur dengan baik.           |
 
 ### 1.3 Jaringan Komputer Punya Aturan??
 IYA, disebut protokol komunikasi
