@@ -44,12 +44,35 @@ Jadi kids koneksi jaringan bukan sebagai kebutuhan tambahan aja, no no no. Karen
 
 ![Jenis-Jenis Jaringan Komputer](images/1.2_Network.png)
 
-1.2.1 Personal Area Network (PAN)
+#### 1.2.1 Personal Area Network (PAN)
 ![PAN](images/1.2.1_PAN.png)
 
-PAN atay *Personal Area Network* ibarat jaringan kecil yang hanya mengelilingi satu orang. PAN ini khusus buat menghubungkan perangkat pribadi kamu yang jaraknya deket-deket, sekitar 1-100 meter.
+PAN atau *Personal Area Network* ibarat jaringan kecil yang hanya mengelilingi satu orang. PAN ini khusus buat menghubungkan perangkat pribadi kamu yang jaraknya deket-deket, sekitar 1-100 meter.
 
-![MemePAN](images/1.2.1_MemePAN.jpg)
+![MemePAN](images/1.2.1_MemePAN1.jpg)
+
+Contohnya smartphone, laptop, smartwatch, bahkan printer yang kamu pakai sendiri bosa saling terhubung lewat jaringan ini.
+
+Fungsi PAN pada kehidupan sehari-hari:
+- Transfer file dari HP ke laptop lewat Bluethooh.
+- Ngeprint dokumen dari laptop ke printer via USB
+
+PAN ada 2 jenis:
+- Wireless PAN: Nggak usah pakai kabel, dalam penerapannya memanfaatkan Bluetooth, WiFi, atau Zigbee. Contohnya kalau kamu lagi dengerin lagu pakai wireless headset dari HP kamu.
+- Wired PAN: Pakai kabel, misalnya USB. Contohnya ketika kamu nyambungin HP ke laptop buat ngecas sekaligus sekaligus kirim file.
+
+| ✅ **Kelebihan PAN**                                   | ❌ **Kekurangan PAN**                                                        |
+|--------------------------------------------------------|-------------------------------------------------------------------------------|
+| Praktis & fleksibel banget buat pemakaian pribadi      | Jangkauannya kecil, cuma buat sekitar 1 orang                                 |
+| Biayanya murah dan gampang disetting                   | Kecepatan transfer data bisa terbatas, tergantung teknologinya                |
+| Nggak perlu teknisi buat instalasi                     | Kadang perangkat nggak semua kompatibel satu sama lain                        |
+| Mudah dibawa kemana-mana alias portable                | Beberapa teknologi PAN (kayak Zigbee) bisa agak mahal                         |
+| Cocok buat orang yang pengen simple                    |                                                                       
+#### 1.2.2 Local Area Network (LAN)
+![LAN](images/1.2.2_LAN.png)
+
+
+
 ### 1.3 Jaringan Komputer Punya Aturan??
 IYA, disebut protokol komunikasi
 contoh :
