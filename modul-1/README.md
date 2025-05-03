@@ -71,6 +71,32 @@ PAN ada 2 jenis:
 #### 1.2.2 Local Area Network (LAN)
 ![LAN](images/1.2.2_LAN.png)
 
+LAN atau *Local Area Network* adalah jenis jaringan komputer yang paling sering dipakai, terutama di tempat-tempat yang areanya terbatas, kayak di rumah, kator, sekolah, atau lab. Jarak jangkauan LAN maksimal 2 km dengan kecepatan transfer yang tinggi.
+
+Jaringan ini menghubungkan **dua atau lebih** komputer dalam satu area lokal, pengaplikasian lewat kabel Ethernet atau Wi-Fi. Jika melalui Ethernet berarti menggunakan kabel LAN dan pengaplikasiannya dicolok ke switch atau router. Kalau pakai Wi-Fi nggak perlu pakek kabel dan pengaplukasiannya tinggal menggunakan hotspot
+
+[Masukin meme bang :)]
+
+Contohnya komputer di lab MIOT yang bisa diakses bersama atau semua komputer kantor yang bisa mengirim file satu sama lain.
+
+✅ Kelebihan LAN
+
+| Keunggulan                | Penjelasan                                                                 |
+|-------------------------  |----------------------------------------------------------------------------|
+| Privasi Terjaga           | LAN bersifat privat, jadi tidak diatur oleh badan eksternal tertentu       |
+| Kecepatan Tinggi          | Bisa mencapai 100 Mbps atau lebih, cocok buat transfer file besar          |
+| Banyak Media Transmisi    | Bisa pakai kabel UTP, fiber optic, bahkan Wi-Fi                            |
+| Murah & Gampang Dipasang  | Instalasi, perawatan, dan pengembangannya relatif murah & simpel           |
+| Fleksibel & Scalable      | Bisa ditambah komputer atau perangkat lain dengan mudah                    |
+
+❌ Kekurangan LAN
+
+| Kekurangan                | Penjelasan                                                                 |
+|-------------------------  |----------------------------------------------------------------------------|
+| Biaya Awal Lumayan        | Butuh perangkat tambahan seperti switch, router, dan software server       |
+| Privasi Bisa Terganggu    | Admin jaringan bisa akses file pribadi dan history internet kamu           |
+| Jangkauan Terbatas        | Hanya berlaku untuk area lokal, tidak cocok untuk area yang terlalu luas   |
+| Risiko Keamanan Data      | Kalau server utama diretas, semua data di jaringan bisa bocor              |
 
 
 ### 1.3 Jaringan Komputer Punya Aturan??
