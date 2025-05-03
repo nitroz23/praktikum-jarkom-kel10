@@ -42,7 +42,7 @@ Jadi kids koneksi jaringan bukan sebagai kebutuhan tambahan aja, no no no. Karen
 
 ### 1.2 Jenis-Jenis Jaringan
 
-![Jenis-Jenis Jaringan Komputer](images/1.3_Network.png)
+![Jenis-Jenis Jaringan Komputer](images/1.2_Network.png)
 
 Untuk informasi lebih rinci dapat dilihat di:
 [Jenis-Jenis Jaringan](https://www.geeksforgeeks.org/types-of-computer-networks/)
@@ -135,8 +135,6 @@ Kalau LAN untuk satu ruangan, MAN untuk satu kota, nahh WAN ini bisa antar kota,
 
 ![Meme MAN](images/1.2.5_MemeWAN1.png)
 
-[Masukin meme yang singgasana sama yang ada orang nyembah itu]
-
 Seorang WAN ini bentuk paling umum dan pasti kalian tau adalah internet itu sendiri!
 
 Proses kerja WAN biasanaya dengan menghubungkan jaringan kecil seperti LAN lalu melewati jalur komunikasi bersama seperti *leased line*, Dial-up, dan VPN.
@@ -157,7 +155,7 @@ Proses kerja WAN biasanaya dengan menghubungkan jaringan kecil seperti LAN lalu 
 ![Jenis-Jenis Protokol Komunikasi](images/1.3_ProtokolKomunikasi.avif)
 
 Untuk informasi lebih rinci dapat dilihat di:
-[Jenis-Jenis Protokol Komunikasi]([Jenis-Jenis Jaringan](https://www.geeksforgeeks.org/types-of-computer-networks/))
+([Jenis-Jenis Jaringan](https://www.geeksforgeeks.org/types-of-computer-networks/))
 
 Dalam dunia jaringan komputer, **protokol** adalah aturan main yang mengatur bagaimana perangkat bisa berkomunikasi satu sama lain. Tanpa protokol, perangkat seperti laptop, server, atau router nggak akan paham "bahasa" satu sama lain, meskipun sudah terhubung ke jaringan.
 
@@ -183,6 +181,7 @@ HTTP punya berbagai metode permintaan sesuai dengan fungsinya:
 
 **Kode Status HTTP**
 ![MemeHTTP](images/1.3.1.1_MemeHTTP.png)
+
 Server akan merespon dengan memberikan kode status untuk memberitahu hasilnya. Contoh yang paling umum:
 | Kode | Arti                                      |
 |------|-------------------------------------------|
@@ -191,7 +190,7 @@ Server akan merespon dengan memberikan kode status untuk memberitahu hasilnya. C
 | 500  | Kesalahan dari sisi server                |
 
 1.3.1.2 Hypertext Transfer Protocol Secure (HTTPS)
-![HTTPS](images/1.3.1.2_HTTPS.avif)
+![HTTPS](images/1.3.1.2_MemeHTTPS.jpg)
 
 **HTTPS** atau *Hypertext Transfer Protocol Secure* merupakan versi lebih aman dari HTTP. Bedanya, HTTP itu kayak ngobrol di tempat umum, semua orang bisa dengerin. Sementara HTTPS itu kayak ngobrol di ruang tertutup dan dienkripsi–cuma kamu dan server yang tahu isi pembicaraannya.
 
