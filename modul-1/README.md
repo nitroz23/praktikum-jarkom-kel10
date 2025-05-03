@@ -42,7 +42,7 @@ Jadi kids koneksi jaringan bukan sebagai kebutuhan tambahan aja, no no no. Karen
 
 ### 1.2 Jenis-Jenis Jaringan
 
-![Jenis-Jenis Jaringan Komputer](img/1.2 Network.png)
+![Jenis-Jenis Jaringan Komputer](images/1.2_Network.png)
 
 1.2.1 Personal Area Network (PAN)
 
