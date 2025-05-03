@@ -234,7 +234,25 @@ Port number TCP untuk menunjukan apliikasi atau layangan tertentu di perangkat, 
 1.3.1.5 Internet Protocol (IP)
 ![IP](images/1.3.1.5_IP.avif)
 
-**IP** atau *Internet Protocol* adalah tulang punggung dari internet. Kalau TCP adalah kang kurur pakek data yang hati-hati, IP ini GPS-nya yang menentukan ke mana pakek data itu pergi
+**IP** atau *Internet Protocol* adalah tulang punggung dari internet. Kalau TCP adalah kang kurur pakek data yang hati-hati, IP ini GPS-nya yang menentukan ke mana pakek data itu pergi.
+
+Setiap perangkat yang terhubung ke jaringan **pasti** punya alamat IP, alamat ini dipakai untuk mengenali dan menemukan perangkat tersebut di jaringan. Ada 2 jenis IP address:
+
+| Jenis IP | Contoh Format                      | Keterangan                                   |
+|----------|------------------------------------|----------------------------------------------|
+| IPv4     | 192.168.0.1                        | Umum digunakan, 32-bit (angka desimal)       |
+| IPv6     | 2001:0db8:85a3::8a2e:0370:7334     | Versi baru, 128-bit (angka heksadesimal)     |
+
+Cara IP Bekerja:
+![Meme IP](images/1.3.1.5_MemeIP.png)
+1. IP memecah data menjadi paket-pakek kecil sebelum dikirim
+2. Tiap paket diberi alamat asal dan tujuan
+3. Router dan switch di jaringan akan membaca alamat IP lalu meneruskan pakek ke jalur yang benar
+IP juga bisa membantu menemukan jalur tercepat dan efisien supaya pakek datang lebih cepat
+
+Berbeda ngan TCP yang perlu buat "janji" dulu, IP itu **connectionless** artinya, nggak perlu buat koneksi dulu buat ngirim data, tiap pakek data dikirim secara independen. Nah contohnya kamu mau ngirim 5 pakek niih dengan ekspedisi yang berbeda-beda, selama asal alamatnya benar, semua pakeknya pasti sampek.
+
+Nah di IP sendiri ada komponen yang penting yaitu **router dan switch** yang fungsinya sebagai navigator IP. Jadi mereka berdua bisa baca alamat IP tujuan, menentukan rute tercepat, dan ngirim paket ke jalur yang tepat.
 
 1.3.2 Protokol Keamanan (*Security Protocols*)
 Protokol komunikasi memastikan **data bisa dikirim**, protokol keamanan memastikan **data itu aman**. Mereka mencegah data dibajak, dibaca orang iseng, atau dimodifikasi saat dikirim.
