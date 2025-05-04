@@ -8,49 +8,53 @@ Praktikum ini merupakan bagian dari mata kuliah di **Departemen Teknik Komputer 
 
 Dalam modul-modul praktikum ini, kamu akan mempelajari dan mengimplementasikan beberapa konsep penting, di antaranya:
 
-### 1. **Pengenalan Jaringan Komputer**
-- Konsep dasar jaringan
-- Jenis-jenis jaringan (LAN, WAN, MAN)
+### 1. **Konfigurasi Dasar Jaringan IPv4**
+- Crimping
+- Konfigurasi **routing statis** dan **routing dinamis** IPv4
 - Topologi jaringan
 
-### 2. **Routing**
-- Konfigurasi **routing statis** dan **routing dinamis**
-- Simulasi menggunakan MikroTik dan software seperti Cisco Packet Tracer
+### 2. **Routing & Manajemen IPv6**
+- Konfigurasi **routing statis** dan **routing dinamis** IPv6
+- 
 
-### 3. **Alamat IP dan Subnetting**
-- Penentuan IP Address (IPv4 & IPv6)
-- Teknik subnetting
-- Penerapan dalam konfigurasi perangkat jaringan
+### 3. **Wireless LAN dan Ubiquitous**
+- Konfigurasi Access Point dan Station
+- Point to Point, Point to Multipoint, Wireless Bridge
+- Konfigtuasi jaringan Ubiquitous
 
-### 4. **Penggunaan Mikrotik**
-- Konfigurasi dasar router Mikrotik
-- DHCP, NAT, Firewall dasar
-- Pengaturan bandwidth dan kontrol akses
+### 4. **Firewall & NAT**
+- Filter Rules (Accept, Drop, Reject)
+- NAT (Masquerade, Port Forwarding)
+- Connection Tracking
+- Proteksi router dari akses luar
 
-### 5. **Implementasi Jaringan Praktis**
-- Topologi simulasi jaringan rumah atau kantor
-- Monitoring jaringan
-- Troubleshooting dan analisis jaringan
+### 5. **VPN & QoS**
+- Tunnel (PPTP, L2TP, EOIP)
+- Simple Queue & Queue Tree
+- Bandwidth Limiting dan Prioritas Traffic
 
 ---
 
 ## 🛠 Aplikasi dan Tools yang Dibutuhkan
+Apa aja sih aplikasi yang kalian butuhkan?
+Nah, untuk melakukan praktikum ini, kamu perlu menginstal aplikasi berikut:
 
-Untuk menunjang praktikum, kamu perlu menginstal beberapa aplikasi berikut:
-
-- **Winbox**  
+- **Winbox 3.41**  
   Untuk konfigurasi router MikroTik secara grafis.
+  Link Download : https://mikrotik.com/download
 
-- **Cisco Packet Tracer**  
+- **Cisco Packet Tracer 8.2.2**  
   Simulator jaringan untuk latihan konfigurasi topologi jaringan secara virtual.
+  Link Download : https://www.netacad.com/resources/lab-downloads?courseLang=en-US
 
 - **Wireshark**  
   Alat analisis paket jaringan yang digunakan untuk memantau dan mempelajari lalu lintas jaringan.
 
-- **VirtualBox / VMware (Opsional)**  
-  Digunakan untuk mensimulasikan jaringan antar virtual machine jika diperlukan.
+- **Aplikasi Ubiquitous?**  
 
-- **Notepad++ / VS Code**  
-  Editor teks untuk mencatat konfigurasi dan dokumentasi.
-
+  
 ---
+## Bagaimana cara membaca modul dan buat laporannya??
+Ada beberapa cara untuk membaca modul yaitu dengan membuka folder modul sesuai modul yang ingin dibaca atau kalian juga bisa download repository ini atau bahkan kalian bisa clone repository ini.
+
+Untuk laporannya kalian dapat download atau clone repository ini

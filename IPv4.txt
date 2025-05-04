@@ -44,12 +44,12 @@ Ternyata... IP itu nggak cuma satu jenis lho! Sama kayak jalan di kota, ada yang
 
 Jadi jenis IP ada dua yaitu IPv4 dan juga IPv6,
 
+## 3 MASUK KE IPv4
+
 IPv4
 IPv4 (Internet Protocol version 4) adalah sistem pengalamatan IP yang paling banyak digunakan saat ini.
 
-## 2 MASUK KE IP ADDRESS
 
-## 3 MASUK KE IPv4
 
 ## 4 KONEKTIVITAS KABEL LAN
 ### 4.1 CRIMPING
