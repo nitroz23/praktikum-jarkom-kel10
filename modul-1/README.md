@@ -328,7 +328,7 @@ Alat ini digunakan untuk mengecek tiap kabel sudah benar terhubung atau tidak.
 
 #### 4.1.2 Konfigurasi Kabel LAN
 Ada beberapa macam konfigurasi kabel LAN berdasarkan urutan warnanya, menurut standar internasional dibagi menjadi **T568A** dan **T568B**
-![T568A dan T568B](images/4.1.2_T567A_B.png)
+![T568A dan T568B](images/4.1.2_T568A_B.png)
 
 Sedangkan dari pemasangannya dibagi menjaadi 2:
 1. **Straight-Through**
