@@ -295,7 +295,7 @@ Dalam jaringan komputer, komunikasi antara satu perangkat dengan perangkat lainn
 
 #### 4.1.1 Peralatan yang Digunakan
 Untuk belajar *crimping* kita butuh peralatan ini kidss:
-1. Kabel UTP (*Unshielded Twisted Pair*)
+1. Kabel UTP (*Unshielded Twisted Pair*)<br>
 ![Kabel UTP](images/4.1.1_KabelUTP.jpeg) 
 
 Kabel UTP atau biasanya disebut kabel internet sama mbak-mbak Berkat ini dari fisik bisa dilihat kalau beda sama kabel biasanya. Disatu selongsong kabel utama ada kumpulan kabel lain yang punya kode warna yang beda-beda.
@@ -311,40 +311,40 @@ Kabel UTP atau biasanya disebut kabel internet sama mbak-mbak Berkat ini dari fi
 | 7   | Putih-Coklat      | Tidak digunakan (untuk PoE/jaringan gigabit) |
 | 8   | Coklat            | Tidak digunakan (untuk PoE/jaringan gigabit) |
 
-2. RJ45
+2. RJ45<br>
 ![RJ45](images/4.1.1_RJ45.jpeg)
 
 Fungsi dari RJ45 adalah sebagai konektor yang menghubungkan kabel UTP dengan perangakat.
 
-3. Tang Crimping
-![Tang Crimping](images/4.1.1_RJ45.jpg)
+3. Tang Crimping<br>
+![Tang Crimping](images/4.1.1_TangCrimping.jpg)
 
 Tang jenis ini khusus digunakan untuk memasang RJ45 pada kabel UTP.
 
-4. LAN Tester
+4. LAN Tester<br>
 ![LAN Tester](images/4.1.1_LANTester.jpeg)
 
 Alat ini digunakan untuk mengecek tiap kabel sudah benar terhubung atau tidak.
 
 #### 4.1.2 Konfigurasi Kabel LAN
-Ada beberapa macam konfigurasi kabel LAN berdasarkan urutan warnanya, menurut standar internasional dibagi menjadi **T568A** dan **T568B**
+Ada beberapa macam konfigurasi kabel LAN berdasarkan urutan warnanya, menurut standar internasional dibagi menjadi **T568A** dan **T568B**<br>
 ![T568A dan T568B](images/4.1.2_T568A_B.png)
 
 Sedangkan dari pemasangannya dibagi menjaadi 2:
 1. **Straight-Through**
-Jenis pengkabelan ini digunakan untuk menyambungkan **dua tipe perangkat berbeda** yang tersambung ke jaringan, yakni perangkat DTE (data terminal equipment) ke DCE (data circuit-terminating equipment) atau sebaliknya. Perangkat DTE adalah perangkat yang melakukan generate data digital dan bertindak sebagai source dan destination untuk data digital, contohnya adalah komputer, mikrokomputer, terminal, printer. DCE adalah perangkat yang menerima dan mengkonversi data ke link telekomunikasi yang sesuai, umumnya DCE adalah perangkat jaringan seperti router, switch, modem.
-![Straight-Through](images/4.1.2_StraightThrough.png)
+Jenis pengkabelan ini digunakan untuk menyambungkan **dua tipe perangkat berbeda** yang tersambung ke jaringan, yakni perangkat DTE (data terminal equipment) ke DCE (data circuit-terminating equipment) atau sebaliknya. Perangkat DTE adalah perangkat yang melakukan generate data digital dan bertindak sebagai source dan destination untuk data digital, contohnya adalah komputer, mikrokomputer, terminal, printer. DCE adalah perangkat yang menerima dan mengkonversi data ke link telekomunikasi yang sesuai, umumnya DCE adalah perangkat jaringan seperti router, switch, modem.<br>
+![Straight-Through](images/4.1.2_StraightThrought.png)
 
 Nah di*Straight-Through* punya aturan pemasangan, tiap ujung kabel harus punya urutan warna yang sama. Misal ujing yang satu menggunakan aturan warna T568A, ujung yang satunya berarti juga harus ikut aturan T568A.
 
 2. **Crossover**
-Berkebalikan dengan kabel Straight-through, pengkabelan ini digunakan untuk menyambungkan **dua tipe perangkat yang sama** yang tersambung ke jaringan, yakni perangkat DTE ke DTE atau DCE ke DCE. Misalnya antara komputer dengan komputer, router dengan router, router dengan switch, komputer dengan printer.
+Berkebalikan dengan kabel Straight-through, pengkabelan ini digunakan untuk menyambungkan **dua tipe perangkat yang sama** yang tersambung ke jaringan, yakni perangkat DTE ke DTE atau DCE ke DCE. Misalnya antara komputer dengan komputer, router dengan router, router dengan switch, komputer dengan printer.<br>
 ![Crossover](images/4.1.2_Crossover.png)
 
 Aturan pemasangannya pun berbeda dengan kabel jenis straight-trough, kabel jenis Crossover memiliki urutan warna yang berbeda dikedua ujungnya. Tapi, perbedaan warna ini tidak boleh sembarangan, karena kedua ujung ini juga memiliki aturan urutan warna. Pada kabel jenis Crossover standar, jika salah satu ujung Pin memiliki susunan warna berdasarkan aturan T568A, maka ujung Pin yang lain harus memiliki urutan warna berdasarkan standar T568B.
 
 #### Video Tutorial
-Tontong kids, udah dibikinin nih 🤬
+Tontong kids, udah dibikinin nih 🤬<br>
 [ini link tutorial]
 
 ### 4.2 ROUTING PAKE ROUTER
