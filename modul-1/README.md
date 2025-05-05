@@ -302,7 +302,7 @@ Sebuah organisasi nirlaba yang lahir di Amerika tahun 1998, dan tugasnya menjaga
 ### 2.1 Gimana Cara Kerja IP Address?
 IP Address itu kayak **bahasa komunikasi universal** yang dipakai semua perangkat buat ngobrol satu sama lain di internet. Gak peduli kamu pakai HP, laptop, atau kulkas pintar, semua saling "ngobrol" pakai aturan komunikasi yang sama: Internet Protocol (IP).
 
-![Talking](images/Talking.jpg) 
+![Talking](images/talking.jpg) 
 
 Jadi kalau misalkan kehidupan manusia bahasa internasionalnya itu bahasa inggris, nah di dunia komputer bahasa komunikasi mereka itu IP.
 
@@ -379,19 +379,19 @@ Secara singkat ialah IP yang bisa berubah-ubah secara otomatis. Bayangin kamu ng
 
 Jika ingin lebih detail lagi :
 Penggunaan sehari-hari di rumah
-- ➤ Kamu cuma pakai internet buat browsing, streaming, meeting, game, dll.
-- ➤ Kamu nggak perlu akses jarak jauh ke perangkatmu.
-- ➤ Cukup terima apa yang diberikan modem secara otomatis? IP dinamis jawabannya.
+1.  Kamu cuma pakai internet buat browsing, streaming, meeting, game, dll.
+2.  Kamu nggak perlu akses jarak jauh ke perangkatmu.
+3.  Cukup terima apa yang diberikan modem secara otomatis? IP dinamis jawabannya.
 
 Banyak perangkat yang sering ganti-ganti koneksi
-- ➤ Misalnya WiFi publik, kantor, atau kampus.
-- ➤ Setiap hari pengguna berganti, jadi sistem akan otomatis kasih IP baru.
+1. Misalnya WiFi publik, kantor, atau kampus.
+2. Setiap hari pengguna berganti, jadi sistem akan otomatis kasih IP baru.
 
 Nggak mau ribet setting IP manual
-- ➤ IP akan dikasih otomatis dari router via DHCP, tinggal nyambung aja, langsung bisa internetan.
+1. IP akan dikasih otomatis dari router via DHCP, tinggal nyambung aja, langsung bisa internetan.
 
 Keamanan lebih fleksibel
-- ➤ Karena alamat IP sering berubah, hacker akan kesulitan menarget perangkat tertentu secara terus-menerus.
+1. Karena alamat IP sering berubah, hacker akan kesulitan menarget perangkat tertentu secara terus-menerus.
 
 ### 2.4 IP Adress Statis
 
@@ -413,20 +413,20 @@ IP Statis cocok untuk perangkat atau sistem yang harus bisa diakses dari luar ja
 
 Jika lebih ingin detail sekali lagi:
 Perangkat harus bisa diakses jarak jauh
-- ➤ Contoh: Server web, file server, remote desktop, CCTV.
-- ➤ Kalau IP-nya berubah, user di luar jaringan akan kehilangan akses. Jadi harus tetap.
+1. Contoh: Server web, file server, remote desktop, CCTV.
+2. Kalau IP-nya berubah, user di luar jaringan akan kehilangan akses. Jadi harus tetap.
 
 Perlu konfigurasi jaringan yang stabil
-- ➤ Misalnya mau bikin subnetting, firewall rules, VPN.
-- ➤ Alamat IP yang tetap bikin pengaturan jadi lebih mudah dan bisa diprediksi.
+1. Misalnya mau bikin subnetting, firewall rules, VPN.
+2. Alamat IP yang tetap bikin pengaturan jadi lebih mudah dan bisa diprediksi.
 
 Mempermudah troubleshooting
-- ➤ IP statis bikin teknisi jaringan gampang melacak masalah.
-- ➤ Nggak perlu nebak-nebak, IP si printer atau server pasti segitu terus.
+1. IP statis bikin teknisi jaringan gampang melacak masalah.
+2. Nggak perlu nebak-nebak, IP si printer atau server pasti segitu terus.
 
 Membuat identitas jaringan tetap dikenal
-- ➤ Misalnya domain diarahkan ke IP tertentu (contoh: website kampus = 103.xxx.xxx.xxx).
-- ➤ Kalau IP-nya gonta-ganti, domainnya jadi error.
+1. Misalnya domain diarahkan ke IP tertentu (contoh: website kampus = 103.xxx.xxx.xxx).
+2. Kalau IP-nya gonta-ganti, domainnya jadi error.
 
 ### 2.5 IP Dinamis vs IP Statis
 |Tujuan / Kondisi                         |	Pakai IP Dinamis ✅     |	Pakai IP Statis ✅|
