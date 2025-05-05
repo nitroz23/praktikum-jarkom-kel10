@@ -12,24 +12,23 @@
     - Routing Menggunakan Router
         - Statis
         - Dinamis
+
 ## 1 Dasar Jaringan Protokol
-Apa Itu Jaringan Komputer?
-"Bayangkan kamu tinggal di sebuah komplek perumahan. Tiap rumah punya keluarga yang ingin saling ngobrol, kirim surat, atau pinjam gula. Nah, kalau mereka saling terkoneksi, itu disebut jaringan."
+![Jaringan](images/1_Jaringan.avif)
 
-Jaringan komputer adalah kumpulan perangkat (seperti laptop, PC, printer, dan router) yang terhubung satu sama lain untuk berbagi informasi atau sumber daya.
+Apa Itu Jaringan Komputer? 
+Nihh dari gambar di atas Admin jelasin, Spongebob kan tinggal di kompleks rumah bareng Squidward dan Patrick. Nah mereka kan salaing ngobrol, pinjem barang satu sama lain, yang artinya mereka ber-3 itu saling terkoneksi. Nah kids, itu disebut jaringan.
 
-Pengandaian:
-Rumah = Komputer
+Begitupun di sekitar kita, jaringan komputer adalah kumpulan perangkat seperti laptop, PC, printer, router yang terhubung satu sama lain untuk **berbagi informasi dan sumber daya.**
 
-Jalan di antara rumah = Kabel jaringan
-
-Surat yang dikirim antar rumah = Data
-
-Tukang pos = Router
-
-Tetangga ngobrol langsung = LAN (Local Area Network)
-
-Tetangga beda kampung ngobrol = WAN (Wide Area Network)
+| Perumpamaan Dunia Nyata               | Di Dunia Jaringan Komputer        |
+|--------------------------------------|------------------------------------|
+| Rumah                                | Komputer                           |
+| Jalan antar rumah                    | Kabel jaringan                     |
+| Surat yang dikirim antar rumah       | Data yang dikirim antar perangkat  |
+| Tukang pos                           | Router                             |
+| Ngobrol sama tetangga dekat          | LAN (Local Area Network)           |
+| Ngobrol sama tetangga beda kampung   | WAN (Wide Area Network)            |
 
 ### 1.1 Kenapa Komputer Harus Terhubung ke Jaringan
 Bayangkan kamu ingin mengirim file dari satu komputer ke komputer lain **tanpa jaringan**, kamu harus meng-copy file tersebut ke flashdisk terlebih dahulu. Lalu mencabut dan mencolokkannya ke komputer tujuan. 
@@ -354,5 +353,5 @@ Tontong kids, udah dibikinin nih 🤬<br>
 #### 4.2.2 DINAMIS
 
 # Referensi
-1.2 [Jenis-Jenis Jaringan](https://www.geeksforgeeks.org/types-of-computer-networks/)
+1.2 [Jenis-Jenis Jaringan](https://www.geeksforgeeks.org/types-of-computer-networks/)<br>
 1.3 [Jenis-Jenis Protokol Komunikasi](https://www.geeksforgeeks.org/types-of-computer-networks/)
