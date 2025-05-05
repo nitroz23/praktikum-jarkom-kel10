@@ -284,9 +284,101 @@ Identitas Komputer itu disebut IP Address
 
 Kalau alamat komputer itu ada dua: make address dan IP address
 
-## 2 MASUK KE IP ADDRESS
+## 2 IP Address?
+Pasti kalian sudah sering dengar IP address ini atau misalkan sering lihat angka ini 192.168.1.1 namun kalian masih bingung kegunaannya sama pentingnya bagi kita itu apa.
 
-## 3 MASUK KE IPv4
+IP Address (Internet Protocol Address) adalah alamat identitas unik yang dimiliki setiap perangkat yang terhubung ke jaringan. 
+IP Address itu bisa kita ibaratkan seperti alamat rumah di dunia internet. Tapi bukannya “Jl. Mawar No. 5”, alamat ini berbentuk deretan angka-angka yang dipisahkan titik. Contohnya kayak gini: 192.158.1.38.
+
+(Masukkan MEME)
+
+Terus alamt rumah kan ditentuin, kalau alamat perangkat kita siapa yang kasih??
+IP Address nggak muncul secara acak, ya! IP itu sebenarnya dibuat secara matematis dan dibagikan secara resmi oleh lembaga bernama:
+🔹 IANA (Internet Assigned Numbers Authority)
+IANA ini adalah bagian dari ICANN, yaitu:
+    🔹 ICANN (Internet Corporation for Assigned Names and Numbers)
+    Sebuah organisasi nirlaba yang lahir di Amerika tahun 1998, dan tugasnya menjaga keamanan dan keteraturan internet di seluruh dunia — biar semua perangkat bisa saling terhubung dengan benar.
+
+### 2.1 Gimana Cara Kerja IP Address?
+IP Address itu kayak bahasa universal yang dipakai semua perangkat buat ngobrol satu sama lain di internet. Gak peduli kamu pakai HP, laptop, atau kulkas pintar, semua saling "ngobrol" pakai aturan komunikasi yang sama: Internet Protocol (IP).
+
+Jadi kalau misalkan kehidupan manusia bahasa internasionalnya itu bahasa inggris, nah di dunia komputer bahasa komunikasi mereka itu IP.
+
+🛣️ Prosesnya Emang Gimana?
+📶 Perangkatmu nyambung ke jaringan (kayak Wi-Fi rumah, kantor, atau kafe).
+
+🌐 Jaringan itu terhubung ke internet lewat ISP (Internet Service Provider).
+
+🧭 ISP akan ngasih IP Address ke perangkatmu, supaya bisa "dikenali" di internet.
+
+📤 Saat kamu browsing, ISP-lah yang nganterin data ke internet dan ngembaliin data ke kamu pakai alamat IP tadi.
+------------------------------------------------------------------------------------------------------------------------
+#### 2.1.1 Ganti IP Address??
+Misalkan kamu sudah punya IP address, namun kamu ingin menggantinya, apakah bisa?
+Tentu saja bisa, ada beberapa cara untuk mengganti IP address sementara.
+
+Kamu matikan-router-nyalain-lagi → bisa dapet IP baru.
+
+Kamu pindah tempat (misalnya ke kafe, hotel) → pakai IP sementara dari Wi-Fi di sana.
+
+Atau kamu minta ISP-nya langsung buat gantiin.
+-------------------------------------------------------------------------------
+### 2.2 Jenis-Jenis IP Address
+Misalkan gini, anggota keluarga di rumah kalian pasti ada panggilannya kan? "Ayah", "Ibu", "Kakak", "Adik" dan mereka bisa saling berkomunikasi satu sama lain namun jika ada orang dari luar komplek ingin kirim surat ke "Ayah" misalnya, pasti surat itu tidak dikirim langsung ke "Ayah" pasti melalui Alamat Rumah Kalian.
+
+Nah, dengan pengandaian begitu IP Address ini memiliki dua jenis utama:
+
+#### 2.2.1 🏠 Private IP Address (Alamat Dalam Rumah)
+Ini kayak nama panggilan antar anggota keluarga.
+Setiap perangkat di jaringan rumah/kantor kamu (HP, laptop, printer, TV pintar, bahkan mesin kopi pintar 😄) dapat alamat unik dari router supaya:
+
+Bisa dikenali satu sama lain
+
+Nggak tabrakan saat kirim data
+
+Contoh alamat privat:
+192.168.0.5, 10.0.0.12, 172.16.1.3
+
+Jadi, meskipun semua rumah pakai nama “Ayah”, “Ibu”, “Adik”, mereka tetap aman karena masing-masing beroperasi di rumahnya sendiri.
+
+#### 2.2.2.2 🌍 Public IP Address (Alamat Rumah di Luar)
+Ini alamat utama yang dikenal orang luar.
+Kalau teman kamu kirim paket, dia gak kirim ke “Kamar Adik” tapi ke alamat rumahmu, misalnya:
+103.94.189.35
+
+Alamat ini diberikan oleh ISP (Internet Service Provider) kamu ke router, supaya jaringanmu bisa:
+
+Terhubung ke internet
+
+Dikenali dari luar
+
+Jadi walaupun ada banyak perangkat di rumahmu, semuanya tetap keluar ke internet lewat satu pintu — alias satu public IP address.
+
+🔑 Analogi Singkat:
+Dunia Nyata	Dunia Jaringan
+Alamat Rumah	Public IP Address
+Nama Anggota di Rumah	Private IP Address
+RT/RW	Jaringan Lokal (LAN)
+POS/Kurir	ISP
+----------------------------------------------------------------------------------------------------------------------------
+
+Bayangkan kamu mau pergi ke rumah teman, tapi yang kamu tahu cuma nama panggilannya, misalnya: "Daffa Rumah Susu".
+Kamu nggak hafal alamat lengkapnya, tapi untungnya kamu punya asisten super pintar yang bisa cari tahu:
+
+“Oh, maksudmu Daffa Rumah Susu? Itu alamatnya di Jl. Susu Segar No. 103!”
+
+Tapi kalau kalian ke google.com yang terlihat hanya "portal.its.ac.id" padahal alamat asli mereka adalah 103.94.189.35. Tujuan dari itu karena manusia lebih gampang mengingat nama dan komputer lebih gampang mengingat angka (komputer aja awalnya pakai biner 0 1)
+---------------------------------------------------------------------------------------------------------------------------------
+
+### 2.3 IP Adress Statis
+
+### 2.4 IP Adress Dinamis
+
+## 3 IPv4
+Apa itu IPv4? – "Alamat Rumahmu di Dunia Internet"
+Merupakan versi IP yang paling umum digunakan saat ini (walau sudah ada IPv6). IPv4 sudah dipakai sejak zaman ARPANET tahun 1983 – nenek moyangnya internet modern. IPv4 adalah versi ke-4 dari internet protokol. Bisa dibilang, ini adalah cara komputer saling sapa dan kirim paket di dunia maya, kayak kurir antar barang ke alamat yang tepat.
+
+IP Address versi IPv4 menggunakan angka 32-bit  yang ditulis dalam format empat kelompok angka, dan tiap angkanya bisa dari 0 sampai 255. Jadi rentang IP yang mungkin itu dari 0.0.0.0 sampai 255.255.255.255. Banyak banget, kan? Tapi tetap teratur, bukan acak.
 
 ## 4 KONEKTIVITAS KABEL LAN
 ### 4.1 CRIMPING 
@@ -346,7 +438,7 @@ Aturan pemasangannya pun berbeda dengan kabel jenis straight-trough, kabel jenis
 Tontong kids, udah dibikinin nih 🤬<br>
 [ini link tutorial]
 
-### 4.2 ROUTING PAKE ROUTER
+### 4.2 ROUTING PAKE ROUTER 
 
 #### 4.2.1 STATIS 
 

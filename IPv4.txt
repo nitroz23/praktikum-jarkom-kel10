@@ -2,7 +2,7 @@ Apa Itu IP Address?
 
 IP Address (Internet Protocol Address) adalah alamat identitas unik yang dimiliki setiap perangkat yang terhubung ke jaringan. 
 Sama seperti rumah punya alamat untuk mengirim surat atau paket, komputer, laptop, bahkan HP juga perlu alamat agar bisa saling mengirim data.
-Tanpa IP Address, komputer gak bakal tahu:
+Tanpa IP Address, komputer gak bakal tahu.
 
 Siapa dia (alamat asal)
 
