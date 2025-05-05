@@ -364,11 +364,85 @@ Kamu nggak hafal alamat lengkapnya, tapi untungnya kamu punya asisten super pint
 “Oh, maksudmu Daffa Rumah Susu? Itu alamatnya di Jl. Susu Segar No. 103!”
 
 Tapi kalau kalian ke google.com yang terlihat hanya "portal.its.ac.id" padahal alamat asli mereka adalah 103.94.189.35. Tujuan dari itu karena manusia lebih gampang mengingat nama dan komputer lebih gampang mengingat angka (komputer aja awalnya pakai biner 0 1)
----------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------
+
+### 2.4 IP Adress Dinamis
+Secara singkat ialah IP yang bisa berubah-ubah secara otomatis. Bayangin kamu ngontrak kos dan setiap beberapa bulan kamu pindah kamar. Nomor kamarmu berubah, tapi kamu tetap bisa tinggal di kos yang sama. Nah, begitu juga dengan Dynamic IP.
+
+#### 2.4.1  Ciri-ciri IP Dinamis:
+
+1. Diberikan oleh ISP (Internet Service Provider) secara otomatis.
+
+2. Sering berubah dalam waktu tertentu.
+
+3. Dikelola pakai sistem DHCP (Dynamic Host Configuration Protocol).
+
+4. IP ini dipinjam dari "kolam IP besar" yang dimiliki oleh ISP.
+
+5. Setelah kamu mati nyalakan modem/router, bisa jadi IP kamu berubah.
+
+#### 2.4.2 Kapan harus pakai IP Dinamis??
+🔄 "Kalau bisa ngekos, ngapain beli rumah?"
+
+IP Dinamis itu cocok untuk kondisi-kondisi di mana alamat IP tidak perlu tetap dan bisa berubah-ubah tanpa masalah. IP dinamis ini juga yang paling sering kita gunakan sehari hari karena ada di laptop, hp, komputer, dan lain lain.
+
+Jika ingin lebih detail lagi :
+Penggunaan sehari-hari di rumah
+➤ Kamu cuma pakai internet buat browsing, streaming, meeting, game, dll.
+➤ Kamu nggak perlu akses jarak jauh ke perangkatmu.
+➤ Cukup terima apa yang diberikan modem secara otomatis? IP dinamis jawabannya.
+
+Banyak perangkat yang sering ganti-ganti koneksi
+➤ Misalnya WiFi publik, kantor, atau kampus.
+➤ Setiap hari pengguna berganti, jadi sistem akan otomatis kasih IP baru.
+
+Nggak mau ribet setting IP manual
+➤ IP akan dikasih otomatis dari router via DHCP, tinggal nyambung aja, langsung bisa internetan.
+
+Keamanan lebih fleksibel
+➤ Karena alamat IP sering berubah, hacker akan kesulitan menarget perangkat tertentu secara terus-menerus.
 
 ### 2.3 IP Adress Statis
 
-### 2.4 IP Adress Dinamis
+🧱 "Kalau kamu mau bikin rumah di maps, jangan pindah-pindah dong!"
+
+Intinya IP yang selamnya tidak berubah kecuali diubah sendiri, jadi IP statis ini seperti rumah milik pribadi. Nomor rumahmu nggak akan berubah, dan orang bisa dengan mudah menemukanmu. IP Statis cocok untuk perangkat atau sistem yang harus bisa diakses dari luar jaringan secara konsisten. Misalnya server, kamera, atau printer jaringan.
+Jika lebih ingin detail sekali lagi:
+Perangkat harus bisa diakses jarak jauh
+➤ Contoh: Server web, file server, remote desktop, CCTV.
+➤ Kalau IP-nya berubah, user di luar jaringan akan kehilangan akses. Jadi harus tetap.
+
+Perlu konfigurasi jaringan yang stabil
+➤ Misalnya mau bikin subnetting, firewall rules, VPN.
+➤ Alamat IP yang tetap bikin pengaturan jadi lebih mudah dan bisa diprediksi.
+
+Mempermudah troubleshooting
+➤ IP statis bikin teknisi jaringan gampang melacak masalah.
+➤ Nggak perlu nebak-nebak, IP si printer atau server pasti segitu terus.
+
+Membuat identitas jaringan tetap dikenal
+➤ Misalnya domain diarahkan ke IP tertentu (contoh: website kampus = 103.xxx.xxx.xxx).
+➤ Kalau IP-nya gonta-ganti, domainnya jadi error.
+
+### 2.5 IP Dinamis vs IP Statis
+|Tujuan / Kondisi|	Pakai IP Dinamis ✅|	Pakai IP Statis ✅|
+|-----------------------------------------------------------|
+|Akses internet harian biasa|	✔️	|
+|Perangkat sering ganti pengguna|	✔️	|
+|Bisa diakses dari luar (server, CCTV)|		✔️ |
+|Stabil & tetap (tidak berubah-ubah)|		✔️ |
+|Konfigurasi otomatis (plug & play)|	✔️	|
+|Konfigurasi manual, butuh kontrol penuh|		✔️|
+
+Perbedaan Singkat
+|Fitur|	Dynamic IP|	Static IP|
+|----------------------------|
+|Sifat Alamat|	Berubah-ubah|	Tetap / permanen|
+|Ditetapkan oleh|	ISP secara otomatis (DHCP)|	Secara manual / oleh admin ISP|
+|Cocok untuk|	Pengguna rumahan, umum|	Server, hosting, bisnis|
+|Biaya|	Lebih hemat	|Bisa lebih mahal|
+|Keamanan|	Lebih susah dilacak|	Lebih rentan jika tidak aman|
+|Koneksi Remote|	Kurang ideal|	Ideal untuk akses dari luar|
 
 ## 3 IPv4
 Apa itu IPv4? – "Alamat Rumahmu di Dunia Internet"
@@ -386,12 +460,14 @@ Contoh : 192.168.0.10
 |3 |	0   |	00000000 |
 |4 |	10  |	00001010 |
 
+(Kasih gambar format IPv4)
+
 IPv4 berbentuk seperti ini sama seperti kamu menyusun alamat:
 Oktet 1–3 bisa menunjukkan lokasi jaringan
 
 Oktet 4 bisa menunjukkan alamat perangkat di jaringan itu
 
-Karena IPv4 memiliki 32 bit -> sehingga tottal kombinasi alamat yang dimiliki ialah 2^32 = 4.294.967.296 alamat.
+Karena IPv4 memiliki 32 bit -> sehingga total kombinasi alamat yang dimiliki ialah 2^32 = 4.294.967.296 alamat.
 
 Artinya, IPv4 bisa membuat lebih dari 4 miliar alamat unik. Tapi karena ada alamat-alamat yang dipesan khusus (reserved), tidak semuanya bisa dipakai publik.
 
