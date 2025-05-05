@@ -309,16 +309,6 @@ Prosesnya Emang Gimana?
 3. ISP akan ngasih IP Address ke perangkatmu, supaya bisa "dikenali" di internet.
 4. Saat kamu browsing, ISP-lah yang nganterin data ke internet dan ngembaliin data ke kamu pakai alamat IP tadi.
 
-#### 2.1.1 Ganti IP Address??
-Misalkan kamu sudah punya IP address, namun kamu ingin menggantinya, apakah bisa?
-Tentu saja bisa, ada beberapa cara untuk mengganti IP address sementara.
-
-Kamu matikan-router-nyalain-lagi → bisa dapet IP baru.
-
-Kamu pindah tempat (misalnya ke kafe, hotel) → pakai IP sementara dari Wi-Fi di sana.
-
-Atau kamu minta ISP-nya langsung buat gantiin.
-
 ### 2.2 Jenis-Jenis IP Address
 Misalkan gini, anggota keluarga di rumah kalian pasti ada panggilannya kan? "Ayah", "Ibu", "Kakak", "Adik" dan mereka bisa saling berkomunikasi satu sama lain namun jika ada orang dari luar komplek ingin kirim surat ke "Ayah" misalnya, pasti surat itu tidak dikirim langsung ke "Ayah" pasti melalui Alamat Rumah Kalian.
 
@@ -337,39 +327,35 @@ Contoh alamat privat:
 
 Jadi, meskipun semua rumah pakai nama “Ayah”, “Ibu”, “Adik”, mereka tetap aman karena masing-masing beroperasi di rumahnya sendiri.
 
+![What??](images/spiderman.jpeg)
+
 #### 2.2.2.2 🌍 Public IP Address
 Ini alamat utama yang dikenal orang luar.
 Kalau teman kamu kirim paket, dia gak kirim ke “Kamar Kakak” tapi ke alamat rumahmu, misalnya:
 103.94.189.35
 
+![Rumah ke Rumah](images/rumah.jpg)
+
 Alamat ini diberikan oleh ISP (Internet Service Provider) kamu ke router, supaya jaringanmu bisa:
 
-Terhubung ke internet
-
-Dikenali dari luar
+- Terhubung ke internet
+- Dikenali dari luar
 
 Jadi walaupun ada banyak perangkat di rumahmu, semuanya tetap keluar ke internet lewat satu pintu — alias satu public IP address.
 
 🔑 Analogi Singkat:
-Dunia Nyata	Dunia Jaringan
-Alamat Rumah	Public IP Address
-Nama Anggota di Rumah	Private IP Address
-RT/RW	Jaringan Lokal (LAN)
-POS/Kurir	ISP
-----------------------------------------------------------------------------------------------------------------------------
+|Dunia Nyata            |	Dunia Jaringan          | 
+|-----------------------|---------------------------|
+|Alamat Rumah           |	Public IP Address       |
+|Nama Anggota di Rumah  |	Private IP Address      |
+|RT/RW                  |	Jaringan Lokal (LAN)    |
+|POS/Kurir              |	ISP                     |
 
-Bayangkan kamu mau pergi ke rumah teman, tapi yang kamu tahu cuma nama panggilannya, misalnya: "Daffa Rumah Susu".
-Kamu nggak hafal alamat lengkapnya, tapi untungnya kamu punya asisten super pintar yang bisa cari tahu:
 
-“Oh, maksudmu Daffa Rumah Susu? Itu alamatnya di Jl. Susu Segar No. 103!”
-
-Tapi kalau kalian ke google.com yang terlihat hanya "portal.its.ac.id" padahal alamat asli mereka adalah 103.94.189.35. Tujuan dari itu karena manusia lebih gampang mengingat nama dan komputer lebih gampang mengingat angka (komputer aja awalnya pakai biner 0 1)
---------------------------------------------------------------------------------------------------------------------------------
-
-### 2.4 IP Adress Dinamis
+### 2.3 IP Adress Dinamis
 Secara singkat ialah IP yang bisa berubah-ubah secara otomatis. Bayangin kamu ngontrak kos dan setiap beberapa bulan kamu pindah kamar. Nomor kamarmu berubah, tapi kamu tetap bisa tinggal di kos yang sama. Nah, begitu juga dengan Dynamic IP.
 
-#### 2.4.1  Ciri-ciri IP Dinamis:
+#### 2.3.1  Ciri-ciri IP Dinamis:
 
 1. Diberikan oleh ISP (Internet Service Provider) secara otomatis.
 
@@ -381,7 +367,7 @@ Secara singkat ialah IP yang bisa berubah-ubah secara otomatis. Bayangin kamu ng
 
 5. Setelah kamu mati nyalakan modem/router, bisa jadi IP kamu berubah.
 
-#### 2.4.2 Kapan harus pakai IP Dinamis??
+#### 2.3.2 Kapan harus pakai IP Dinamis??
 🔄 "Kalau bisa ngekos, ngapain beli rumah?"
 
 IP Dinamis itu cocok untuk kondisi-kondisi di mana alamat IP tidak perlu tetap dan bisa berubah-ubah tanpa masalah. IP dinamis ini juga yang paling sering kita gunakan sehari hari karena ada di laptop, hp, komputer, dan lain lain.
@@ -402,11 +388,24 @@ Nggak mau ribet setting IP manual
 Keamanan lebih fleksibel
 ➤ Karena alamat IP sering berubah, hacker akan kesulitan menarget perangkat tertentu secara terus-menerus.
 
-### 2.3 IP Adress Statis
+### 2.4 IP Adress Statis
 
+Intinya IP yang selamnya tidak berubah kecuali kamu ubah secara manual, jadi IP statis ini seperti rumah milik pribadi. Nomor rumahmu nggak akan berubah, dan orang bisa dengan mudah menemukanmu. Berbeda dengan IP dinamis (yang bisa berubah-ubah tiap nyambung), IP statis ditetapkan secara manual oleh administrator jaringan atau oleh penyedia layanan internet (ISP), dan tidak diubah secara otomatis oleh DHCP.
+
+#### 2.4.1 Ciri-ciri IP Statis
+📌 Ciri-ciri Static IP:
+
+1. Ditetapkan secara permanen ke satu perangkat/jaringan.
+
+2. Biasanya dibutuhkan oleh server, CCTV, hosting, atau layanan email sendiri.
+
+3. Mudah dilacak dan diakses dari internet karena alamatnya selalu sama.
+
+#### 2.4.2 Kapan Harus Pakai IP Statis??
 🧱 "Kalau kamu mau bikin rumah di maps, jangan pindah-pindah dong!"
 
-Intinya IP yang selamnya tidak berubah kecuali diubah sendiri, jadi IP statis ini seperti rumah milik pribadi. Nomor rumahmu nggak akan berubah, dan orang bisa dengan mudah menemukanmu. IP Statis cocok untuk perangkat atau sistem yang harus bisa diakses dari luar jaringan secara konsisten. Misalnya server, kamera, atau printer jaringan.
+IP Statis cocok untuk perangkat atau sistem yang harus bisa diakses dari luar jaringan secara konsisten. Misalnya server, kamera, atau printer jaringan.
+
 Jika lebih ingin detail sekali lagi:
 Perangkat harus bisa diakses jarak jauh
 ➤ Contoh: Server web, file server, remote desktop, CCTV.
@@ -425,24 +424,24 @@ Membuat identitas jaringan tetap dikenal
 ➤ Kalau IP-nya gonta-ganti, domainnya jadi error.
 
 ### 2.5 IP Dinamis vs IP Statis
-|Tujuan / Kondisi|	Pakai IP Dinamis ✅|	Pakai IP Statis ✅|
-|-----------------------------------------------------------|
-|Akses internet harian biasa|	✔️	|
-|Perangkat sering ganti pengguna|	✔️	|
-|Bisa diakses dari luar (server, CCTV)|		✔️ |
-|Stabil & tetap (tidak berubah-ubah)|		✔️ |
-|Konfigurasi otomatis (plug & play)|	✔️	|
-|Konfigurasi manual, butuh kontrol penuh|		✔️|
+|Tujuan / Kondisi                         |	Pakai IP Dinamis ✅     |	Pakai IP Statis ✅|
+|-----------------------------------------|-------------------------|-----------------------|
+|Akses internet harian biasa              |          ✔️             |                       |
+|Perangkat sering ganti pengguna          |            ✔️           |                       |
+|Bisa diakses dari luar (server, CCTV)    |                         |            ✔️         |    
+|Stabil & tetap (tidak berubah-ubah)      |                         |           ✔️          |
+|Konfigurasi otomatis (plug & play)       |            ✔️          |                        |
+|Konfigurasi manual, butuh kontrol penuh  |                         |              ✔️       |
 
 Perbedaan Singkat
-|Fitur|	Dynamic IP|	Static IP|
-|----------------------------|
-|Sifat Alamat|	Berubah-ubah|	Tetap / permanen|
-|Ditetapkan oleh|	ISP secara otomatis (DHCP)|	Secara manual / oleh admin ISP|
-|Cocok untuk|	Pengguna rumahan, umum|	Server, hosting, bisnis|
-|Biaya|	Lebih hemat	|Bisa lebih mahal|
-|Keamanan|	Lebih susah dilacak|	Lebih rentan jika tidak aman|
-|Koneksi Remote|	Kurang ideal|	Ideal untuk akses dari luar|
+|Fitur          |	Dynamic IP                  |	Static IP                       |
+|---------------|-------------------------------|-----------------------------------|
+|Sifat Alamat   |	Berubah-ubah                |	Tetap / permanen                |
+|Ditetapkan oleh|	ISP secara otomatis (DHCP)  |	Secara manual / oleh admin ISP  |
+|Cocok untuk    |	Pengguna rumahan, umum      |	Server, hosting, bisnis         |
+|Biaya          |	Lebih hemat	                |   Bisa lebih mahal                |
+|Keamanan       |	Lebih susah dilacak         |	Lebih rentan jika tidak aman    |
+|Koneksi Remote |	Kurang ideal                |	Ideal untuk akses dari luar     |
 
 ## 3 IPv4
 Apa itu IPv4? – "Alamat Rumahmu di Dunia Internet"
@@ -453,14 +452,14 @@ IP Address versi IPv4 menggunakan angka 32-bit  yang dibagi menjadi empat kelomp
 ### 3.1 Struktur IPv4
 Karena 32-bit tadi dibagi 4, maka IPv4 ini memiliki 4 Oktet (4 blok angka).
 Contoh : 192.168.0.10
-|Oktet |	Angka |	Binari (8-bit) |
-|------------------------------|
-|1 |	192 |	11000000 |
-|2 |	168 |	10101000 |
-|3 |	0   |	00000000 |
-|4 |	10  |	00001010 |
+|Oktet  |	Angka   |	Binari (8-bit)  |
+|-------|-----------|-------------------|
+|1      |	192     |	11000000        |
+|2      |	168     |	10101000        |
+|3      |	0       |	00000000        |
+|4      |	10      |	00001010        |
 
-(Kasih gambar format IPv4)
+![IPv4](images/IPv4.png)
 
 IPv4 berbentuk seperti ini sama seperti kamu menyusun alamat:
 Oktet 1–3 bisa menunjukkan lokasi jaringan
@@ -471,7 +470,7 @@ Karena IPv4 memiliki 32 bit -> sehingga total kombinasi alamat yang dimiliki ial
 
 Artinya, IPv4 bisa membuat lebih dari 4 miliar alamat unik. Tapi karena ada alamat-alamat yang dipesan khusus (reserved), tidak semuanya bisa dipakai publik.
 
-(MEME WOW)
+![WOW](images/wow.jpeg)
 
 ## 4 KONEKTIVITAS KABEL LAN
 ### 4.1 CRIMPING 
