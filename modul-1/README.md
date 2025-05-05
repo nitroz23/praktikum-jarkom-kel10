@@ -12,29 +12,28 @@
     - Routing Menggunakan Router
         - Statis
         - Dinamis
+
 ## 1 Dasar Jaringan Protokol
-Apa Itu Jaringan Komputer?
-"Bayangkan kamu tinggal di sebuah komplek perumahan. Tiap rumah punya keluarga yang ingin saling ngobrol, kirim surat, atau pinjam gula. Nah, kalau mereka saling terkoneksi, itu disebut jaringan."
+![Jaringan](images/1_Jaringan.avif)
 
-Jaringan komputer adalah kumpulan perangkat (seperti laptop, PC, printer, dan router) yang terhubung satu sama lain untuk berbagi informasi atau sumber daya.
+Apa Itu Jaringan Komputer? 
+Nihh dari gambar di atas Admin jelasin, Spongebob kan tinggal di kompleks rumah bareng Squidward dan Patrick. Nah mereka kan salaing ngobrol, pinjem barang satu sama lain, yang artinya mereka ber-3 itu saling terkoneksi. Nah kids, itu disebut **jaringan.**
 
-Pengandaian:
-Rumah = Komputer
+Begitupun di sekitar kita, jaringan komputer adalah kumpulan perangkat seperti laptop, PC, printer, router yang terhubung satu sama lain untuk **berbagi informasi dan sumber daya.**
 
-Jalan di antara rumah = Kabel jaringan
-
-Surat yang dikirim antar rumah = Data
-
-Tukang pos = Router
-
-Tetangga ngobrol langsung = LAN (Local Area Network)
-
-Tetangga beda kampung ngobrol = WAN (Wide Area Network)
+| Perumpamaan Dunia Nyata              | Di Dunia Jaringan Komputer        |
+|--------------------------------------|------------------------------------|
+| Rumah                                | Komputer                           |
+| Jalan antar rumah                    | Kabel jaringan                     |
+| Surat yang dikirim antar rumah       | Data yang dikirim antar perangkat  |
+| Tukang pos                           | Router                             |
+| Ngobrol sama tetangga dekat          | LAN (Local Area Network)           |
+| Ngobrol sama tetangga beda kampung   | WAN (Wide Area Network)            |
 
 ### 1.1 Kenapa Komputer Harus Terhubung ke Jaringan
 Bayangkan kamu ingin mengirim file dari satu komputer ke komputer lain **tanpa jaringan**, kamu harus meng-copy file tersebut ke flashdisk terlebih dahulu. Lalu mencabut dan mencolokkannya ke komputer tujuan. 
 
-[Gambar meme nggak sih]
+![MemeJaringan](images/1.1_MemeJaringan.jpg)
 
 Bisa dibayangkan proses manual tersebut memakan waktu dan memiliki keterbatasan jarak. Bahkan risiko kerusakan atau kehilangan data. Namun, dengan pemanfaatan **jaringan** pengiriman file tidak perlu mengandalkan alat eksternal seperti flashdisk. Selain itu pemindahan file dapat dalam hitungan detik dan tanpa kamu berpindah tempat.
 
@@ -54,7 +53,7 @@ Untuk informasi lebih rinci dapat dilihat di:
 
 ![MemePAN](images/1.2.1_MemePAN1.jpg)
 
-Contohnya smartphone, laptop, smartwatch, bahkan printer yang kamu pakai sendiri bosa saling terhubung lewat jaringan ini.
+Contohnya smartphone, laptop, smartwatch, bahkan printer yang kamu pakai sendiri bisa saling terhubung lewat jaringan ini.
 
 **Fungsi PAN pada kehidupan sehari-hari:**
 - Transfer file dari HP ke laptop lewat Bluethooh.
@@ -76,9 +75,7 @@ PAN ada 2 jenis:
 
 **LAN** atau *Local Area Network* adalah jenis jaringan komputer yang paling sering dipakai, terutama di tempat-tempat yang areanya terbatas, kayak di rumah, kator, sekolah, atau lab. Jarak jangkauan LAN maksimal 2 km dengan kecepatan transfer yang tinggi.
 
-Jaringan ini menghubungkan **dua atau lebih** komputer dalam satu area lokal, pengaplikasian lewat kabel Ethernet atau Wi-Fi. Jika melalui Ethernet berarti menggunakan kabel LAN dan pengaplikasiannya dicolok ke switch atau router. Kalau pakai Wi-Fi nggak perlu pakek kabel dan pengaplukasiannya tinggal menggunakan hotspot
-
-[Masukin meme bang :)]
+Jaringan ini menghubungkan **dua atau lebih** komputer dalam satu area lokal, pengaplikasian lewat kabel Ethernet atau Wi-Fi. Jika melalui Ethernet berarti menggunakan kabel LAN dan pengaplikasiannya dicolok ke switch atau router. Kalau pakai Wi-Fi nggak perlu pakek kabel dan pengaplukasiannya tinggal menggunakan hotspot.
 
 Contohnya komputer di lab MIOT yang bisa diakses bersama atau semua komputer kantor yang bisa mengirim file satu sama lain.
 
@@ -464,6 +461,6 @@ Tontong kids, udah dibikinin nih 🤬<br>
 
 #### 4.2.2 DINAMIS
 
-# Referensi
-1.2 [Jenis-Jenis Jaringan](https://www.geeksforgeeks.org/types-of-computer-networks/)
+## Referensi
+1.2 [Jenis-Jenis Jaringan](https://www.geeksforgeeks.org/types-of-computer-networks/)<br>
 1.3 [Jenis-Jenis Protokol Komunikasi](https://www.geeksforgeeks.org/types-of-computer-networks/)
