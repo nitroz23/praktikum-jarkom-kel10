@@ -379,19 +379,19 @@ Secara singkat ialah IP yang bisa berubah-ubah secara otomatis. Bayangin kamu ng
 
 Jika ingin lebih detail lagi :
 Penggunaan sehari-hari di rumah
-➤ Kamu cuma pakai internet buat browsing, streaming, meeting, game, dll.
-➤ Kamu nggak perlu akses jarak jauh ke perangkatmu.
-➤ Cukup terima apa yang diberikan modem secara otomatis? IP dinamis jawabannya.
+- ➤ Kamu cuma pakai internet buat browsing, streaming, meeting, game, dll.
+- ➤ Kamu nggak perlu akses jarak jauh ke perangkatmu.
+- ➤ Cukup terima apa yang diberikan modem secara otomatis? IP dinamis jawabannya.
 
 Banyak perangkat yang sering ganti-ganti koneksi
-➤ Misalnya WiFi publik, kantor, atau kampus.
-➤ Setiap hari pengguna berganti, jadi sistem akan otomatis kasih IP baru.
+- ➤ Misalnya WiFi publik, kantor, atau kampus.
+- ➤ Setiap hari pengguna berganti, jadi sistem akan otomatis kasih IP baru.
 
 Nggak mau ribet setting IP manual
-➤ IP akan dikasih otomatis dari router via DHCP, tinggal nyambung aja, langsung bisa internetan.
+- ➤ IP akan dikasih otomatis dari router via DHCP, tinggal nyambung aja, langsung bisa internetan.
 
 Keamanan lebih fleksibel
-➤ Karena alamat IP sering berubah, hacker akan kesulitan menarget perangkat tertentu secara terus-menerus.
+- ➤ Karena alamat IP sering berubah, hacker akan kesulitan menarget perangkat tertentu secara terus-menerus.
 
 ### 2.4 IP Adress Statis
 
@@ -413,20 +413,20 @@ IP Statis cocok untuk perangkat atau sistem yang harus bisa diakses dari luar ja
 
 Jika lebih ingin detail sekali lagi:
 Perangkat harus bisa diakses jarak jauh
-➤ Contoh: Server web, file server, remote desktop, CCTV.
-➤ Kalau IP-nya berubah, user di luar jaringan akan kehilangan akses. Jadi harus tetap.
+- ➤ Contoh: Server web, file server, remote desktop, CCTV.
+- ➤ Kalau IP-nya berubah, user di luar jaringan akan kehilangan akses. Jadi harus tetap.
 
 Perlu konfigurasi jaringan yang stabil
-➤ Misalnya mau bikin subnetting, firewall rules, VPN.
-➤ Alamat IP yang tetap bikin pengaturan jadi lebih mudah dan bisa diprediksi.
+- ➤ Misalnya mau bikin subnetting, firewall rules, VPN.
+- ➤ Alamat IP yang tetap bikin pengaturan jadi lebih mudah dan bisa diprediksi.
 
 Mempermudah troubleshooting
-➤ IP statis bikin teknisi jaringan gampang melacak masalah.
-➤ Nggak perlu nebak-nebak, IP si printer atau server pasti segitu terus.
+- ➤ IP statis bikin teknisi jaringan gampang melacak masalah.
+- ➤ Nggak perlu nebak-nebak, IP si printer atau server pasti segitu terus.
 
 Membuat identitas jaringan tetap dikenal
-➤ Misalnya domain diarahkan ke IP tertentu (contoh: website kampus = 103.xxx.xxx.xxx).
-➤ Kalau IP-nya gonta-ganti, domainnya jadi error.
+- ➤ Misalnya domain diarahkan ke IP tertentu (contoh: website kampus = 103.xxx.xxx.xxx).
+- ➤ Kalau IP-nya gonta-ganti, domainnya jadi error.
 
 ### 2.5 IP Dinamis vs IP Statis
 |Tujuan / Kondisi                         |	Pakai IP Dinamis ✅     |	Pakai IP Statis ✅|
