@@ -329,7 +329,7 @@ Jadi, meskipun semua rumah pakai nama “Ayah”, “Ibu”, “Adik”, mereka 
 
 ![What??](images/spiderman.jpeg)
 
-#### 2.2.2.2 🌍 Public IP Address
+#### 2.2.2 🌍 Public IP Address
 Ini alamat utama yang dikenal orang luar.
 Kalau teman kamu kirim paket, dia gak kirim ke “Kamar Kakak” tapi ke alamat rumahmu, misalnya:
 103.94.189.35
@@ -354,6 +354,8 @@ Jadi walaupun ada banyak perangkat di rumahmu, semuanya tetap keluar ke internet
 
 ### 2.3 IP Adress Dinamis
 Secara singkat ialah IP yang bisa berubah-ubah secara otomatis. Bayangin kamu ngontrak kos dan setiap beberapa bulan kamu pindah kamar. Nomor kamarmu berubah, tapi kamu tetap bisa tinggal di kos yang sama. Nah, begitu juga dengan Dynamic IP.
+
+![ganti kamar](images/Meme_Pintu.jpeg)
 
 #### 2.3.1  Ciri-ciri IP Dinamis:
 
@@ -470,7 +472,127 @@ Karena IPv4 memiliki 32 bit -> sehingga total kombinasi alamat yang dimiliki ial
 
 Artinya, IPv4 bisa membuat lebih dari 4 miliar alamat unik. Tapi karena ada alamat-alamat yang dipesan khusus (reserved), tidak semuanya bisa dipakai publik.
 
-![WOW](images/wow.jpeg)
+![WOW](images/wow.jpeg)''
+
+### 3.2 Representasi Biner IPv4
+“Komputer nggak ngerti angka desimal kayak 192.168.1.1. Dia cuma ngerti 0 dan 1!”
+
+Setiap alamat IPv4 sebenarnya terdiri dari 32 bit. Tapi supaya mudah dibaca manusia, alamat IP dibagi jadi empat bagian (oktet) dan ditulis dalam desimal (contoh: 185.107.80.231).
+
+🔄 Contoh Konversi ke Biner
+Alamat IP: 185.107.80.231
+
+|Oktet  |	Desimal |	Biner   |
+|-------|-----------|-----------|
+|1      |	185     |	10111001|
+|2      |	107     |	01101011|
+|3      |	80      |	01010000|
+|4      |	231     |	11100111|
+
+➡️ Jadi alamat 185.107.80.231 kalau dibaca oleh komputer:
+10111001.01101011.01010000.11100111
+
+### 3.3  Struktur Alamat IPv4
+“Anggap aja alamat IP itu seperti alamat rumah: ada nama komplek, nomor rumah, dan blok.”
+
+IPv4 terdiri dari 3 bagian utama:
+
+📌 1. Network Part
+Menunjukkan jaringan utama tempat host berada.
+
+Semua perangkat di jaringan yang sama punya bagian ini identik.
+
+Bisa dianggap seperti nama komplek perumahan.
+
+📌 2. Host Part
+Identitas unik setiap perangkat (komputer, HP, printer, dsb) di dalam jaringan.
+
+Harus berbeda untuk tiap perangkat.
+
+Ibaratnya seperti nomor rumah.
+
+📌 3. Subnet Part (Opsional)
+Digunakan untuk membagi jaringan besar menjadi beberapa bagian kecil (subnet).
+
+Mirip kayak blok perumahan dalam satu komplek supaya lebih tertata.
+
+### 3.4 Pembagian Kelas IPv4
+![Kelas IPv4](images/class_IPv4.png)
+#### 3.4.1 Class A – Untuk Jaringan Raksasa
+"Class A itu seperti kota besar dengan jalan utama super lebar, cocok buat banyak kendaraan (host)!"
+
+- Siapa yang pakai? Organisasi besar seperti perusahaan multinasional, institusi pemerintah, atau penyedia layanan internet (ISP) besar.
+
+- Kenapa istimewa? Karena hanya memakai 1 oktet pertama untuk network ID, sisanya 3 oktet untuk host.
+
+- Artinya, 1 jaringan Class A bisa punya lebih dari 16 juta perangkat di dalamnya. Gila kan? Tapi karena ini super gede, cuma ada 126 jaringan Class A yang tersedia (dari 1.0.0.0 s/d 126.255.255.255).
+
+- IP 127.x.x.x bukan Class A biasa, melainkan khusus untuk loopback (buat test jaringan sendiri).
+
+🔒 Private IP Class A
+Private IP-nya adalah dari 10.0.0.0 hingga 10.255.255.255
+
+Biasanya dipakai oleh perusahaan besar yang punya banyak divisi atau cabang, tapi semua tetap di dalam satu jaringan internal.
+
+#### 3.4.2 Class B – Jaringan Menengah ke Atas
+"Class B itu seperti kota sedang dengan jalan dua arah – cukup luas buat perusahaan gede, tapi nggak segede Class A."
+
+- Cocok buat siapa? Universitas, rumah sakit besar, perusahaan dengan beberapa lokasi.
+
+- Di Class B, 2 oktet pertama untuk network ID, sisanya 2 oktet untuk host.
+
+- Satu jaringan Class B bisa punya sekitar 65 ribu perangkat. Sudah cukup buat banyak kantor!
+
+- Alamat IP-nya mulai dari 128.0.0.0 hingga 191.255.255.255.
+
+🔒 Private IP Class B
+Private IP-nya adalah dari 172.16.0.0 hingga 172.31.255.255
+
+Sering dipakai buat jaringan skala menengah yang tetap butuh kontrol internal.
+
+#### 3.4.3Class C – Untuk Jaringan Kecil
+"Class C itu kayak komplek perumahan. Jalurnya kecil tapi cukup buat rumah-rumah (host) yang nggak terlalu banyak."
+
+- Cocok untuk siapa? Bisnis kecil, sekolah, warnet, atau jaringan rumah.
+
+- Menggunakan 3 oktet pertama sebagai network ID, hanya 1 oktet terakhir untuk host.
+
+- Setiap jaringan Class C bisa menampung 254 host saja (karena 2 alamat dipakai buat network dan broadcast).
+
+- IP-nya mulai dari 192.0.0.0 hingga 223.255.255.255.
+
+🔒 Private IP Class C
+Private IP-nya adalah dari 192.168.0.0 hingga 192.168.255.255
+
+Ini yang paling sering kita temui di rumah atau kantor kecil.
+
+#### 3.4.4Class D – Multicast, Bukan Buat Host!
+"Class D itu kayak siaran TV digital – satu pemancar bisa disaksikan banyak orang sekaligus!"
+
+- Class D tidak digunakan untuk mengidentifikasi perangkat individual.
+
+- Digunakan untuk multicast, yaitu pengiriman data ke banyak perangkat sekaligus, seperti:
+
+- Streaming video/audio
+
+- Live conference
+
+- Update data ke banyak node secara bersamaan
+
+- IP-nya mulai dari 224.0.0.0 hingga 239.255.255.255
+
+Sayangnya tidak bisa dipakai sebagai IP normal seperti Class A, B, atau C.
+
+#### 3.4.5 Class E – Penelitian dan Masa Depan
+"Class E itu seperti lahan kosong yang disiapkan buat eksperimen ilmuwan."
+
+- Class E tidak digunakan dalam jaringan umum.
+
+- Dicadangkan untuk eksperimen, riset, dan keperluan khusus.
+
+- IP-nya mulai dari 240.0.0.0 hingga 255.255.255.255
+
+- Sama seperti Class D, tidak boleh digunakan oleh perangkat biasa.
 
 ## 4 KONEKTIVITAS KABEL LAN
 ### 4.1 CRIMPING 
