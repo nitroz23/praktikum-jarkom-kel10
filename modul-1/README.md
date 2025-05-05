@@ -796,8 +796,8 @@ Berkebalikan dengan kabel Straight-through, pengkabelan ini digunakan untuk meny
 Aturan pemasangannya pun berbeda dengan kabel jenis straight-trough, kabel jenis Crossover memiliki urutan warna yang berbeda dikedua ujungnya. Tapi, perbedaan warna ini tidak boleh sembarangan, karena kedua ujung ini juga memiliki aturan urutan warna. Pada kabel jenis Crossover standar, jika salah satu ujung Pin memiliki susunan warna berdasarkan aturan T568A, maka ujung Pin yang lain harus memiliki urutan warna berdasarkan standar T568B.
 
 #### Video Tutorial
-Tontong kids, udah dibikinin nih 🤬<br>
-[ini link tutorial]
+https://its.id/m/Tutorial_Crimping
+
 
 ### 4.2 ROUTING PAKE ROUTER 
 
