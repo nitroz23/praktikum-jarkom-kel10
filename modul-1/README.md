@@ -288,9 +288,9 @@ Pasti kalian sudah sering dengar IP address ini atau misalkan sering lihat angka
 IP Address (Internet Protocol Address) adalah alamat identitas unik yang dimiliki setiap perangkat yang terhubung ke jaringan. 
 IP Address itu bisa kita ibaratkan seperti alamat rumah di dunia internet. Tapi bukannya “Jl. Mawar No. 5”, alamat ini berbentuk deretan angka-angka yang dipisahkan titik. Contohnya kayak gini: 192.158.1.38.
 
-(Masukkan MEME)
+![IP Address](images/Alamat.jpeg) 
 
-Terus alamt rumah kan ditentuin, kalau alamat perangkat kita siapa yang kasih??
+Terus alamat rumah kan ditentuin, kalau alamat perangkat kita siapa yang kasih??
 IP Address nggak muncul secara acak, ya! IP itu sebenarnya dibuat secara matematis dan dibagikan secara resmi oleh lembaga bernama:
 🔹 IANA (Internet Assigned Numbers Authority)
 IANA ini adalah bagian dari ICANN, yaitu:
@@ -593,6 +593,151 @@ Sayangnya tidak bisa dipakai sebagai IP normal seperti Class A, B, atau C.
 - IP-nya mulai dari 240.0.0.0 hingga 255.255.255.255
 
 - Sama seperti Class D, tidak boleh digunakan oleh perangkat biasa.
+
+### 3.5 Prefix dan Subnet Mask IPv4
+Dalam pembahasan IPv4, kita tahu bahwa sebuah alamat IP terdiri dari 32 bit angka biner, yang dibagi menjadi dua bagian penting:
+
+Network ID: Menunjukkan jaringan tempat komputer itu berada.
+
+Host ID: Menunjukkan perangkat (komputer, printer, dll.) di dalam jaringan tersebut.
+
+Tapi... gimana cara kita tahu berapa banyak bit yang digunakan untuk Network ID dan sisanya untuk Host ID?
+
+Nah, di sinilah prefix berperan.
+
+#### 3.5.1 Fungsi Prfix
+Prefix adalah angka yang menunjukkan berapa banyak bit pertama dari alamat IP yang digunakan untuk Network ID. Biasanya ditulis setelah tanda garis miring /.
+
+Contoh Penulisan Prefix:
+192.168.3.0/24
+
+- Angka /24 disebut prefix.
+
+- Artinya, 24 bit pertama dari alamat IP tersebut adalah bagian Network ID.
+
+- Sisa 8 bit digunakan untuk Host ID (karena total ada 32 bit).
+
+##### 3.5.1.1 Prefix Emang Penting??
+Tanpa prefix, kita tidak bisa tahu bagian mana dari alamat IP yang menunjukkan jaringan dan bagian mana yang menunjukkan perangkat di dalam jaringan.
+
+Dengan prefix, kita bisa:
+
+- Menentukan jumlah host yang bisa digunakan di dalam jaringan.
+
+- Membagi jaringan besar menjadi beberapa jaringan kecil (subnet).
+
+- Melakukan konfigurasi routing dengan benar, terutama pada router.
+
+##### 3.5.1.1 Cara Membaca Prefix
+➤ Contoh 1: 192.168.3.0/24
+IP Address dalam biner:
+11000000.10101000.00000011.00000000
+
+Prefix /24 berarti 24 bit pertama adalah untuk Network ID:
+
+Network ID: 192.168.3
+
+Host ID: 0 sampai 255
+
+Tapi host hanya bisa digunakan dari 1 sampai 254 karena:
+
+192.168.3.0 → network address
+
+192.168.3.255 → broadcast address
+
+Maka total host yang bisa digunakan adalah 254.
+---------------------------------------------------
+➤ Contoh 2: 192.168.3.130/29
+Prefix /29 berarti 29 bit pertama adalah Network ID.
+
+Sisa bit: 32 - 29 = 3 bit untuk Host ID.
+
+3 bit bisa menghasilkan 2³ = 8 kombinasi, tapi:
+
+1 untuk network address
+
+1 untuk broadcast address
+
+Maka host yang bisa digunakan hanya 6 IP address saja.
+
+#### 3.5.2 Aoa itu Subnet Mask??
+Subnet mask adalah angka biner 32-bit yang digunakan untuk membagi jaringan IP menjadi beberapa bagian yang lebih kecil yang disebut subnet. Proses pembagian ini disebut subnetting, dan fungsinya adalah untuk mengelola dan mengoptimalkan penggunaan alamat IP dalam suatu jaringan.
+
+Jika sebuah jaringan terlalu besar dan mencakup terlalu banyak perangkat (host), maka akan sulit untuk mengatur lalu lintas data. Di sinilah subnetting berguna. Dengan memecah jaringan besar menjadi jaringan-jaringan kecil, lalu lintas data bisa dikendalikan lebih baik, dan keamanan serta efisiensinya meningkat.
+
+Subnet mask bekerja bersama dengan IP address untuk menunjukkan bagian mana dari IP tersebut yang merupakan network ID (identitas jaringan) dan bagian mana yang merupakan host ID (identitas perangkat di jaringan itu). Ini penting untuk mengetahui apakah dua perangkat berada di jaringan yang sama atau tidak.
+
+Contoh sederhana:
+|IP Address |192.168.1.10   |
+|-----------|---------------|
+|Subnet Mask|255.255.255.0  |
+
+Dengan subnet mask tersebut, kita tahu bahwa 192.168.1 adalah bagian network, dan .10 adalah bagian host.
+
+##### 3.5.2.1 Fungsi Subnet Mask
+Subnet mask tidak hanya berguna untuk membagi jaringan menjadi subnet, tetapi juga memiliki beberapa fungsi penting lainnya:
+
+1. Memisahkan Network dan Host ID
+Subnet mask membantu sistem dan perangkat jaringan untuk mengetahui mana bagian dari alamat IP yang menunjuk ke jaringan, dan mana yang menunjuk ke perangkat. Tanpa subnet mask, komputer tidak tahu ke mana data harus dikirim.
+
+2. Mengurangi Kemacetan Jaringan (Kongesti)
+Dengan membagi jaringan besar menjadi bagian-bagian kecil, maka jumlah host yang saling “berebut” jalur komunikasi bisa dikurangi. Ini memperlancar lalu lintas data dan meningkatkan performa jaringan secara keseluruhan.
+
+3. Meningkatkan Keamanan Jaringan
+Dengan subnetting, jaringan bisa dipecah untuk memisahkan perangkat-perangkat tertentu. Misalnya, perangkat penting bisa dipisahkan dari perangkat umum, sehingga mengurangi risiko akses ilegal atau serangan jaringan.
+
+4. Penghematan Alamat IP
+Subnetting membuat penggunaan alamat IP lebih efisien. Tanpa subnetting, alamat IP bisa cepat habis karena banyak yang tidak digunakan secara optimal. Dengan pembagian subnet yang cermat, alokasi IP bisa disesuaikan dengan kebutuhan sebenarnya.
+
+5. Memudahkan Administrasi Jaringan
+Ketika jaringan sudah terlalu besar, pengelolaan akan lebih sulit. Subnetting mempermudah pemantauan, pengaturan, dan troubleshooting jaringan karena setiap bagian bisa ditangani secara terpisah.
+
+#### 3.5.3 Hubungan Subnet Mask dengan Prefix
+
+Prefix dan subnet mask adalah dua cara berbeda untuk menjelaskan hal yang sama: **berapa banyak bit dari sebuah alamat IP yang digunakan untuk Network ID**.
+
+- **Prefix** ditulis dalam format garis miring, misalnya `/24`
+- **Subnet mask** ditulis dalam format desimal bertitik, misalnya `255.255.255.0`
+
+Keduanya saling berkaitan dan bisa dikonversi satu sama lain.
+
+🔁 Konversi Prefix ke Subnet Mask
+
+| Prefix | Subnet Mask         | Jumlah Bit Host | Jumlah Host yang Bisa Dipakai |
+|--------|---------------------|------------------|-------------------------------|
+| /8     | 255.0.0.0           | 24               | 16.777.214 host               |
+| /16    | 255.255.0.0         | 16               | 65.534 host                   |
+| /24    | 255.255.255.0       | 8                | 254 host                      |
+| /25    | 255.255.255.128     | 7                | 126 host                      |
+| /26    | 255.255.255.192     | 6                | 62 host                       |
+| /27    | 255.255.255.224     | 5                | 30 host                       |
+| /28    | 255.255.255.240     | 4                | 14 host                       |
+| /29    | 255.255.255.248     | 3                | 6 host                        |
+| /30    | 255.255.255.252     | 2                | 2 host                        |
+| /31    | 255.255.255.254     | 1                | 0 host (khusus point-to-point) |
+| /32    | 255.255.255.255     | 0                | 0 host (identifikasi satu perangkat saja) |
+
+Rumus Menghitung Jumlah Host: 2^(32 - Prefix) - 2
+
+- **32**: Total bit dalam IPv4
+- **-2**: Dikurangi Network Address dan Broadcast Address
+
+---
+
+Contoh Perhitungan:
+
+**Contoh:** 192.168.3.130/29  
+- Prefix: `/29` → 32 - 29 = 3 bit untuk host  
+- Jumlah host = 2³ - 2 = **6 host yang bisa digunakan**
+
+**Subnet Mask-nya:**  
+- 29 bit = 255.255.255.248
+
+---
+
+> ✅ Kesimpulan:
+Prefix dan subnet mask adalah dua cara untuk menentukan berapa banyak perangkat yang bisa dipasang di suatu jaringan. Dengan memahami konversinya, kita bisa mengatur jaringan secara efisien dan optimal.
+
 
 ## 4 KONEKTIVITAS KABEL LAN
 ### 4.1 CRIMPING 
