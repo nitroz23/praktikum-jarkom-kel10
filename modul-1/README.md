@@ -17,11 +17,11 @@
 ![Jaringan](images/1_Jaringan.avif)
 
 Apa Itu Jaringan Komputer? 
-Nihh dari gambar di atas Admin jelasin, Spongebob kan tinggal di kompleks rumah bareng Squidward dan Patrick. Nah mereka kan salaing ngobrol, pinjem barang satu sama lain, yang artinya mereka ber-3 itu saling terkoneksi. Nah kids, itu disebut jaringan.
+Nihh dari gambar di atas Admin jelasin, Spongebob kan tinggal di kompleks rumah bareng Squidward dan Patrick. Nah mereka kan salaing ngobrol, pinjem barang satu sama lain, yang artinya mereka ber-3 itu saling terkoneksi. Nah kids, itu disebut **jaringan.**
 
 Begitupun di sekitar kita, jaringan komputer adalah kumpulan perangkat seperti laptop, PC, printer, router yang terhubung satu sama lain untuk **berbagi informasi dan sumber daya.**
 
-| Perumpamaan Dunia Nyata               | Di Dunia Jaringan Komputer        |
+| Perumpamaan Dunia Nyata              | Di Dunia Jaringan Komputer        |
 |--------------------------------------|------------------------------------|
 | Rumah                                | Komputer                           |
 | Jalan antar rumah                    | Kabel jaringan                     |
