@@ -422,11 +422,11 @@ Perlu konfigurasi jaringan yang stabil
 
 Mempermudah troubleshooting
 1. IP statis bikin teknisi jaringan gampang melacak masalah.
-2. Nggak perlu nebak-nebak, IP si printer atau server pasti segitu terus.
+- ➤ Nggak perlu nebak-nebak, IP si printer atau server pasti segitu terus.
 
 Membuat identitas jaringan tetap dikenal
-1. Misalnya domain diarahkan ke IP tertentu (contoh: website kampus = 103.xxx.xxx.xxx).
-2. Kalau IP-nya gonta-ganti, domainnya jadi error.
+- ➤ Misalnya domain diarahkan ke IP tertentu (contoh: website kampus = 103.xxx.xxx.xxx).
+- ➤ Kalau IP-nya gonta-ganti, domainnya jadi error.
 
 ### 2.5 IP Dinamis vs IP Statis
 |Tujuan / Kondisi                         |	Pakai IP Dinamis ✅     |	Pakai IP Statis ✅|
