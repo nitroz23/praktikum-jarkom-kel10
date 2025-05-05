@@ -33,7 +33,7 @@ Begitupun di sekitar kita, jaringan komputer adalah kumpulan perangkat seperti l
 ### 1.1 Kenapa Komputer Harus Terhubung ke Jaringan
 Bayangkan kamu ingin mengirim file dari satu komputer ke komputer lain **tanpa jaringan**, kamu harus meng-copy file tersebut ke flashdisk terlebih dahulu. Lalu mencabut dan mencolokkannya ke komputer tujuan. 
 
-[Gambar meme nggak sih]
+![MemeJaringan](images/1.1_MemeJaringan.jpg)
 
 Bisa dibayangkan proses manual tersebut memakan waktu dan memiliki keterbatasan jarak. Bahkan risiko kerusakan atau kehilangan data. Namun, dengan pemanfaatan **jaringan** pengiriman file tidak perlu mengandalkan alat eksternal seperti flashdisk. Selain itu pemindahan file dapat dalam hitungan detik dan tanpa kamu berpindah tempat.
 
