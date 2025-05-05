@@ -53,7 +53,7 @@ Untuk informasi lebih rinci dapat dilihat di:
 
 ![MemePAN](images/1.2.1_MemePAN1.jpg)
 
-Contohnya smartphone, laptop, smartwatch, bahkan printer yang kamu pakai sendiri bosa saling terhubung lewat jaringan ini.
+Contohnya smartphone, laptop, smartwatch, bahkan printer yang kamu pakai sendiri bisa saling terhubung lewat jaringan ini.
 
 **Fungsi PAN pada kehidupan sehari-hari:**
 - Transfer file dari HP ke laptop lewat Bluethooh.
@@ -75,9 +75,7 @@ PAN ada 2 jenis:
 
 **LAN** atau *Local Area Network* adalah jenis jaringan komputer yang paling sering dipakai, terutama di tempat-tempat yang areanya terbatas, kayak di rumah, kator, sekolah, atau lab. Jarak jangkauan LAN maksimal 2 km dengan kecepatan transfer yang tinggi.
 
-Jaringan ini menghubungkan **dua atau lebih** komputer dalam satu area lokal, pengaplikasian lewat kabel Ethernet atau Wi-Fi. Jika melalui Ethernet berarti menggunakan kabel LAN dan pengaplikasiannya dicolok ke switch atau router. Kalau pakai Wi-Fi nggak perlu pakek kabel dan pengaplukasiannya tinggal menggunakan hotspot
-
-[Masukin meme bang :)]
+Jaringan ini menghubungkan **dua atau lebih** komputer dalam satu area lokal, pengaplikasian lewat kabel Ethernet atau Wi-Fi. Jika melalui Ethernet berarti menggunakan kabel LAN dan pengaplikasiannya dicolok ke switch atau router. Kalau pakai Wi-Fi nggak perlu pakek kabel dan pengaplukasiannya tinggal menggunakan hotspot.
 
 Contohnya komputer di lab MIOT yang bisa diakses bersama atau semua komputer kantor yang bisa mengirim file satu sama lain.
 
