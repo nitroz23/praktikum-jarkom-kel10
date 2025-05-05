@@ -651,7 +651,7 @@ Tapi host hanya bisa digunakan dari 1 sampai 254 karena:
 192.168.3.255 → broadcast address
 
 Maka total host yang bisa digunakan adalah 254.
----------------------------------------------------
+
 **➤ Contoh 2**: 192.168.3.130/29
 Prefix /29 berarti 29 bit pertama adalah Network ID.
 
