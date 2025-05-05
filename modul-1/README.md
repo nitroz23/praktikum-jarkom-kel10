@@ -444,6 +444,6 @@ Tontong kids, udah dibikinin nih 🤬<br>
 
 #### 4.2.2 DINAMIS
 
-# Referensi
+## Referensi
 1.2 [Jenis-Jenis Jaringan](https://www.geeksforgeeks.org/types-of-computer-networks/)<br>
 1.3 [Jenis-Jenis Protokol Komunikasi](https://www.geeksforgeeks.org/types-of-computer-networks/)
