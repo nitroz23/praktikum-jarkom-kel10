@@ -21,7 +21,8 @@ Sebuah perusahaan baru sedang membangun jaringan internal yang akan dibagi menja
 - Departemen Administrasi: 20 perangkat
 - Departemen Keuangan: 10 perangkat
 - Departemen R&D: 100 perangkat
-- Administrator jaringan diminta untuk:
+
+Administrator jaringan diminta untuk:
 - Membuat perencanaan alokasi IP address untuk masing-masing departemen.
 - Menentukan prefix subnet (CIDR) yang paling sesuai untuk masing-masing kebutuhan, tanpa memboroskan IP.
 - Memastikan tidak ada overlap antar subnet.
