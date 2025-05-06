@@ -46,31 +46,32 @@
 
 
 ## Tugas Pendahuluan
-Sebuah perusahaan baru sedang membangun jaringan internal yang akan dibagi menjadi beberapa bagian berdasarkan departemen. Setiap departemen akan memiliki jaringan lokalnya sendiri dan akan saling terhubung melalui sebuah router utama. Berikut adalah informasi mengenai jumlah perangkat yang digunakan masing-masing departemen:
-- Departemen Produksi: 50 perangkat
-- Departemen Administrasi: 20 perangkat
-- Departemen Keuangan: 10 perangkat
-- Departemen R&D: 100 perangkat
-- Administrator jaringan diminta untuk:
-- Membuat perencanaan alokasi IP address untuk masing-masing departemen.
-- Menentukan prefix subnet (CIDR) yang paling sesuai untuk masing-masing kebutuhan, tanpa memboroskan IP.
-- Memastikan tidak ada overlap antar subnet.
-- Membuat skema routing agar masing-masing jaringan bisa saling berkomunikasi melalui router, jika diperlukan.
+Sebuah perusahaan baru sedang membangun **jaringan internal** yang akan dibagi menjadi beberapa bagian berdasarkan departemen. Setiap departemen akan memiliki jaringan lokalnya sendiri dan akan saling terhubung melalui sebuah **router utama**. Berikut adalah informasi mengenai jumlah perangkat yang digunakan masing-masing departemen:
+- Departemen Produksi: **50 perangkat**
+- Departemen Administrasi: **20 perangkat**
+- Departemen Keuangan: **10 perangkat**
+- Departemen R&D: **100 perangkat**
 
-🎯 Tugas:
+Administrator jaringan diminta untuk:
+- Membuat **perencanaan alokasi IP address** untuk masing-masing departemen.
+- Menentukan **prefix subnet (CIDR)** yang paling sesuai untuk masing-masing kebutuhan, tanpa memboroskan IP.
+- Memastikan tidak ada overlap antar subnet.
+- Membuat **skema routing** agar masing-masing jaringan bisa saling berkomunikasi melalui router, jika diperlukan.
+
+**🎯 Tugas:**
 1. Tentukan:
 - Rentang IP address dan prefix (CIDR) yang sesuai untuk masing-masing departemen.
 - Total subnet yang diperlukan dan IP network untuk masing-masing.
-2. Gambarkan topologi sederhana yang menunjukkan bagaimana router akan menghubungkan semua subnet.
+2. Gambarkan **topologi sederhana** yang menunjukkan bagaimana router akan menghubungkan semua subnet.
 3. Tuliskan tabel routing sederhana yang menunjukkan:
-- Network destination
-- Netmask/prefix
-- Gateway (anggap antarmuka router)
-- Interface tujuan
-4. Berdasarkan topologi yang telah kamu buat, jenis routing apa yang paling cocok untuk perusahaan ini? Jelaskan alasanmu secara rinci. Pilih salah satu dari opsi berikut (atau lebih jika diperlukan) dan berikan justifikasi mengapa itu menjadi pilihan terbaik untuk perusahaan ini:
-- Static Routing
-- Dynamic Routing ( jika menggunakan Routing Dynamic jenis Protokol apa yang cocok)
-- Routing berbasis Classless Inter-Domain Routing (CIDR)
+- **Network destination**
+- **Netmask/prefix**
+- **Gateway** (anggap antarmuka router)
+- **Interface tujuan**
+4. Berdasarkan topologi yang telah kamu buat, jenis **routing apa yang paling cocok** untuk perusahaan ini? **Jelaskan alasanmu secara rinci**. Pilih salah satu dari opsi berikut (atau lebih jika diperlukan) dan berikan justifikasi mengapa itu menjadi pilihan terbaik untuk perusahaan ini:
+- **Static Routing**
+- **Dynamic Routing** ( jika menggunakan Routing Dynamic jenis Protokol apa yang cocok)
+- **Routing berbasis Classless Inter-Domain Routing (CIDR)**
 
 
 ## 1 Dasar Jaringan Protokol
