@@ -1,18 +1,48 @@
-# Crimping & Routing IPv4
-## Daftar Isi
-- 1 Dasar Jaringan Protokol
-    - Kenapa Komputer Harus Terhubung ke Jaringan
-    - Jenis-Jenis Jaringan
-    - Jaringan Komputer Punya Aturan?
-    - Semua Komputer Memiliki Alamat
-- 2 Masuk ke IP Address
-- 3 Masuk ke IPv4
-- 4 Kenektivitas Kabel LAN
-    - Crimpring
-    - Routing Menggunakan Router
-        - Statis
-        - Dinamis
+# 📚 Daftar Isi
 
+## Tugas Pendahuluan
+
+## Dasar Jaringan Protokol
+- [1.1 Kenapa Komputer Harus Terhubung ke Jaringan](#11-latar-belakang)
+- [1.2 Jenis-Jenis Jaringan](#12-rumusan-masalah)
+    - [1.2.1 Personal Area Network (PAN)](#13-tujuan)
+    - [1.2.2 Local Area Network (LAN)](#13-tujuan)
+- [1.4 Manfaat](#14-manfaat)
+
+## BAB II LANDASAN TEORI
+- [2.1 Pengertian Jaringan Komputer](#21-pengertian-jaringan-komputer)
+- [2.2 Sejarah Jaringan Komputer](#22-sejarah-jaringan-komputer)
+- [2.3 Manfaat Jaringan Komputer](#23-manfaat-jaringan-komputer)
+- [2.4 Topologi Jaringan](#24-topologi-jaringan)
+  - [2.4.1 Topologi Bus](#241-topologi-bus)
+  - [2.4.2 Topologi Ring](#242-topologi-ring)
+  - [2.4.3 Topologi Star](#243-topologi-star)
+  - [2.4.4 Topologi Mesh](#244-topologi-mesh)
+- [2.5 Media Transmisi](#25-media-transmisi)
+  - [2.5.1 Kabel Twisted Pair](#251-kabel-twisted-pair)
+  - [2.5.2 Kabel Koaksial](#252-kabel-koaksial)
+  - [2.5.3 Kabel Fiber Optik](#253-kabel-fiber-optik)
+- [2.6 Perangkat Keras Jaringan](#26-perangkat-keras-jaringan)
+  - [2.6.1 NIC (Network Interface Card)](#261-nic-network-interface-card)
+  - [2.6.2 Switch](#262-switch)
+  - [2.6.3 Router](#263-router)
+- [2.7 IP Address](#27-ip-address)
+  - [2.7.1 Pengertian IP Address](#271-pengertian-ip-address)
+  - [2.7.2 Kelas IP Address](#272-kelas-ip-address)
+  - [2.7.3 Subnetting](#273-subnetting)
+
+## BAB III PRAKTIKUM
+- [3.1 Praktikum Jaringan Peer-to-Peer](#31-praktikum-jaringan-peer-to-peer)
+- [3.2 Praktikum Jaringan Client-Server](#32-praktikum-jaringan-client-server)
+- [3.3 Praktikum Konfigurasi IP Address](#33-praktikum-konfigurasi-ip-address)
+- [3.4 Praktikum Konfigurasi DHCP](#34-praktikum-konfigurasi-dhcp)
+- [3.5 Praktikum Konfigurasi DNS](#35-praktikum-konfigurasi-dns)
+- [3.6 Praktikum Konfigurasi Web Server](#36-praktikum-konfigurasi-web-server)
+- [3.7 Praktikum Konfigurasi FTP Server](#37-praktikum-konfigurasi-ftp-server)
+
+## BAB IV PENUTUP
+- [4.1 Kesimpulan](#41-kesimpulan)
+- [4.2 Saran](#42-saran)
 
 
 ## Tugas Pendahuluan
