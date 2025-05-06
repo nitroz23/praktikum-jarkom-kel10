@@ -1,49 +1,66 @@
 # 📚 Daftar Isi
 
-## Tugas Pendahuluan
-
-## Dasar Jaringan Protokol
-- [1.1 Kenapa Komputer Harus Terhubung ke Jaringan](#11-latar-belakang)
-- [1.2 Jenis-Jenis Jaringan](#12-rumusan-masalah)
-    - [1.2.1 Personal Area Network (PAN)](#13-tujuan)
-    - [1.2.2 Local Area Network (LAN)](#13-tujuan)
-- [1.4 Manfaat](#14-manfaat)
-
-## BAB II LANDASAN TEORI
-- [2.1 Pengertian Jaringan Komputer](#21-pengertian-jaringan-komputer)
-- [2.2 Sejarah Jaringan Komputer](#22-sejarah-jaringan-komputer)
-- [2.3 Manfaat Jaringan Komputer](#23-manfaat-jaringan-komputer)
-- [2.4 Topologi Jaringan](#24-topologi-jaringan)
-  - [2.4.1 Topologi Bus](#241-topologi-bus)
-  - [2.4.2 Topologi Ring](#242-topologi-ring)
-  - [2.4.3 Topologi Star](#243-topologi-star)
-  - [2.4.4 Topologi Mesh](#244-topologi-mesh)
-- [2.5 Media Transmisi](#25-media-transmisi)
-  - [2.5.1 Kabel Twisted Pair](#251-kabel-twisted-pair)
-  - [2.5.2 Kabel Koaksial](#252-kabel-koaksial)
-  - [2.5.3 Kabel Fiber Optik](#253-kabel-fiber-optik)
-- [2.6 Perangkat Keras Jaringan](#26-perangkat-keras-jaringan)
-  - [2.6.1 NIC (Network Interface Card)](#261-nic-network-interface-card)
-  - [2.6.2 Switch](#262-switch)
-  - [2.6.3 Router](#263-router)
-- [2.7 IP Address](#27-ip-address)
-  - [2.7.1 Pengertian IP Address](#271-pengertian-ip-address)
-  - [2.7.2 Kelas IP Address](#272-kelas-ip-address)
-  - [2.7.3 Subnetting](#273-subnetting)
-
-## BAB III PRAKTIKUM
-- [3.1 Praktikum Jaringan Peer-to-Peer](#31-praktikum-jaringan-peer-to-peer)
-- [3.2 Praktikum Jaringan Client-Server](#32-praktikum-jaringan-client-server)
-- [3.3 Praktikum Konfigurasi IP Address](#33-praktikum-konfigurasi-ip-address)
-- [3.4 Praktikum Konfigurasi DHCP](#34-praktikum-konfigurasi-dhcp)
-- [3.5 Praktikum Konfigurasi DNS](#35-praktikum-konfigurasi-dns)
-- [3.6 Praktikum Konfigurasi Web Server](#36-praktikum-konfigurasi-web-server)
-- [3.7 Praktikum Konfigurasi FTP Server](#37-praktikum-konfigurasi-ftp-server)
-
-## BAB IV PENUTUP
-- [4.1 Kesimpulan](#41-kesimpulan)
-- [4.2 Saran](#42-saran)
-
+- [📚 Daftar Isi](#-daftar-isi)
+  - [Tugas Pendahuluan](#tugas-pendahuluan)
+  - [1 Dasar Jaringan Protokol](#1-dasar-jaringan-protokol)
+    - [1.1 Kenapa Komputer Harus Terhubung ke Jaringan](#11-kenapa-komputer-harus-terhubung-ke-jaringan)
+    - [1.2 Jenis-Jenis Jaringan](#12-jenis-jenis-jaringan)
+      - [1.2.1 Personal Area Network (PAN)](#121-personal-area-network-pan)
+      - [1.2.2 Local Area Network (LAN)](#122-local-area-network-lan)
+      - [1.2.3 Campus Area Network (CAN)](#123-campus-area-network-can)
+      - [1.2.4 Metropolitan Area Network (MAN)](#124-metropolitan-area-network-man)
+      - [1.2.5 Wide Area Network (WAN)](#125-wide-area-network-wan)
+    - [1.3 Jaringan Komputer Punya Aturan??](#13-jaringan-komputer-punya-aturan)
+      - [**Jenis-Jenis Protokol:**](#jenis-jenis-protokol)
+      - [1.3.1 Protokol Komunikasi (*Communication Protocols*)](#131-protokol-komunikasi-communication-protocols)
+        - [1.3.1.1 Hypertext Transfer Protocol (HTTP)](#1311-hypertext-transfer-protocol-http)
+        - [1.3.1.2 Hypertext Transfer Protocol Secure (HTTPS)](#1312-hypertext-transfer-protocol-secure-https)
+        - [1.3.1.3 File Transfer Protocol (FTP)](#1313-file-transfer-protocol-ftp)
+        - [1.3.1.4 Transmission Control Protocol (TCP)](#1314-transmission-control-protocol-tcp)
+        - [1.3.1.5 Internet Protocol (IP)](#1315-internet-protocol-ip)
+      - [1.3.2 Protokol Keamanan (*Security Protocols*)](#132-protokol-keamanan-security-protocols)
+      - [1.3.3 Protokol Manajemen (*Management Protocols*)](#133-protokol-manajemen-management-protocols)
+        - [1.3.3.1 Dynamic Host Configuration Protocol (DHCP)](#1331-dynamic-host-configuration-protocol-dhcp)
+    - [1.4 Semua Komputer memiliki Alamat](#14-semua-komputer-memiliki-alamat)
+  - [2 IP Address?](#2-ip-address)
+    - [2.1 Gimana Cara Kerja IP Address?](#21-gimana-cara-kerja-ip-address)
+    - [2.2 Jenis-Jenis IP Address](#22-jenis-jenis-ip-address)
+      - [2.2.1 🏠 Private IP Address](#221--private-ip-address)
+      - [2.2.2 🌍 Public IP Address](#222--public-ip-address)
+    - [2.3 IP Adress Dinamis](#23-ip-adress-dinamis)
+      - [2.3.1  Ciri-ciri IP Dinamis:](#231--ciri-ciri-ip-dinamis)
+      - [2.3.2 Kapan harus pakai IP Dinamis??](#232-kapan-harus-pakai-ip-dinamis)
+    - [2.4 IP Adress Statis](#24-ip-adress-statis)
+      - [2.4.1 Ciri-ciri IP Statis](#241-ciri-ciri-ip-statis)
+      - [2.4.2 Kapan Harus Pakai IP Statis??](#242-kapan-harus-pakai-ip-statis)
+    - [2.5 IP Dinamis vs IP Statis](#25-ip-dinamis-vs-ip-statis)
+  - [3 IPv4](#3-ipv4)
+    - [3.1 Struktur IPv4](#31-struktur-ipv4)
+    - [3.2 Representasi Biner IPv4](#32-representasi-biner-ipv4)
+    - [3.3  Struktur Alamat IPv4](#33--struktur-alamat-ipv4)
+    - [3.4 Pembagian Kelas IPv4](#34-pembagian-kelas-ipv4)
+      - [3.4.1 Class A – Untuk Jaringan Raksasa](#341-class-a--untuk-jaringan-raksasa)
+      - [3.4.2 Class B – Jaringan Menengah ke Atas](#342-class-b--jaringan-menengah-ke-atas)
+      - [3.4.3 Class C – Untuk Jaringan Kecil](#343-class-c--untuk-jaringan-kecil)
+      - [3.4.4 Class D – Multicast, Bukan Buat Host!](#344-class-d--multicast-bukan-buat-host)
+      - [3.4.5 Class E – Penelitian dan Masa Depan](#345-class-e--penelitian-dan-masa-depan)
+    - [3.5 Prefix dan Subnet Mask IPv4](#35-prefix-dan-subnet-mask-ipv4)
+      - [3.5.1 Fungsi Prfix](#351-fungsi-prfix)
+        - [3.5.1.1 Prefix Emang Penting??](#3511-prefix-emang-penting)
+        - [3.5.1.1 Cara Membaca Prefix](#3511-cara-membaca-prefix)
+      - [3.5.2 Aoa itu Subnet Mask??](#352-aoa-itu-subnet-mask)
+        - [3.5.2.1 Fungsi Subnet Mask](#3521-fungsi-subnet-mask)
+      - [3.5.3 Hubungan Subnet Mask dengan Prefix](#353-hubungan-subnet-mask-dengan-prefix)
+  - [4 KONEKTIVITAS KABEL LAN](#4-konektivitas-kabel-lan)
+    - [4.1 CRIMPING](#41-crimping)
+      - [4.1.1 Peralatan yang Digunakan](#411-peralatan-yang-digunakan)
+      - [4.1.2 Konfigurasi Kabel LAN](#412-konfigurasi-kabel-lan)
+      - [Video Tutorial](#video-tutorial)
+    - [4.2 ROUTING PAKE ROUTER](#42-routing-pake-router)
+      - [4.2.1 STATIS](#421-statis)
+      - [4.2.2 DINAMIS](#422-dinamis)
+  - [5. Tugas Modul](#5-tugas-modul)
+  - [Referensi](#referensi)
 
 ## Tugas Pendahuluan
 Sebuah perusahaan baru sedang membangun **jaringan internal** yang akan dibagi menjadi beberapa bagian berdasarkan departemen. Setiap departemen akan memiliki jaringan lokalnya sendiri dan akan saling terhubung melalui sebuah **router utama**. Berikut adalah informasi mengenai jumlah perangkat yang digunakan masing-masing departemen:
@@ -866,7 +883,7 @@ https://its.id/m/Tutorial_Crimping
 
 #### 4.2.2 DINAMIS
 
-## 6. Tugas Modul
+## 5. Tugas Modul
 
 ## Referensi
 1.2 [Jenis-Jenis Jaringan](https://www.geeksforgeeks.org/types-of-computer-networks/)<br>
