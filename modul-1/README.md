@@ -1,17 +1,95 @@
-# Crimping & Routing IPv4
-## Daftar Isi
-- 1 Dasar Jaringan Protokol
-    - Kenapa Komputer Harus Terhubung ke Jaringan
-    - Jenis-Jenis Jaringan
-    - Jaringan Komputer Punya Aturan?
-    - Semua Komputer Memiliki Alamat
-- 2 Masuk ke IP Address
-- 3 Masuk ke IPv4
-- 4 Kenektivitas Kabel LAN
-    - Crimpring
-    - Routing Menggunakan Router
-        - Statis
-        - Dinamis
+# 📚 Daftar Isi
+
+- [📚 Daftar Isi](#-daftar-isi)
+  - [Tugas Pendahuluan](#tugas-pendahuluan)
+  - [1 Dasar Jaringan Protokol](#1-dasar-jaringan-protokol)
+    - [1.1 Kenapa Komputer Harus Terhubung ke Jaringan](#11-kenapa-komputer-harus-terhubung-ke-jaringan)
+    - [1.2 Jenis-Jenis Jaringan](#12-jenis-jenis-jaringan)
+      - [1.2.1 Personal Area Network (PAN)](#121-personal-area-network-pan)
+      - [1.2.2 Local Area Network (LAN)](#122-local-area-network-lan)
+      - [1.2.3 Campus Area Network (CAN)](#123-campus-area-network-can)
+      - [1.2.4 Metropolitan Area Network (MAN)](#124-metropolitan-area-network-man)
+      - [1.2.5 Wide Area Network (WAN)](#125-wide-area-network-wan)
+    - [1.3 Jaringan Komputer Punya Aturan??](#13-jaringan-komputer-punya-aturan)
+      - [**Jenis-Jenis Protokol:**](#jenis-jenis-protokol)
+      - [1.3.1 Protokol Komunikasi (*Communication Protocols*)](#131-protokol-komunikasi-communication-protocols)
+        - [1.3.1.1 Hypertext Transfer Protocol (HTTP)](#1311-hypertext-transfer-protocol-http)
+        - [1.3.1.2 Hypertext Transfer Protocol Secure (HTTPS)](#1312-hypertext-transfer-protocol-secure-https)
+        - [1.3.1.3 File Transfer Protocol (FTP)](#1313-file-transfer-protocol-ftp)
+        - [1.3.1.4 Transmission Control Protocol (TCP)](#1314-transmission-control-protocol-tcp)
+        - [1.3.1.5 Internet Protocol (IP)](#1315-internet-protocol-ip)
+      - [1.3.2 Protokol Keamanan (*Security Protocols*)](#132-protokol-keamanan-security-protocols)
+      - [1.3.3 Protokol Manajemen (*Management Protocols*)](#133-protokol-manajemen-management-protocols)
+        - [1.3.3.1 Dynamic Host Configuration Protocol (DHCP)](#1331-dynamic-host-configuration-protocol-dhcp)
+    - [1.4 Semua Komputer memiliki Alamat](#14-semua-komputer-memiliki-alamat)
+  - [2 IP Address?](#2-ip-address)
+    - [2.1 Gimana Cara Kerja IP Address?](#21-gimana-cara-kerja-ip-address)
+    - [2.2 Jenis-Jenis IP Address](#22-jenis-jenis-ip-address)
+      - [2.2.1 🏠 Private IP Address](#221--private-ip-address)
+      - [2.2.2 🌍 Public IP Address](#222--public-ip-address)
+    - [2.3 IP Adress Dinamis](#23-ip-adress-dinamis)
+      - [2.3.1  Ciri-ciri IP Dinamis:](#231--ciri-ciri-ip-dinamis)
+      - [2.3.2 Kapan harus pakai IP Dinamis??](#232-kapan-harus-pakai-ip-dinamis)
+    - [2.4 IP Adress Statis](#24-ip-adress-statis)
+      - [2.4.1 Ciri-ciri IP Statis](#241-ciri-ciri-ip-statis)
+      - [2.4.2 Kapan Harus Pakai IP Statis??](#242-kapan-harus-pakai-ip-statis)
+    - [2.5 IP Dinamis vs IP Statis](#25-ip-dinamis-vs-ip-statis)
+  - [3 IPv4](#3-ipv4)
+    - [3.1 Struktur IPv4](#31-struktur-ipv4)
+    - [3.2 Representasi Biner IPv4](#32-representasi-biner-ipv4)
+    - [3.3  Struktur Alamat IPv4](#33--struktur-alamat-ipv4)
+    - [3.4 Pembagian Kelas IPv4](#34-pembagian-kelas-ipv4)
+      - [3.4.1 Class A – Untuk Jaringan Raksasa](#341-class-a--untuk-jaringan-raksasa)
+      - [3.4.2 Class B – Jaringan Menengah ke Atas](#342-class-b--jaringan-menengah-ke-atas)
+      - [3.4.3 Class C – Untuk Jaringan Kecil](#343-class-c--untuk-jaringan-kecil)
+      - [3.4.4 Class D – Multicast, Bukan Buat Host!](#344-class-d--multicast-bukan-buat-host)
+      - [3.4.5 Class E – Penelitian dan Masa Depan](#345-class-e--penelitian-dan-masa-depan)
+    - [3.5 Prefix dan Subnet Mask IPv4](#35-prefix-dan-subnet-mask-ipv4)
+      - [3.5.1 Fungsi Prfix](#351-fungsi-prfix)
+        - [3.5.1.1 Prefix Emang Penting??](#3511-prefix-emang-penting)
+        - [3.5.1.1 Cara Membaca Prefix](#3511-cara-membaca-prefix)
+      - [3.5.2 Aoa itu Subnet Mask??](#352-aoa-itu-subnet-mask)
+        - [3.5.2.1 Fungsi Subnet Mask](#3521-fungsi-subnet-mask)
+      - [3.5.3 Hubungan Subnet Mask dengan Prefix](#353-hubungan-subnet-mask-dengan-prefix)
+  - [4 KONEKTIVITAS KABEL LAN](#4-konektivitas-kabel-lan)
+    - [4.1 CRIMPING](#41-crimping)
+      - [4.1.1 Peralatan yang Digunakan](#411-peralatan-yang-digunakan)
+      - [4.1.2 Konfigurasi Kabel LAN](#412-konfigurasi-kabel-lan)
+      - [Video Tutorial](#video-tutorial)
+    - [4.2 ROUTING PAKE ROUTER](#42-routing-pake-router)
+      - [4.2.1 STATIS](#421-statis)
+      - [4.2.2 DINAMIS](#422-dinamis)
+  - [5. Tugas Modul](#5-tugas-modul)
+  - [Referensi](#referensi)
+
+## Tugas Pendahuluan
+Sebuah perusahaan baru sedang membangun **jaringan internal** yang akan dibagi menjadi beberapa bagian berdasarkan departemen. Setiap departemen akan memiliki jaringan lokalnya sendiri dan akan saling terhubung melalui sebuah **router utama**. Berikut adalah informasi mengenai jumlah perangkat yang digunakan masing-masing departemen:
+- Departemen Produksi: **50 perangkat**
+- Departemen Administrasi: **20 perangkat**
+- Departemen Keuangan: **10 perangkat**
+- Departemen R&D: **100 perangkat**
+
+Administrator jaringan diminta untuk:
+- Membuat **perencanaan alokasi IP address** untuk masing-masing departemen.
+- Menentukan **prefix subnet (CIDR)** yang paling sesuai untuk masing-masing kebutuhan, tanpa memboroskan IP.
+- Memastikan tidak ada overlap antar subnet.
+- Membuat **skema routing** agar masing-masing jaringan bisa saling berkomunikasi melalui router, jika diperlukan.
+
+**🎯 Tugas:**
+1. Tentukan:
+- Rentang IP address dan prefix (CIDR) yang sesuai untuk masing-masing departemen.
+- Total subnet yang diperlukan dan IP network untuk masing-masing.
+2. Gambarkan **topologi sederhana** yang menunjukkan bagaimana router akan menghubungkan semua subnet.
+3. Tuliskan tabel routing sederhana yang menunjukkan:
+- **Network destination**
+- **Netmask/prefix**
+- **Gateway** (anggap antarmuka router)
+- **Interface tujuan**
+4. Berdasarkan topologi yang telah kamu buat, jenis **routing apa yang paling cocok** untuk perusahaan ini? **Jelaskan alasanmu secara rinci**. Pilih salah satu dari opsi berikut (atau lebih jika diperlukan) dan berikan justifikasi mengapa itu menjadi pilihan terbaik untuk perusahaan ini:
+- **Static Routing**
+- **Dynamic Routing** ( jika menggunakan Routing Dynamic jenis Protokol apa yang cocok)
+- **Routing berbasis Classless Inter-Domain Routing (CIDR)**
+
 
 ## 1 Dasar Jaringan Protokol
 ![Jaringan](images/1_Jaringan.avif)
@@ -286,20 +364,23 @@ Kalau alamat komputer itu ada dua: make address dan IP address
 Pasti kalian sudah sering dengar IP address ini atau misalkan sering lihat angka ini 192.168.1.1 namun kalian masih bingung kegunaannya sama pentingnya bagi kita itu apa.
 
 IP Address (Internet Protocol Address) adalah alamat identitas unik yang dimiliki setiap perangkat yang terhubung ke jaringan. 
-IP Address itu bisa kita ibaratkan seperti alamat rumah di dunia internet. Tapi bukannya “Jl. Mawar No. 5”, alamat ini berbentuk deretan angka-angka yang dipisahkan titik. Contohnya kayak gini: 192.158.1.38.
+IP Address itu bisa kita ibaratkan seperti alamat rumah di dunia internet. Tapi bukannya “Jl. Mawar No. 5”, alamat ini berbentuk deretan angka-angka yang dipisahkan titik. 
+Contohnya kayak gini: 192.158.1.38.
 
-(Masukkan MEME)
+![IP Address](images/Alamat.jpeg) 
 
-Terus alamt rumah kan ditentuin, kalau alamat perangkat kita siapa yang kasih??
+Terus alamat rumah kan ditentuin, kalau alamat perangkat kita siapa yang kasih??
 IP Address nggak muncul secara acak, ya! IP itu sebenarnya dibuat secara matematis dan dibagikan secara resmi oleh lembaga bernama:
-🔹 IANA (Internet Assigned Numbers Authority)
+🔹 **IANA (Internet Assigned Numbers Authority)**
 IANA ini adalah bagian dari ICANN, yaitu:
-🔹 ICANN (Internet Corporation for Assigned Names and Numbers)
+🔹 **ICANN (Internet Corporation for Assigned Names and Numbers)**
 
 Sebuah organisasi nirlaba yang lahir di Amerika tahun 1998, dan tugasnya menjaga keamanan dan keteraturan internet di seluruh dunia — biar semua perangkat bisa saling terhubung dengan benar.
 
 ### 2.1 Gimana Cara Kerja IP Address?
-IP Address itu kayak bahasa universal yang dipakai semua perangkat buat ngobrol satu sama lain di internet. Gak peduli kamu pakai HP, laptop, atau kulkas pintar, semua saling "ngobrol" pakai aturan komunikasi yang sama: Internet Protocol (IP).
+IP Address itu kayak **bahasa komunikasi universal** yang dipakai semua perangkat buat ngobrol satu sama lain di internet. Gak peduli kamu pakai HP, laptop, atau kulkas pintar, semua saling "ngobrol" pakai aturan komunikasi yang sama: Internet Protocol (IP).
+
+![Talking](images/talking.jpg) 
 
 Jadi kalau misalkan kehidupan manusia bahasa internasionalnya itu bahasa inggris, nah di dunia komputer bahasa komunikasi mereka itu IP.
 
@@ -323,7 +404,7 @@ Bisa dikenali satu sama lain
 Nggak tabrakan saat kirim data
 
 Contoh alamat privat:
-192.168.0.5, 10.0.0.12, 172.16.1.3
+**192.168.0.5**, **10.0.0.12**, **172.16.1.3**
 
 Jadi, meskipun semua rumah pakai nama “Ayah”, “Ibu”, “Adik”, mereka tetap aman karena masing-masing beroperasi di rumahnya sendiri.
 
@@ -331,8 +412,8 @@ Jadi, meskipun semua rumah pakai nama “Ayah”, “Ibu”, “Adik”, mereka 
 
 #### 2.2.2 🌍 Public IP Address
 Ini alamat utama yang dikenal orang luar.
-Kalau teman kamu kirim paket, dia gak kirim ke “Kamar Kakak” tapi ke alamat rumahmu, misalnya:
-103.94.189.35
+Kalau teman kamu kirim paket, dia gak kirim ke “Kamar Kakak” tapi ke **alamat rumahmu**, 
+misalnya: **103.94.189.35**
 
 ![Rumah ke Rumah](images/rumah.jpg)
 
@@ -353,7 +434,7 @@ Jadi walaupun ada banyak perangkat di rumahmu, semuanya tetap keluar ke internet
 
 
 ### 2.3 IP Adress Dinamis
-Secara singkat ialah IP yang bisa berubah-ubah secara otomatis. Bayangin kamu ngontrak kos dan setiap beberapa bulan kamu pindah kamar. Nomor kamarmu berubah, tapi kamu tetap bisa tinggal di kos yang sama. Nah, begitu juga dengan Dynamic IP.
+Secara singkat ialah IP yang bisa berubah-ubah secara otomatis. Bayangin kamu ngontrak kos dan setiap beberapa bulan kamu pindah kamar. Nomor kamarmu berubah, tapi kamu tetap bisa tinggal di kos yang sama. Nah, begitu juga dengan **IP Dinamis**.
 
 ![ganti kamar](images/Meme_Pintu.jpeg)
 
@@ -363,39 +444,39 @@ Secara singkat ialah IP yang bisa berubah-ubah secara otomatis. Bayangin kamu ng
 
 2. Sering berubah dalam waktu tertentu.
 
-3. Dikelola pakai sistem DHCP (Dynamic Host Configuration Protocol).
+3. Dikelola pakai **sistem DHCP (Dynamic Host Configuration Protocol)**.
 
 4. IP ini dipinjam dari "kolam IP besar" yang dimiliki oleh ISP.
 
 5. Setelah kamu mati nyalakan modem/router, bisa jadi IP kamu berubah.
 
 #### 2.3.2 Kapan harus pakai IP Dinamis??
-🔄 "Kalau bisa ngekos, ngapain beli rumah?"
+**🔄 "Kalau bisa ngekos, ngapain beli rumah?"**
 
-IP Dinamis itu cocok untuk kondisi-kondisi di mana alamat IP tidak perlu tetap dan bisa berubah-ubah tanpa masalah. IP dinamis ini juga yang paling sering kita gunakan sehari hari karena ada di laptop, hp, komputer, dan lain lain.
+**IP Dinamis** itu cocok untuk kondisi-kondisi di mana alamat IP tidak perlu tetap dan bisa berubah-ubah tanpa masalah. IP dinamis ini juga yang paling sering kita gunakan sehari hari karena ada di laptop, hp, komputer, dan lain lain.
 
 Jika ingin lebih detail lagi :
 Penggunaan sehari-hari di rumah
-➤ Kamu cuma pakai internet buat browsing, streaming, meeting, game, dll.
-➤ Kamu nggak perlu akses jarak jauh ke perangkatmu.
-➤ Cukup terima apa yang diberikan modem secara otomatis? IP dinamis jawabannya.
+-  Kamu cuma pakai internet buat browsing, streaming, meeting, game, dll.
+-  Kamu nggak perlu akses jarak jauh ke perangkatmu.
+-  Cukup terima apa yang diberikan modem secara otomatis? IP dinamis jawabannya.
 
 Banyak perangkat yang sering ganti-ganti koneksi
-➤ Misalnya WiFi publik, kantor, atau kampus.
-➤ Setiap hari pengguna berganti, jadi sistem akan otomatis kasih IP baru.
+- Misalnya WiFi publik, kantor, atau kampus.
+- Setiap hari pengguna berganti, jadi sistem akan otomatis kasih IP baru.
 
 Nggak mau ribet setting IP manual
-➤ IP akan dikasih otomatis dari router via DHCP, tinggal nyambung aja, langsung bisa internetan.
+- IP akan dikasih otomatis dari router via DHCP, tinggal nyambung aja, langsung bisa internetan.
 
 Keamanan lebih fleksibel
-➤ Karena alamat IP sering berubah, hacker akan kesulitan menarget perangkat tertentu secara terus-menerus.
+- Karena alamat IP sering berubah, hacker akan kesulitan menarget perangkat tertentu secara terus-menerus.
 
 ### 2.4 IP Adress Statis
 
-Intinya IP yang selamnya tidak berubah kecuali kamu ubah secara manual, jadi IP statis ini seperti rumah milik pribadi. Nomor rumahmu nggak akan berubah, dan orang bisa dengan mudah menemukanmu. Berbeda dengan IP dinamis (yang bisa berubah-ubah tiap nyambung), IP statis ditetapkan secara manual oleh administrator jaringan atau oleh penyedia layanan internet (ISP), dan tidak diubah secara otomatis oleh DHCP.
+Intinya IP yang selamnya tidak berubah kecuali kamu ubah secara manual, jadi IP statis ini seperti rumah milik pribadi. Nomor rumahmu nggak akan berubah, dan orang bisa dengan mudah menemukanmu. Berbeda dengan IP dinamis (yang bisa berubah-ubah tiap nyambung), **IP statis** ditetapkan secara manual oleh administrator jaringan atau oleh penyedia layanan internet (ISP), dan tidak diubah secara otomatis oleh DHCP.
 
 #### 2.4.1 Ciri-ciri IP Statis
-📌 Ciri-ciri Static IP:
+📌 Ciri-ciri IP Statis:
 
 1. Ditetapkan secara permanen ke satu perangkat/jaringan.
 
@@ -404,26 +485,26 @@ Intinya IP yang selamnya tidak berubah kecuali kamu ubah secara manual, jadi IP 
 3. Mudah dilacak dan diakses dari internet karena alamatnya selalu sama.
 
 #### 2.4.2 Kapan Harus Pakai IP Statis??
-🧱 "Kalau kamu mau bikin rumah di maps, jangan pindah-pindah dong!"
+**🧱 "Kalau kamu mau bikin rumah di maps, jangan pindah-pindah dong!"**
 
 IP Statis cocok untuk perangkat atau sistem yang harus bisa diakses dari luar jaringan secara konsisten. Misalnya server, kamera, atau printer jaringan.
 
 Jika lebih ingin detail sekali lagi:
 Perangkat harus bisa diakses jarak jauh
-➤ Contoh: Server web, file server, remote desktop, CCTV.
-➤ Kalau IP-nya berubah, user di luar jaringan akan kehilangan akses. Jadi harus tetap.
+- Contoh: Server web, file server, remote desktop, CCTV.
+- Kalau IP-nya berubah, user di luar jaringan akan kehilangan akses. Jadi harus tetap.
 
 Perlu konfigurasi jaringan yang stabil
-➤ Misalnya mau bikin subnetting, firewall rules, VPN.
-➤ Alamat IP yang tetap bikin pengaturan jadi lebih mudah dan bisa diprediksi.
+- Misalnya mau bikin subnetting, firewall rules, VPN.
+- Alamat IP yang tetap bikin pengaturan jadi lebih mudah dan bisa diprediksi.
 
 Mempermudah troubleshooting
-➤ IP statis bikin teknisi jaringan gampang melacak masalah.
-➤ Nggak perlu nebak-nebak, IP si printer atau server pasti segitu terus.
+- IP statis bikin teknisi jaringan gampang melacak masalah.
+- Nggak perlu nebak-nebak, IP si printer atau server pasti segitu terus.
 
 Membuat identitas jaringan tetap dikenal
-➤ Misalnya domain diarahkan ke IP tertentu (contoh: website kampus = 103.xxx.xxx.xxx).
-➤ Kalau IP-nya gonta-ganti, domainnya jadi error.
+- Misalnya domain diarahkan ke IP tertentu (contoh: website kampus = 103.xxx.xxx.xxx).
+- Kalau IP-nya gonta-ganti, domainnya jadi error.
 
 ### 2.5 IP Dinamis vs IP Statis
 |Tujuan / Kondisi                         |	Pakai IP Dinamis ✅     |	Pakai IP Statis ✅|
@@ -446,14 +527,14 @@ Perbedaan Singkat
 |Koneksi Remote |	Kurang ideal                |	Ideal untuk akses dari luar     |
 
 ## 3 IPv4
-Apa itu IPv4? – "Alamat Rumahmu di Dunia Internet"
+**Apa itu IPv4?** – "Alamat Rumahmu di Dunia Internet"
 Merupakan versi IP yang paling umum digunakan saat ini (walau sudah ada IPv6). IPv4 sudah dipakai sejak zaman ARPANET tahun 1983 – nenek moyangnya internet modern. IPv4 adalah versi ke-4 dari internet protokol. Bisa dibilang, ini adalah cara komputer saling sapa dan kirim paket di dunia maya, kayak kurir antar barang ke alamat yang tepat.
 
-IP Address versi IPv4 menggunakan angka 32-bit  yang dibagi menjadi empat kelompok angka, berarti tiap kelompok angka itu akan memiliki 1 oktet atau 8 bit -> 2^8 = 256, sehingga tiap angkanya bisa dari 0 sampai 255. Jadi rentang IP yang mungkin itu dari 0.0.0.0 sampai 255.255.255.255. Banyak banget, kan? Tapi tetap teratur, bukan acak.
+IP Address versi IPv4 menggunakan angka **32-bit** yang dibagi menjadi empat kelompok angka, berarti tiap kelompok angka itu akan memiliki 1 oktet atau 8 bit -> 2^8 = 256, sehingga tiap angkanya bisa dari 0 sampai 255. Jadi rentang IP yang mungkin itu dari 0.0.0.0 sampai 255.255.255.255. Banyak banget, kan? Tapi tetap teratur, bukan acak.
 
 ### 3.1 Struktur IPv4
-Karena 32-bit tadi dibagi 4, maka IPv4 ini memiliki 4 Oktet (4 blok angka).
-Contoh : 192.168.0.10
+Karena 32-bit tadi dibagi 4, maka IPv4 ini memiliki **4 Oktet (4 blok angka)**.
+Contoh : **192.168.0.10**
 |Oktet  |	Angka   |	Binari (8-bit)  |
 |-------|-----------|-------------------|
 |1      |	192     |	11000000        |
@@ -475,7 +556,7 @@ Artinya, IPv4 bisa membuat lebih dari 4 miliar alamat unik. Tapi karena ada alam
 ![WOW](images/wow.jpeg)''
 
 ### 3.2 Representasi Biner IPv4
-“Komputer nggak ngerti angka desimal kayak 192.168.1.1. Dia cuma ngerti 0 dan 1!”
+**“Komputer nggak ngerti angka desimal kayak 192.168.1.1. Dia cuma ngerti 0 dan 1!”**
 
 Setiap alamat IPv4 sebenarnya terdiri dari 32 bit. Tapi supaya mudah dibaca manusia, alamat IP dibagi jadi empat bagian (oktet) dan ditulis dalam desimal (contoh: 185.107.80.231).
 
@@ -493,33 +574,35 @@ Alamat IP: 185.107.80.231
 10111001.01101011.01010000.11100111
 
 ### 3.3  Struktur Alamat IPv4
-“Anggap aja alamat IP itu seperti alamat rumah: ada nama komplek, nomor rumah, dan blok.”
+**“Anggap aja alamat IP itu seperti alamat rumah: ada nama komplek, nomor rumah, dan blok.”**
 
 IPv4 terdiri dari 3 bagian utama:
 
-📌 1. Network Part
+1. **Network Part**
 Menunjukkan jaringan utama tempat host berada.
 
 Semua perangkat di jaringan yang sama punya bagian ini identik.
 
 Bisa dianggap seperti nama komplek perumahan.
 
-📌 2. Host Part
+2. **Host Part**
 Identitas unik setiap perangkat (komputer, HP, printer, dsb) di dalam jaringan.
 
 Harus berbeda untuk tiap perangkat.
 
 Ibaratnya seperti nomor rumah.
 
-📌 3. Subnet Part (Opsional)
+3. **Subnet Part (Opsional)**
 Digunakan untuk membagi jaringan besar menjadi beberapa bagian kecil (subnet).
 
 Mirip kayak blok perumahan dalam satu komplek supaya lebih tertata.
 
 ### 3.4 Pembagian Kelas IPv4
+
 ![Kelas IPv4](images/class_IPv4.png)
+
 #### 3.4.1 Class A – Untuk Jaringan Raksasa
-"Class A itu seperti kota besar dengan jalan utama super lebar, cocok buat banyak kendaraan (host)!"
+**"Class A itu seperti kota besar dengan jalan utama super lebar, cocok buat banyak kendaraan (host)!"**
 
 - Siapa yang pakai? Organisasi besar seperti perusahaan multinasional, institusi pemerintah, atau penyedia layanan internet (ISP) besar.
 
@@ -535,7 +618,7 @@ Private IP-nya adalah dari 10.0.0.0 hingga 10.255.255.255
 Biasanya dipakai oleh perusahaan besar yang punya banyak divisi atau cabang, tapi semua tetap di dalam satu jaringan internal.
 
 #### 3.4.2 Class B – Jaringan Menengah ke Atas
-"Class B itu seperti kota sedang dengan jalan dua arah – cukup luas buat perusahaan gede, tapi nggak segede Class A."
+**"Class B itu seperti kota sedang dengan jalan dua arah – cukup luas buat perusahaan gede, tapi nggak segede Class A."**
 
 - Cocok buat siapa? Universitas, rumah sakit besar, perusahaan dengan beberapa lokasi.
 
@@ -550,8 +633,8 @@ Private IP-nya adalah dari 172.16.0.0 hingga 172.31.255.255
 
 Sering dipakai buat jaringan skala menengah yang tetap butuh kontrol internal.
 
-#### 3.4.3Class C – Untuk Jaringan Kecil
-"Class C itu kayak komplek perumahan. Jalurnya kecil tapi cukup buat rumah-rumah (host) yang nggak terlalu banyak."
+#### 3.4.3 Class C – Untuk Jaringan Kecil
+**"Class C itu kayak komplek perumahan. Jalurnya kecil tapi cukup buat rumah-rumah (host) yang nggak terlalu banyak."**
 
 - Cocok untuk siapa? Bisnis kecil, sekolah, warnet, atau jaringan rumah.
 
@@ -566,8 +649,8 @@ Private IP-nya adalah dari 192.168.0.0 hingga 192.168.255.255
 
 Ini yang paling sering kita temui di rumah atau kantor kecil.
 
-#### 3.4.4Class D – Multicast, Bukan Buat Host!
-"Class D itu kayak siaran TV digital – satu pemancar bisa disaksikan banyak orang sekaligus!"
+#### 3.4.4 Class D – Multicast, Bukan Buat Host!
+**"Class D itu kayak siaran TV digital – satu pemancar bisa disaksikan banyak orang sekaligus!"**
 
 - Class D tidak digunakan untuk mengidentifikasi perangkat individual.
 
@@ -584,7 +667,7 @@ Ini yang paling sering kita temui di rumah atau kantor kecil.
 Sayangnya tidak bisa dipakai sebagai IP normal seperti Class A, B, atau C.
 
 #### 3.4.5 Class E – Penelitian dan Masa Depan
-"Class E itu seperti lahan kosong yang disiapkan buat eksperimen ilmuwan."
+**"Class E itu seperti lahan kosong yang disiapkan buat eksperimen ilmuwan."**
 
 - Class E tidak digunakan dalam jaringan umum.
 
@@ -593,6 +676,148 @@ Sayangnya tidak bisa dipakai sebagai IP normal seperti Class A, B, atau C.
 - IP-nya mulai dari 240.0.0.0 hingga 255.255.255.255
 
 - Sama seperti Class D, tidak boleh digunakan oleh perangkat biasa.
+
+### 3.5 Prefix dan Subnet Mask IPv4
+Dalam pembahasan IPv4, kita tahu bahwa sebuah alamat IP terdiri dari 32 bit angka biner, yang dibagi menjadi dua bagian penting:
+
+Network ID: Menunjukkan jaringan tempat komputer itu berada.
+
+Host ID: Menunjukkan perangkat (komputer, printer, dll.) di dalam jaringan tersebut.
+
+Tapi... gimana cara kita tahu berapa banyak bit yang digunakan untuk Network ID dan sisanya untuk Host ID?
+
+Nah, di sinilah prefix berperan.
+
+#### 3.5.1 Fungsi Prfix
+Prefix adalah angka yang menunjukkan berapa banyak bit pertama dari alamat IP yang digunakan untuk Network ID. Biasanya ditulis setelah tanda garis miring /.
+
+Contoh Penulisan Prefix:
+192.168.3.0/24
+
+- Angka /24 disebut prefix.
+
+- Artinya, 24 bit pertama dari alamat IP tersebut adalah bagian Network ID.
+
+- Sisa 8 bit digunakan untuk Host ID (karena total ada 32 bit).
+
+##### 3.5.1.1 Prefix Emang Penting??
+Tanpa prefix, kita tidak bisa tahu bagian mana dari alamat IP yang menunjukkan jaringan dan bagian mana yang menunjukkan perangkat di dalam jaringan.
+
+Dengan prefix, kita bisa:
+
+- Menentukan jumlah host yang bisa digunakan di dalam jaringan.
+
+- Membagi jaringan besar menjadi beberapa jaringan kecil (subnet).
+
+- Melakukan konfigurasi routing dengan benar, terutama pada router.
+
+##### 3.5.1.1 Cara Membaca Prefix
+**➤ Contoh 1**: 192.168.3.0/24
+IP Address dalam biner:
+11000000.10101000.00000011.00000000
+
+Prefix /24 berarti 24 bit pertama adalah untuk Network ID:
+
+Network ID: 192.168.3
+
+Host ID: 0 sampai 255
+
+Tapi host hanya bisa digunakan dari 1 sampai 254 karena:
+
+192.168.3.0 → network address
+
+192.168.3.255 → broadcast address
+
+Maka total host yang bisa digunakan adalah 254.
+
+**➤ Contoh 2**: 192.168.3.130/29
+Prefix /29 berarti 29 bit pertama adalah Network ID.
+
+Sisa bit: 32 - 29 = 3 bit untuk Host ID.
+
+3 bit bisa menghasilkan 2³ = 8 kombinasi, tapi:
+
+1 untuk network address
+
+1 untuk broadcast address
+
+Maka host yang bisa digunakan hanya 6 IP address saja.
+
+#### 3.5.2 Aoa itu Subnet Mask??
+**Subnet mask** adalah angka biner 32-bit yang digunakan untuk membagi jaringan IP menjadi beberapa bagian yang lebih kecil yang disebut subnet. Proses pembagian ini disebut subnetting, dan fungsinya adalah untuk mengelola dan **mengoptimalkan penggunaan alamat IP** dalam suatu jaringan.
+
+Jika sebuah jaringan terlalu besar dan mencakup terlalu banyak perangkat (host), maka akan sulit untuk mengatur lalu lintas data. Di sinilah subnetting berguna. Dengan memecah jaringan besar menjadi jaringan-jaringan kecil, lalu lintas data bisa dikendalikan lebih baik, dan keamanan serta efisiensinya meningkat.
+
+Subnet mask bekerja bersama dengan IP address untuk menunjukkan bagian mana dari IP tersebut yang merupakan network ID (identitas jaringan) dan bagian mana yang merupakan host ID (identitas perangkat di jaringan itu). Ini penting untuk mengetahui apakah dua perangkat berada di jaringan yang sama atau tidak.
+
+Contoh sederhana:
+|IP Address |192.168.1.10   |
+|-----------|---------------|
+|Subnet Mask|255.255.255.0  |
+
+Dengan subnet mask tersebut, kita tahu bahwa **192.168.1** adalah **bagian network**, dan **.10 adalah bagian host**.
+
+##### 3.5.2.1 Fungsi Subnet Mask
+Subnet mask tidak hanya berguna untuk membagi jaringan menjadi subnet, tetapi juga memiliki beberapa fungsi penting lainnya:
+
+1. **Memisahkan Network dan Host ID**
+Subnet mask membantu sistem dan perangkat jaringan untuk mengetahui mana bagian dari alamat IP yang menunjuk ke jaringan, dan mana yang menunjuk ke perangkat. Tanpa subnet mask, komputer tidak tahu ke mana data harus dikirim.
+
+2. **Mengurangi Kemacetan Jaringan (Kongesti)**
+Dengan membagi jaringan besar menjadi bagian-bagian kecil, maka jumlah host yang saling “berebut” jalur komunikasi bisa dikurangi. Ini memperlancar lalu lintas data dan meningkatkan performa jaringan secara keseluruhan.
+
+3. **Meningkatkan Keamanan Jaringan**
+Dengan subnetting, jaringan bisa dipecah untuk memisahkan perangkat-perangkat tertentu. Misalnya, perangkat penting bisa dipisahkan dari perangkat umum, sehingga mengurangi risiko akses ilegal atau serangan jaringan.
+
+4. **Penghematan Alamat IP**
+Subnetting membuat penggunaan alamat IP lebih efisien. Tanpa subnetting, alamat IP bisa cepat habis karena banyak yang tidak digunakan secara optimal. Dengan pembagian subnet yang cermat, alokasi IP bisa disesuaikan dengan kebutuhan sebenarnya.
+
+5. **Memudahkan Administrasi Jaringan**
+Ketika jaringan sudah terlalu besar, pengelolaan akan lebih sulit. Subnetting mempermudah pemantauan, pengaturan, dan troubleshooting jaringan karena setiap bagian bisa ditangani secara terpisah.
+
+#### 3.5.3 Hubungan Subnet Mask dengan Prefix
+
+Prefix dan subnet mask adalah dua cara berbeda untuk menjelaskan hal yang sama: **berapa banyak bit dari sebuah alamat IP yang digunakan untuk Network ID**.
+
+- **Prefix** ditulis dalam format garis miring, misalnya `/24`
+- **Subnet mask** ditulis dalam format desimal bertitik, misalnya `255.255.255.0`
+
+Keduanya saling berkaitan dan bisa dikonversi satu sama lain.
+
+🔁 Konversi Prefix ke Subnet Mask
+
+| Prefix | Subnet Mask         | Jumlah Bit Host | Jumlah Host yang Bisa Dipakai |
+|--------|---------------------|------------------|-------------------------------|
+| /8     | 255.0.0.0           | 24               | 16.777.214 host               |
+| /16    | 255.255.0.0         | 16               | 65.534 host                   |
+| /24    | 255.255.255.0       | 8                | 254 host                      |
+| /25    | 255.255.255.128     | 7                | 126 host                      |
+| /26    | 255.255.255.192     | 6                | 62 host                       |
+| /27    | 255.255.255.224     | 5                | 30 host                       |
+| /28    | 255.255.255.240     | 4                | 14 host                       |
+| /29    | 255.255.255.248     | 3                | 6 host                        |
+| /30    | 255.255.255.252     | 2                | 2 host                        |
+| /31    | 255.255.255.254     | 1                | 0 host (khusus point-to-point) |
+| /32    | 255.255.255.255     | 0                | 0 host (identifikasi satu perangkat saja) |
+
+Rumus Menghitung Jumlah Host: 2^(32 - Prefix) - 2
+
+- **32**: Total bit dalam IPv4
+- **-2**: Dikurangi Network Address dan Broadcast Address
+
+---
+
+Contoh Perhitungan:
+
+**Contoh:** 192.168.3.130/29  
+- Prefix: `/29` → 32 - 29 = 3 bit untuk host  
+- Jumlah host = 2³ - 2 = **6 host yang bisa digunakan**
+
+**Subnet Mask-nya:**  
+- 29 bit = 255.255.255.248
+
+> ✅ Kesimpulan:
+Prefix dan subnet mask adalah dua cara untuk menentukan berapa banyak perangkat yang bisa dipasang di suatu jaringan. Dengan memahami konversinya, kita bisa mengatur jaringan secara efisien dan optimal.
 
 ## 4 KONEKTIVITAS KABEL LAN
 ### 4.1 CRIMPING 
@@ -649,14 +874,16 @@ Berkebalikan dengan kabel Straight-through, pengkabelan ini digunakan untuk meny
 Aturan pemasangannya pun berbeda dengan kabel jenis straight-trough, kabel jenis Crossover memiliki urutan warna yang berbeda dikedua ujungnya. Tapi, perbedaan warna ini tidak boleh sembarangan, karena kedua ujung ini juga memiliki aturan urutan warna. Pada kabel jenis Crossover standar, jika salah satu ujung Pin memiliki susunan warna berdasarkan aturan T568A, maka ujung Pin yang lain harus memiliki urutan warna berdasarkan standar T568B.
 
 #### Video Tutorial
-Tontong kids, udah dibikinin nih 🤬<br>
-[ini link tutorial]
+https://its.id/m/Tutorial_Crimping
+
 
 ### 4.2 ROUTING PAKE ROUTER 
 
 #### 4.2.1 STATIS 
 
 #### 4.2.2 DINAMIS
+
+## 5. Tugas Modul
 
 ## Referensi
 1.2 [Jenis-Jenis Jaringan](https://www.geeksforgeeks.org/types-of-computer-networks/)<br>
