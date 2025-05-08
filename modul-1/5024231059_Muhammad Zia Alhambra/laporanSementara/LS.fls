@@ -1,6 +1,6 @@
-PWD c:\Users\DELL\Documents\coding\jarkom_ws\praktikum-jarkom-kel10\modul-1\Muhammad Zia Alhambra_5024231059\laporanSementara
+PWD c:\Users\DELL\Documents\coding\jarkom_ws\praktikum-jarkom-kel10\modul-1\5024231059_Muhammad Zia Alhambra\laporanSementara
 INPUT C:\Users\DELL\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\DELL\Documents\coding\jarkom_ws\praktikum-jarkom-kel10\modul-1\Muhammad Zia Alhambra_5024231059\laporanSementara\LS.tex
+INPUT c:\Users\DELL\Documents\coding\jarkom_ws\praktikum-jarkom-kel10\modul-1\5024231059_Muhammad Zia Alhambra\laporanSementara\LS.tex
 OUTPUT LS.log
 INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
@@ -89,6 +89,8 @@ INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\tex\latex\graphics\mathcolor.l
 INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\tex\latex\graphics\mathcolor.ltx
 INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\tex\latex\setspace\setspace.sty
 INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\tex\latex\setspace\setspace.sty
+INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\tex\latex\tools\indentfirst.sty
+INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\tex\latex\tools\indentfirst.sty
 INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\hyperref.sty
 INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\hyperref.sty
 INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\tex\latex\kvsetkeys\kvsetkeys.sty
@@ -310,6 +312,16 @@ INPUT P1\crimping.tex
 INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\fonts\tfm\public\tex-gyre\ec-qhvb.tfm
 INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\fonts\tfm\public\tex-gyre\ec-qhvr.tfm
 INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\fonts\tfm\public\tex-gyre\ec-qhvb.tfm
+INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\fonts\tfm\public\tex-gyre\ec-qhvr.tfm
+INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
+INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
+INPUT .\P1\img\topology.png
+INPUT .\P1\img\topology.png
+INPUT .\P1\img\topology.png
+INPUT .\P1\img\topology.png
+INPUT .\P1\img\topology.png
+INPUT .\P1\img\topology.png
+INPUT .\P1\img\topology.png
 INPUT .\miot.png
 INPUT .\miot.png
 INPUT .\miot.png
@@ -322,6 +334,8 @@ INPUT .\LS.out
 INPUT .\LS.out
 INPUT LS.run.xml
 OUTPUT LS.run.xml
+INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
+INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
 INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\fonts\type1\public\tex-gyre\qhvb.pfb
 INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\fonts\type1\public\tex-gyre\qhvb.pfb
 INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\fonts\type1\public\tex-gyre\qhvbi.pfb
