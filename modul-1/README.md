@@ -939,6 +939,9 @@ Pada konfigurasikan Router 2 dan laptop yang terhubung ke router 2 lakukan hal y
 
 
 ## 5. Tugas Modul
+1. Berdasarkan tugas pendahuluan sebelumnya mengenai perancangan topologi jaringan dan tabel IP yang telah Anda buat, langkah selanjutnya adalah membuat simulasi jaringan menggunakan aplikasi Cisco Packet Tracer.
+Silakan lakukan konfigurasi pada masing-masing perangkat agar seluruh jaringan dapat saling terhubung dan berkomunikasi dengan baik.
+2. Jelaskan apa kesulitan yang anda alami pada Praktikum.
 
 ## Referensi
 1.2 [Jenis-Jenis Jaringan](https://www.geeksforgeeks.org/types-of-computer-networks/)<br>
