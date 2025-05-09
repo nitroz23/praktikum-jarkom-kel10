@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.10.24)  8 MAY 2025 22:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.10.24)  9 MAY 2025 15:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"c:/Users/DELL/Documents/coding/jarkom_ws/praktikum-jarkom-kel10/modul-1/Muhammad Zia Alhambra_5024231059/laporanSementara/LS.tex"
-(c:/Users/DELL/Documents/coding/jarkom_ws/praktikum-jarkom-kel10/modul-1/Muhammad Zia Alhambra_5024231059/laporanSementara/LS.tex
+**"c:/Users/DELL/Documents/coding/jarkom_ws/praktikum-jarkom-kel10/modul-1/5024231029_Hilmy Abid Syafi Abiyyu/laporanSementara/LS.tex"
+(c:/Users/DELL/Documents/coding/jarkom_ws/praktikum-jarkom-kel10/modul-1/5024231029_Hilmy Abid Syafi Abiyyu/laporanSementara/LS.tex
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-09-10>
 (C:\Users\DELL\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
@@ -753,7 +753,7 @@ File: Cover/img/miot.png Graphic file (type png)
 <use Cover/img/miot.png>
 Package pdftex.def Info: Cover/img/miot.png  used on input line 20.
 (pdftex.def)             Requested size: 85.35826pt x 85.35896pt.
-<Cover/img/footer.png, id=22, 904.88063pt x 89.58469pt>
+<Cover/img/footer.png, id=26, 904.88063pt x 89.58469pt>
 File: Cover/img/footer.png Graphic file (type png)
 <use Cover/img/footer.png>
 Package pdftex.def Info: Cover/img/footer.png  used on input line 35.
@@ -763,7 +763,12 @@ Package pdftex.def Info: Cover/img/footer.png  used on input line 35.
 [1
 
 
-{C:/Users/DELL/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/DELL/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/tex-gyre/q-ec.enc} <./Cover/img/logodepart.png> <./Cover/img/miot.png> <./Cover/img/footer.png>]) (P1/crimping.tex)
+{C:/Users/DELL/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/DELL/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/tex-gyre/q-ec.enc} <./Cover/img/logodepart.png> <./Cover/img/miot.png> <./Cover/img/footer.png>]) (P1/crimping.tex
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 4.
+
+)
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
@@ -771,7 +776,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has b
                    \relax 
 l.99 \end{document}
                    
-<miot.png, id=34, 200.75pt x 200.75pt>
+<miot.png, id=38, 200.75pt x 200.75pt>
 File: miot.png Graphic file (type png)
 <use miot.png>
 Package pdftex.def Info: miot.png  used on input line 99.
@@ -788,7 +793,7 @@ L3 programming layer <2024-09-10>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `LS.out' has not changed.
-(rerunfilecheck)             Checksum: F646F2247E20B5F6EF92810BDD37164F;474.
+(rerunfilecheck)             Checksum: 091C831D3DC63107C497BECBD8F20E84;524.
 
 Package biblatex Warning: Please (re)run Biber on the file:
 (biblatex)                LS
@@ -799,17 +804,17 @@ Package logreq Info: Writing requests to 'LS.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 21498 strings out of 473898
- 375794 string characters out of 5726950
- 1200441 words of memory out of 5000000
- 44094 multiletter control sequences out of 15000+600000
+ 21500 strings out of 473898
+ 375844 string characters out of 5726950
+ 1203446 words of memory out of 5000000
+ 44095 multiletter control sequences out of 15000+600000
  601087 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,12n,81p,1319b,499s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,12n,81p,1321b,499s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/DELL/AppData/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qhvb.pfb><C:/Users/DELL/AppData/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qhvbi.pfb><C:/Users/DELL/AppData/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qhvr.pfb>
-Output written on LS.pdf (2 pages, 138371 bytes).
+Output written on LS.pdf (2 pages, 140246 bytes).
 PDF statistics:
- 61 PDF objects out of 1000 (max. 8388607)
- 9 named destinations out of 1000 (max. 500000)
- 53 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 65 PDF objects out of 1000 (max. 8388607)
+ 10 named destinations out of 1000 (max. 500000)
+ 61 words of extra memory for PDF output out of 10000 (max. 10000000)
 

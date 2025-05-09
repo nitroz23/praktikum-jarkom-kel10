@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.10.24)  9 MAY 2025 04:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.10.24)  9 MAY 2025 15:51
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -766,33 +766,35 @@ Package pdftex.def Info: Cover/img/footer.png  used on input line 35.
 
 
 {C:/Users/DELL/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/DELL/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/tex-gyre/q-ec.enc} <./Cover/img/logodepart.png> <./Cover/img/miot.png> <./Cover/img/footer.png>]) (P1/crimping.tex
-Overfull \hbox (43.42812pt too wide) in paragraph at lines 19--29
- [] 
- []
-
-<P1/img/topology.png, id=34, 1445.4pt x 813.0375pt>
-File: P1/img/topology.png Graphic file (type png)
-<use P1/img/topology.png>
-Package pdftex.def Info: P1/img/topology.png  used on input line 38.
-(pdftex.def)             Requested size: 317.98898pt x 178.8688pt.
-
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.45 		\begin{center}
-                     
-<miot.png, id=35, 200.75pt x 200.75pt>
+l.61 	P
+       erutean IPv4 dibentuk oleh penggunaan subnetting dan CIDR (Classless
+<miot.png, id=34, 200.75pt x 200.75pt>
 File: miot.png Graphic file (type png)
 <use miot.png>
-Package pdftex.def Info: miot.png  used on input line 45.
+Package pdftex.def Info: miot.png  used on input line 61.
 (pdftex.def)             Requested size: 238.9995pt x 239.01491pt.
  [1
 
- <./miot.png> <./P1/img/topology.png>])
+ <./miot.png>]
+Overfull \hbox (43.42812pt too wide) in paragraph at lines 90--100
+ [] 
+ []
 
-[2] (LS.aux)
+<P1/img/topology.png, id=41, 623.32875pt x 443.85825pt>
+File: P1/img/topology.png Graphic file (type png)
+<use P1/img/topology.png>
+Package pdftex.def Info: P1/img/topology.png  used on input line 111.
+(pdftex.def)             Requested size: 311.6636pt x 221.92857pt.
+
+
+[2])
+
+[3 <./P1/img/topology.png>] (LS.aux)
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-09-10>
@@ -804,17 +806,17 @@ Package logreq Info: Writing requests to 'LS.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 21532 strings out of 473898
- 376738 string characters out of 5726950
+ 21537 strings out of 473898
+ 376768 string characters out of 5726950
  1207570 words of memory out of 5000000
  44123 multiletter control sequences out of 15000+600000
  604538 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,12n,81p,1319b,647s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,13n,81p,1319b,667s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/DELL/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/DELL/AppData/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qhvb.pfb><C:/Users/DELL/AppData/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qhvbi.pfb><C:/Users/DELL/AppData/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qhvr.pfb>
-Output written on LS.pdf (3 pages, 347962 bytes).
+Output written on LS.pdf (4 pages, 217668 bytes).
 PDF statistics:
- 73 PDF objects out of 1000 (max. 8388607)
- 11 named destinations out of 1000 (max. 500000)
+ 82 PDF objects out of 1000 (max. 8388607)
+ 16 named destinations out of 1000 (max. 500000)
  58 words of extra memory for PDF output out of 10000 (max. 10000000)
 
