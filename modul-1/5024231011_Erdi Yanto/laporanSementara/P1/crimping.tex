@@ -1,15 +1,63 @@
 \section{Pendahuluan}
+
 \subsection{Latar Belakang}
-Bagian ini menjelaskan alasan dilaksanakannya praktikum, termasuk pentingnya topik yang dibahas. Latar belakang mencantumkan permasalahan yang ingin diselesaikan, urgensi pembelajaran topik, serta keterkaitannya dengan aplikasi dunia nyata atau teknologi saat ini.
+Dalam era digital saat ini, sistem jaringan komputer menjadi tulang punggung komunikasi dan pertukaran data dalam sebuah perusahaan. Setiap departemen dalam perusahaan membutuhkan akses yang cepat, aman, dan terstruktur untuk menjalankan fungsinya secara optimal. Oleh karena itu, perencanaan jaringan internal yang baik sangat penting agar komunikasi antar perangkat dan antar departemen dapat berlangsung tanpa gangguan.
+
+Salah satu aspek penting dalam perencanaan jaringan adalah pembagian alamat IP yang efisien dan tidak saling tumpang tindih. Dengan menggunakan teknik subnetting, administrator jaringan dapat mengalokasikan ruang alamat IP yang sesuai dengan kebutuhan masing-masing departemen, menghindari pemborosan, serta memudahkan pengelolaan jaringan. Selain itu, penggunaan router dan konfigurasi routing yang tepat memungkinkan perangkat di jaringan yang berbeda tetap dapat saling terhubung sesuai kebutuhan operasional perusahaan.
 
 \subsection{Dasar Teori}
-Bagian ini memuat teori-teori dasar yang mendukung pelaksanaan praktikum. Penjelasan mencakup konsep teknis, nama istilah, serta prinsip ilmiah yang relevan. Tujuannya adalah untuk memberikan pemahaman mendalam sebelum praktikum dilakukan.
 
-%===========================================================%
+Internet Protocol (IP) Address adalah alamat numerik unik yang digunakan oleh perangkat dalam jaringan komputer untuk saling berkomunikasi. IP address versi IPv4 umumnya dituliskan dalam bentuk empat oktet desimal yang dipisahkan dengan tanda titik, seperti 192.168.0.1. Alamat ini berfungsi sebagai identifikasi dan alamat tujuan dalam pengiriman data.
+
+Subnetting adalah teknik pembagian jaringan IP besar menjadi jaringan-jaringan kecil yang disebut subnet. Tujuannya adalah untuk memanfaatkan ruang alamat IP secara lebih efisien, meningkatkan keamanan, serta mempermudah pengelolaan jaringan. Subnetting dilakukan dengan mengatur panjang prefix subnet menggunakan notasi CIDR (Classless Inter-Domain Routing), contohnya /24, /26, dan sebagainya.
+
+CIDR adalah metode pemberian alamat IP yang tidak bergantung pada kelas alamat (Class A, B, atau C). Dengan CIDR, alokasi alamat IP dapat dilakukan lebih fleksibel dan efisien berdasarkan kebutuhan aktual jaringan, tanpa terikat pada batasan kelas IP tradisional.
+
+Routing merupakan proses pemilihan jalur untuk mentransmisikan data dari satu jaringan ke jaringan lainnya. Dalam praktiknya, routing dapat dibagi menjadi dua jenis, yaitu static routing dan dynamic routing. Static routing adalah metode di mana administrator jaringan secara manual mengatur jalur komunikasi antar jaringan. Sementara itu, dynamic routing menggunakan protokol seperti RIP, OSPF, atau EIGRP untuk secara otomatis memperbarui dan menentukan jalur terbaik berdasarkan perubahan kondisi jaringan.
+
+Router adalah perangkat yang berfungsi untuk menghubungkan beberapa jaringan berbeda. Router bekerja dengan menggunakan tabel routing yang berisi informasi tentang jalur yang tersedia menuju berbagai jaringan tujuan. Melalui konfigurasi routing yang tepat, router dapat memastikan data dikirim ke alamat yang benar antar subnet dalam jaringan perusahaan.
+
 \section{Tugas Pendahuluan}
-Bagian ini berisi jawaban dari tugas pendahuluan yang telah anda kerjakan, beserta penjelasan dari jawaban tersebut
+
 \begin{enumerate}
-	\item jawaban
-	\item jawaban
-	\item jawaban
+    \item Rentang IP address dan prefix (CIDR) yang sesuai untuk masing-masing departemen:
+
+    \begin{itemize}
+        \item Departemen R\&D: 192.168.0.0/25 (jumlah host: 126)
+        \item Departemen Produksi: 192.168.0.128/26 (jumlah host: 62)
+        \item Departemen Administrasi: 192.168.0.192/27 (jumlah host: 30)
+        \item Departemen Keuangan: 192.168.0.224/28 (jumlah host: 14)
+    \end{itemize}
+
+    \item Total subnet yang diperlukan dan IP network untuk masing-masing:
+
+    \begin{itemize}
+        \item Total subnet: 4
+        \item Network Address:
+        \begin{itemize}
+            \item R\&D: 192.168.0.0/25 (Broadcast: 192.168.0.127)
+            \item Produksi: 192.168.0.128/26 (Broadcast: 192.168.0.191)
+            \item Administrasi: 192.168.0.192/27 (Broadcast: 192.168.0.223)
+            \item Keuangan: 192.168.0.224/28 (Broadcast: 192.168.0.239)
+        \end{itemize}
+    \end{itemize}
+
+    \item Tabel routing sederhana dan jenis routing yang digunakan:
+
+    Tabel Routing:
+
+    \begin{center}
+    \begin{tabular}{|l|l|l|l|}
+        \hline
+        Network Destination & Netmask/Prefix & Gateway & Interface \\
+        \hline
+        192.168.0.0 & /25 & - & eth0 \\
+        192.168.0.128 & /26 & - & eth1 \\
+        192.168.0.192 & /27 & - & eth2 \\
+        192.168.0.224 & /28 & - & eth3 \\
+        \hline
+    \end{tabular}
+    \end{center}
+
+    \item Jenis routing yang paling sesuai adalah static routing. Hal ini disebabkan oleh struktur jaringan yang masih sederhana dengan satu router pusat yang menghubungkan empat subnet. Static routing lebih mudah dikonfigurasi, efisien, dan tidak menambah overhead seperti halnya dynamic routing. Jika jaringan berkembang menjadi lebih kompleks, maka dynamic routing seperti OSPF dapat digunakan karena mendukung CIDR dan efisien dalam skala besar.
 \end{enumerate}

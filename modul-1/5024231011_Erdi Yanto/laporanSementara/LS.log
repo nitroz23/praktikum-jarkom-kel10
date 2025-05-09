@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.10.24)  8 MAY 2025 22:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.10.24)  9 MAY 2025 16:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"c:/Users/DELL/Documents/coding/jarkom_ws/praktikum-jarkom-kel10/modul-1/Muhammad Zia Alhambra_5024231059/laporanSementara/LS.tex"
-(c:/Users/DELL/Documents/coding/jarkom_ws/praktikum-jarkom-kel10/modul-1/Muhammad Zia Alhambra_5024231059/laporanSementara/LS.tex
+**"c:/Users/DELL/Documents/coding/jarkom_ws/praktikum-jarkom-kel10/modul-1/5024231011_Erdi Yanto/laporanSementara/LS.tex"
+(c:/Users/DELL/Documents/coding/jarkom_ws/praktikum-jarkom-kel10/modul-1/5024231011_Erdi Yanto/laporanSementara/LS.tex
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-09-10>
 (C:\Users\DELL\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
@@ -763,22 +763,28 @@ Package pdftex.def Info: Cover/img/footer.png  used on input line 35.
 [1
 
 
-{C:/Users/DELL/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/DELL/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/tex-gyre/q-ec.enc} <./Cover/img/logodepart.png> <./Cover/img/miot.png> <./Cover/img/footer.png>]) (P1/crimping.tex)
+{C:/Users/DELL/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/DELL/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/tex-gyre/q-ec.enc} <./Cover/img/logodepart.png> <./Cover/img/miot.png> <./Cover/img/footer.png>]) (P1/crimping.tex
+LaTeX Font Info:    Trying to load font information for TS1+qhv on input line 26.
+ (C:\Users\DELL\AppData\Local\Programs\MiKTeX\tex/latex/tex-gyre\ts1qhv.fd
+File: ts1qhv.fd 2009/09/25 v1.2 font definition file for TS1/qhv
+)
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.99 \end{document}
-                   
+l.27         \item D
+                    epartemen Produksi: 192.168.0.128/26 (jumlah host: 62)
 <miot.png, id=34, 200.75pt x 200.75pt>
 File: miot.png Graphic file (type png)
 <use miot.png>
-Package pdftex.def Info: miot.png  used on input line 99.
+Package pdftex.def Info: miot.png  used on input line 27.
 (pdftex.def)             Requested size: 238.9995pt x 239.01491pt.
  [1
 
- <./miot.png>] (LS.aux)
+ <./miot.png>])
+
+[2{C:/Users/DELL/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/tex-gyre/q-ts1.enc}] (LS.aux)
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-09-10>
@@ -799,17 +805,17 @@ Package logreq Info: Writing requests to 'LS.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 21498 strings out of 473898
- 375794 string characters out of 5726950
- 1200441 words of memory out of 5000000
- 44094 multiletter control sequences out of 15000+600000
- 601087 words of font info for 62 fonts, out of 8000000 for 9000
+ 21541 strings out of 473898
+ 376380 string characters out of 5726950
+ 1207436 words of memory out of 5000000
+ 44130 multiletter control sequences out of 15000+600000
+ 601453 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,12n,81p,1319b,499s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,12n,81p,1308b,676s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/DELL/AppData/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qhvb.pfb><C:/Users/DELL/AppData/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qhvbi.pfb><C:/Users/DELL/AppData/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qhvr.pfb>
-Output written on LS.pdf (2 pages, 138371 bytes).
+Output written on LS.pdf (3 pages, 145475 bytes).
 PDF statistics:
- 61 PDF objects out of 1000 (max. 8388607)
- 9 named destinations out of 1000 (max. 500000)
+ 70 PDF objects out of 1000 (max. 8388607)
+ 11 named destinations out of 1000 (max. 500000)
  53 words of extra memory for PDF output out of 10000 (max. 10000000)
 
