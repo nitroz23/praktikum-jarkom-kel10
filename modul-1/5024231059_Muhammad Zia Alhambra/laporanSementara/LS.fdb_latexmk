@@ -1,11 +1,11 @@
 # Fdb version 4
-["biber LS"] 1746737988.96813 "LS.bcf" "LS.bbl" "LS" 1746741684.86441 0
-  "LS.bcf" 1746741684 107438 de200c6f14820d1c3c066ecaf56bf23c "pdflatex"
+["biber LS"] 1746737988.96813 "LS.bcf" "LS.bbl" "LS" 1746777822.62441 0
+  "LS.bcf" 1746777822 107438 de200c6f14820d1c3c066ecaf56bf23c "pdflatex"
   (generated)
   "LS.bbl"
   "LS.blg"
   (rewritten before read)
-["pdflatex"] 1746741682.38016 "c:/Users/DELL/Documents/coding/jarkom_ws/praktikum-jarkom-kel10/modul-1/5024231059_Muhammad Zia Alhambra/laporanSementara/LS.tex" "LS.pdf" "LS" 1746741684.8658 0
+["pdflatex"] 1746777820.2327 "c:/Users/DELL/Documents/coding/jarkom_ws/praktikum-jarkom-kel10/modul-1/5024231059_Muhammad Zia Alhambra/laporanSementara/LS.tex" "LS.pdf" "LS" 1746777822.62536 0
   "C:/Users/DELL/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1746691805 145394 e031379ca374355cbd3447c77dbb63a1 ""
   "C:/Users/DELL/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1729779728 11947807 1174c303a14e7f929a86bcf8e00c096b ""
   "C:/Users/DELL/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/tex-gyre/q-ec.enc" 1525740614 2457 aaabbccba4df2a7f7371410ee4e075a3 ""
@@ -133,13 +133,13 @@
   "Cover/img/footer.png" 1746691024 28618 7e563268718746d34d6e0293ee851b55 ""
   "Cover/img/logodepart.png" 1746691024 37002 0f7871c228b1de42912bcfe0dae05fc4 ""
   "Cover/img/miot.png" 1746691024 13325 9f73d680988fc58aae95c8b21181dad3 ""
-  "LS.aux" 1746741684 938 3bddda457c904b85ce3ec68e58302d46 "pdflatex"
+  "LS.aux" 1746777822 938 3bddda457c904b85ce3ec68e58302d46 "pdflatex"
   "LS.bbl" 1746737991 0 d41d8cd98f00b204e9800998ecf8427e "biber LS"
-  "LS.out" 1746741684 474 f646f2247e20b5f6ef92810bdd37164f "pdflatex"
-  "LS.run.xml" 1746741684 2276 7205158936b1c16644ed2aaaec1046de "pdflatex"
+  "LS.out" 1746777822 474 f646f2247e20b5f6ef92810bdd37164f "pdflatex"
+  "LS.run.xml" 1746777822 2276 7205158936b1c16644ed2aaaec1046de "pdflatex"
   "LS.tex" 1746741678 2864 504cd215e63208690405eb4dd6c26f7c ""
-  "P1/crimping.tex" 1746741678 3525 6428a17b7c6317ae851882a85bb50f22 ""
-  "P1/img/topology.png" 1746741678 232342 73f42aa4634003f932f1eb8a994edb46 ""
+  "P1/crimping.tex" 1746777819 3518 2abd0f79c5c40823645efbceaadc548f ""
+  "P1/img/image.png" 1746773475 84592 6c7f447dae95c91ded17105e24f5cd3a ""
   "c:/Users/DELL/Documents/coding/jarkom_ws/praktikum-jarkom-kel10/modul-1/5024231059_Muhammad Zia Alhambra/laporanSementara/LS.tex" 1746741678 2864 504cd215e63208690405eb4dd6c26f7c ""
   "miot.png" 1746691024 13325 9f73d680988fc58aae95c8b21181dad3 ""
   (generated)

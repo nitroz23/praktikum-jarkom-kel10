@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.10.24)  9 MAY 2025 05:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.10.24)  9 MAY 2025 15:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -770,11 +770,11 @@ Overfull \hbox (43.42812pt too wide) in paragraph at lines 19--29
  [] 
  []
 
-<P1/img/topology.png, id=34, 1445.4pt x 813.0375pt>
-File: P1/img/topology.png Graphic file (type png)
-<use P1/img/topology.png>
-Package pdftex.def Info: P1/img/topology.png  used on input line 38.
-(pdftex.def)             Requested size: 317.98898pt x 178.8688pt.
+<P1/img/image.png, id=34, 623.32875pt x 443.85825pt>
+File: P1/img/image.png Graphic file (type png)
+<use P1/img/image.png>
+Package pdftex.def Info: P1/img/image.png  used on input line 38.
+(pdftex.def)             Requested size: 249.32707pt x 177.54015pt.
 
 
 
@@ -790,7 +790,7 @@ Package pdftex.def Info: miot.png  used on input line 45.
 (pdftex.def)             Requested size: 238.9995pt x 239.01491pt.
  [1
 
- <./miot.png> <./P1/img/topology.png>])
+ <./miot.png> <./P1/img/image.png>])
 
 [2] (LS.aux)
  ***********
@@ -805,14 +805,14 @@ Package logreq Info: Writing requests to 'LS.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
  21532 strings out of 473898
- 376738 string characters out of 5726950
+ 376717 string characters out of 5726950
  1207570 words of memory out of 5000000
  44123 multiletter control sequences out of 15000+600000
  604538 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,12n,81p,1319b,647s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/DELL/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/DELL/AppData/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qhvb.pfb><C:/Users/DELL/AppData/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qhvbi.pfb><C:/Users/DELL/AppData/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qhvr.pfb>
-Output written on LS.pdf (3 pages, 347962 bytes).
+Output written on LS.pdf (3 pages, 213886 bytes).
 PDF statistics:
  73 PDF objects out of 1000 (max. 8388607)
  11 named destinations out of 1000 (max. 500000)
