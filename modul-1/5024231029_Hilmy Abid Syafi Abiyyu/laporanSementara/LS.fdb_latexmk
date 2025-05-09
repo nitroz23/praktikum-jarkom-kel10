@@ -1,11 +1,11 @@
 # Fdb version 4
-["biber LS"] 1746719918.39673 "LS.bcf" "LS.bbl" "LS" 1746719923.02972 0
-  "LS.bcf" 1746719922 107438 de200c6f14820d1c3c066ecaf56bf23c "pdflatex"
+["biber LS"] 1746777945.69347 "LS.bcf" "LS.bbl" "LS" 1746777951.44231 0
+  "LS.bcf" 1746777950 107438 de200c6f14820d1c3c066ecaf56bf23c "pdflatex"
   (generated)
   "LS.bbl"
   "LS.blg"
   (rewritten before read)
-["pdflatex"] 1746719920.97557 "c:/Users/DELL/Documents/coding/jarkom_ws/praktikum-jarkom-kel10/modul-1/Muhammad Zia Alhambra_5024231059/laporanSementara/LS.tex" "LS.pdf" "LS" 1746719923.03091 0
+["pdflatex"] 1746777948.6517 "c:/Users/DELL/Documents/coding/jarkom_ws/praktikum-jarkom-kel10/modul-1/5024231029_Hilmy Abid Syafi Abiyyu/laporanSementara/LS.tex" "LS.pdf" "LS" 1746777951.44407 0
   "C:/Users/DELL/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1746691805 145394 e031379ca374355cbd3447c77dbb63a1 ""
   "C:/Users/DELL/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1729779728 11947807 1174c303a14e7f929a86bcf8e00c096b ""
   "C:/Users/DELL/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/tex-gyre/q-ec.enc" 1525740614 2457 aaabbccba4df2a7f7371410ee4e075a3 ""
@@ -127,18 +127,18 @@
   "C:/Users/DELL/AppData/Local/Programs/MiKTeX/tex/latex/transparent/transparent.sty" 1674488802 1918 c8d1ecb3722721d6f624992cbc042b70 ""
   "C:/Users/DELL/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/DELL/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
-  "Cover/Header.tex" 1746691024 853 d1ecf0084ecebe6fef3cd4325a2a8258 ""
-  "Cover/img/footer.png" 1746691024 28618 7e563268718746d34d6e0293ee851b55 ""
-  "Cover/img/logodepart.png" 1746691024 37002 0f7871c228b1de42912bcfe0dae05fc4 ""
-  "Cover/img/miot.png" 1746691024 13325 9f73d680988fc58aae95c8b21181dad3 ""
-  "LS.aux" 1746719922 961 d61990d91c16e6074fba55256788e2bd "pdflatex"
-  "LS.bbl" 1746719920 0 d41d8cd98f00b204e9800998ecf8427e "biber LS"
-  "LS.out" 1746719922 474 f646f2247e20b5f6ef92810bdd37164f "pdflatex"
-  "LS.run.xml" 1746719922 2276 5bc9e8b1d4efc964f3aa5d1a3b0faa42 "pdflatex"
-  "LS.tex" 1746719912 2838 dac28456ff6cfd3a7ac780d4d23a8b28 ""
-  "P1/crimping.tex" 1746691024 880 f25c53261e1e8d3db7847d57e14a76e4 ""
-  "c:/Users/DELL/Documents/coding/jarkom_ws/praktikum-jarkom-kel10/modul-1/Muhammad Zia Alhambra_5024231059/laporanSementara/LS.tex" 1746719912 2838 dac28456ff6cfd3a7ac780d4d23a8b28 ""
-  "miot.png" 1746691024 13325 9f73d680988fc58aae95c8b21181dad3 ""
+  "Cover/Header.tex" 1746721212 853 d1ecf0084ecebe6fef3cd4325a2a8258 ""
+  "Cover/img/footer.png" 1746721212 28618 7e563268718746d34d6e0293ee851b55 ""
+  "Cover/img/logodepart.png" 1746721212 37002 0f7871c228b1de42912bcfe0dae05fc4 ""
+  "Cover/img/miot.png" 1746721212 13325 9f73d680988fc58aae95c8b21181dad3 ""
+  "LS.aux" 1746777950 1046 b1d57147f118fae261bb9f2a7370dab8 "pdflatex"
+  "LS.bbl" 1746777948 0 d41d8cd98f00b204e9800998ecf8427e "biber LS"
+  "LS.out" 1746777950 524 091c831d3dc63107c497becbd8f20e84 "pdflatex"
+  "LS.run.xml" 1746777950 2276 5bc9e8b1d4efc964f3aa5d1a3b0faa42 "pdflatex"
+  "LS.tex" 1746777939 2840 40263cca150173756baadff647feaca4 ""
+  "P1/crimping.tex" 1746777453 1799 4c22d8122644651c74fdcef0e91c5426 ""
+  "c:/Users/DELL/Documents/coding/jarkom_ws/praktikum-jarkom-kel10/modul-1/5024231029_Hilmy Abid Syafi Abiyyu/laporanSementara/LS.tex" 1746777939 2840 40263cca150173756baadff647feaca4 ""
+  "miot.png" 1746721212 13325 9f73d680988fc58aae95c8b21181dad3 ""
   (generated)
   "LS.aux"
   "LS.bcf"
