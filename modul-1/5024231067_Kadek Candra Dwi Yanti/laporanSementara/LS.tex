@@ -1,4 +1,6 @@
 \documentclass[titlepage,11pt]{article}
+
+% Package lainnya
 \usepackage{comment}
 \usepackage{enumitem}
 \usepackage{transparent} % Untuk transparansi gambar
@@ -6,27 +8,31 @@
 \usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage[font=small,labelfont=bf]{caption}
-\usepackage[bahasa]{babel}
+\usepackage[utf8]{inputenc}  % Pastikan input encoding yang benar
+\usepackage[english]{babel}  % Menggunakan bahasa Indonesia
 \usepackage{float}
 \usepackage{verbatim}
 \usepackage{graphicx,tabularx,multirow}
 \usepackage{xcolor}
 \usepackage[onehalfspacing]{setspace}
 \usepackage[
-	allcolors=visigrey,
-	colorlinks=true,
+    allcolors=visigrey,
+    colorlinks=true,
 ]{hyperref}
 \usepackage[a4paper,left=2cm,right=2cm]{geometry}
+
 % Pengaturan kutipan artikel
 \usepackage[style=ieee, backend=biber]{biblatex}
-%Code listing style pak akok
+\usepackage{csquotes}  % Menambahkan csquotes untuk kutipan
+
+% Definisi warna dan lainnya
 \definecolor{codegreen}{rgb}{0,0.6,0}
 \definecolor{codegray}{rgb}{0.5,0.5,0.5}
 \definecolor{codepurple}{rgb}{0.58,0,0.82}
 \definecolor{backcolour}{rgb}{0.95,0.95,0.92}
 
-\usepackage{eso-pic} % Untuk menambahkan elemen ke seluruh halaman
-
+% Mengatur background
+\usepackage{eso-pic} 
 \newcommand\BackgroundPic{
   \put(0,0){
     \parbox[b][\paperheight]{\paperwidth}{
@@ -53,7 +59,7 @@
 	captionpos=t,                    
 	keepspaces=true,                 
 	numbers=left,                    
-	numbersep=5pt,                  
+	numbersep=5pt,                   
 	showspaces=false,                
 	showstringspaces=false,
 	showtabs=false,           
@@ -81,13 +87,13 @@
 \def\departemen{Departemen Teknik Komputer}
 \def\institut{Institut Teknologi Sepuluh Nopember}
 \def\praktikum{Laporan Sementara \\ Praktikum Jaringan Komputer}
-\def\nama{Muhammad Zia Alhambra - 5024231059}
-% Ubah Judul sesuai dengan modul
+\def\nama{Kadek Candra Dwi Yanti - 5024231067}
 \def\judul{Crimping dan Routing IPv4}
 \def\tanggal{2025}
+
 \begin{document}
 % Ubah Bahasa sesuai dengan keinginan
-\selectlanguage{bahasa}
+\selectlanguage{english}
 
 \BackgroundNone
 \input{Cover/Header.tex}
