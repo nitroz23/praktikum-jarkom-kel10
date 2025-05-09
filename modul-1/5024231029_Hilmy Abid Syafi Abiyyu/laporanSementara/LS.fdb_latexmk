@@ -1,11 +1,11 @@
 # Fdb version 4
-["biber LS"] 1746777945.69347 "LS.bcf" "LS.bbl" "LS" 1746777951.44231 0
-  "LS.bcf" 1746777950 107438 de200c6f14820d1c3c066ecaf56bf23c "pdflatex"
+["biber LS"] 1746777945.69347 "LS.bcf" "LS.bbl" "LS" 1746781628.153 0
+  "LS.bcf" 1746781627 107438 de200c6f14820d1c3c066ecaf56bf23c "pdflatex"
   (generated)
   "LS.bbl"
   "LS.blg"
   (rewritten before read)
-["pdflatex"] 1746777948.6517 "c:/Users/DELL/Documents/coding/jarkom_ws/praktikum-jarkom-kel10/modul-1/5024231029_Hilmy Abid Syafi Abiyyu/laporanSementara/LS.tex" "LS.pdf" "LS" 1746777951.44407 0
+["pdflatex"] 1746781625.57137 "c:/Users/DELL/Documents/coding/jarkom_ws/praktikum-jarkom-kel10/modul-1/5024231029_Hilmy Abid Syafi Abiyyu/laporanSementara/LS.tex" "LS.pdf" "LS" 1746781628.15416 0
   "C:/Users/DELL/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1746691805 145394 e031379ca374355cbd3447c77dbb63a1 ""
   "C:/Users/DELL/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1729779728 11947807 1174c303a14e7f929a86bcf8e00c096b ""
   "C:/Users/DELL/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/tex-gyre/q-ec.enc" 1525740614 2457 aaabbccba4df2a7f7371410ee4e075a3 ""
@@ -131,13 +131,14 @@
   "Cover/img/footer.png" 1746721212 28618 7e563268718746d34d6e0293ee851b55 ""
   "Cover/img/logodepart.png" 1746721212 37002 0f7871c228b1de42912bcfe0dae05fc4 ""
   "Cover/img/miot.png" 1746721212 13325 9f73d680988fc58aae95c8b21181dad3 ""
-  "LS.aux" 1746777950 1046 b1d57147f118fae261bb9f2a7370dab8 "pdflatex"
+  "LS.aux" 1746781627 1131 9c31f330e576a5a82ebeec7d6c7927bd "pdflatex"
   "LS.bbl" 1746777948 0 d41d8cd98f00b204e9800998ecf8427e "biber LS"
-  "LS.out" 1746777950 524 091c831d3dc63107c497becbd8f20e84 "pdflatex"
-  "LS.run.xml" 1746777950 2276 5bc9e8b1d4efc964f3aa5d1a3b0faa42 "pdflatex"
-  "LS.tex" 1746777939 2840 40263cca150173756baadff647feaca4 ""
-  "P1/crimping.tex" 1746777453 1799 4c22d8122644651c74fdcef0e91c5426 ""
-  "c:/Users/DELL/Documents/coding/jarkom_ws/praktikum-jarkom-kel10/modul-1/5024231029_Hilmy Abid Syafi Abiyyu/laporanSementara/LS.tex" 1746777939 2840 40263cca150173756baadff647feaca4 ""
+  "LS.out" 1746781627 574 6a65c3bdf910f5a956c1cdad8941d7f0 "pdflatex"
+  "LS.run.xml" 1746781627 2276 5bc9e8b1d4efc964f3aa5d1a3b0faa42 "pdflatex"
+  "LS.tex" 1746781621 2840 40263cca150173756baadff647feaca4 ""
+  "P1/crimping.tex" 1746781479 5582 a3af788f653b122e9bd93fc7113b0108 ""
+  "P1/img/Tupen2.jpg" 1746781479 21010 ae518a866baf2e38335668c4b90a494c ""
+  "c:/Users/DELL/Documents/coding/jarkom_ws/praktikum-jarkom-kel10/modul-1/5024231029_Hilmy Abid Syafi Abiyyu/laporanSementara/LS.tex" 1746781621 2840 40263cca150173756baadff647feaca4 ""
   "miot.png" 1746721212 13325 9f73d680988fc58aae95c8b21181dad3 ""
   (generated)
   "LS.aux"

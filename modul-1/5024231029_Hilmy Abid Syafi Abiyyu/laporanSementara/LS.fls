@@ -310,6 +310,7 @@ INPUT P1\crimping.tex
 INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\fonts\tfm\public\tex-gyre\ec-qhvb.tfm
 INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\fonts\tfm\public\tex-gyre\ec-qhvr.tfm
 INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\fonts\tfm\public\tex-gyre\ec-qhvb.tfm
+INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\fonts\tfm\public\tex-gyre\ec-qhvr.tfm
 INPUT .\miot.png
 INPUT .\miot.png
 INPUT .\miot.png
@@ -317,6 +318,15 @@ INPUT .\miot.png
 INPUT .\miot.png
 INPUT .\miot.png
 INPUT .\miot.png
+INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
+INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
+INPUT .\P1\img\Tupen2.jpg
+INPUT .\P1\img\Tupen2.jpg
+INPUT .\P1\img\Tupen2.jpg
+INPUT .\P1\img\Tupen2.jpg
+INPUT .\P1\img\Tupen2.jpg
+INPUT .\P1\img\Tupen2.jpg
+INPUT .\P1\img\Tupen2.jpg
 INPUT LS.aux
 INPUT .\LS.out
 INPUT .\LS.out

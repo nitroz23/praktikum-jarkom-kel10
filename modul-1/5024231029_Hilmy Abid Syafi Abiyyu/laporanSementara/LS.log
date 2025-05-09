@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.10.24)  9 MAY 2025 15:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.10.24)  9 MAY 2025 16:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -753,7 +753,7 @@ File: Cover/img/miot.png Graphic file (type png)
 <use Cover/img/miot.png>
 Package pdftex.def Info: Cover/img/miot.png  used on input line 20.
 (pdftex.def)             Requested size: 85.35826pt x 85.35896pt.
-<Cover/img/footer.png, id=26, 904.88063pt x 89.58469pt>
+<Cover/img/footer.png, id=30, 904.88063pt x 89.58469pt>
 File: Cover/img/footer.png Graphic file (type png)
 <use Cover/img/footer.png>
 Package pdftex.def Info: Cover/img/footer.png  used on input line 35.
@@ -768,22 +768,38 @@ Package pdftex.def Info: Cover/img/footer.png  used on input line 35.
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 4.
 
-)
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 10.
+
+
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.99 \end{document}
-                   
-<miot.png, id=38, 200.75pt x 200.75pt>
+l.22 		\begin{center}
+                     
+<miot.png, id=42, 200.75pt x 200.75pt>
 File: miot.png Graphic file (type png)
 <use miot.png>
-Package pdftex.def Info: miot.png  used on input line 99.
+Package pdftex.def Info: miot.png  used on input line 22.
 (pdftex.def)             Requested size: 238.9995pt x 239.01491pt.
  [1
 
- <./miot.png>] (LS.aux)
+ <./miot.png>]
+Overfull \hbox (8.85814pt too wide) in paragraph at lines 23--33
+ [] 
+ []
+
+<P1/img/Tupen2.jpg, id=48, 491.8375pt x 363.3575pt>
+File: P1/img/Tupen2.jpg Graphic file (type jpg)
+<use P1/img/Tupen2.jpg>
+Package pdftex.def Info: P1/img/Tupen2.jpg  used on input line 37.
+(pdftex.def)             Requested size: 245.91814pt x 181.6783pt.
+)
+
+[2 <./P1/img/Tupen2.jpg>] (LS.aux)
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-09-10>
@@ -793,7 +809,7 @@ L3 programming layer <2024-09-10>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `LS.out' has not changed.
-(rerunfilecheck)             Checksum: 091C831D3DC63107C497BECBD8F20E84;524.
+(rerunfilecheck)             Checksum: 6A65C3BDF910F5A956C1CDAD8941D7F0;574.
 
 Package biblatex Warning: Please (re)run Biber on the file:
 (biblatex)                LS
@@ -804,17 +820,17 @@ Package logreq Info: Writing requests to 'LS.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 21500 strings out of 473898
- 375844 string characters out of 5726950
- 1203446 words of memory out of 5000000
- 44095 multiletter control sequences out of 15000+600000
- 601087 words of font info for 62 fonts, out of 8000000 for 9000
+ 21518 strings out of 473898
+ 376200 string characters out of 5726950
+ 1208449 words of memory out of 5000000
+ 44110 multiletter control sequences out of 15000+600000
+ 604538 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,12n,81p,1321b,499s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,12n,81p,1321b,686s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/DELL/AppData/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qhvb.pfb><C:/Users/DELL/AppData/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qhvbi.pfb><C:/Users/DELL/AppData/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qhvr.pfb>
-Output written on LS.pdf (2 pages, 140246 bytes).
+Output written on LS.pdf (3 pages, 167853 bytes).
 PDF statistics:
- 65 PDF objects out of 1000 (max. 8388607)
- 10 named destinations out of 1000 (max. 500000)
- 61 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 76 PDF objects out of 1000 (max. 8388607)
+ 13 named destinations out of 1000 (max. 500000)
+ 74 words of extra memory for PDF output out of 10000 (max. 10000000)
 
