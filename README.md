@@ -1,3 +1,12 @@
+# Untuk Asprak
+## Anggota:
+1. Erdi Yanto - 5024231011
+2. Hilmy Abid Syafi Abiyyu - 5024231029
+3. Muhammad Zia Alhambra - 5024231059
+4. Kadek Candra Dwi Yanti - 5024231067
+
+Repo ini merupakan clone dari repo Mr. Syawal. Untuk pengerjaan laporan dilakukan pada directory tiap modul (cth. modul-1/5024231059_Muhammad Zia Alhambra/laporanSementara)
+
 # 👋 Selamat Datang di Praktikum Jaringan Komputer
 
 Praktikum ini merupakan bagian dari mata kuliah di **Departemen Teknik Komputer - Institut Teknologi Sepuluh Nopember (ITS)** yang bertujuan untuk memberikan pemahaman praktis mengenai konsep dasar dan implementasi jaringan komputer.
