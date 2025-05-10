@@ -950,7 +950,7 @@ Gunakan Fitur DHCP Setup lalu klik dan ikuti-langkah-langkah yang ada dan sesuai
 - Setting Recive menjadi V1-2, Send Menjadi V-2, dan Authentification menjadi none
 - Lalu tambahkan Network pada RIP masuk ke menu Routing->RIP->Network "+" Masukan semua IP Network yang ada dalam jaringan di Router sendiri
 ![Network_RIP](images/RIP_Network.png)
-- Lalu tambahkan gateway jaringan yang ingin di tuju di menu Routing->RIP->Neighbours dan "+"
+- Lalu tambahkan gateway jaringan yang ingin di tuju di menu Routing->RIP->Neighbours dan "+" (gateway ini yaitu alamat gateway dari PC tujuan atau tetangga)
 ![Neib_RIP](images/RIP_Neib.png)
 8. Konfigurasi IP Adress di Laptop
 Karena Sekarang sudah menggunakan konfigurasi IP Dinamis maka ubah konfigurasi yang tadi menjadi konfigurasi DHCP dimana nanti laptop akan  mendapatkan IP dari DHCP Server yang ada di Router
