@@ -890,16 +890,24 @@ Pastikan router telah di-reset ke kondisi awal (tanpa konfigurasi) agar konfigur
 2. Login ke Router
 Gunakan Winbox untuk mengakses router melalui MAC address atau IP default. Login menggunakan user admin (tanpa password jika belum diatur).
 3. Konfigurasi IP Address pada Ether1 (antar router)
-Tambahkan IP address pada ether1 yang digunakan sebagai jalur antar-router. Karena hanya ada dua perangkat yang terhubung (router A dan router B), gunakan prefix /30 agar tidak boros IP (cukup 2 host) misalnya 10.10.x.x/30.
+Tambahkan IP address pada ether1 yang digunakan sebagai jalur antar-router. Karena hanya ada dua perangkat yang terhubung (router A dan router B), gunakan prefix /30 agar tidak boros IP (cukup 2 host) 10.10.10.1 untuk router 1 dan 10.10.10.2 untuk router 2.
 4. Konfigurasi IP Address untuk Jaringan LAN
-Tambahkan IP address pada ether 2 yang digunakan untuk menghubungkan Laptop dengan Router gunakan prefix yang bisa menangani sampai 20 user.
+Tambahkan IP address pada ether 2 yang digunakan untuk menghubungkan Laptop dengan Router gunakan prefix yang bisa menangani sampai 20 user, gunakan prefix /27 dan untuk ip address router 1 yaitu 192.168.10.1/27 untuk router 2 gunakan 192.168.20.1/27.
 5. Konfigurasi Routing Statis
 Setelah semua interface diberi IP, langkah selanjutnya adalah menambahkan rute secara manual.
 Masuk ke menu IP → Routes, kemudian klik "+" untuk menambahkan routing.
-- Dst. Address: alamat jaringan tujuan.
-- Gateway: IP address tujuan yang ada di ether1 (IP ether1 milik router tetangga).
+- Dst. Address: alamat jaringan tujuan untuk di router 1 Dst. address di isi dengan alamat network router 2 yaitu 192.168.20.0/27 dan untuk router 2 gunakan alamat network ether 2 para router 1 yaitu 192.168.10.0/27.
+- Gateway: IP address tujuan yang ada di ether1 (IP ether1 milik router tetangga) jadi untuk pada konfigurasi router 1 gateway di isi 10.10.10.2 dan untuk router 2 di isi 10.10.10.1.
 6. Konfigurasi IP Adress di Laptop
-Karena ini masih menggunakan konfigurasi Static IP tambahkan IP address secara manual ke interface di laptop masing-masing bisa lewat Control Panel atau langsung di settings Windows, pastikan IP dan Gateway sudah benar sesuai Ether 2.
+Karena ini masih menggunakan konfigurasi Static IP tambahkan IP address secara manual ke interface di laptop masing-masing bisa lewat Control Panel atau langsung di settings Windows, pastikan IP dan Gateway sudah benar sesuai Ether 2, pada laptop yang terhubung ke :
+1. router 1
+- ip : 192.168.10.2
+- netmask : 255.255.255.224
+- gateway :192.168.10.1
+2. router 2
+- ip : 192.168.20.2
+- netmask : 255.255.255.224
+- gateway :192.168.20.1
 7. Jika Sudah Uji test PING dari Laptop 1 ke alamat Laptop 2, Jika berhasil maka Routing tidak ada masalah.
 
 Pada konfigurasikan Router 2 dan laptop yang terhubung ke router 2 lakukan hal yang sama
