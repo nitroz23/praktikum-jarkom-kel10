@@ -916,7 +916,7 @@ Karena ini masih menggunakan konfigurasi Static IP tambahkan IP address secara m
 7. Jika Sudah Uji test PING dari Laptop 1 ke alamat Laptop 2, Jika berhasil maka Routing tidak ada masalah.
 ![Test_PING](images/Test_PING_PC1.png)
 Pada konfigurasikan Router 2 dan laptop yang terhubung ke router 2 lakukan hal yang sama
-
+NOTE : Pastikan Firewall Mati jika mengalamai error seperti tidak bisa konek
 
 #### 4.2.2 DINAMIS
 Routing dinamis adalah metode routing di mana router saling bertukar informasi routing menggunakan protokol routing dinamis, sehingga rute bisa berubah otomatis jika ada perubahan jaringan.
@@ -957,7 +957,7 @@ Karena Sekarang sudah menggunakan konfigurasi IP Dinamis maka ubah konfigurasi y
 9. Lakukan Uji Test Ping antara 2 Laptop
 
 Pada konfigurasikan Router 2 dan laptop yang terhubung ke router 2 lakukan hal yang sama
-
+NOTE : Pastikan Firewall Mati jika mengalamai error seperti tidak bisa konek
 
 ## 5. Tugas Modul
 1. Berdasarkan tugas pendahuluan sebelumnya mengenai perancangan topologi jaringan dan tabel IP yang telah Anda buat, langkah selanjutnya adalah membuat simulasi jaringan menggunakan aplikasi Cisco Packet Tracer.
