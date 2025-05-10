@@ -928,6 +928,7 @@ Tambahkan IP address pada ether 2 yang digunakan untuk menghubungkan Laptop deng
 6. Konfigurasikan DHCP Server
 Masuk ke IP->DHCP
 Gunakan Fitur DHCP Setup lalu klik dan ikuti-langkah-langkah yang ada dan sesuaikan interface ethernet menjadi 2 
+![DHCP](images/DHCP.png)
 7. Konfigurasi Routing Dinamis Menggunakan RIP
 - Masuk Menu Routing->RIP->Interface dan "+" untuk interface nya gunakan Ether all
 ![Interface_RIP](images/RIP%20Interface.png)
