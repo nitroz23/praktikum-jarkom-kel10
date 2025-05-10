@@ -887,8 +887,10 @@ Langkah-langkah menghubungkan 2 Router dengan Routing Statis Di Mikrotik :
 Konfigurasi Router
 1. Reset Router
 Pastikan router telah di-reset ke kondisi awal (tanpa konfigurasi) agar konfigurasi yang kita lakukan bersih dan tidak terjadi konflik.
+![Reset_Router](images/Reset_Router.png)
 2. Login ke Router
 Gunakan Winbox untuk mengakses router melalui MAC address atau IP default. Login menggunakan user admin (tanpa password jika belum diatur).
+![Login_winbox](images/Winbox_Login.png)
 3. Konfigurasi IP Address pada Ether1 (antar router)
 Tambahkan IP address pada ether1 yang digunakan sebagai jalur antar-router. Karena hanya ada dua perangkat yang terhubung (router A dan router B), gunakan prefix /30 agar tidak boros IP (cukup 2 host) 10.10.10.1 untuk router 1 dan 10.10.10.2 untuk router 2.
 4. Konfigurasi IP Address untuk Jaringan LAN
@@ -928,6 +930,7 @@ Langkah-langkah menghubungkan 2 Router dengan Routing Dinamis Di Mikrotik :
 Konfigurasi Router
 1. Reset Router
 Pastikan router telah di-reset ke kondisi awal (tanpa konfigurasi) agar konfigurasi yang kita lakukan bersih dan tidak terjadi konflik.
+
 2. Login ke Router
 Gunakan Winbox untuk mengakses router melalui MAC address atau IP default. Login menggunakan user admin (tanpa password jika belum diatur).
 3. Aktifkan Routing RIP Package (jika belum aktif)
