@@ -878,6 +878,7 @@ https://its.id/m/Tutorial_Crimping
 
 
 ### 4.2 ROUTING PAKE ROUTER 
+![Topologi](images/4.2_Topologi_Praktikum_M1)
 #### 4.2.1 STATIS 
 Routing statis adalah metode routing di mana administrator jaringan secara manual menentukan rute (route) yang harus dilalui oleh paket data. Setiap rute ditambahkan secara eksplisit.
 
@@ -928,10 +929,13 @@ Tambahkan IP address pada ether 2 yang digunakan untuk menghubungkan Laptop deng
 Masuk ke IP->DHCP
 Gunakan Fitur DHCP Setup lalu klik dan ikuti-langkah-langkah yang ada dan sesuaikan interface ethernet menjadi 2 
 7. Konfigurasi Routing Dinamis Menggunakan RIP
-- Masuk Menu Routing->RIP->Interface dan "+" untuk interface nya gunakan Ether 1
+- Masuk Menu Routing->RIP->Interface dan "+" untuk interface nya gunakan Ether all
+![Interface_RIP](images/RIP%20Interface.png)
 - Setting Recive menjadi V1-2, Send Menjadi V-2, dan Authentification menjadi none
 - Lalu tambahkan Network pada RIP masuk ke menu Routing->RIP->Network "+" Masukan semua IP Network yang ada dalam jaringan di Router sendiri
+![Network_RIP](images/RIP_Network.png)
 - Lalu tambahkan gateway jaringan yang ingin di tuju di menu Routing->RIP->Neighbours dan "+"
+![Neib_RIP](images/RIP_Neib.png)
 8. Konfigurasi IP Adress di Laptop
 Karena Sekarang sudah menggunakan konfigurasi IP Dinamis maka ubah konfigurasi yang tadi menjadi konfigurasi DHCP dimana nanti laptop akan  mendapatkan IP dari DHCP Server yang ada di Router
 9. Lakukan Uji Test Ping antara 2 Laptop
