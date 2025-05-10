@@ -915,7 +915,7 @@ Karena ini masih menggunakan konfigurasi Static IP tambahkan IP address secara m
 ![Settings_IP](images/Settings_IP_PC1.png)
 7. Jika Sudah Uji test PING dari Laptop 1 ke alamat Laptop 2, Jika berhasil maka Routing tidak ada masalah.
 ![Test_PING](images/Test_PING_PC1.png)
-Pada konfigurasikan Router 2 dan laptop yang terhubung ke router 2 lakukan hal yang sama
+Pada konfigurasikan Router 2 dan laptop yang terhubung ke router 2 lakukan hal yang sama </br>
 NOTE : Pastikan Firewall Mati jika mengalamai error seperti tidak bisa konek
 
 #### 4.2.2 DINAMIS
@@ -956,7 +956,7 @@ Gunakan Fitur DHCP Setup lalu klik dan ikuti-langkah-langkah yang ada dan sesuai
 Karena Sekarang sudah menggunakan konfigurasi IP Dinamis maka ubah konfigurasi yang tadi menjadi konfigurasi DHCP dimana nanti laptop akan  mendapatkan IP dari DHCP Server yang ada di Router
 9. Lakukan Uji Test Ping antara 2 Laptop
 
-Pada konfigurasikan Router 2 dan laptop yang terhubung ke router 2 lakukan hal yang sama
+Pada konfigurasikan Router 2 dan laptop yang terhubung ke router 2 lakukan hal yang sama</br>
 NOTE : Pastikan Firewall Mati jika mengalamai error seperti tidak bisa konek
 
 ## 5. Tugas Modul
