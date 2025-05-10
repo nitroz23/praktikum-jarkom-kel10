@@ -930,15 +930,16 @@ Langkah-langkah menghubungkan 2 Router dengan Routing Dinamis Di Mikrotik :
 Konfigurasi Router
 1. Reset Router
 Pastikan router telah di-reset ke kondisi awal (tanpa konfigurasi) agar konfigurasi yang kita lakukan bersih dan tidak terjadi konflik.
-
+![Reset_Router](images/Reset_Router.png)
 2. Login ke Router
 Gunakan Winbox untuk mengakses router melalui MAC address atau IP default. Login menggunakan user admin (tanpa password jika belum diatur).
+![Login_Winbox](images/Winbox_Login.png)
 3. Aktifkan Routing RIP Package (jika belum aktif)
 Jika kamu menggunakan versi lama MikroTik, pastikan paket routing sudah aktif. Di versi terbaru RouterOS (7.x), fitur RIP sudah tersedia secara default.
-4. Konfigurasi IP Address pada Ether1 (antar router)
+4. Konfigurasi IP Address pada Ether1 
 Tambahkan IP address pada ether1 yang digunakan sebagai jalur antar-router. Karena hanya ada dua perangkat yang terhubung (router A dan router B), gunakan prefix /30 agar tidak boros IP (cukup 2 host) misalnya 10.10.x.x/30.
-5. Konfigurasi IP Address untuk Jaringan LAN
-Tambahkan IP address pada ether 2 yang digunakan untuk menghubungkan Laptop dengan Router gunakan prefix yang bisa menangani sampai 20 user.
+5. Konfigurasi IP Address untuk Jaringan LAN ether 2
+Tambahkan IP address pada ether 2 yang digunakan untuk menghubungkan Laptop dengan Router gunakan prefix yang bisa menangani sampai 20 user, gunakan prefix /27 misalnya 192.168.x.x/27.
 6. Konfigurasikan DHCP Server
 Masuk ke IP->DHCP
 Gunakan Fitur DHCP Setup lalu klik dan ikuti-langkah-langkah yang ada dan sesuaikan interface ethernet menjadi 2 
