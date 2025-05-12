@@ -96,7 +96,118 @@ Makanya, akhirnya diputuskan buat langsung loncat ke IPv6 yang bisa nyediain ala
 
 ## Routing Statis IPv6
 
+
+Langkah-langkah menghubungkan 2 Router dengan Routing Statis Di Mikrotik :
+
+Konfigurasi Router
+1. Reset Router Jika masih ada konfigurasi 
+Pastikan router telah di-reset ke kondisi awal (tanpa konfigurasi) agar konfigurasi yang kita lakukan bersih dan tidak terjadi konflik, Untuk reset bisa gunakan winbox masuk menu system->reset konfigurasi-> cek list no default konfigurasi
+2. Login ke Router
+Gunakan Winbox untuk mengakses router melalui MAC address atau IP default. Login menggunakan user admin (tanpa password jika belum diatur).
+3. Konfigurasi IP Address pada Ether1 (note lakukan konfigurasi ini pada router 1 dan 2)
+Tambahkan IP address pada ether1 yang digunakan sebagai jalur antar-router. Karena hanya ada dua perangkat yang terhubung (router A dan router B),<br>
+- IP ether1 Router A  : 2001:db8:1::1/64
+- IP ether 1 Router B : 2001:db8:1::2/64
+4. Konfigurasi IP Address untuk Jaringan LAN (note lakukan konfigurasi ini pada router 1 dan 2)
+Tambahkan IP address pada ether 2 yang digunakan untuk menghubungkan Laptop dengan Router. <br>
+- IP ether 1 Router A  : 2001:db8:a::1/64
+- IP ether 2 Router B  : 2001:db8:b::1/64
+5. Konfigurasi Routing Statis (note lakukan konfigurasi ini pada router 1 dan 2)
+Setelah semua interface diberi IP, langkah selanjutnya adalah menambahkan rute secara manual.
+Masuk ke menu IPv6 → Routes, kemudian klik "+" untuk menambahkan routing.
+Pada Router 1
+- Dst. Address: 2001:db8:b::/64
+- Gateway: 2001:db8:1::2
+Pada Router 2
+- Dst. Address: 2001:db8:a::/64
+- Gateway: 2001:db8:1::1
+6. Test Koneksi Antar Router
+- Dari Router1, buka New Terminal, ping LAN Router2:
+```bash
+ping 2001:db8:b::1
+```
+- Dari Router2, ping LAN Router1:
+```bash
+ping 2001:db8:a::1
+```
+6. Konfigurasi IP Adress di Laptop (note lakukan konfigurasi ini laptop yang terhubung pada router 1 dan 2 masing-masing)
+Karena ini masih menggunakan konfigurasi Static IP tambahkan IP address secara manual ke interface di laptop masing-masing bisa lewat Control Panel atau langsung di settings Windows, pastikan IP dan Gateway sudah benar sesuai Ether 2.
+Pada laptop yang terhubung ke Router 1
+- IP Address: 2001:db8:a::100
+- Prefix    : /64
+- Gateway   : 2001:db8:a::1 (Router1)
+Pada laptop yang terhubung ke Router 2
+- IP Address: 2001:db8:b::100
+- Prefix    : /64
+- Gateway   : 2001:db8:b::1 (Router2)
+7. Jika Sudah Uji test PING dari Laptop 1 ke alamat Laptop 2, Jika berhasil maka Routing tidak ada masalah.
+
+Pada konfigurasikan Router 2 dan laptop yang terhubung ke router 2 lakukan hal yang sama
+
+
+
 ## Routing Dimanis IPv6
+
+
+Langkah-langkah menghubungkan 2 Router dengan Routing Statis Di Mikrotik :
+
+Konfigurasi Router
+1. Reset Router Jika masih ada konfigurasi 
+Pastikan router telah di-reset ke kondisi awal (tanpa konfigurasi) agar konfigurasi yang kita lakukan bersih dan tidak terjadi konflik, Untuk reset bisa gunakan winbox masuk menu system->reset konfigurasi-> cek list no default konfigurasi
+2. Login ke Router
+Gunakan Winbox untuk mengakses router melalui MAC address atau IP default. Login menggunakan user admin (tanpa password jika belum diatur).
+3. Konfigurasi IP Address pada Ether1 (note lakukan konfigurasi ini pada router 1 dan 2)
+Tambahkan IP address pada ether1 yang digunakan sebagai jalur antar-router. Karena hanya ada dua perangkat yang terhubung (router A dan router B),<br>
+- IP ether1 Router A  : 2001:db8:1::1/64
+- IP ether 1 Router B : 2001:db8:1::2/64
+4. Konfigurasi IP Address untuk Jaringan LAN (note lakukan konfigurasi ini pada router 1 dan 2)
+Tambahkan IP address pada ether 2 yang digunakan untuk menghubungkan Laptop dengan Router. <br>
+- IP ether 1 Router A  : 2001:db8:a::1/64
+- IP ether 2 Router B  : 2001:db8:b::1/64
+5. Konfigurasi Routing Dinamis (note lakukan konfigurasi ini pada router 1 dan 2) 
+Setelah semua interface diberi IP, langkah selanjutnya adalah menggunakan OSPFv3 untuk Routing Dinamis.
+1. Buat Instance OSPFv3 
+- Masuk ke menu IIPv6 > Routing > OSPFv3 > Instances → Klik + untuk menambahkan routing.
+- Name: ospf-instance
+- Router ID: misalnya 1.1.1.1 untuk Router1, 2.2.2.2 untuk Router2
+- Enabled: ✔️ Centang
+2. Tambah Area
+- Masuk ke menu IPv6 > Routing > OSPFv3 > Areas → Klik +
+- Name: backbone
+- Instance: pilih ospf-instance
+- Area ID: 0.0.0.0 (wajib untuk backbone area)
+3. Tambah Interface OSPFv3
+- Router1:
+- Masuk ke menu IPv6 > Routing > OSPFv3 > Interface → Klik +
+- Interface: ether1 (ke Router2)
+- Instance: ospf-instance
+- Area: backbone
+Tambahkan juga interface LAN:
+- Interface: ether2
+Router2:
+- Tambahkan interface ether1 dan ether2 dengan cara yang sama
+4. Cek Neighbor & Routing
+Masuk ke menu IPv6 > Routing > OSPFv3 > Neighbors
+- Harus muncul tetangga OSPF antara Router1 dan Router2
+Masuk ke menu IPv6 > Routes
+- Harus terlihat rute dinamis ke jaringan 2001:db8:a::/64 dan 2001:db8:b::/64
+5. Dari Router1 terminal, coba ping LAN di Router2:
+```bash
+ping 2001:db8:b::1
+```
+6. Konfigurasi IP Adress di Laptop (note lakukan konfigurasi ini laptop yang terhubung pada router 1 dan 2 masing-masing)
+Karena ini masih menggunakan konfigurasi Static IP tambahkan IP address secara manual ke interface di laptop masing-masing bisa lewat Control Panel atau langsung di settings Windows, pastikan IP dan Gateway sudah benar sesuai Ether 2.
+Pada laptop yang terhubung ke Router 1
+- IP Address: 2001:db8:a::100
+- Prefix    : /64
+- Gateway   : 2001:db8:a::1 (Router1)
+Pada laptop yang terhubung ke Router 2
+- IP Address: 2001:db8:b::100
+- Prefix    : /64
+- Gateway   : 2001:db8:b::1 (Router2)
+7. Jika Sudah Uji test PING dari Laptop 1 ke alamat Laptop 2, Jika berhasil maka Routing tidak ada masalah.
+
+Pada konfigurasikan Router 2 dan laptop yang terhubung ke router 2 lakukan hal yang sama
 
 # Tugas Modul
 
