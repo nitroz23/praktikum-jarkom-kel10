@@ -49,7 +49,7 @@ Soal penerapannya, sekarang banyak perangkat udah mulai pakai Dual-IP Stack, art
 | *Ukuran Header*               | Ukuran tetap 40 byte                               | Ukuran bervariasi antara 20-60 byte       |
 | *Dukungan VLSM*               | Tidak mendukung VLSM (Variable Length Subnet Mask) | Mendukung VLSM                            |
 
-## 3 Kemana IPv5?
+## ❓ 3 Kemana IPv5?
 Nah, lucunya… IPv5 itu sebenarnya nggak pernah benar-benar ada! 🤯
 Meskipun angka “5” udah pernah dipakai sebagai versi protokol IP, versi IP yang resmi dikenal cuma ada IPv4 dan IPv6.
 
