@@ -217,5 +217,5 @@ Pada konfigurasikan Router 2 dan laptop yang terhubung ke router 2 lakukan hal y
 ## 2 [IPv4 v.s. IPv6](https://www.geeksforgeeks.org/what-is-ipv6/)
 ## 3 [Kemana IPv5?](https://www.ipxo.com/blog/what-happened-to-ipv5/)
 ## 3 [Kemana IPv5?](https://www.cloudns.net/blog/ipv4-vs-ipv6-internet-protocol/)
-## 3 [Video Installasi GNS3]() --dalam proses
-## 3 [Video Contoh Konfigurasi di GNS3]() --dalam proses
+## 4 [Video Installasi GNS3]() --dalam proses
+## 5 [Video Contoh Konfigurasi di GNS3]() --dalam proses
