@@ -188,13 +188,13 @@ Setelah semua interface diberi IP, langkah selanjutnya adalah menggunakan OSPFv3
 - Router ID: misalnya 1.1.1.1 untuk Router1, 2.2.2.2 untuk Router2
 - Enabled: ✔️ Centang
 2. Tambah Area
-- Masuk ke menu IPv6 > Routing > OSPFv3 > Areas → Klik +
+- Masuk ke menu Routing > OSPFv3 > Areas → Klik +
 - Name: backbone
 - Instance: pilih ospf-instance
 - Area ID: 0.0.0.0 (wajib untuk backbone area)
 3. Tambah Interface OSPFv3
 - Router1:
-- Masuk ke menu IPv6 > Routing > OSPFv3 > Interface → Klik +
+- Masuk ke menu Routing > OSPFv3 > Interface → Klik +
 - Interface: ether1 (ke Router2)
 - Instance: ospf-instance
 - Area: backbone
@@ -203,7 +203,7 @@ Tambahkan juga interface LAN:
 Router2:
 - Tambahkan interface ether1 dan ether2 dengan cara yang sama
 4. Cek Neighbor & Routing
-Masuk ke menu IPv6 > Routing > OSPFv3 > Neighbors
+Masuk ke menu Routing > OSPFv3 > Neighbors
 - Harus muncul tetangga OSPF antara Router1 dan Router2
 Masuk ke menu IPv6 > Routes
 - Harus terlihat rute dinamis ke jaringan 2001:db8:a::/64 dan 2001:db8:b::/64
