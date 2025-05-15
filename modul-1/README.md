@@ -878,6 +878,7 @@ https://its.id/m/Tutorial_Crimping
 
 
 ### 4.2 ROUTING PAKE ROUTER 
+![Topologi](images/4.2_Topologi_Praktikum_M1)
 #### 4.2.1 STATIS 
 Routing statis adalah metode routing di mana administrator jaringan secara manual menentukan rute (route) yang harus dilalui oleh paket data. Setiap rute ditambahkan secara eksplisit.
 
@@ -886,23 +887,36 @@ Langkah-langkah menghubungkan 2 Router dengan Routing Statis Di Mikrotik :
 Konfigurasi Router
 1. Reset Router
 Pastikan router telah di-reset ke kondisi awal (tanpa konfigurasi) agar konfigurasi yang kita lakukan bersih dan tidak terjadi konflik.
+![Reset_Router](images/Reset_Router.png)
 2. Login ke Router
 Gunakan Winbox untuk mengakses router melalui MAC address atau IP default. Login menggunakan user admin (tanpa password jika belum diatur).
+![Login_winbox](images/Winbox_Login.png)
 3. Konfigurasi IP Address pada Ether1 (antar router)
-Tambahkan IP address pada ether1 yang digunakan sebagai jalur antar-router. Karena hanya ada dua perangkat yang terhubung (router A dan router B), gunakan prefix /30 agar tidak boros IP (cukup 2 host) misalnya 10.10.x.x/30.
+Tambahkan IP address pada ether1 yang digunakan sebagai jalur antar-router. Karena hanya ada dua perangkat yang terhubung (router A dan router B), gunakan prefix /30 agar tidak boros IP (cukup 2 host) 10.10.10.1 untuk router 1 dan 10.10.10.2 untuk router 2.
 4. Konfigurasi IP Address untuk Jaringan LAN
-Tambahkan IP address pada ether 2 yang digunakan untuk menghubungkan Laptop dengan Router gunakan prefix yang bisa menangani sampai 20 user.
+Tambahkan IP address pada ether 2 yang digunakan untuk menghubungkan Laptop dengan Router gunakan prefix yang bisa menangani sampai 20 user, gunakan prefix /27 dan untuk ip address router 1 yaitu 192.168.10.1/27 untuk router 2 gunakan 192.168.20.1/27.
+![IP_address_add](images/IP_Address_RB1.png)
 5. Konfigurasi Routing Statis
 Setelah semua interface diberi IP, langkah selanjutnya adalah menambahkan rute secara manual.
 Masuk ke menu IP → Routes, kemudian klik "+" untuk menambahkan routing.
-- Dst. Address: alamat jaringan tujuan.
-- Gateway: IP address tujuan yang ada di ether1 (IP ether1 milik router tetangga).
+- Dst. Address: alamat jaringan tujuan untuk di router 1 Dst. address di isi dengan alamat network router 2 yaitu 192.168.20.0/27 dan untuk router 2 gunakan alamat network ether 2 para router 1 yaitu 192.168.10.0/27.
+- Gateway: IP address tujuan yang ada di ether1 (IP ether1 milik router tetangga) jadi untuk pada konfigurasi router 1 gateway di isi 10.10.10.2 dan untuk router 2 di isi 10.10.10.1.
+![Add_Routes](images/Routes_RB1.png)
 6. Konfigurasi IP Adress di Laptop
-Karena ini masih menggunakan konfigurasi Static IP tambahkan IP address secara manual ke interface di laptop masing-masing bisa lewat Control Panel atau langsung di settings Windows, pastikan IP dan Gateway sudah benar sesuai Ether 2.
+Karena ini masih menggunakan konfigurasi Static IP tambahkan IP address secara manual ke interface di laptop masing-masing bisa lewat Control Panel atau langsung di settings Windows, pastikan IP dan Gateway sudah benar sesuai Ether 2, pada laptop yang terhubung ke :
+1. router 1
+- ip : 192.168.10.2
+- netmask : 255.255.255.224
+- gateway :192.168.10.1
+2. router 2
+- ip : 192.168.20.2
+- netmask : 255.255.255.224
+- gateway :192.168.20.1
+![Settings_IP](images/Settings_IP_PC1.png)
 7. Jika Sudah Uji test PING dari Laptop 1 ke alamat Laptop 2, Jika berhasil maka Routing tidak ada masalah.
-
-Pada konfigurasikan Router 2 dan laptop yang terhubung ke router 2 lakukan hal yang sama
-
+![Test_PING](images/Test_PING_PC1.png)
+Pada konfigurasikan Router 2 dan laptop yang terhubung ke router 2 lakukan hal yang sama </br>
+NOTE : Pastikan Firewall Mati jika mengalamai error seperti tidak bisa konek
 
 #### 4.2.2 DINAMIS
 Routing dinamis adalah metode routing di mana router saling bertukar informasi routing menggunakan protokol routing dinamis, sehingga rute bisa berubah otomatis jika ada perubahan jaringan.
@@ -916,27 +930,34 @@ Langkah-langkah menghubungkan 2 Router dengan Routing Dinamis Di Mikrotik :
 Konfigurasi Router
 1. Reset Router
 Pastikan router telah di-reset ke kondisi awal (tanpa konfigurasi) agar konfigurasi yang kita lakukan bersih dan tidak terjadi konflik.
+![Reset_Router](images/Reset_Router.png)
 2. Login ke Router
 Gunakan Winbox untuk mengakses router melalui MAC address atau IP default. Login menggunakan user admin (tanpa password jika belum diatur).
+![Login_Winbox](images/Winbox_Login.png)
 3. Aktifkan Routing RIP Package (jika belum aktif)
 Jika kamu menggunakan versi lama MikroTik, pastikan paket routing sudah aktif. Di versi terbaru RouterOS (7.x), fitur RIP sudah tersedia secara default.
-4. Konfigurasi IP Address pada Ether1 (antar router)
+4. Konfigurasi IP Address pada Ether1 
 Tambahkan IP address pada ether1 yang digunakan sebagai jalur antar-router. Karena hanya ada dua perangkat yang terhubung (router A dan router B), gunakan prefix /30 agar tidak boros IP (cukup 2 host) misalnya 10.10.x.x/30.
-5. Konfigurasi IP Address untuk Jaringan LAN
-Tambahkan IP address pada ether 2 yang digunakan untuk menghubungkan Laptop dengan Router gunakan prefix yang bisa menangani sampai 20 user.
+5. Konfigurasi IP Address untuk Jaringan LAN ether 2
+Tambahkan IP address pada ether 2 yang digunakan untuk menghubungkan Laptop dengan Router gunakan prefix yang bisa menangani sampai 20 user, gunakan prefix /27 misalnya 192.168.x.x/27.
 6. Konfigurasikan DHCP Server
 Masuk ke IP->DHCP
 Gunakan Fitur DHCP Setup lalu klik dan ikuti-langkah-langkah yang ada dan sesuaikan interface ethernet menjadi 2 
+![DHCP](images/DHCP.png)
 7. Konfigurasi Routing Dinamis Menggunakan RIP
-- Masuk Menu Routing->RIP->Interface dan "+" untuk interface nya gunakan Ether 1 dan 2
-- Setting Recive menjadi V1-2, Send Menjadi V1-2, dan Authentification menjadi none
-- Lalu tambahkan Network pada RIP masuk ke menu Routing->RIP->Network "+" Masukan semua IP Network yang ada dalam jaringan di Router tetangga
+- Masuk Menu Routing->RIP->Interface dan "+" untuk interface nya gunakan Ether all
+![Interface_RIP](images/RIP%20Interface.png)
+- Setting Recive menjadi V1-2, Send Menjadi V-2, dan Authentification menjadi none
+- Lalu tambahkan Network pada RIP masuk ke menu Routing->RIP->Network "+" Masukan semua IP Network yang ada dalam jaringan di Router sendiri
+![Network_RIP](images/RIP_Network.png)
+- Lalu tambahkan gateway jaringan yang ingin di tuju di menu Routing->RIP->Neighbours dan "+" (gateway ini yaitu alamat gateway dari PC tujuan atau tetangga)
+![Neib_RIP](images/RIP_Neib.png)
 8. Konfigurasi IP Adress di Laptop
 Karena Sekarang sudah menggunakan konfigurasi IP Dinamis maka ubah konfigurasi yang tadi menjadi konfigurasi DHCP dimana nanti laptop akan  mendapatkan IP dari DHCP Server yang ada di Router
 9. Lakukan Uji Test Ping antara 2 Laptop
 
-Pada konfigurasikan Router 2 dan laptop yang terhubung ke router 2 lakukan hal yang sama
-
+Pada konfigurasikan Router 2 dan laptop yang terhubung ke router 2 lakukan hal yang sama</br>
+NOTE : Pastikan Firewall Mati jika mengalamai error seperti tidak bisa konek
 
 ## 5. Tugas Modul
 1. Berdasarkan tugas pendahuluan sebelumnya mengenai perancangan topologi jaringan dan tabel IP yang telah Anda buat, langkah selanjutnya adalah membuat simulasi jaringan menggunakan aplikasi Cisco Packet Tracer.
