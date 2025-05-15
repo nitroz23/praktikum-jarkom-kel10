@@ -102,16 +102,22 @@ Langkah-langkah menghubungkan 2 Router dengan Routing Statis Di Mikrotik :
 Konfigurasi Router
 1. Reset Router Jika masih ada konfigurasi 
 Pastikan router telah di-reset ke kondisi awal (tanpa konfigurasi) agar konfigurasi yang kita lakukan bersih dan tidak terjadi konflik, Untuk reset bisa gunakan winbox masuk menu system->reset konfigurasi-> cek list no default konfigurasi
+![Reset Router](images/Reset_Router.png)
 2. Login ke Router
 Gunakan Winbox untuk mengakses router melalui MAC address atau IP default. Login menggunakan user admin (tanpa password jika belum diatur).
+![Login Winbox](images/Login_Winbox.png)
 3. Konfigurasi IP Address pada Ether1 (note lakukan konfigurasi ini pada router 1 dan 2)
 Tambahkan IP address pada ether1 yang digunakan sebagai jalur antar-router. Karena hanya ada dua perangkat yang terhubung (router A dan router B),<br>
 - IP ether1 Router A  : 2001:db8:1::1/64
 - IP ether 1 Router B : 2001:db8:1::2/64
 4. Konfigurasi IP Address untuk Jaringan LAN (note lakukan konfigurasi ini pada router 1 dan 2)
 Tambahkan IP address pada ether 2 yang digunakan untuk menghubungkan Laptop dengan Router. <br>
-- IP ether 1 Router A  : 2001:db8:a::1/64
+- IP ether 2 Router A  : 2001:db8:a::1/64
 - IP ether 2 Router B  : 2001:db8:b::1/64
+
+![IP RB1 IPV6](images/add_ip_rb1.png)
+![IP RB2 IPV6](images/add_ip_rb2.png)
+
 5. Konfigurasi Routing Statis (note lakukan konfigurasi ini pada router 1 dan 2)
 Setelah semua interface diberi IP, langkah selanjutnya adalah menambahkan rute secara manual.
 Masuk ke menu IPv6 → Routes, kemudian klik "+" untuk menambahkan routing.
@@ -121,6 +127,10 @@ Pada Router 1
 Pada Router 2
 - Dst. Address: 2001:db8:a::/64
 - Gateway: 2001:db8:1::1
+
+![Route RB1 IPV6](images/routes_rb1.png)
+![Route RB2 IPV6](images/route_rb2.png)
+
 6. Test Koneksi Antar Router
 - Dari Router1, buka New Terminal, ping LAN Router2:
 ```bash
@@ -154,16 +164,22 @@ Langkah-langkah menghubungkan 2 Router dengan Routing Statis Di Mikrotik :
 Konfigurasi Router
 1. Reset Router Jika masih ada konfigurasi 
 Pastikan router telah di-reset ke kondisi awal (tanpa konfigurasi) agar konfigurasi yang kita lakukan bersih dan tidak terjadi konflik, Untuk reset bisa gunakan winbox masuk menu system->reset konfigurasi-> cek list no default konfigurasi
+![Reset Router](images/Reset_Router.png)
 2. Login ke Router
 Gunakan Winbox untuk mengakses router melalui MAC address atau IP default. Login menggunakan user admin (tanpa password jika belum diatur).
+![Login Winbox](images/Login_Winbox.png)
 3. Konfigurasi IP Address pada Ether1 (note lakukan konfigurasi ini pada router 1 dan 2)
 Tambahkan IP address pada ether1 yang digunakan sebagai jalur antar-router. Karena hanya ada dua perangkat yang terhubung (router A dan router B),<br>
 - IP ether1 Router A  : 2001:db8:1::1/64
 - IP ether 1 Router B : 2001:db8:1::2/64
 4. Konfigurasi IP Address untuk Jaringan LAN (note lakukan konfigurasi ini pada router 1 dan 2)
 Tambahkan IP address pada ether 2 yang digunakan untuk menghubungkan Laptop dengan Router. <br>
-- IP ether 1 Router A  : 2001:db8:a::1/64
+- IP ether 2 Router A  : 2001:db8:a::1/64
 - IP ether 2 Router B  : 2001:db8:b::1/64
+
+![IP RB1 IPV6](images/add_ip_rb1.png)
+![IP RB2 IPV6](images/add_ip_rb2.png)
+
 5. Konfigurasi Routing Dinamis (note lakukan konfigurasi ini pada router 1 dan 2) 
 Setelah semua interface diberi IP, langkah selanjutnya adalah menggunakan OSPFv3 untuk Routing Dinamis.
 1. Buat Instance OSPFv3 
@@ -209,8 +225,14 @@ Pada laptop yang terhubung ke Router 2
 
 Pada konfigurasikan Router 2 dan laptop yang terhubung ke router 2 lakukan hal yang sama
 
+# Troubleshooting
+1. Jika sudah konek dengan router atau terkendala PING antar PC Pastikan masing-masing laptop firewall nya sudah di masikan yang berada di setting semua di matikan.
+2. Jika IPV6 belum ada di Router maka harus di Enable dulu dengan masuk ke Winbox menu System->Packages, lalu pilih IPV6 dan tekan Enable, Jika sudah Enable maka anda tinggal reboot router dengan ke menu System->Reboot.
+![Enable IPV6](images/Enable_IPV6.png)
+Setelah Reboot jika package sudah ter install maka menu IPV6 akan muncul
+![Menu IPV6](images/Menu_IPV6.png)
 # Tugas Modul
-
+1. Simulasikan Konfigurasi Praktikum P2 di atas mengenai Routing Dinamis dan Statis IPV6 menggunakan GNS3
 # Referensi
 ## 1 [Apa itu IPv6](https://www.thousandeyes.com/learning/techtorials/ipv4-vs-ipv6)
 ## 1 [Apa itu IPv6](https://www.geeksforgeeks.org/what-is-ipv6/)
