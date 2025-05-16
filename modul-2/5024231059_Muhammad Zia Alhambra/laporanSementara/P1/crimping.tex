@@ -1,0 +1,177 @@
+\section{Pendahuluan}
+\subsection{Latar Belakang}
+Seiring dengan penggunaan internet yang berkembang pesat, 
+kebutuhan akan lebih banyak alamat IP telah menjadi masalah 
+penting. Skema pengalamatan IPv4, yang menggunakan alamat 32-
+bit, menyediakan sekitar 4,3 miliar alamat IP yang unik. 
+Meskipun jumlah tersebut tampaknya cukup memadai pada masa-masa 
+awal internet, ledakan perangkat yang terhubung - seperti ponsel 
+pintar, sistem IoT, dan layanan cloud - telah menyebabkan ruang 
+alamat IPv4 yang tersedia hampir habis.
+
+Untuk mengatasi keterbatasan ini, Internet Protocol versi 6 
+(IPv6) diperkenalkan oleh Internet Engineering Task Force (IETF). 
+IPv6 menggunakan alamat 128-bit, secara signifikan meningkatkan 
+jumlah alamat IP yang memungkinkan menjadi sekitar $3,4\times 10^{38}$, 
+yang lebih dari cukup untuk mengakomodasi perluasan internet di 
+masa mendatang. IPv6 tidak hanya menawarkan ruang alamat yang 
+jauh lebih besar, tetapi juga mencakup peningkatan dalam 
+efisiensi perutean, fitur keamanan, dan header paket yang 
+disederhanakan.
+\subsection{Dasar Teori}
+IPv6 (Internet Protocol versi 6) adalah versi terbaru dari 
+Internet Protocol, yang bertanggung jawab untuk mengidentifikasi 
+dan menemukan komputer di jaringan dan merutekan lalu lintas di 
+internet. Tidak seperti pendahulunya, IPv4, yang menggunakan 
+alamat 32-bit dan mendukung sekitar 4,3 miliar alamat IP unik, 
+IPv6 menggunakan alamat 128-bit, yang memungkinkan sekitar 340 
+undecillion ($3,4\times 10^{38}$) kombinasi unik. Peningkatan ruang 
+alamat yang sangat besar ini diperlukan untuk mengakomodasi 
+pertumbuhan pesat perangkat yang terhubung ke internet. Alamat 
+IPv6 ditulis dalam heksadesimal dan dipisahkan dengan titik dua, 
+seperti 2001:0db8:85a3:0000:0000:8a2e:0370:7334, dan dapat 
+dipersingkat menggunakan aturan notasi standar untuk memudahkan.
+
+Selain kapasitas alamat yang lebih besar, IPv6 menawarkan 
+beberapa peningkatan dibandingkan IPv4. IPv6 memiliki struktur 
+header paket yang disederhanakan yang memungkinkan pemrosesan 
+yang lebih efisien oleh router, mendukung mekanisme konfigurasi 
+otomatis seperti SLAAC (Stateless Address Autoconfiguration) dan 
+DHCPv6, dan termasuk dukungan bawaan untuk IPsec, meningkatkan 
+keamanan data. IPv6 juga menghilangkan kebutuhan akan Network 
+Address Translation (NAT), sebuah solusi yang biasanya digunakan 
+pada IPv4 karena ketersediaan alamat yang terbatas. Dengan 
+memungkinkan konektivitas langsung dari ujung ke ujung, IPv6 
+memfasilitasi kinerja yang lebih baik untuk aplikasi seperti 
+komunikasi waktu nyata, layanan cloud, dan penyebaran Internet 
+of Things (IoT). Kemajuan ini menjadikan IPv6 sebagai komponen 
+penting dalam mendukung skalabilitas, keandalan, dan keamanan 
+infrastruktur internet global di masa depan.
+%===========================================================%
+\section{Tugas Pendahuluan}
+Bagian ini berisi jawaban dari tugas pendahuluan yang telah anda kerjakan, beserta penjelasan dari jawaban tersebut
+\begin{enumerate}
+	\item IPv6, atau Internet Protocol versi 6, adalah versi 
+	terbaru dari Internet Protocol yang dirancang untuk 
+	mengatasi keterbatasan IPv4, khususnya kekurangan alamat IP 
+	yang tersedia. Sementara IPv4 menggunakan alamat 32-bit dan 
+	mendukung sekitar 4,3 miliar alamat IP unik, IPv6 
+	menggunakan alamat 128-bit, sehingga memungkinkan jumlah 
+	alamat unik yang hampir tak terbatas-sekitar 340 undecillion. 
+	Hal ini membuat IPv6 ideal untuk mendukung semakin banyaknya 
+	perangkat yang terhubung ke internet. Selain ruang alamat 
+	yang diperluas, IPv6 memperkenalkan beberapa peningkatan, 
+	seperti header paket yang disederhanakan, dukungan bawaan 
+	untuk keamanan melalui IPSec, dan dukungan yang lebih baik 
+	untuk konfigurasi otomatis menggunakan SLAAC (Konfigurasi 
+	Otomatis Alamat Tanpa Kewarganegaraan). IPv6 juga 
+	menghilangkan kebutuhan akan NAT (Network Address 
+	Translation), yang biasanya digunakan dalam IPv4 untuk 
+	menghemat ruang alamat. Secara keseluruhan, IPv6 dirancang 
+	agar lebih terukur, aman, dan efisien, sehingga lebih cocok 
+	untuk internet modern.
+	\item \begin{enumerate}
+		\item Karena kita memiliki 32 bit, kita dapat menggunakan 
+		32 bit lagi untuk subnetting untuk mencapai 64 bit.
+		\begin{itemize}
+			\item Subnet 1: 2001:db8:0000:0000::/64
+			\item Subnet 2: 2001:db8:0000:0001::/64
+			\item Subnet 3: 2001:db8:0000:0002::/64
+			\item Subnet 4: 2001:db8:0000:0003::/64
+		\end{itemize}
+		\item Berikut alokasi alamat IPv6 untuk masing-masing 
+		subnet:
+		{\small
+		\begin{center}
+		\begin{tabular}{ |c|c| } 
+			\hline
+			Subnet & Alamat Subnet  \\
+			\hline
+			Subnet A & 2001:db8:0:0::/64\\
+			Subnet B & 2001:db8:0:1::/64 \\
+			Subnet C & 2001:db8:0:2::/64  \\
+			Subnet D & 2001:db8:0:3::/64   \\
+			\hline
+		\end{tabular}
+		\end{center}
+		}
+	\end{enumerate}
+	\item \begin{enumerate}
+		\item Alamat IPv6 pada setiap antarmuka router adalah 
+		sebagai berikut:
+		{\small
+		\begin{center}
+		\begin{tabular}{ |c|c|c| } 
+			\hline
+			Interface & Assigned Subnet & IPv6 Address on Router Interface  \\
+			\hline
+			Ether 1 & Subnet A & 2001:db8:0:0::1/64\\
+			Ether 2 & Subnet B & 2001:db8:0:1::1/64 \\
+			Ether 3 & Subnet C & 2001:db8:0:2::1/64  \\
+			Ether 4 & Subnet D & 2001:db8:0:3::1/64   \\
+			\hline
+		\end{tabular}
+		\end{center}
+		}
+		\item Untuk konfigurasi antarmuka router, dapat dilakukan 
+		dalam program seperti mikrotik. Command CLI yang digunakkan 
+		antara lain seperti berikut:
+		{\small
+		\begin{center}
+		\begin{tabular}{ |l| } 
+			\hline
+			/ipv6 address \\
+			add address=2001:db8:0:0::1/64 interface=ether1 \\
+			add address=2001:db8:0:1::1/64 interface=ether2 \\
+			add address=2001:db8:0:2::1/64 interface=ether3 \\
+			add address=2001:db8:0:3::1/64 interface=ether4 \\
+			\hline
+		\end{tabular}
+		\end{center}
+		}
+	\end{enumerate}
+	\item Berikut IP table routing statis agar semua subnet saling 
+	berkomunikasi:
+	{\small
+		\begin{center}
+		\begin{tabular}{ |c|c|c|c| } 
+			\hline
+			Destination Network & Gateway & Interface & Deskripsi  \\
+			\hline
+			2001:db8:0000:0100::/64	 & 2001:db8:0000:0100::1	 & ether1 & Menuju B melalui ether2	\\
+			2001:db8:0000:0200::/64	 & 2001:db8:0000:0200::1	 & ether1 & Menuju C melalui ether3	 \\
+			2001:db8:0000:0300::/64	 & 2001:db8:0000:0300::1	 & ether1 & Menuju D melalui ether4	  \\
+			2001:db8:0000:0000::/64	 & 2001:db8:0000:0000::1	 & ether2 & Menuju A melalui ether1	   \\
+			2001:db8:0000:0200::/64	 & 2001:db8:0000:0200::1	 & ether2 & Menuju C melalui ether3	\\
+			2001:db8:0000:0300::/64	 & 2001:db8:0000:0300::1	 & ether2 & Menuju D melalui ether4	 \\
+			2001:db8:0000:0000::/64	 & 2001:db8:0000:0000::1	 & ether3 & Menuju A melalui ether1	  \\
+			2001:db8:0000:0100::/64	 & 2001:db8:0000:0100::1	 & ether3 & Menuju B melalui ether2	   \\
+			2001:db8:0000:0300::/64	 & 2001:db8:0000:0300::1	 & ether3 & Menuju D melalui ether4	\\
+			2001:db8:0000:0000::/64	 & 2001:db8:0000:0000::1	 & ether4 & Menuju A melalui ether1	 \\
+			2001:db8:0000:0100::/64	 & 2001:db8:0000:0100::1	 & ether4 & Menuju B melalui ether2	  \\
+			2001:db8:0000:0200::/64	 & 2001:db8:0000:0200::1	 & ether4 & Menuju C melalui ether3	   \\
+			\hline
+		\end{tabular}
+		\end{center}
+		}
+	\item Perutean statis dalam jaringan IPv6 mengacu pada 
+	konfigurasi manual jalur perutean antar jaringan oleh 
+	administrator jaringan. Alih-alih mengandalkan protokol 
+	dinamis untuk secara otomatis berbagi informasi perutean, 
+	rute statis ditentukan sebelumnya dan tetap, sehingga 
+	administrator memiliki kontrol penuh atas bagaimana lalu 
+	lintas mengalir di antara subnet atau jaringan. Metode ini 
+	sangat berguna di jaringan yang lebih kecil atau kurang 
+	kompleks di mana rute jarang berubah, karena memastikan 
+	prediktabilitas dan stabilitas. Routing statis juga lebih 
+	disukai dalam situasi di mana keamanan dan kontrol sangat 
+	penting, seperti di lingkungan server atau ketika menguji 
+	perilaku jaringan tertentu. Namun, ini menjadi kurang 
+	praktis dalam jaringan yang lebih besar atau lebih dinamis, 
+	di mana mempertahankan konfigurasi rute manual dapat 
+	memakan waktu dan rentan terhadap kesalahan. Dalam kasus 
+	seperti itu, protokol routing dinamis seperti RIPng, 
+	OSPFv3, atau BGP lebih cocok, karena dapat secara otomatis 
+	beradaptasi dengan perubahan jaringan tanpa intervensi 
+	manual.
+\end{enumerate}

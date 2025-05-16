@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.10.24)  8 MAY 2025 23:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.10.24)  16 MAY 2025 15:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"c:/Users/DELL/Documents/coding/jarkom_ws/praktikum-jarkom-kel10/modul-1/Muhammad Zia Alhambra_5024231059/laporanAkhir/LA.tex"
-(c:/Users/DELL/Documents/coding/jarkom_ws/praktikum-jarkom-kel10/modul-1/Muhammad Zia Alhambra_5024231059/laporanAkhir/LA.tex
+**"c:/Users/DELL/Documents/coding/jarkom_ws/praktikum-jarkom-kel10/modul-2/5024231059_Muhammad Zia Alhambra/laporanSementara/LS.tex"
+(c:/Users/DELL/Documents/coding/jarkom_ws/praktikum-jarkom-kel10/modul-2/5024231059_Muhammad Zia Alhambra/laporanSementara/LS.tex
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-09-10>
 (C:\Users\DELL\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
@@ -238,6 +238,8 @@ Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
 ) (C:\Users\DELL\AppData\Local\Programs\MiKTeX\tex/latex/setspace\setspace.sty
 Package: setspace 2022/12/04 v6.7b set line spacing
+) (C:\Users\DELL\AppData\Local\Programs\MiKTeX\tex/latex/tools\indentfirst.sty
+Package: indentfirst 2023/07/02 v1.03 Indent first paragraph (DPC)
 ) (C:\Users\DELL\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
 Package: hyperref 2024-07-10 v7.01j Hypertext links for LaTeX
  (C:\Users\DELL\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
@@ -634,30 +636,30 @@ Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 
 \@quotelevel=\count443
 \@quotereset=\count444
-LaTeX Font Info:    Trying to load font information for T1+qhv on input line 88.
+LaTeX Font Info:    Trying to load font information for T1+qhv on input line 89.
 (C:\Users\DELL\AppData\Local\Programs\MiKTeX\tex/latex/tex-gyre\t1qhv.fd
 File: t1qhv.fd 2009/09/25 v1.2 font definition file for T1/qhv
-) (LA.aux)
-\openout1 = `LA.aux'.
+) (LS.aux)
+\openout1 = `LS.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
 \c@lstlisting=\count445
  (C:\Users\DELL\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -688,10 +690,10 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring ON on input line 88.
- (LA.out) (LA.out)
+Package hyperref Info: Link coloring ON on input line 89.
+ (LS.out) (LS.out)
 \@outlinefile=\write5
-\openout5 = `LA.out'.
+\openout5 = `LS.out'.
 
 
 *geometry* driver: auto-detecting
@@ -732,18 +734,18 @@ Package biblatex Info: Trying to load language 'bahasa'...
 Package biblatex Info: ... file 'bahasa.lbx' not found.
 
 Package biblatex Warning: Language 'bahasa' not supported.
-(biblatex)                Using dummy definitions on input line 88.
+(biblatex)                Using dummy definitions on input line 89.
 
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
-\openout4 = `LA.bcf'.
+\openout4 = `LS.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'LA.bbl' found.
-(LA.bbl)
-Package biblatex Info: Reference section=0 on input line 88.
-Package biblatex Info: Reference segment=0 on input line 88.
+Package biblatex Info: ... file 'LS.bbl' found.
+(LS.bbl)
+Package biblatex Info: Reference section=0 on input line 89.
+Package biblatex Info: Reference segment=0 on input line 89.
  (Cover/Header.tex
 File: Cover/img/logodepart.png Graphic file (type png)
 <use Cover/img/logodepart.png>
@@ -753,7 +755,7 @@ File: Cover/img/miot.png Graphic file (type png)
 <use Cover/img/miot.png>
 Package pdftex.def Info: Cover/img/miot.png  used on input line 20.
 (pdftex.def)             Requested size: 85.35826pt x 85.35896pt.
-<Cover/img/footer.png, id=34, 904.88063pt x 89.58469pt>
+<Cover/img/footer.png, id=22, 904.88063pt x 89.58469pt>
 File: Cover/img/footer.png Graphic file (type png)
 <use Cover/img/footer.png>
 Package pdftex.def Info: Cover/img/footer.png  used on input line 35.
@@ -764,57 +766,51 @@ Package pdftex.def Info: Cover/img/footer.png  used on input line 35.
 
 
 {C:/Users/DELL/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/DELL/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/tex-gyre/q-ec.enc} <./Cover/img/logodepart.png> <./Cover/img/miot.png> <./Cover/img/footer.png>]) (P1/crimping.tex
-Overfull \hbox (6.66455pt too wide) in paragraph at lines 2--3
-\T1/qhv/m/n/10.95 Bagian ini men-je-lask-an se-ca-ra rin-ci ta-hap-an atau pro-se-dur yang di-la-kuk-an se-la-ma prak-ti-kum. Langkah-
- []
-
-)
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.99 \end{document}
-                   
-<miot.png, id=46, 200.75pt x 200.75pt>
+l.73 	\item \begin
+                  {enumerate}
+<miot.png, id=34, 200.75pt x 200.75pt>
 File: miot.png Graphic file (type png)
 <use miot.png>
-Package pdftex.def Info: miot.png  used on input line 99.
+Package pdftex.def Info: miot.png  used on input line 73.
 (pdftex.def)             Requested size: 238.9995pt x 239.01491pt.
  [1
 
- <./miot.png>] (LA.aux)
+ <./miot.png>]
+LaTeX Font Info:    Trying to load font information for TS1+qhv on input line 77.
+ (C:\Users\DELL\AppData\Local\Programs\MiKTeX\tex/latex/tex-gyre\ts1qhv.fd
+File: ts1qhv.fd 2009/09/25 v1.2 font definition file for TS1/qhv
+)
+
+[2{C:/Users/DELL/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/tex-gyre/q-ts1.enc}])
+
+[3] (LS.aux)
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-09-10>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
-Package rerunfilecheck Info: File `LA.out' has not changed.
-(rerunfilecheck)             Checksum: 766AE0BDB69FF7F9E0360BE4C72349DD;1011.
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                LA
-(biblatex)                and rerun LaTeX afterwards.
-
-Package logreq Info: Writing requests to 'LA.run.xml'.
-\openout1 = `LA.run.xml'.
+Package rerunfilecheck Info: File `LS.out' has not changed.
+(rerunfilecheck)             Checksum: F646F2247E20B5F6EF92810BDD37164F;474.
+Package logreq Info: Writing requests to 'LS.run.xml'.
+\openout1 = `LS.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 21497 strings out of 473898
- 375672 string characters out of 5726950
- 1202438 words of memory out of 5000000
- 44093 multiletter control sequences out of 15000+600000
- 601087 words of font info for 62 fonts, out of 8000000 for 9000
+ 21568 strings out of 473898
+ 377207 string characters out of 5726950
+ 1212577 words of memory out of 5000000
+ 44148 multiletter control sequences out of 15000+600000
+ 604904 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,12n,81p,1315b,499s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/DELL/AppData/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qhvb.pfb><C:/Users/DELL/AppData/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qhvbi.pfb><C:/Users/DELL/AppData/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qhvr.pfb>
-Output written on LA.pdf (2 pages, 141445 bytes).
+ 75i,12n,81p,1319b,701s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/DELL/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/DELL/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/DELL/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/DELL/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/DELL/AppData/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qhvb.pfb><C:/Users/DELL/AppData/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qhvbi.pfb><C:/Users/DELL/AppData/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qhvr.pfb>
+Output written on LS.pdf (4 pages, 184877 bytes).
 PDF statistics:
- 70 PDF objects out of 1000 (max. 8388607)
- 9 named destinations out of 1000 (max. 500000)
- 77 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 100 PDF objects out of 1000 (max. 8388607)
+ 17 named destinations out of 1000 (max. 500000)
+ 53 words of extra memory for PDF output out of 10000 (max. 10000000)
 

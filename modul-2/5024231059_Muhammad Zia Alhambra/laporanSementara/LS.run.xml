@@ -41,13 +41,13 @@
   >
 ]>
 <requests version="1.0">
-  <internal package="biblatex" priority="9" active="1">
+  <internal package="biblatex" priority="9" active="0">
     <generic>latex</generic>
     <provides type="dynamic">
-      <file>LA.bcf</file>
+      <file>LS.bcf</file>
     </provides>
     <requires type="dynamic">
-      <file>LA.bbl</file>
+      <file>LS.bbl</file>
     </requires>
     <requires type="static">
       <file>blx-dm.def</file>
@@ -62,23 +62,23 @@
       <file>biblatex.cfg</file>
     </requires>
   </internal>
-  <external package="biblatex" priority="5" active="1">
+  <external package="biblatex" priority="5" active="0">
     <generic>biber</generic>
     <cmdline>
       <binary>biber</binary>
-      <infile>LA</infile>
+      <infile>LS</infile>
     </cmdline>
     <input>
-      <file>LA.bcf</file>
+      <file>LS.bcf</file>
     </input>
     <output>
-      <file>LA.bbl</file>
+      <file>LS.bbl</file>
     </output>
     <provides type="dynamic">
-      <file>LA.bbl</file>
+      <file>LS.bbl</file>
     </provides>
     <requires type="dynamic">
-      <file>LA.bcf</file>
+      <file>LS.bcf</file>
     </requires>
   </external>
 </requests>
