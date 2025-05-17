@@ -112,6 +112,13 @@ Masuk pada menu System->Package, lalu anda akan menemukan IPV6 jika itu belum ak
 Jika sudah enable package IPV6 maka silangkan reboot router anda menggunakan menu system->.
 
 
+# Troubleshooting
+1. Jika sudah konek dengan router atau terkendala PING antar PC Pastikan masing-masing laptop firewall nya sudah di masikan yang berada di setting semua di matikan.
+2. Jika IPV6 belum ada di Router maka harus di Enable dulu dengan masuk ke Winbox menu System->Packages, lalu pilih IPV6 dan tekan Enable, Jika sudah Enable maka anda tinggal reboot router dengan ke menu System->Reboot.
+![Enable IPV6](images/Enable_IPV6.png)
+Setelah Reboot jika package sudah ter install maka menu IPV6 akan muncul
+![Menu IPV6](images/Menu_IPV6.png)
+
 ## Routing Statis IPv6
 
 
@@ -262,12 +269,6 @@ Pada laptop yang terhubung ke Router 2
 
 Pada konfigurasikan Router 2 dan laptop yang terhubung ke router 2 lakukan hal yang sama
 
-# Troubleshooting
-1. Jika sudah konek dengan router atau terkendala PING antar PC Pastikan masing-masing laptop firewall nya sudah di masikan yang berada di setting semua di matikan.
-2. Jika IPV6 belum ada di Router maka harus di Enable dulu dengan masuk ke Winbox menu System->Packages, lalu pilih IPV6 dan tekan Enable, Jika sudah Enable maka anda tinggal reboot router dengan ke menu System->Reboot.
-![Enable IPV6](images/Enable_IPV6.png)
-Setelah Reboot jika package sudah ter install maka menu IPV6 akan muncul
-![Menu IPV6](images/Menu_IPV6.png)
 # Tugas Modul
 1. Simulasikan Konfigurasi Praktikum P2 di atas mengenai Routing Dinamis dan Statis IPV6 menggunakan GNS3
 # Referensi
