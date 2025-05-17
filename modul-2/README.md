@@ -94,6 +94,75 @@ Makanya, akhirnya diputuskan buat langsung loncat ke IPv6 yang bisa nyediain ala
 
 ## Cara Menghitung Prefix IPv6
 
+## 1. Perbedaan Prefix IPv4 vs IPv6
+
+| Aspek                        | IPv4                                | IPv6                                |
+|------------------------------|-------------------------------------|-------------------------------------|
+| Panjang alamat               | 32 bit                              | 128 bit                             |
+| Format subnet mask           | Decimal dotted (255.255.255.0)      | Tidak digunakan                     |
+| Notasi prefix (CIDR)         | /24, /16, dst                       | /64, /56, /48, dst                  |
+| Jumlah alamat total          | ~4,3 miliar                         | ~340 undecillion (2¹²⁸)            |
+| Praktik umum                 | /24 untuk LAN                       | /64 untuk LAN                       |
+| Subnetting                   | Perlu konversi biner ke desimal     | Lebih sederhana, langsung di bit   |
+
+## 2. Format Penulisan Prefix IPv6
+
+IPv6 menggunakan prefix langsung pada akhir alamat:
+2001:0db8:85a3::8a2e:0370:7334/64
+
+- `/64` adalah **prefix length**
+- Menunjukkan bahwa 64 bit pertama digunakan untuk **Network ID**
+- Sisanya 64 bit untuk **Interface ID (host ID)**
+
+---
+
+## 3. Kenapa IPv6 Biasanya /64?
+
+- Direkomendasikan oleh IETF (RFC 4291)
+- Mendukung **SLAAC (Stateless Address Autoconfiguration)**
+- Membagi alamat menjadi dua bagian yang seimbang (64 bit jaringan, 64 bit host)
+
+---
+
+## 4. Cara Menghitung Prefix IPv6
+
+### Jumlah Alamat dalam Satu Subnet:
+2^(128 - prefix length)
+
+Contoh:
+- `/64` → 2⁶⁴ alamat dalam satu subnet
+
+### Jumlah Subnet dari Prefix Lebih Besar:
+
+Jika ISP memberikan `/48`, kamu ingin bagi ke `/64`, maka:
+2^(64 - 48) = 2^16 = 65.536 subnet
+
+## 5. Contoh Perhitungan
+
+### 🔹 Dari `/48` ke `/64`:
+- Jumlah subnet: `2^16 = 65.536 subnet`
+- Alamat per subnet: `2^64` alamat
+
+### 🔹 Dari `/56` ke `/64`:
+- Jumlah subnet: `2^8 = 256 subnet`
+- Alamat per subnet: `2^64` alamat
+
+### 🔹 Dari `/64` ke `/96`:
+- Jumlah subnet: `2^32 = 4.294.967.296 subnet`
+- Alamat per subnet: `2^32 = 4.294.967.296 alamat`
+
+---
+
+## 6. Praktik Terbaik Prefix IPv6
+
+- Gunakan `/64` untuk jaringan LAN (default dan kompatibel dengan SLAAC/DHCPv6)
+- Gunakan `/48` atau `/56` untuk blok organisasi, kemudian bagi menjadi subnet `/64`
+- Hindari prefix lebih dari `/64`, kecuali untuk point-to-point link (misal `/127`)
+- Dokumentasikan subnet dengan baik, contoh:
+2001:db8:abcd:0000::/64 → Data Center
+2001:db8:abcd:0001::/64 → Divisi IT
+2001:db8:abcd:0002::/64 → Divisi HRD
+
 ## Topologi Praktikum
 
 ![Topologi Praktikum](images/Topologi_Praktikum_M1.png)
