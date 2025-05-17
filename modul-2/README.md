@@ -94,6 +94,24 @@ Makanya, akhirnya diputuskan buat langsung loncat ke IPv6 yang bisa nyediain ala
 
 ## Cara Menghitung Prefix IPv6
 
+## Topologi Praktikum
+
+![Topologi Praktikum](images/Topologi_Praktikum_M1.png)
+
+## Enable IPV6 pada Router Mikrotik
+1. Reset Router Jika masih ada konfigurasi 
+Pastikan router telah di-reset ke kondisi awal (tanpa konfigurasi) agar konfigurasi yang kita lakukan bersih dan tidak terjadi konflik, Untuk reset bisa gunakan winbox masuk menu system->reset konfigurasi-> cek list no default konfigurasi
+![Reset Router](images/Reset_Router.png)
+2. Login ke Router
+Gunakan Winbox untuk mengakses router melalui MAC address atau IP default. Login menggunakan user admin (tanpa password jika belum diatur).
+![Login Winbox](images/Login_Winbox.png)
+2. Enable IPV6
+Masuk pada menu System->Package, lalu anda akan menemukan IPV6 jika itu belum aktif maka klik ipv6 lalu tekan tombol enable.
+![Login Winbox](images/Enable_IPV6.png)
+2. Restart Router
+Jika sudah enable package IPV6 maka silangkan reboot router anda menggunakan menu system->.
+
+
 ## Routing Statis IPv6
 
 
@@ -106,19 +124,23 @@ Pastikan router telah di-reset ke kondisi awal (tanpa konfigurasi) agar konfigur
 2. Login ke Router
 Gunakan Winbox untuk mengakses router melalui MAC address atau IP default. Login menggunakan user admin (tanpa password jika belum diatur).
 ![Login Winbox](images/Login_Winbox.png)
-3. Konfigurasi IP Address pada Ether1 (note lakukan konfigurasi ini pada router 1 dan 2)
+3. Konfigurasi IP Address pada Ether1 (note lakukan konfigurasi ini pada router A dan B)
 Tambahkan IP address pada ether1 yang digunakan sebagai jalur antar-router. Karena hanya ada dua perangkat yang terhubung (router A dan router B),<br>
 - IP ether1 Router A  : 2001:db8:1::1/64
 - IP ether 1 Router B : 2001:db8:1::2/64
-4. Konfigurasi IP Address untuk Jaringan LAN (note lakukan konfigurasi ini pada router 1 dan 2)
+4. Konfigurasi IP Address untuk Jaringan LAN (note lakukan konfigurasi ini pada router A dan b)
 Tambahkan IP address pada ether 2 yang digunakan untuk menghubungkan Laptop dengan Router. <br>
 - IP ether 2 Router A  : 2001:db8:a::1/64
 - IP ether 2 Router B  : 2001:db8:b::1/64
 
 ![IP RB1 IPV6](images/add_ip_rb1.png)
 ![IP RB2 IPV6](images/add_ip_rb2.png)
+<br>
 
-5. Konfigurasi Routing Statis (note lakukan konfigurasi ini pada router 1 dan 2)
+Catatan Jika pada Konfigurasi IPV6 di Address terdapat IPV6 dengan code DL ketika belum add IP ke interface tenang IP tersebut jangan di hapus tetapi di biarkan saja karena itu adalah IPV6 Link Local dari Router Mikrotik yang tergenerate otomatis.<br>
+![IPV6 Link Local](<images/IPV6 Automatic.png>)
+
+5. Konfigurasi Routing Statis (note lakukan konfigurasi ini pada router A dan b)
 Setelah semua interface diberi IP, langkah selanjutnya adalah menambahkan rute secara manual.
 Masuk ke menu IPv6 → Routes, kemudian klik "+" untuk menambahkan routing.
 Pada Router 1
@@ -131,6 +153,7 @@ Pada Router 2
 ![Route RB1 IPV6](images/routes_rb1.png)
 ![Route RB2 IPV6](images/route_rb2.png)
 
+
 6. Test Koneksi Antar Router
 - Dari Router1, buka New Terminal, ping LAN Router2:
 ```bash
@@ -140,16 +163,21 @@ ping 2001:db8:b::1
 ```bash
 ping 2001:db8:a::1
 ```
-6. Konfigurasi IP Adress di Laptop (note lakukan konfigurasi ini laptop yang terhubung pada router 1 dan 2 masing-masing)
+6. Konfigurasi IP Adress di Laptop (note lakukan konfigurasi ini laptop yang terhubung pada router A dan b masing-masing)
 Karena ini masih menggunakan konfigurasi Static IP tambahkan IP address secara manual ke interface di laptop masing-masing bisa lewat Control Panel atau langsung di settings Windows, pastikan IP dan Gateway sudah benar sesuai Ether 2.
 Pada laptop yang terhubung ke Router 1
 - IP Address: 2001:db8:a::100
 - Prefix    : /64
 - Gateway   : 2001:db8:a::1 (Router1)
+-DNS        :2001:4860:4860::8888
 Pada laptop yang terhubung ke Router 2
 - IP Address: 2001:db8:b::100
 - Prefix    : /64
 - Gateway   : 2001:db8:b::1 (Router2)
+- DNS       : 2001:4860:4860::8888
+![IP PC A](<images/IP Address Router A.png>)
+![IP PC B](<images/IP Address Router B.png>)
+
 7. Jika Sudah Uji test PING dari Laptop 1 ke alamat Laptop 2, Jika berhasil maka Routing tidak ada masalah.
 
 Pada konfigurasikan Router 2 dan laptop yang terhubung ke router 2 lakukan hal yang sama
@@ -168,11 +196,11 @@ Pastikan router telah di-reset ke kondisi awal (tanpa konfigurasi) agar konfigur
 2. Login ke Router
 Gunakan Winbox untuk mengakses router melalui MAC address atau IP default. Login menggunakan user admin (tanpa password jika belum diatur).
 ![Login Winbox](images/Login_Winbox.png)
-3. Konfigurasi IP Address pada Ether1 (note lakukan konfigurasi ini pada router 1 dan 2)
+3. Konfigurasi IP Address pada Ether1 (note lakukan konfigurasi ini pada router A dan b)
 Tambahkan IP address pada ether1 yang digunakan sebagai jalur antar-router. Karena hanya ada dua perangkat yang terhubung (router A dan router B),<br>
 - IP ether1 Router A  : 2001:db8:1::1/64
 - IP ether 1 Router B : 2001:db8:1::2/64
-4. Konfigurasi IP Address untuk Jaringan LAN (note lakukan konfigurasi ini pada router 1 dan 2)
+4. Konfigurasi IP Address untuk Jaringan LAN (note lakukan konfigurasi ini pada router A dan b)
 Tambahkan IP address pada ether 2 yang digunakan untuk menghubungkan Laptop dengan Router. <br>
 - IP ether 2 Router A  : 2001:db8:a::1/64
 - IP ether 2 Router B  : 2001:db8:b::1/64
@@ -180,18 +208,19 @@ Tambahkan IP address pada ether 2 yang digunakan untuk menghubungkan Laptop deng
 ![IP RB1 IPV6](images/add_ip_rb1.png)
 ![IP RB2 IPV6](images/add_ip_rb2.png)
 
-5. Konfigurasi Routing Dinamis (note lakukan konfigurasi ini pada router 1 dan 2) 
+5. Konfigurasi Routing Dinamis (note lakukan konfigurasi ini pada router A dan b) 
 Setelah semua interface diberi IP, langkah selanjutnya adalah menggunakan OSPFv3 untuk Routing Dinamis.
 1. Buat Instance OSPFv3 
 - Masuk ke menu IIPv6 > Routing > OSPFv3 > Instances → Klik + untuk menambahkan routing.
 - Name: ospf-instance
-- Router ID: misalnya 1.1.1.1 untuk Router1, 2.2.2.2 untuk Router2
-- Enabled: ✔️ Centang
+- Router ID: misalnya 0.0.0.0 untuk Router1, 0.0.0.0 untuk Router2
+![OSPF Instance](images/OSPF_Instance.png)
 2. Tambah Area
 - Masuk ke menu Routing > OSPFv3 > Areas → Klik +
 - Name: backbone
 - Instance: pilih ospf-instance
 - Area ID: 0.0.0.0 (wajib untuk backbone area)
+![OSPF Area](images/OSPF_Area.png)
 3. Tambah Interface OSPFv3
 - Router1:
 - Masuk ke menu Routing > OSPFv3 > Interface → Klik +
@@ -202,25 +231,33 @@ Tambahkan juga interface LAN:
 - Interface: ether2
 Router2:
 - Tambahkan interface ether1 dan ether2 dengan cara yang sama
+![OSPF Area](images/OSPF_Interface.png)
 4. Cek Neighbor & Routing
 Masuk ke menu Routing > OSPFv3 > Neighbors
 - Harus muncul tetangga OSPF antara Router1 dan Router2
-Masuk ke menu IPv6 > Routes
+Optional coba cek Masuk ke menu IPv6 > Routes
 - Harus terlihat rute dinamis ke jaringan 2001:db8:a::/64 dan 2001:db8:b::/64
 5. Dari Router1 terminal, coba ping LAN di Router2:
 ```bash
 ping 2001:db8:b::1
 ```
-6. Konfigurasi IP Adress di Laptop (note lakukan konfigurasi ini laptop yang terhubung pada router 1 dan 2 masing-masing)
+6. Konfigurasi IP Adress di Laptop (note lakukan konfigurasi ini laptop yang terhubung pada router A dan b masing-masing)
 Karena ini masih menggunakan konfigurasi Static IP tambahkan IP address secara manual ke interface di laptop masing-masing bisa lewat Control Panel atau langsung di settings Windows, pastikan IP dan Gateway sudah benar sesuai Ether 2.
 Pada laptop yang terhubung ke Router 1
 - IP Address: 2001:db8:a::100
 - Prefix    : /64
 - Gateway   : 2001:db8:a::1 (Router1)
+- DNS       : 2001:4860:4860::8888
 Pada laptop yang terhubung ke Router 2
 - IP Address: 2001:db8:b::100
 - Prefix    : /64
 - Gateway   : 2001:db8:b::1 (Router2)
+- DNS       : 2001:4860:4860::8888
+
+![IP PC A](<images/IP Address Router A.png>)
+![IP PC B](<images/IP Address Router B.png>)
+
+
 7. Jika Sudah Uji test PING dari Laptop 1 ke alamat Laptop 2, Jika berhasil maka Routing tidak ada masalah.
 
 Pada konfigurasikan Router 2 dan laptop yang terhubung ke router 2 lakukan hal yang sama
