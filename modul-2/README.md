@@ -220,7 +220,7 @@ Setelah semua interface diberi IP, langkah selanjutnya adalah menggunakan OSPFv3
 1. Buat Instance OSPFv3 
 - Masuk ke menu IIPv6 > Routing > OSPFv3 > Instances → Klik + untuk menambahkan routing.
 - Name: ospf-instance
-- Router ID: misalnya 0.0.0.0 untuk Router1, 0.0.0.0 untuk Router2
+- Router ID: misalnya 1.1.1.1 untuk Router1, 2.2.2.2 untuk Router2
 ![OSPF Instance](images/OSPF_Instance.png)
 2. Tambah Area
 - Masuk ke menu Routing > OSPFv3 > Areas → Klik +
