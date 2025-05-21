@@ -340,6 +340,7 @@ Pada konfigurasikan Router 2 dan laptop yang terhubung ke router 2 lakukan hal y
 
 # Tugas Modul
 1. Simulasikan Konfigurasi Praktikum P2 di atas mengenai Routing Dinamis dan Statis IPV6 menggunakan GNS3
+
 # Referensi
 ## 1 [Apa itu IPv6](https://www.thousandeyes.com/learning/techtorials/ipv4-vs-ipv6)
 ## 1 [Apa itu IPv6](https://www.geeksforgeeks.org/what-is-ipv6/)

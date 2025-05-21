@@ -1,6 +1,5 @@
 # Tugas Pendahuluan
-1. Jelaskan Jaringan mana yang lebih baik Wired atau Wireless?
-2. 
+SABAR YAA
 
 ## 1.1 Apa itu Jaringan Wireless?
 "Wireless" secara harfiah berarti "tanpa kabel". Jadi, jaringan wireless adalah jaringan komunikasi yang tidak menggunakan kabel untuk menghubungkan antar perangkat. Sebagai gantinya, jaringan ini memanfaatkan gelombang elektromagnetik (EM waves) seperti gelombang radio atau inframerah sebagai media transmisinya.
@@ -11,8 +10,8 @@ Kalau kabel itu seperti jalan aspal yang harus dibangun fisik, maka wireless itu
 hambatan dan lebih fleksibel!
 
 ### 1.1.1 Tipe-tipe Jaringan Wireless
-#### 1.1.1.1 WIFI
-Wi-Fi (Wireless Fidelity) adalah teknologi standar untuk jaringan WLAN (Wireless Local Area Network) yang menghubungkan komputer dan perangkat lain tanpa kabel ke jaringan dan internet.
+#### 1.1.1.1 Wi-Fi
+**Wi-Fi (Wireless Fidelity)** adalah teknologi standar untuk jaringan WLAN (Wireless Local Area Network) yang menghubungkan komputer dan perangkat lain tanpa kabel ke jaringan dan internet.
 
 "Gampangnya, Wi-Fi itu seperti versi nirkabel dari kabel LAN. Kalau kabel LAN butuh ditancapkan, Wi-Fi cukup cari sinyal, klik SSID, masukin password, dan kamu sudah online!"
 
@@ -103,13 +102,16 @@ Setiap jaringan wireless (Wi-Fi) pasti memiliki **SSID (Service Set Identifier)*
 - **Nama unik** yang membedakan satu jaringan WLAN dengan yang lain
 - Semua perangkat yang ingin bergabung ke jaringan harus menyambung ke SSID yang sama
 
-"Misalnya kamu lihat SSID bernama Kampus_ITS_Wifi, itu adalah identitas WLAN tempatmu akan bergabung."
+"Misalnya kamu lihat SSID bernama Kampus_ITS_Wifi, itu adalah identitas WLAN tempatmu akan berga bung."
 
 ## 2.1 Perangkat Wireless Network
 
 ### 2.1.1 Access Point
 
 ### 2.1.2 Wireless Router
+**Wireless Router** adalah perangkat jaringan yang berfungsi sebagai penghubung antara jaringan lokal (LAN) dengan jaringan luar seperti internet, sekaligus menyediakan koneksi nirkabel (Wi-Fi) untuk perangkat pengguna.
+
+"Gampangnya, kalau router biasa itu seperti gerbang masuk ke internet lewat kabel, maka wireless router itu gerbang yang juga memancarkan Wi-Fi ke HP, laptop, dan perangkat lainnya."
 
 ### 2.1.3 Wireless Network Interface Controller (NIC)
 
