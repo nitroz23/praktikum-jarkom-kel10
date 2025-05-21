@@ -1,5 +1,7 @@
 # Tugas Pendahuluan
-SABAR YAA
+1. Jelasin apa yang lebih baik, jaringan wired atau jaringan wireless?
+2. Apa perbedaan antara router, access point, dan modem?
+3. Jika kamu diminta menghubungkan dua ruangan di gedung berbeda tanpa menggunakan kabel, perangkat apa yang kamu pilih? Jelaskan alasannya.
 
 ## 1.1 Apa itu Jaringan Wireless?
 "Wireless" secara harfiah berarti "tanpa kabel". Jadi, jaringan wireless adalah jaringan komunikasi yang tidak menggunakan kabel untuk menghubungkan antar perangkat. Sebagai gantinya, jaringan ini memanfaatkan gelombang elektromagnetik (EM waves) seperti gelombang radio atau inframerah sebagai media transmisinya.
@@ -107,13 +109,39 @@ Setiap jaringan wireless (Wi-Fi) pasti memiliki **SSID (Service Set Identifier)*
 ## 2.1 Perangkat Wireless Network
 
 ### 2.1.1 Access Point
+**Access Point (AP)** adalah perangkat jaringan yang berfungsi untuk menghubungkan perangkat wireless (nirkabel) seperti laptop, smartphone, atau tablet ke jaringan kabel, seperti LAN atau internet.
+
+"Gampangnya, Access Point itu seperti jembatan antara dunia tanpa kabel (wireless) dan dunia dengan kabel (wired)."
+
+Access Point akan menciptakan jaringan wireless lokal (WLAN) di area tertentu — biasanya di kantor, sekolah, gedung besar, atau ruang publik lainnya.
+
+**🛠️ Cara Kerja Access Point**
+Access Point bekerja dengan tersambung ke router, switch, atau hub melalui kabel Ethernet. Dari situ:
+1. Access Point menerima koneksi jaringan kabel.
+2. Kemudian memancarkan sinyal Wi-Fi ke area sekitar.
+3. Perangkat seperti HP, laptop, atau tablet mendeteksi SSID dari Access Point.
+4. Setelah terhubung, perangkat bisa mengakses jaringan/internet seolah-olah terhubung langsung lewat kabel.
 
 ### 2.1.2 Wireless Router
 **Wireless Router** adalah perangkat jaringan yang berfungsi sebagai penghubung antara jaringan lokal (LAN) dengan jaringan luar seperti internet, sekaligus menyediakan koneksi nirkabel (Wi-Fi) untuk perangkat pengguna.
 
 "Gampangnya, kalau router biasa itu seperti gerbang masuk ke internet lewat kabel, maka wireless router itu gerbang yang juga memancarkan Wi-Fi ke HP, laptop, dan perangkat lainnya."
 
+#### 2.1.2.1 Fungsi Wireless Router
+Fungsi Wireless Router
+Wireless router menggabungkan dua peran dalam satu perangkat:
+
+1. Router:
+- Mengarahkan lalu lintas data antara jaringan lokal dan internet.
+- Mengatur jalur pengiriman paket data.
+- Bisa menghubungkan beberapa jaringan LAN.
+
+2. Transmitter Wi-Fi:
+- Memancarkan sinyal nirkabel ke sekitarnya agar perangkat bisa terhubung tanpa kabel.
+- Mengelola komunikasi antar perangkat dalam jaringan lokal wireless.
+
 ### 2.1.3 Wireless Network Interface Controller (NIC)
+
 
 ### 2.1.4 Repeater / Range Extender
 
