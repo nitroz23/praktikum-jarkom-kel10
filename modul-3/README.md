@@ -142,14 +142,137 @@ Wireless router menggabungkan dua peran dalam satu perangkat:
 - Mengelola komunikasi antar perangkat dalam jaringan lokal wireless.
 
 ### 2.1.3 Wireless Network Interface Controller (NIC)
+**Wireless NIC** itu adalah komponen hardware yang bikin laptop, PC, atau perangkat lain bisa nyambung ke jaringan Wi-Fi. Bisa langsung nempel di motherboard atau berupa perangkat tambahan kayak USB dongle atau kartu PCI.
 
+Wireless NIC, atau sering juga disebut **wireless adapter** atau **kartu Wi-Fi**, adalah alat penting biar perangkat bisa terkoneksi ke jaringan nirkabel. Alat ini memungkinkan kita terhubung ke internet tanpa kabel, dan bisa ditemukan di berbagai perangkat: laptop, desktop, HP, tablet, sampai perangkat IoT.
+
+#### 2.1.3.1 Cara Kerja Wireless NIC
+NIC nirkabel bekerja dengan cara mengubah data jadi sinyal radio, lalu dikirim lewat udara ke router atau access point. Router ini bakal ubah lagi sinyal jadi data yang bisa dimengerti oleh jaringan.
+
+**Bagian penting dari Wireless NIC:**
+- **Radio Transceiver:** Kirim dan terima sinyal radio.
+- **Antena:** Bantu jangkauan sinyal lebih luas.
+- **Driver & Firmware:** Software buat komunikasi antara hardware dan sistem operasi.
+- **MAC Address:** Identitas unik tiap NIC di jaringan.
+
+#### 2.1.3.2 Jenis-Jenis Wireless NIC
+Wireless NIC hadir dalam berbagai bentuk tergantung kebutuhan:
+
+- **Internal NIC:** Udah nempel di motherboard (umum di laptop).
+- **PCI/PCIe NIC:** Kartu tambahan buat desktop, biasanya sinyalnya lebih kuat.
+- **USB Wi-Fi Adapter:** Praktis buat PC lama, tinggal colok USB.
+- **Mini PCIe & M.2 NIC:** Kecil, cocok buat laptop dan sistem embedded.
+- **Wireless Dongle:** Adapter kecil untuk TV, konsol game, dll.
+
+#### 2.1.3.3 Keunggulan Wireless NIC
+Kenapa banyak orang pakai wireless NIC? Ini dia alasannya:
+
+- **Mobilitas:** Gak perlu kabel, bebas pindah tempat.
+- **Praktis:** Gampang nyambung ke jaringan.
+- **Skalabilitas:** Tambah perangkat ke jaringan tanpa ribet narik kabel.
+- **Fleksibel:** Bisa dipakai di banyak jenis perangkat.
+- **Lebih Murah:** Gak perlu biaya instalasi kabel jaringan.
+
+#### 2.1.3.4 Fitur Keren Wireless NIC
+Beberapa fitur bikin wireless NIC makin keren:
+
+- **Multiple Antennas (MIMO):** Bikin sinyal makin kuat.
+- **Dual-Band (2.4 & 5 GHz):** Lebih fleksibel, gangguan lebih sedikit.
+- **Keamanan Tinggi:** Dukungan WPA2, WPA3, dll.
+- **Dukungan Wi-Fi Terbaru:** Misal Wi-Fi 6 untuk kecepatan dan efisiensi lebih baik.
+- **Driver Update:** Produsen biasanya kasih update buat performa dan kompatibilitas.
 
 ### 2.1.4 Repeater / Range Extender
+![Repeater](images/2.1.4_Repeater.webp)
+**WiFi Repeater** atau **WiFi Extender** itu alat buat memperluas jangkauan sinyal WiFi di rumah atau kantor. Cara kerjanya simpel: alat ini menangkap sinyal WiFi yang udah ada, terus diperkuat dan dipancarkan ulang ke area yang sinyalnya lemah. Dengan repeater ini, kamu bisa nyambung WiFi sampai ke pojok rumah, lantai atas, atau bahkan halaman belakang.
+
+WiFi repeater itu isinya dua router mini. Yang satu tugasnya nangkep sinyal WiFi dari router utama, dan yang satu lagi nyebarin ulang sinyal yang udah diperkuat tadi.
+
+Semua repeater **pasti ada penurunan kecepatan**. Yang parah itu biasanya **single-band repeater** karena mereka pakai frekuensi yang sama buat nerima dan nyebar sinyal — ini bisa bikin bandwidth turun sampai 50%.
+
+**Dual-band repeater** lebih bagus karena bisa nerima sinyal dari router di satu frekuensi dan ngeluarin sinyal baru di frekuensi lain. Misalnya, **Netgear Nighthawk AC1900** pakai teknologi **FastLane**, punya prosesor 1GHz dual-core buat performa maksimal.
 
 ### 2.1.5 Point-to-Point (PtP) Wireless Bridge
 #### 2.1.5.1 AirGrid M5 HP
 
 ## 3.1 Keamanan Jaringan Wireless
+![Keamanan Jaringan Wireless](images/3.1_JenisSecurityWireless.webpater.webp)
+
+Keamanan jaringan nirkabel bikin lapisan perlindungan dengan kombinasi dari:
+
+- Enkripsi: Nyamarkan data supaya cuma bisa dibaca yang punya kunci.
+- Autentikasi: Pastikan perangkat dan orang yang nyambung itu valid.
+- Kontrol akses: Atur siapa bisa akses apa.
+- Keamanan perangkat: Identifikasi perangkat yang aman dan set aturan di sistem keamanan lainnya.
+- Deteksi intrusi: Pantau jaringan dan blokir aktivitas mencurigakan secara real-time.
+
+Semua itu untuk cegah akses ilegal dan jaga keamanan jaringan. Prosesnya dimulai dari enkripsi kayak WPA2 atau WPA3 yang nyamarkan data biar nggak bisa dibaca orang lain.
+
+Saat ada perangkat yang mau nyambung, sistem bakal minta verifikasi identitas, biasanya lewat password. Lalu, kontrol akses bakal nentuin siapa yang boleh masuk dan sampai sejauh mana aksesnya.
+
+Setelah itu, keamanan perangkat dijaga dengan antivirus, update sistem, dan pembatasan akses admin. Sistem IDPS juga aktif buat ngawasin jaringan dari aktivitas mencurigakan.
+
+### 3.1.1 Jenis-Jenis Protokol Keamanan Wi-Fi
+![Keamanan Protokol Keamanan](images/3.1.1_JenisProtokolKeamanan.webp)
+
+1. WEP (Wired Equivalent Privacy)
+- Protokol lama (1997)
+- Gampang dibobol karena pakai RC4 yang lemah
+- Sekarang udah nggak direkomendasikan
+
+2. WPA (Wi-Fi Protected Access)
+
+- Pengganti WEP, muncul tahun 2003
+- Pakai TKIP
+- Ada dua mode: WPA-Personal dan WPA-Enterprise
+- Lebih baik dari WEP, tapi masih kurang aman dibanding WPA2
+
+3. WPA2
+- Rilis 2004
+- Pakai AES encryption, jauh lebih aman
+- Jadi standar umum
+- Masih punya celah seperti KRACK
+
+4. WPA3
+- Protokol terbaru (2018)
+- Lebih aman, anti brute force, dan konfigurasi lebih gampang
+- Ada tiga versi: WPA3-Personal, WPA3-Enterprise, dan Enhanced Open
+- Masih belum banyak dipakai karena masalah kompatibilitas dan adopsi lambat
+
+5 Cara Jaga Keamanan Wi-Fi
+
+
+
+### 3.1.2 Cara Jaga Keamanan Wi-Fi
+ ![Cara Jaga Keamanan Wi-Fi](images/3.1.2_CaraJagaKeamananWiFi.webp)
+
+1. Gunakan Enkripsi
+Pakai WPA2 atau WPA3 biar data kamu nggak gampang disadap.
+
+2. Aktifkan Firewall Router
+Cek pengaturan router dan aktifkan firewall buat perlindungan ekstra.
+
+3. Amankan SSID
+Hindari pakai nama yang gampang ditebak (kayak nama kamu). Bikin unik dan nggak mencolok.
+
+4. Pakai VPN
+VPN bantu enkripsi koneksi kamu, apalagi di Wi-Fi publik. Cari yang pakai AES-256.
+
+5. Gunakan Aplikasi Keamanan Wi-Fi
+Aplikasi kayak Wireshark, NetSpot, dll. bisa bantu cek performa, cari celah, dan pantau aktivitas mencurigakan.
+
+### 3.1.3 Jenis Autentikasi Wireless
+1. Multi-Factor Authentication (MFA)
+Gabungan password + verifikasi tambahan (misal OTP, biometrik).
+
+2. Single Sign-On (SSO)
+Login sekali untuk akses beberapa aplikasi.
+
+3. Password-Based
+Pakai username dan password. Umum, tapi rentan kalau gak dijaga.
+
+4. Passwordless
+Tanpa password! Pakai biometrik atau one-time link. Lebih aman dan praktis.
 
 # TAHAPAN PRAKTIKUM
 
