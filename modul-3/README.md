@@ -212,7 +212,7 @@ Saat ada perangkat yang mau nyambung, sistem bakal minta verifikasi identitas, b
 Setelah itu, keamanan perangkat dijaga dengan antivirus, update sistem, dan pembatasan akses admin. Sistem IDPS juga aktif buat ngawasin jaringan dari aktivitas mencurigakan.
 
 ### 3.1.1 Jenis-Jenis Protokol Keamanan Wi-Fi
-![Keamanan Protokol Keamanan](images/3.1.1_JenisProtokolKeamanan.webp_JenisSecurityWireless.webpater.webp)
+![Keamanan Protokol Keamanan](images/3.1.1_JenisProtokolKeamanan.webp)
 
 1. WEP (Wired Equivalent Privacy)
 - Protokol lama (1997)
@@ -243,7 +243,7 @@ Setelah itu, keamanan perangkat dijaga dengan antivirus, update sistem, dan pemb
 
 
 ### 3.1.2 Cara Jaga Keamanan Wi-Fi
- ![Cara Jaga Keamanan Wi-Fi](images/3.1.2_CaraJagaKeamananWiFi.webp_JenisProtokolKeamanan.webp_JenisSecurityWireless.webpater.webp)
+ ![Cara Jaga Keamanan Wi-Fi](images/3.1.2_CaraJagaKeamananWiFi.webp)
 
 1. Gunakan Enkripsi
 Pakai WPA2 atau WPA3 biar data kamu nggak gampang disadap.
