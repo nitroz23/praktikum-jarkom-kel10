@@ -3,6 +3,7 @@
 2. Apa perbedaan antara router, access point, dan modem?
 3. Jika kamu diminta menghubungkan dua ruangan di gedung berbeda tanpa menggunakan kabel, perangkat apa yang kamu pilih? Jelaskan alasannya.
 
+# Modul Jaringan Wireless
 ## 1.1 Apa itu Jaringan Wireless?
 "Wireless" secara harfiah berarti "tanpa kabel". Jadi, jaringan wireless adalah jaringan komunikasi yang tidak menggunakan kabel untuk menghubungkan antar perangkat. Sebagai gantinya, jaringan ini memanfaatkan gelombang elektromagnetik (EM waves) seperti gelombang radio atau inframerah sebagai media transmisinya.
 
