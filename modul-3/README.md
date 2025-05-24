@@ -345,10 +345,7 @@ Pakai username dan password. Umum, tapi rentan kalau gak dijaga.
 Tanpa password! Pakai biometrik atau one-time link. Lebih aman dan praktis.
 
 # TAHAPAN PRAKTIKUM
-
-
 ## Wireless Point to Point
-
 
 Konfigurasi Router
 1. Reset Router Jika masih ada konfigurasi 
@@ -411,7 +408,6 @@ Pada konfigurasikan Router B dan laptop yang terhubung ke Router B lakukan hal y
 
 
 ## Wireless Point to Multipoint
-
 
 Konfigurasi Router
 1. Reset Router Jika masih ada konfigurasi 
@@ -532,6 +528,9 @@ Pada laptop yang terhubung ke Router B
 Pada konfigurasikan Router B dan laptop yang terhubung ke Router B lakukan hal yang sama
 
 
-## Wireless Point To Point Ubiqotus
+## Wireless Point To Point Ubiquiti airGrid M5 HP
+1. Silahkan hubungkan kabel power ke PoE, lalu hubungkan port lan PoE ke ubiquiti dan juga port LAN ke port LAN. Sambungkan ke kedua PC kalian.
+2. Setelah itu silahkan ke browser kalian dan ketik http://192.168.1.20 (default IP Ubiquiti).
+3. Jika tidak bisa silahkan hard reset melalui tombol disebelah LAN port
 
 # TUGAS MODUL
