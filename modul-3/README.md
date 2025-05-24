@@ -511,7 +511,7 @@ Masuk pada Menu Wireless-> Wifi Interface -> Klik interface Wlan 1 dan tekan tan
 Konfigurasikan untuk Router A Sebagai ( setelah double Klik pada interface wlan 1 masuk ke tab Wireless ) :
 - Mode : Bridge
 - SSID : WirelessBridge_No kelompok
-![Station_Bridge](images/StationBridge_Scan.png)
+![alt text](images/Bridge_RouterA.png)
 Konfigurasikan untuk Router B Sebagai ( setelah double Klik pada interface wlan 1 masuk ke tab Wireless ) : 
 - Mode : Station Pseudobridge
 - Setelah itu klik tombol scan dan pilih interface menjadi wlan 1 lalu akan muncul berbagai jaringan wifi cari nama wifi yang sesuai dengan Router A lalu klik Connect.
