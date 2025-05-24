@@ -359,19 +359,26 @@ Masuk pada Menu Wireless-> Wifi Interface -> Klik interface Wlan 1 dan tekan tan
 Konfigurasikan untuk Router A Sebagai ( setelah double Klik pada interface wlan 1 masuk ke tab Wireless ) :
 - Mode : Bridge
 - SSID : PointToPoint_No kelompok
+![Bridge_RB](images/Bridge_RouterA.png)
+
 Konfigurasikan untuk Router B Sebagai ( setelah double Klik pada interface wlan 1 masuk ke tab Wireless ) : 
 - Mode : Station
 - Setelah itu klik tombol scan dan pilih interface menjadi wlan 1 lalu akan muncul berbagai jaringan wifi cari nama wifi yang sesuai dengan Router A lalu klik Connect.
+
+![Station_Scan](images/station_scan.png)
+
 4. Konfigurasi IP Address pada Wlan 1 
 Tambahkan IP address pada Wlan 1 yang digunakan sebagai jalur antar-router. Karena hanya ada dua perangkat yang terhubung (router A dan router B),
-<br>
 - IP Wlan 1 Router A  : 10.10.10.1/29
 - IP Wlan 1 Router B : 10.10.10.2/29
 5. Konfigurasi IP Address untuk Jaringan LAN (note lakukan konfigurasi ini pada router A dan b)
 Tambahkan IP address pada ether 2 yang digunakan untuk menghubungkan Laptop dengan Router. <br>
 - IP ether 2 Router A  : 192.168.20.1/24
 - IP ether 2 Router B  : 192.168.30.1/24
-<br>
+
+![IPADDRBA](images/Route_Router_A.png)
+![IPADDRBB](images/Route_Router_B.png)
+
 6. Konfigurasi Routing Statis (note lakukan konfigurasi ini pada router A dan b)
 Setelah semua interface diberi IP, langkah selanjutnya adalah menambahkan rute secara manual.
 Masuk ke menu IPv4 → Routes, kemudian klik "+" untuk menambahkan routing.
@@ -381,6 +388,10 @@ Pada Router A
 Pada Router B
 - Dst. Address: 192.168.20.0/24
 - Gateway: 10.10.10.1
+
+![Router_A](images/Route_Router_A.png)
+![Router_B](images/Route_Router_B.png)
+
 
 7. Test Koneksi Antar Router
 - Dari Router A, buka New Terminal, ping Wlan 1 Router B:
@@ -421,9 +432,14 @@ Masuk pada Menu Wireless-> Wifi Interface -> Klik interface Wlan 1 dan tekan tan
 Konfigurasikan untuk Router A Sebagai ( setelah double Klik pada interface wlan 1 masuk ke tab Wireless ) :
 - Mode : Ap bridge
 - SSID : PointToMultipoint_No kelompok
+![APP_Bridge](images/AppBridge.png)
+
 Konfigurasikan untuk Router B Sebagai ( setelah double Klik pada interface wlan 1 masuk ke tab Wireless ) : 
 - Mode : Station Bridge
 - Setelah itu klik tombol scan dan pilih interface menjadi wlan 1 lalu akan muncul berbagai jaringan wifi cari nama wifi yang sesuai dengan Router A lalu klik Connect.
+
+
+![Station_Bridge](images/StationBridge_Scan.png)
 4. Konfigurasi IP Address pada Wlan 1 
 Tambahkan IP address pada Wlan 1 yang digunakan sebagai jalur antar-router. Karena hanya ada dua perangkat yang terhubung (router A dan router B),
 <br>
@@ -433,7 +449,11 @@ Tambahkan IP address pada Wlan 1 yang digunakan sebagai jalur antar-router. Kare
 Tambahkan IP address pada ether 2 yang digunakan untuk menghubungkan Laptop dengan Router. <br>
 - IP ether 2 Router A  : 192.168.20.1/24
 - IP ether 2 Router B  : 192.168.30.1/24
-<br>
+
+
+![IPADDRBA](images/Route_Router_A.png)
+![IPADDRBB](images/Route_Router_B.png)
+
 6. Konfigurasi Routing Statis (note lakukan konfigurasi ini pada router A dan b)
 Setelah semua interface diberi IP, langkah selanjutnya adalah menambahkan rute secara manual.
 Masuk ke menu IPv4 → Routes, kemudian klik "+" untuk menambahkan routing.
@@ -443,6 +463,11 @@ Pada Router A
 Pada Router B
 - Dst. Address: 192.168.20.0/24
 - Gateway: 10.10.10.1
+
+
+![Router_A](images/Route_Router_A.png)
+![Router_B](images/Route_Router_B.png)
+
 
 7. Test Koneksi Antar Router
 - Dari Router A, buka New Terminal, ping Wlan 1 Router B:
@@ -482,26 +507,34 @@ Masuk pada Menu Wireless-> Wifi Interface -> Klik interface Wlan 1 dan tekan tan
 Konfigurasikan untuk Router A Sebagai ( setelah double Klik pada interface wlan 1 masuk ke tab Wireless ) :
 - Mode : Bridge
 - SSID : WirelessBridge_No kelompok
+![Station_Bridge](images/StationBridge_Scan.png)
 Konfigurasikan untuk Router B Sebagai ( setelah double Klik pada interface wlan 1 masuk ke tab Wireless ) : 
 - Mode : Station Pseudobridge
 - Setelah itu klik tombol scan dan pilih interface menjadi wlan 1 lalu akan muncul berbagai jaringan wifi cari nama wifi yang sesuai dengan Router A lalu klik Connect.
+
+![StationPSUDO](images/StationPsudo.png)
+
 4. Konfigurasi IP Address pada Wlan 1 
 Tambahkan IP address pada Wlan 1 yang digunakan sebagai jalur antar-router. Karena hanya ada dua perangkat yang terhubung (router A dan router B),
-<br>
 - IP Wlan 1 Router A  : 10.10.10.1/29
 - IP Wlan 1 Router B : 10.10.10.2/29
 
 5. Konfigurasi IP Address untuk Jaringan LAN (note lakukan konfigurasi ini pada router A dan b)
 Tambahkan IP address pada ether 2 yang digunakan untuk menghubungkan Laptop dengan Router. <br>
-- IP ether 2 Router A  : 192.168.20.1/24
-- IP ether 2 Router B  : 192.168.30.1/24
-<br>
+- IP ether 2 Router A  : 192.168.10.2/24
+- IP ether 2 Router B  : 192.168.10.3/24
+
+![A](images/IPADDRESS_WBA.png)
+![B](images/IPADRESS_WBB.png)
 
 6. Tambahkan bridge pada Router A dan B untuk menghubungkan wlan 1 dan ether 2 
 Router A :
 - Masuk ke menu Bridge -> lalu tambah kan bridge dengan menekan tombol "+", lalu tambahkan untuk nama gunakan bridge1(atau yang lain)
 - lalu masuk ke tab Port dan tambahkan :
 - Interface Wlan 1 dan Ether 2 lalu gunakan bridge yang sudah di buat.
+![Bridge](images/Bridge.png)
+
+![PortBridge](images/PortBridge.png)
 
 7. Test Koneksi Antar Router
 - Dari Router A, buka New Terminal, ping Wlan 1 Router B:
@@ -515,12 +548,12 @@ ping 10.10.10.1
 8. Konfigurasi IP Adress di Laptop (note lakukan konfigurasi ini laptop yang terhubung pada router A dan b masing-masing)
 Karena ini masih menggunakan konfigurasi Static IP tambahkan IP address secara manual ke interface di laptop masing-masing bisa lewat Control Panel atau langsung di settings Windows, pastikan IP dan Gateway sudah benar sesuai Ether 2.
 Pada laptop yang terhubung ke Router A
-- IP Address : 192.168.20.2
-- Gateway    : 192.168.20.1  (Router A)
+- IP Address : 192.168.10.5
+- Gateway    : 192.168.10.2  (Router A)
 - DNS        : 8.8.8.8
 Pada laptop yang terhubung ke Router B
-- IP Address: 192.168.30.2
-- Gateway   : 192.168.30.1 (Router B)
+- IP Address: 192.168.10.7
+- Gateway   : 192.168.10.3 (Router B)
 - DNS       : 8.8.8.8
 
 9. Jika Sudah Uji test PING dari Laptop 1 ke alamat Laptop 2, Jika berhasil maka Routing tidak ada masalah.
