@@ -520,7 +520,6 @@ Konfigurasikan untuk Router B Sebagai ( setelah double Klik pada interface wlan 
 
 4. Konfigurasi IP Address pada Wlan 1 
 Tambahkan IP address pada Wlan 1 yang digunakan sebagai jalur antar-router. Karena hanya ada dua perangkat yang terhubung (router A dan router B),
-<br>
 - IP Wlan 1 Router A  : 10.10.10.1/29
 - IP Wlan 1 Router B : 10.10.10.2/29
 
