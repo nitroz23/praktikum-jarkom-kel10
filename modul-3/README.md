@@ -3,6 +3,7 @@
 2. Apa perbedaan antara router, access point, dan modem?
 3. Jika kamu diminta menghubungkan dua ruangan di gedung berbeda tanpa menggunakan kabel, perangkat apa yang kamu pilih? Jelaskan alasannya.
 
+# Modul Jaringan Wireless
 ## 1.1 Apa itu Jaringan Wireless?
 "Wireless" secara harfiah berarti "tanpa kabel". Jadi, jaringan wireless adalah jaringan komunikasi yang tidak menggunakan kabel untuk menghubungkan antar perangkat. Sebagai gantinya, jaringan ini memanfaatkan gelombang elektromagnetik (EM waves) seperti gelombang radio atau inframerah sebagai media transmisinya.
 
@@ -115,7 +116,7 @@ Setiap jaringan wireless (Wi-Fi) pasti memiliki **SSID (Service Set Identifier)*
 
 Access Point akan menciptakan jaringan wireless lokal (WLAN) di area tertentu — biasanya di kantor, sekolah, gedung besar, atau ruang publik lainnya.
 
-**🛠️ Cara Kerja Access Point**
+#### 2.1.1.1 Cara Kerja Access Point
 Access Point bekerja dengan tersambung ke router, switch, atau hub melalui kabel Ethernet. Dari situ:
 1. Access Point menerima koneksi jaringan kabel.
 2. Kemudian memancarkan sinyal Wi-Fi ke area sekitar.
@@ -139,6 +140,22 @@ Wireless router menggabungkan dua peran dalam satu perangkat:
 2. Transmitter Wi-Fi:
 - Memancarkan sinyal nirkabel ke sekitarnya agar perangkat bisa terhubung tanpa kabel.
 - Mengelola komunikasi antar perangkat dalam jaringan lokal wireless.
+
+#### 2.1.2.2 Perbedaan Router dengan Access Point
+
+### 🔄 Perbedaan Router dengan Access Point
+Walaupun keduanya sering ditemukan dalam jaringan wireless, **router** dan **access point** adalah dua perangkat yang memiliki **fungsi yang berbeda**. Banyak orang mengira keduanya sama karena sama-sama memancarkan Wi-Fi, padahal peran dan penggunaannya berbeda.
+
+| Aspek                      | Router                                         | Access Point                                   |
+|----------------------------|-----------------------------------------------|------------------------------------------------|
+| Fungsi utama               | Menghubungkan jaringan lokal ke internet       | Menghubungkan perangkat wireless ke jaringan lokal |
+| Apakah bisa pancarkan Wi-Fi?| Ya (jika wireless router)                     | Ya, khusus untuk jaringan lokal                 |
+| Apakah butuh koneksi ke router lain? | Tidak, biasanya berdiri sendiri (terhubung ke modem) | Ya, perlu terhubung ke router/switch utama      |
+| Menyediakan DHCP/IP        | Ya, biasanya memiliki DHCP server              | Bisa ya, bisa juga tidak (tergantung perangkat) |
+| Cocok untuk                | Internet rumah, kantor kecil                  | Memperluas jangkauan Wi-Fi di gedung besar      |
+| Topologi                   | Titik pusat jaringan                          | Perpanjangan jaringan wireless                 |
+| Contoh penggunaan          | Wi-Fi utama rumah/kantor                      | Tambahan Wi-Fi di ruangan lain / lantai lain   |
+
 
 ### 2.1.3 Wireless Network Interface Controller (NIC)
 **Wireless NIC** itu adalah komponen hardware yang bikin laptop, PC, atau perangkat lain bisa nyambung ke jaringan Wi-Fi. Bisa langsung nempel di motherboard atau berupa perangkat tambahan kayak USB dongle atau kartu PCI.
@@ -191,8 +208,64 @@ Semua repeater **pasti ada penurunan kecepatan**. Yang parah itu biasanya **sing
 
 **Dual-band repeater** lebih bagus karena bisa nerima sinyal dari router di satu frekuensi dan ngeluarin sinyal baru di frekuensi lain. Misalnya, **Netgear Nighthawk AC1900** pakai teknologi **FastLane**, punya prosesor 1GHz dual-core buat performa maksimal.
 
-### 2.1.5 Point-to-Point (PtP) Wireless Bridge
+### 2.1.5 Wireless Bridge
+**Wireless Bridge** adalah perangkat yang berfungsi untuk **menghubungkan jaringan utama (router/internet)** ke **perangkat lain di lokasi berbeda** secara **nirkabel (tanpa kabel)**, khususnya untuk **jarak jauh dan tetap**.
+
+> Ibarat jembatan digital, Wireless Bridge mengantarkan jaringan internet dari satu tempat ke tempat lain — biasanya di area yang tidak terjangkau sinyal Wi-Fi biasa.
+
+Contoh Kasus:
+> Kamu punya rumah utama dengan router, dan ada **guest house** atau kantor kecil di jarak 1 kilometer.  
+Kamu bisa pasang Wireless Bridge di kedua titik, sehingga guest house tetap mendapatkan koneksi internet dari rumah utama.
+
+#### 2.1.5.1 Cara Kerja Wireless Bridge
+
+- Router utama terhubung ke modem seperti biasa.
+- Wireless Bridge dipasang di router utama dan diarahkan ke lokasi kedua.
+- Wireless Bridge lainnya dipasang di lokasi kedua, **menerima sinyal dan meneruskannya ke perangkat lokal (PC, switch, dll).**
+
+Jadi Wireless Bridge bertugas **mengirim sinyal internet dari satu titik ke titik lain secara fokus**, seperti jembatan sempit yang menghubungkan dua pulau.
+
+#### 2.1.5.2 Perbedaan Wireless Bridge vs Router
+
+| Aspek                     | Wireless Router                                   | Wireless Bridge                                      |
+|--------------------------|----------------------------------------------------|------------------------------------------------------|
+| Fungsi utama             | Menghubungkan LAN ke internet                     | Memperluas cakupan jaringan secara arah tertentu     |
+| Radius Sinyal            | 360 derajat                                       | Fokus satu arah (point-to-point atau point-to-multipoint) |
+| Perlu modem?             | Ya (biasanya terhubung ke modem ISP)              | Tidak. Hanya butuh jaringan dari router              |
+| Contoh penggunaan        | Wi-Fi rumah, kantor, cafe                         | Antar gedung, guest house, tower komunikasi          |
+
+
 #### 2.1.5.1 AirGrid M5 HP
+**AirGrid M5 HP** adalah perangkat **wireless outdoor** buatan **Ubiquiti Networks** yang digunakan untuk **menghubungkan jaringan antar lokasi yang berjauhan** tanpa kabel — umumnya antar gedung, menara, atau area terpencil.
+
+Perangkat ini masuk kategori **Wireless Bridge** tipe **Point-to-Point (PtP)** karena mengarahkan sinyal internet dari satu titik ke titik lain secara fokus, bukan menyebarkannya ke segala arah seperti router biasa.
+
+> Ibaratnya, AirGrid M5 adalah **jembatan internet nirkabel** antar lokasi yang terpisah secara fisik.
+
+##### 2.1.5.1.1 Spesifikasi Umum AirGrid M5 HP
+
+| Fitur                      | Keterangan                                     |
+|----------------------------|-----------------------------------------------|
+| **Frekuensi**              | 5 GHz (karena itu namanya "M5")               |
+| **Jarak Jangkauan**        | Hingga **10+ km** dalam kondisi ideal         |
+| **Jenis Antena**           | Grid (parabola kawat) dengan sinyal terarah   |
+| **Mode Operasi**           | Station / Access Point / Bridge               |
+| **Kecepatan Transfer**     | Hingga **100 Mbps** (tergantung kondisi)      |
+| **Koneksi**                | 1 port Ethernet + **PoE** (Power over Ethernet)|
+| **Tahan Cuaca**            | Ya, dirancang untuk penggunaan luar ruangan   |
+
+##### 2.1.5.1.2 Cara Kerja AirGrid M5 HP
+
+1. **Perangkat 1 (Tx)**: Terhubung ke jaringan/internet utama (misalnya router di gedung A)
+2. **Perangkat 2 (Rx)**: Dipasang di lokasi tujuan (misalnya gedung B)
+3. Keduanya saling diarahkan secara **line of sight** (tanpa halangan)
+4. Sinyal dikirim dan diterima dalam bentuk **jaringan LAN**, bisa langsung ke switch atau router lokal
+
+##### 2.1.5.1.3 PoE (Power over Ethernet)
+AirGrid M5 menggunakan **PoE**, artinya:
+- Cukup **satu kabel LAN** untuk menghantarkan **data dan daya (listrik)**
+- Tidak perlu stop kontak di atap/tower — hanya butuh kabel ke perangkat PoE injector di dalam ruangan
+
 
 ## 3.1 Keamanan Jaringan Wireless
 ![Keamanan Jaringan Wireless](images/3.1_JenisSecurityWireless.webpater.webp)
@@ -240,8 +313,6 @@ Setelah itu, keamanan perangkat dijaga dengan antivirus, update sistem, dan pemb
 
 5 Cara Jaga Keamanan Wi-Fi
 
-
-
 ### 3.1.2 Cara Jaga Keamanan Wi-Fi
  ![Cara Jaga Keamanan Wi-Fi](images/3.1.2_CaraJagaKeamananWiFi.webp)
 
@@ -274,5 +345,225 @@ Pakai username dan password. Umum, tapi rentan kalau gak dijaga.
 Tanpa password! Pakai biometrik atau one-time link. Lebih aman dan praktis.
 
 # TAHAPAN PRAKTIKUM
+## Wireless Point to Point
+
+Konfigurasi Router
+1. Reset Router Jika masih ada konfigurasi 
+Pastikan router telah di-reset ke kondisi awal (tanpa konfigurasi) agar konfigurasi yang kita lakukan bersih dan tidak terjadi konflik, Untuk reset bisa gunakan winbox masuk menu system->reset konfigurasi-> cek list no default konfigurasi
+![Reset Router](images/Reset_Router.png)
+2. Login ke Router
+Gunakan Winbox untuk mengakses router melalui MAC address atau IP default. Login menggunakan user admin (tanpa password jika belum diatur).
+![Login Winbox](images/Login_Winbox.png)
+3. Aktifkan Interface Wireless Wlan 1
+Masuk pada Menu Wireless-> Wifi Interface -> Klik interface Wlan 1 dan tekan tanda panah warna biru untuk enable
+Konfigurasikan untuk Router A Sebagai ( setelah double Klik pada interface wlan 1 masuk ke tab Wireless ) :
+- Mode : Bridge
+- SSID : PointToPoint_No kelompok
+![Bridge_RB](images/Bridge_RouterA.png)
+
+Konfigurasikan untuk Router B Sebagai ( setelah double Klik pada interface wlan 1 masuk ke tab Wireless ) : 
+- Mode : Station
+- Setelah itu klik tombol scan dan pilih interface menjadi wlan 1 lalu akan muncul berbagai jaringan wifi cari nama wifi yang sesuai dengan Router A lalu klik Connect.
+
+![Station_Scan](images/station_scan.png)
+
+4. Konfigurasi IP Address pada Wlan 1 
+Tambahkan IP address pada Wlan 1 yang digunakan sebagai jalur antar-router. Karena hanya ada dua perangkat yang terhubung (router A dan router B),
+- IP Wlan 1 Router A  : 10.10.10.1/29
+- IP Wlan 1 Router B : 10.10.10.2/29
+5. Konfigurasi IP Address untuk Jaringan LAN (note lakukan konfigurasi ini pada router A dan b)
+Tambahkan IP address pada ether 2 yang digunakan untuk menghubungkan Laptop dengan Router. <br>
+- IP ether 2 Router A  : 192.168.20.1/24
+- IP ether 2 Router B  : 192.168.30.1/24
+
+![IPADDRBA](images/Route_Router_A.png)
+![IPADDRBB](images/Route_Router_B.png)
+
+6. Konfigurasi Routing Statis (note lakukan konfigurasi ini pada router A dan b)
+Setelah semua interface diberi IP, langkah selanjutnya adalah menambahkan rute secara manual.
+Masuk ke menu IPv4 → Routes, kemudian klik "+" untuk menambahkan routing.
+Pada Router A
+- Dst. Address: 192.168.30.0/24
+- Gateway: 10.10.10.2
+Pada Router B
+- Dst. Address: 192.168.20.0/24
+- Gateway: 10.10.10.1
+
+![Router_A](images/Route_Router_A.png)
+![Router_B](images/Route_Router_B.png)
+
+
+7. Test Koneksi Antar Router
+- Dari Router A, buka New Terminal, ping Wlan 1 Router B:
+```bash
+ping 10.10.10.2
+```
+- Dari Router B, ping Wlan 1 Router A:
+```bash
+ping 10.10.10.1
+```
+8. Konfigurasi IP Adress di Laptop (note lakukan konfigurasi ini laptop yang terhubung pada router A dan b masing-masing)
+Karena ini masih menggunakan konfigurasi Static IP tambahkan IP address secara manual ke interface di laptop masing-masing bisa lewat Control Panel atau langsung di settings Windows, pastikan IP dan Gateway sudah benar sesuai Ether 2.
+Pada laptop yang terhubung ke Router A
+- IP Address : 192.168.20.2
+- Gateway    : 192.168.20.1  (Router A)
+- DNS        : 8.8.8.8
+Pada laptop yang terhubung ke Router B
+- IP Address: 192.168.30.2
+- Gateway   : 192.168.30.1 (Router B)
+- DNS       : 8.8.8.8
+
+9. Jika Sudah Uji test PING dari Laptop 1 ke alamat Laptop 2, Jika berhasil maka Routing tidak ada masalah.
+
+Pada konfigurasikan Router B dan laptop yang terhubung ke Router B lakukan hal yang sama
+
+
+## Wireless Point to Multipoint
+
+Konfigurasi Router
+1. Reset Router Jika masih ada konfigurasi 
+Pastikan router telah di-reset ke kondisi awal (tanpa konfigurasi) agar konfigurasi yang kita lakukan bersih dan tidak terjadi konflik, Untuk reset bisa gunakan winbox masuk menu system->reset konfigurasi-> cek list no default konfigurasi
+![Reset Router](images/Reset_Router.png)
+2. Login ke Router
+Gunakan Winbox untuk mengakses router melalui MAC address atau IP default. Login menggunakan user admin (tanpa password jika belum diatur).
+![Login Winbox](images/Login_Winbox.png)
+3. Aktifkan Interface Wireless Wlan 1
+Masuk pada Menu Wireless-> Wifi Interface -> Klik interface Wlan 1 dan tekan tanda panah warna biru untuk enable
+Konfigurasikan untuk Router A Sebagai ( setelah double Klik pada interface wlan 1 masuk ke tab Wireless ) :
+- Mode : Ap bridge
+- SSID : PointToMultipoint_No kelompok
+![APP_Bridge](images/AppBridge.png)
+
+Konfigurasikan untuk Router B Sebagai ( setelah double Klik pada interface wlan 1 masuk ke tab Wireless ) : 
+- Mode : Station Bridge
+- Setelah itu klik tombol scan dan pilih interface menjadi wlan 1 lalu akan muncul berbagai jaringan wifi cari nama wifi yang sesuai dengan Router A lalu klik Connect.
+
+
+![Station_Bridge](images/StationBridge_Scan.png)
+4. Konfigurasi IP Address pada Wlan 1 
+Tambahkan IP address pada Wlan 1 yang digunakan sebagai jalur antar-router. Karena hanya ada dua perangkat yang terhubung (router A dan router B),
+<br>
+- IP Wlan 1 Router A  : 10.10.10.1/29
+- IP Wlan 1 Router B : 10.10.10.2/29
+5. Konfigurasi IP Address untuk Jaringan LAN (note lakukan konfigurasi ini pada router A dan b)
+Tambahkan IP address pada ether 2 yang digunakan untuk menghubungkan Laptop dengan Router. <br>
+- IP ether 2 Router A  : 192.168.20.1/24
+- IP ether 2 Router B  : 192.168.30.1/24
+
+
+![IPADDRBA](images/Route_Router_A.png)
+![IPADDRBB](images/Route_Router_B.png)
+
+6. Konfigurasi Routing Statis (note lakukan konfigurasi ini pada router A dan b)
+Setelah semua interface diberi IP, langkah selanjutnya adalah menambahkan rute secara manual.
+Masuk ke menu IPv4 → Routes, kemudian klik "+" untuk menambahkan routing.
+Pada Router A
+- Dst. Address: 192.168.30.0/24
+- Gateway: 10.10.10.2
+Pada Router B
+- Dst. Address: 192.168.20.0/24
+- Gateway: 10.10.10.1
+
+
+![Router_A](images/Route_Router_A.png)
+![Router_B](images/Route_Router_B.png)
+
+
+7. Test Koneksi Antar Router
+- Dari Router A, buka New Terminal, ping Wlan 1 Router B:
+```bash
+ping 10.10.10.2
+```
+- Dari Router B, ping Wlan 1 Router A:
+```bash
+ping 10.10.10.1
+```
+8. Konfigurasi IP Adress di Laptop (note lakukan konfigurasi ini laptop yang terhubung pada router A dan b masing-masing)
+Karena ini masih menggunakan konfigurasi Static IP tambahkan IP address secara manual ke interface di laptop masing-masing bisa lewat Control Panel atau langsung di settings Windows, pastikan IP dan Gateway sudah benar sesuai Ether 2.
+Pada laptop yang terhubung ke Router A
+- IP Address : 192.168.20.2
+- Gateway    : 192.168.20.1  (Router A)
+- DNS        : 8.8.8.8
+Pada laptop yang terhubung ke Router B
+- IP Address: 192.168.30.2
+- Gateway   : 192.168.30.1 (Router B)
+- DNS       : 8.8.8.8
+
+9. Jika Sudah Uji test PING dari Laptop 1 ke alamat Laptop 2, Jika berhasil maka Routing tidak ada masalah.
+
+Pada konfigurasikan Router B dan laptop yang terhubung ke Router B lakukan hal yang sama
+
+## Wireless Bridge
+
+Konfigurasi Router
+1. Reset Router Jika masih ada konfigurasi 
+Pastikan router telah di-reset ke kondisi awal (tanpa konfigurasi) agar konfigurasi yang kita lakukan bersih dan tidak terjadi konflik, Untuk reset bisa gunakan winbox masuk menu system->reset konfigurasi-> cek list no default konfigurasi
+![Reset Router](images/Reset_Router.png)
+2. Login ke Router
+Gunakan Winbox untuk mengakses router melalui MAC address atau IP default. Login menggunakan user admin (tanpa password jika belum diatur).
+![Login Winbox](images/Login_Winbox.png)
+3. Aktifkan Interface Wireless Wlan 1
+Masuk pada Menu Wireless-> Wifi Interface -> Klik interface Wlan 1 dan tekan tanda panah warna biru untuk enable
+Konfigurasikan untuk Router A Sebagai ( setelah double Klik pada interface wlan 1 masuk ke tab Wireless ) :
+- Mode : Bridge
+- SSID : WirelessBridge_No kelompok
+![alt text](images/Bridge_RouterA.png)
+Konfigurasikan untuk Router B Sebagai ( setelah double Klik pada interface wlan 1 masuk ke tab Wireless ) : 
+- Mode : Station Pseudobridge
+- Setelah itu klik tombol scan dan pilih interface menjadi wlan 1 lalu akan muncul berbagai jaringan wifi cari nama wifi yang sesuai dengan Router A lalu klik Connect.
+
+![StationPSUDO](images/StationPsudo.png)
+
+4. Konfigurasi IP Address pada Wlan 1 
+Tambahkan IP address pada Wlan 1 yang digunakan sebagai jalur antar-router. Karena hanya ada dua perangkat yang terhubung (router A dan router B),
+- IP Wlan 1 Router A  : 10.10.10.1/29
+- IP Wlan 1 Router B : 10.10.10.2/29
+
+5. Konfigurasi IP Address untuk Jaringan LAN (note lakukan konfigurasi ini pada router A dan b)
+Tambahkan IP address pada ether 2 yang digunakan untuk menghubungkan Laptop dengan Router. <br>
+- IP ether 2 Router A  : 192.168.10.2/24
+- IP ether 2 Router B  : 192.168.10.3/24
+
+![A](images/IPADDRESS_WBA.png)
+![B](images/IPADRESS_WBB.png)
+
+6. Tambahkan bridge pada Router A dan B untuk menghubungkan wlan 1 dan ether 2 
+Router A :
+- Masuk ke menu Bridge -> lalu tambah kan bridge dengan menekan tombol "+", lalu tambahkan untuk nama gunakan bridge1(atau yang lain)
+- lalu masuk ke tab Port dan tambahkan :
+- Interface Wlan 1 dan Ether 2 lalu gunakan bridge yang sudah di buat.
+![Bridge](images/Bridge.png)
+
+![PortBridge](images/PortBridge.png)
+
+7. Test Koneksi Antar Router
+- Dari Router A, buka New Terminal, ping Wlan 1 Router B:
+```bash
+ping 10.10.10.2
+```
+- Dari Router B, ping Wlan 1 Router A:
+```bash
+ping 10.10.10.1
+```
+8. Konfigurasi IP Adress di Laptop (note lakukan konfigurasi ini laptop yang terhubung pada router A dan b masing-masing)
+Karena ini masih menggunakan konfigurasi Static IP tambahkan IP address secara manual ke interface di laptop masing-masing bisa lewat Control Panel atau langsung di settings Windows, pastikan IP dan Gateway sudah benar sesuai Ether 2.
+Pada laptop yang terhubung ke Router A
+- IP Address : 192.168.10.5
+- Gateway    : 192.168.10.2  (Router A)
+- DNS        : 8.8.8.8
+Pada laptop yang terhubung ke Router B
+- IP Address: 192.168.10.7
+- Gateway   : 192.168.10.3 (Router B)
+- DNS       : 8.8.8.8
+
+9. Jika Sudah Uji test PING dari Laptop 1 ke alamat Laptop 2, Jika berhasil maka Routing tidak ada masalah.
+
+Pada konfigurasikan Router B dan laptop yang terhubung ke Router B lakukan hal yang sama
+
+
+## Wireless Point To Point Ubiquiti airGrid M5 HP
+1. Silahkan hubungkan kabel power ke PoE, lalu hubungkan port lan PoE ke ubiquiti dan juga port LAN ke port LAN. Sambungkan ke kedua PC kalian.
+2. Setelah itu silahkan ke browser kalian dan ketik http://192.168.1.20 (default IP Ubiquiti).
+3. Jika tidak bisa silahkan hard reset melalui tombol disebelah LAN port
 
 # TUGAS MODUL
