@@ -18,14 +18,14 @@ Cek satu per satu data yang lewat berdasarkan IP, port, dan protokol. Tapi dia n
 ![Stateful Inspection](images/1.1.1_StatefulInspection.webp)<d>
 Lebih canggih, bisa tahu ini data udah bagian dari koneksi yang sah atau belum.
 
-3. Application Layer Firewall
+3. Application Layer Firewall<d>
 Bisa ngintip sampai ke isi aplikasi (kayak HTTP, FTP), bahkan bisa blokir konten tertentu. Biasanya pakai proxy.
 
 4. Next Generation Firewall (NGFW)
 ![NGFW](images/1.1.1_NGFW.webp)<d>
 Ini firewall zaman now! Bisa cek isi data lebih dalam (deep packet inspection), termasuk enkripsi SSL.
 
-5. Circuit Level Gateway
+5. Circuit Level Gateway<d>
 Kerja di level koneksi (session). Cuma lihat apakah koneksi udah sah atau belum, tapi nggak cek isi datanya. Jadi bisa lolos tuh malware.
 
 6. Software Firewall
@@ -36,7 +36,7 @@ Dipasang di komputer atau server. Fleksibel tapi kadang berat dan makan waktu bu
 ![Hardware Firewall](images/1.1.1_HardwareFirewall.webp)<d>
 Bentuknya kayak perangkat fisik. Dipasang di antara internet dan jaringan internal, jadi bisa tahan serangan sebelum masuk lebih jauh.
 
-8. Cloud Firewall
+8. Cloud Firewall<d>
 Firewall yang dijalankan di cloud. Cocok buat organisasi yang udah banyak pakai layanan cloud.
 
 ### 1.1.2 Cara Kerja Firewall
@@ -55,13 +55,13 @@ Pernah bingung kenapa semua orang bisa internetan padahal IP publik di dunia ini
 Coba bayangin: alamat IPv4 yang tersedia cuma sekitar 4,3 miliar. Padahal perangkat yang nyambung ke internet udah lebih dari itu. Kalau tiap perangkat butuh satu IP publik, alamat bakal cepat habis. Nah, dengan NAT, cukup satu IP publik buat satu jaringan lokal, terus semua perangkat di jaringan itu bisa internetan bareng lewat IP publik yang sama.
 
 ### 1.2.1 Jenis-Jenis NAT
-1. Static NAT
+1. Static NAT<d>
 Satu IP lokal dihubungkan ke satu IP publik (one-to-one). Jarang dipakai karena mahal dan boros IP publik. Cocok buat server yang butuh alamat tetap, misalnya buat hosting website.
 
-2. Dynamic NAT
+2. Dynamic NAT<d>
 IP lokal diubah ke IP publik dari kumpulan (pool) IP yang tersedia. Kalau IP di pool habis, permintaan koneksi ditolak. Tetap butuh banyak IP publik.
 
-3. Port Address Translation (PAT)
+3. Port Address Translation (PAT)<d>
 Ini yang paling sering dipakai. Banyak IP lokal bisa pakai satu IP publik dengan membedakan tiap koneksi berdasarkan port. Hemat dan efisien!
 
 ### 1.2.2 Cara Kerja NAT
