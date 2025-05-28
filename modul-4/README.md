@@ -10,30 +10,30 @@ Coba bayangin firewall itu kayak satpam digital buat jaringan komputer kamu. Dia
 Sebelum ada firewall, keamanan jaringan cuma pakai Access Control List (ACL), tapi ACL ini nggak bisa bedain isi dari data yang lewat. Jadinya, masih banyak celah yang bisa dimanfaatin sama orang jahat. Apalagi sekarang internet udah kayak kebutuhan pokok organisasi. Sayangnya, koneksi ke internet juga buka celah buat serangan dari luar. Nah, firewall hadir buat nutup celah itu dan jagain jaringan internal biar tetap aman.
 
 ### 1.1.1 Jenis-Jenis Firewall
-1. Packet Filtering<d>
-![Packet Filtering](images/1.1.1_PacketFiltering.png)
+1. Packet Filtering
+![Packet Filtering](images/1.1.1_PacketFiltering.png)<d>
 Cek satu per satu data yang lewat berdasarkan IP, port, dan protokol. Tapi dia nggak tahu ini bagian dari komunikasi yang mana, jadi agak kaku.
 
-2. Stateful Inspection<d>
-![Stateful Inspection](images/1.1.1_StatefulInspection.webp)
+2. Stateful Inspection
+![Stateful Inspection](images/1.1.1_StatefulInspection.webp)<d>
 Lebih canggih, bisa tahu ini data udah bagian dari koneksi yang sah atau belum.
 
 3. Application Layer Firewall
 Bisa ngintip sampai ke isi aplikasi (kayak HTTP, FTP), bahkan bisa blokir konten tertentu. Biasanya pakai proxy.
 
-4. Next Generation Firewall (NGFW)<d>
-![NGFW](images/1.1.1_NGFW)
+4. Next Generation Firewall (NGFW)
+![NGFW](images/1.1.1_NGFW.webp)<d>
 Ini firewall zaman now! Bisa cek isi data lebih dalam (deep packet inspection), termasuk enkripsi SSL.
 
 5. Circuit Level Gateway
 Kerja di level koneksi (session). Cuma lihat apakah koneksi udah sah atau belum, tapi nggak cek isi datanya. Jadi bisa lolos tuh malware.
 
-6. Software Firewall<d>
-![Software Firewal](images/1.1.1_SoftwareFirewall.webp)
+6. Software Firewall
+![Software Firewal](images/1.1.1_SoftwareFirewall.webp)<d>
 Dipasang di komputer atau server. Fleksibel tapi kadang berat dan makan waktu buat setting-nya.
 
-7. Hardware Firewall<d>
-![Hardware Firewall](images/1.1.1_HardwareFirewall.webp)
+7. Hardware Firewall
+![Hardware Firewall](images/1.1.1_HardwareFirewall.webp)<d>
 Bentuknya kayak perangkat fisik. Dipasang di antara internet dan jaringan internal, jadi bisa tahan serangan sebelum masuk lebih jauh.
 
 8. Cloud Firewall
@@ -70,7 +70,7 @@ Biasanya, NAT ini ada di router yang jadi penghubung antara jaringan lokal dan i
 Bayangin dua orang dari satu rumah (misalnya laptop A dan B) buka website yang sama di waktu yang sama, pakai port yang sama. Kalau cuma IP yang diubah, pas server balikin datanya, router bingung: data ini buat A atau B? Makanya, NAT juga ngubah nomor port, jadi bisa bedain mana data buat siapa.
 
 ### 1.2.3 Istilah Penting di NAT
-![Istilah NAT](images/1.2.3_IstilahNAT.png)
+![Istilah NAT](images/1.2.3_IstilahNAT.png)<d>
 1. Inside Local Address: IP lokal perangkat di jaringan dalam (biasanya IP privat kayak 192.168.x.x)
 
 2. Inside Global Address: IP publik yang mewakili perangkat dari dalam jaringan ke dunia luar
