@@ -3,6 +3,8 @@
 2. Menurutmu, mana yang lebih penting diterapkan terlebih dahulu di jaringan: NAT atau Firewall? Jelaskan alasanmu.
 3. Apa dampak negatif jika router tidak diberi filter firewall sama sekali?
 
+**Berikan referensi dari jawaban yang kamu berikan**
+
 # Modul Firewall & NAT
 ## 1.1 Apa itu Firewall?
 Coba bayangin firewall itu kayak satpam digital buat jaringan komputer kamu. Dia yang berdiri di gerbang jaringan buat ngecek siapa yang boleh masuk atau keluar. Jadi, kalau ada data yang mau masuk atau keluar, firewall bakal lihat dulu aturannya: boleh lewat, ditolak sambil ngasih pesan error, atau langsung diabaikan kayak nggak pernah ada. Intinya, firewall ini bantu jagain komputer dari hal-hal yang nggak diinginkan kayak hacker atau virus.
