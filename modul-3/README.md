@@ -564,6 +564,21 @@ Pada konfigurasikan Router B dan laptop yang terhubung ke Router B lakukan hal y
 ## Wireless Point To Point Ubiquiti airGrid M5 HP
 1. Silahkan hubungkan kabel power ke PoE, lalu hubungkan port lan PoE ke ubiquiti dan juga port LAN ke port LAN. Sambungkan ke kedua PC kalian.
 2. Setelah itu silahkan ke browser kalian dan ketik http://192.168.1.20 (default IP Ubiquiti).
-3. Jika tidak bisa silahkan hard reset melalui tombol disebelah LAN port
+3. Jika tidak bisa silahkan hard reset dengan tekan tombol disebelah LAN port selama 30 detik hingga 2 menit dan tunggu hingga keempat LED range kedap-kedip
+![PortBridge](images/PortBridge.png)
+4. Masukkan identitas autentikasi user ubiquiti.
+- USER: ubnt
+- PASS: ubnt
+5. Setelah itu ubah konfigurasi mode pada halaman Wireless menjadi Access Point dan simpan dengan menekan tombol change dan apply.
+6. Save konfigurasi yang telah dibuat dengan membuat password baru.
+7. 
+[Bridge]
+    Konfigurasikan setting wireless mode menjadi Access Point dan buat SSID dengan format: AirGrid_Kelompok-Nomor
+
+[Station]
+    Konfigurasikan setting wireless mode menjadi Station lalu select SSID sesuai dengan nama SSID kelompok.
+
+Simpan hasil perubahan yang dibuat dengan menekan tombol change dan apply. Setup password baru untuk perubahan yang dilakukan pertama kali.
+8. Fwaeh
 
 # TUGAS MODUL
