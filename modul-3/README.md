@@ -345,5 +345,225 @@ Pakai username dan password. Umum, tapi rentan kalau gak dijaga.
 Tanpa password! Pakai biometrik atau one-time link. Lebih aman dan praktis.
 
 # TAHAPAN PRAKTIKUM
+## Wireless Point to Point
+
+Konfigurasi Router
+1. Reset Router Jika masih ada konfigurasi 
+Pastikan router telah di-reset ke kondisi awal (tanpa konfigurasi) agar konfigurasi yang kita lakukan bersih dan tidak terjadi konflik, Untuk reset bisa gunakan winbox masuk menu system->reset konfigurasi-> cek list no default konfigurasi
+![Reset Router](images/Reset_Router.png)
+2. Login ke Router
+Gunakan Winbox untuk mengakses router melalui MAC address atau IP default. Login menggunakan user admin (tanpa password jika belum diatur).
+![Login Winbox](images/Login_Winbox.png)
+3. Aktifkan Interface Wireless Wlan 1
+Masuk pada Menu Wireless-> Wifi Interface -> Klik interface Wlan 1 dan tekan tanda panah warna biru untuk enable
+Konfigurasikan untuk Router A Sebagai ( setelah double Klik pada interface wlan 1 masuk ke tab Wireless ) :
+- Mode : Bridge
+- SSID : PointToPoint_No kelompok
+![Bridge_RB](images/Bridge_RouterA.png)
+
+Konfigurasikan untuk Router B Sebagai ( setelah double Klik pada interface wlan 1 masuk ke tab Wireless ) : 
+- Mode : Station
+- Setelah itu klik tombol scan dan pilih interface menjadi wlan 1 lalu akan muncul berbagai jaringan wifi cari nama wifi yang sesuai dengan Router A lalu klik Connect.
+
+![Station_Scan](images/station_scan.png)
+
+4. Konfigurasi IP Address pada Wlan 1 
+Tambahkan IP address pada Wlan 1 yang digunakan sebagai jalur antar-router. Karena hanya ada dua perangkat yang terhubung (router A dan router B),
+- IP Wlan 1 Router A  : 10.10.10.1/29
+- IP Wlan 1 Router B : 10.10.10.2/29
+5. Konfigurasi IP Address untuk Jaringan LAN (note lakukan konfigurasi ini pada router A dan b)
+Tambahkan IP address pada ether 2 yang digunakan untuk menghubungkan Laptop dengan Router. <br>
+- IP ether 2 Router A  : 192.168.20.1/24
+- IP ether 2 Router B  : 192.168.30.1/24
+
+![IPADDRBA](images/Route_Router_A.png)
+![IPADDRBB](images/Route_Router_B.png)
+
+6. Konfigurasi Routing Statis (note lakukan konfigurasi ini pada router A dan b)
+Setelah semua interface diberi IP, langkah selanjutnya adalah menambahkan rute secara manual.
+Masuk ke menu IPv4 → Routes, kemudian klik "+" untuk menambahkan routing.
+Pada Router A
+- Dst. Address: 192.168.30.0/24
+- Gateway: 10.10.10.2
+Pada Router B
+- Dst. Address: 192.168.20.0/24
+- Gateway: 10.10.10.1
+
+![Router_A](images/Route_Router_A.png)
+![Router_B](images/Route_Router_B.png)
+
+
+7. Test Koneksi Antar Router
+- Dari Router A, buka New Terminal, ping Wlan 1 Router B:
+```bash
+ping 10.10.10.2
+```
+- Dari Router B, ping Wlan 1 Router A:
+```bash
+ping 10.10.10.1
+```
+8. Konfigurasi IP Adress di Laptop (note lakukan konfigurasi ini laptop yang terhubung pada router A dan b masing-masing)
+Karena ini masih menggunakan konfigurasi Static IP tambahkan IP address secara manual ke interface di laptop masing-masing bisa lewat Control Panel atau langsung di settings Windows, pastikan IP dan Gateway sudah benar sesuai Ether 2.
+Pada laptop yang terhubung ke Router A
+- IP Address : 192.168.20.2
+- Gateway    : 192.168.20.1  (Router A)
+- DNS        : 8.8.8.8
+Pada laptop yang terhubung ke Router B
+- IP Address: 192.168.30.2
+- Gateway   : 192.168.30.1 (Router B)
+- DNS       : 8.8.8.8
+
+9. Jika Sudah Uji test PING dari Laptop 1 ke alamat Laptop 2, Jika berhasil maka Routing tidak ada masalah.
+
+Pada konfigurasikan Router B dan laptop yang terhubung ke Router B lakukan hal yang sama
+
+
+## Wireless Point to Multipoint
+
+Konfigurasi Router
+1. Reset Router Jika masih ada konfigurasi 
+Pastikan router telah di-reset ke kondisi awal (tanpa konfigurasi) agar konfigurasi yang kita lakukan bersih dan tidak terjadi konflik, Untuk reset bisa gunakan winbox masuk menu system->reset konfigurasi-> cek list no default konfigurasi
+![Reset Router](images/Reset_Router.png)
+2. Login ke Router
+Gunakan Winbox untuk mengakses router melalui MAC address atau IP default. Login menggunakan user admin (tanpa password jika belum diatur).
+![Login Winbox](images/Login_Winbox.png)
+3. Aktifkan Interface Wireless Wlan 1
+Masuk pada Menu Wireless-> Wifi Interface -> Klik interface Wlan 1 dan tekan tanda panah warna biru untuk enable
+Konfigurasikan untuk Router A Sebagai ( setelah double Klik pada interface wlan 1 masuk ke tab Wireless ) :
+- Mode : Ap bridge
+- SSID : PointToMultipoint_No kelompok
+![APP_Bridge](images/AppBridge.png)
+
+Konfigurasikan untuk Router B Sebagai ( setelah double Klik pada interface wlan 1 masuk ke tab Wireless ) : 
+- Mode : Station Bridge
+- Setelah itu klik tombol scan dan pilih interface menjadi wlan 1 lalu akan muncul berbagai jaringan wifi cari nama wifi yang sesuai dengan Router A lalu klik Connect.
+
+
+![Station_Bridge](images/StationBridge_Scan.png)
+4. Konfigurasi IP Address pada Wlan 1 
+Tambahkan IP address pada Wlan 1 yang digunakan sebagai jalur antar-router. Karena hanya ada dua perangkat yang terhubung (router A dan router B),
+<br>
+- IP Wlan 1 Router A  : 10.10.10.1/29
+- IP Wlan 1 Router B : 10.10.10.2/29
+5. Konfigurasi IP Address untuk Jaringan LAN (note lakukan konfigurasi ini pada router A dan b)
+Tambahkan IP address pada ether 2 yang digunakan untuk menghubungkan Laptop dengan Router. <br>
+- IP ether 2 Router A  : 192.168.20.1/24
+- IP ether 2 Router B  : 192.168.30.1/24
+
+
+![IPADDRBA](images/Route_Router_A.png)
+![IPADDRBB](images/Route_Router_B.png)
+
+6. Konfigurasi Routing Statis (note lakukan konfigurasi ini pada router A dan b)
+Setelah semua interface diberi IP, langkah selanjutnya adalah menambahkan rute secara manual.
+Masuk ke menu IPv4 → Routes, kemudian klik "+" untuk menambahkan routing.
+Pada Router A
+- Dst. Address: 192.168.30.0/24
+- Gateway: 10.10.10.2
+Pada Router B
+- Dst. Address: 192.168.20.0/24
+- Gateway: 10.10.10.1
+
+
+![Router_A](images/Route_Router_A.png)
+![Router_B](images/Route_Router_B.png)
+
+
+7. Test Koneksi Antar Router
+- Dari Router A, buka New Terminal, ping Wlan 1 Router B:
+```bash
+ping 10.10.10.2
+```
+- Dari Router B, ping Wlan 1 Router A:
+```bash
+ping 10.10.10.1
+```
+8. Konfigurasi IP Adress di Laptop (note lakukan konfigurasi ini laptop yang terhubung pada router A dan b masing-masing)
+Karena ini masih menggunakan konfigurasi Static IP tambahkan IP address secara manual ke interface di laptop masing-masing bisa lewat Control Panel atau langsung di settings Windows, pastikan IP dan Gateway sudah benar sesuai Ether 2.
+Pada laptop yang terhubung ke Router A
+- IP Address : 192.168.20.2
+- Gateway    : 192.168.20.1  (Router A)
+- DNS        : 8.8.8.8
+Pada laptop yang terhubung ke Router B
+- IP Address: 192.168.30.2
+- Gateway   : 192.168.30.1 (Router B)
+- DNS       : 8.8.8.8
+
+9. Jika Sudah Uji test PING dari Laptop 1 ke alamat Laptop 2, Jika berhasil maka Routing tidak ada masalah.
+
+Pada konfigurasikan Router B dan laptop yang terhubung ke Router B lakukan hal yang sama
+
+## Wireless Bridge
+
+Konfigurasi Router
+1. Reset Router Jika masih ada konfigurasi 
+Pastikan router telah di-reset ke kondisi awal (tanpa konfigurasi) agar konfigurasi yang kita lakukan bersih dan tidak terjadi konflik, Untuk reset bisa gunakan winbox masuk menu system->reset konfigurasi-> cek list no default konfigurasi
+![Reset Router](images/Reset_Router.png)
+2. Login ke Router
+Gunakan Winbox untuk mengakses router melalui MAC address atau IP default. Login menggunakan user admin (tanpa password jika belum diatur).
+![Login Winbox](images/Login_Winbox.png)
+3. Aktifkan Interface Wireless Wlan 1
+Masuk pada Menu Wireless-> Wifi Interface -> Klik interface Wlan 1 dan tekan tanda panah warna biru untuk enable
+Konfigurasikan untuk Router A Sebagai ( setelah double Klik pada interface wlan 1 masuk ke tab Wireless ) :
+- Mode : Bridge
+- SSID : WirelessBridge_No kelompok
+![alt text](images/Bridge_RouterA.png)
+Konfigurasikan untuk Router B Sebagai ( setelah double Klik pada interface wlan 1 masuk ke tab Wireless ) : 
+- Mode : Station Pseudobridge
+- Setelah itu klik tombol scan dan pilih interface menjadi wlan 1 lalu akan muncul berbagai jaringan wifi cari nama wifi yang sesuai dengan Router A lalu klik Connect.
+
+![StationPSUDO](images/StationPsudo.png)
+
+4. Konfigurasi IP Address pada Wlan 1 
+Tambahkan IP address pada Wlan 1 yang digunakan sebagai jalur antar-router. Karena hanya ada dua perangkat yang terhubung (router A dan router B),
+- IP Wlan 1 Router A  : 10.10.10.1/29
+- IP Wlan 1 Router B : 10.10.10.2/29
+
+5. Konfigurasi IP Address untuk Jaringan LAN (note lakukan konfigurasi ini pada router A dan b)
+Tambahkan IP address pada ether 2 yang digunakan untuk menghubungkan Laptop dengan Router. <br>
+- IP ether 2 Router A  : 192.168.10.2/24
+- IP ether 2 Router B  : 192.168.10.3/24
+
+![A](images/IPADDRESS_WBA.png)
+![B](images/IPADRESS_WBB.png)
+
+6. Tambahkan bridge pada Router A dan B untuk menghubungkan wlan 1 dan ether 2 
+Router A :
+- Masuk ke menu Bridge -> lalu tambah kan bridge dengan menekan tombol "+", lalu tambahkan untuk nama gunakan bridge1(atau yang lain)
+- lalu masuk ke tab Port dan tambahkan :
+- Interface Wlan 1 dan Ether 2 lalu gunakan bridge yang sudah di buat.
+![Bridge](images/Bridge.png)
+
+![PortBridge](images/PortBridge.png)
+
+7. Test Koneksi Antar Router
+- Dari Router A, buka New Terminal, ping Wlan 1 Router B:
+```bash
+ping 10.10.10.2
+```
+- Dari Router B, ping Wlan 1 Router A:
+```bash
+ping 10.10.10.1
+```
+8. Konfigurasi IP Adress di Laptop (note lakukan konfigurasi ini laptop yang terhubung pada router A dan b masing-masing)
+Karena ini masih menggunakan konfigurasi Static IP tambahkan IP address secara manual ke interface di laptop masing-masing bisa lewat Control Panel atau langsung di settings Windows, pastikan IP dan Gateway sudah benar sesuai Ether 2.
+Pada laptop yang terhubung ke Router A
+- IP Address : 192.168.10.5
+- Gateway    : 192.168.10.2  (Router A)
+- DNS        : 8.8.8.8
+Pada laptop yang terhubung ke Router B
+- IP Address: 192.168.10.7
+- Gateway   : 192.168.10.3 (Router B)
+- DNS       : 8.8.8.8
+
+9. Jika Sudah Uji test PING dari Laptop 1 ke alamat Laptop 2, Jika berhasil maka Routing tidak ada masalah.
+
+Pada konfigurasikan Router B dan laptop yang terhubung ke Router B lakukan hal yang sama
 
 # TUGAS MODUL
+1. Simulasikan jaringan wireless antara tiga gedung: 
+- **Gedung Pusat**
+- **Gedung Lab** 
+- **Gedung Asrama (Hubungkan dua bagian dalam Gedung Asrama (Blok A dan Blok B) menggunakan Wireless Bridge Point-to-Point.)**
+
+Menggunakan Point-to-Multipoint (PTMP) di Cisco Packet Tracer. 
