@@ -114,4 +114,165 @@ Connection Tracking memberikan banyak keuntungan dalam pengelolaan dan pengamana
 
 ## Tahapan Praktikum
 
+Konfigurasi Router
+
+1. Reset Router
+
+Pastikan perangkat router telah dikembalikan ke konfigurasi awal untuk mencegah potensi konflik dalam pengaturan selanjutnya.
+
+    Akses router menggunakan aplikasi Winbox.
+    Navigasikan ke menu System > Reset Configuration.
+    Aktifkan opsi "No Default Configuration" dengan mencentangnya.
+    Klik "Reset Configuration" untuk memulai proses reset.
+
+![alt text](images/Reset_Router.png)
+
+2. Login ke Router
+
+Lakukan proses login untuk mengakses antarmuka router.
+
+    Gunakan Winbox untuk melakukan koneksi ke router.
+    Login dapat dilakukan melalui MAC address atau IP default perangkat.
+    Gunakan username "admin". (Kata sandi tidak diperlukan jika belum diatur).
+
+![alt text](images/Login_Winbox.png)
+
+3. Konfigurasi DHCP Client pada Router A (Ether 1)
+
+Sambungkan kabel internet ke ether1 pada Router A, kemudian lakukan konfigurasi DHCP Client.
+
+    Akses menu IP > DHCP Client.
+    Klik ikon "+" untuk menambah entri baru.
+    Pilih "ether1" sebagai Interface.
+    Klik "Apply" dan pastikan status koneksi menunjukkan "bound".
+
+![alt text](<images/konfigurasi/Screenshot from 2025-05-30 16-36-04.png>)
+
+4. Penambahan Alamat IP pada Ether 7
+
+Tambahkan alamat IP pada ether7 untuk konektivitas dengan Switch.
+
+    Navigasikan ke menu IP > Addresses.
+    Klik ikon "+" untuk menambahkan alamat IP.
+    Masukkan Address: 192.168.10.1/24.
+    Pilih Interface: "ether7".
+    Klik "Apply" kemudian "OK".
+
+![alt text](<images/konfigurasi/Screenshot from 2025-05-30 16-36-48.png>)
+
+5. Konfigurasi DHCP Server pada Router MikroTik
+
+Konfigurasi DHCP Server untuk secara otomatis mendistribusikan alamat IP kepada perangkat klien yang terhubung.
+
+    Akses menu IP > DHCP Server.
+    Klik tombol "DHCP Setup".
+    Pada jendela "DHCP Server Interface":
+        Pilih interface yang akan mendistribusikan IP address ke klien. Contoh: "ether7" (sesuai koneksi ke Switch/Client). Klik "Next".
+    Pada jendela "DHCP Address Space":
+        Verifikasi network address yang akan digunakan (contoh: 192.168.10.0/24). Klik "Next".
+    Pada jendela "Gateway for DHCP Network":
+        Verifikasi gateway yang akan diberikan kepada klien (contoh: 192.168.10.1). Klik "Next".
+    Pada jendela "Addresses to Give Out":
+        Tentukan rentang alamat IP yang akan didistribusikan (contoh: 192.168.10.2-192.168.10.254). Klik "Next".
+    Pada jendela "DNS Servers":
+        Masukkan alamat DNS Server yang akan diberikan kepada klien (contoh: 8.8.8.8 dan 8.8.4.4). Klik "Next". (DNS akan Otomatis dapat)
+    Pada jendela "Lease Time":
+        Atur durasi waktu lease IP address (contoh: 00:10:00 untuk 10 menit). Klik "Next".
+    Setelah semua langkah selesai, akan muncul pesan "Setup has completed successfully". Klik "OK".
+
+![alt text](<images/konfigurasi/Screenshot from 2025-05-30 17-21-05.png>)
+
+6. Konfigurasi NAT
+
+Lakukan konfigurasi NAT (Network Address Translation) untuk menyediakan konektivitas internet.
+
+    Akses menu IP > Firewall > NAT.
+    Klik ikon "+" untuk membuat aturan baru.
+    Pada tab "General", atur Chain: "src-nat".
+    Pada tab "Action", atur Action: "masquerade".
+    Klik "Apply" kemudian "OK".
+
+    Untuk test buka Terminal pada winbox dan test ping ke "ping 8.8.8.8" pastikan reply.
+
+![alt text](<images/konfigurasi/Screenshot from 2025-05-30 16-37-46.png>)
+![alt text](<images/konfigurasi/Screenshot from 2025-05-30 16-37-56.png>)
+
+
+
+7. Konfigurasi Firewall
+
+Tambahkan aturan filter (Filter Rules) pada firewall.
+
+    Akses menu IP > Firewall > Filter Rule.
+    Klik ikon "+" untuk menambahkan aturan baru.
+
+Untuk Pemblokiran ICMP (Internet Control Message Protocol):
+
+    Pada tab "General", atur Chain: "forward".
+    Pada tab "General", atur Protocol: "icmp".
+    Pada tab "General", atur In. Interface: "ether7".
+    Pada tab "Action", atur Action: "drop".
+
+Untuk Pemblokiran Akses Situs Web Berdasarkan Konten (Content Blocking):
+
+    Pada tab "General", atur Chain: "forward".
+    Pada tab "General", atur Protocol: "tcp".
+    Pada tab "General", atur Dst. Port: "80,443".
+    Pada tab "General", atur In. Interface: "ether7".
+    Pada tab "General", atur Out. Interface: "ether1".
+    Pada tab "Advanced", atur Content: "speedtest".
+    Pada tab "Action", atur Action: "drop".
+
+![alt text](<images/konfigurasi/Screenshot from 2025-05-30 16-38-19.png>)
+![alt text](<images/konfigurasi/Screenshot from 2025-05-30 16-38-33.png>)
+![alt text](<images/konfigurasi/Screenshot from 2025-05-30 16-38-46.png>)
+![alt text](<images/konfigurasi/Screenshot from 2025-05-30 16-38-54.png>)
+
+8. Konfigurasi Bridge pada Router B
+
+Lakukan konfigurasi bridge untuk mengubah fungsi Router B menjadi hub.
+
+    Akses menu Bridge.
+    Klik ikon "+" untuk membuat bridge baru.
+    Klik "Apply" kemudian "OK".
+
+Selanjutnya, tambahkan port ke dalam bridge yang telah dibuat:
+
+    Akses menu Bridge > Port.
+    Klik ikon "+" untuk menambahkan port.
+    Pilih interface yang terhubung ke perangkat laptop.
+    Pilih interface yang terhubung ke Router A.
+
+![alt text](<images/konfigurasi/Screenshot from 2025-05-30 16-40-44.png>)
+![alt text](<images/konfigurasi/Screenshot from 2025-05-30 16-41-03.png>)
+
+9. Konfigurasi Alamat IP pada Laptop
+
+Pastikan pengaturan alamat IP pada laptop diatur secara otomatis melalui DHCP, lalu verifikasi perolehan alamat IP.
+
+    Pada pengaturan sistem operasi laptop Anda (melalui Settings atau Control Panel), pastikan konfigurasi jaringan diatur ke DHCP (Automatic).
+    Buka Command Prompt (CMD).
+    Gunakan perintah ipconfig untuk memeriksa dan mengonfirmasi alamat IP yang telah diterima oleh laptop Anda.
+
+
+10. Uji Coba Konfigurasi
+
+Lakukan pengujian terhadap konfigurasi yang telah diterapkan untuk memverifikasi fungsionalitasnya.
+
+Pengujian Konektivitas (ICMP):
+
+    Buka Terminal pada laptop Anda.
+    Lakukan perintah ping 8.8.8.8.
+    Saat firewall aktif, respon yang diharapkan adalah Request Timed Out (RTO).
+    Nonaktifkan firewall ICMP dengan menekan tanda "X" (disable) pada aturan terkait di Filter Rules.
+    Ulangi perintah ping 8.8.8.8. Koneksi seharusnya berhasil (terhubung).
+
+Pengujian Pemblokiran Konten (Browse):
+
+    Coba akses situs web yang mengandung kata kunci "speedtest" (misalnya, www.speedtest.net) melalui peramban web Anda.
+    Saat firewall konten aktif, situs web seharusnya tidak dapat diakses atau terus memuat tanpa menampilkan konten, menandakan bahwa firewall telah berhasil bekerja.
+    Nonaktifkan firewall konten dengan menekan tanda "X" (disable) pada aturan terkait di Filter Rules.
+    Coba akses kembali situs web tersebut. Anda seharusnya dapat mengakses situs web tersebut dengan normal.
+
+
 ## Tugas Modul
