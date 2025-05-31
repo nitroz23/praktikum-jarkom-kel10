@@ -92,8 +92,7 @@ Kalau kamu mau mengatur **bandwidth** (kecepatan upload/download) di jaringan ka
 
 
 ### 3.1 Definisi Simple Queue & Queue Tree
-1. Simple Queue ✅<d>
-Simple Queue itu cara paling gampang buat ngatur bandwidth per user atau per IP. Cocok buat pemula atau buat jaringan kecil.
+1. **Simple Queue:** Merupakan cara paling gampang buat ngatur bandwidth per user atau per IP. Cocok buat pemula atau buat jaringan kecil.
 
 **Ciri-cirinya:**
 - Mudah disetting, cukup masukin IP atau interface.
@@ -104,8 +103,7 @@ Simple Queue itu cara paling gampang buat ngatur bandwidth per user atau per IP.
 **Contoh Penggunaan:**
 Kamu punya user dengan IP 192.168.1.10, terus kamu mau batasin kecepatannya maksimal 2 Mbps download dan 1 Mbps upload. Kamu bisa langsung bikin Simple Queue buat IP tersebut.
 
-2. Queue Tree 🌳<d>
-Queue Tree itu buat kamu yang butuh pengaturan bandwidth lebih kompleks dan fleksibel. Cocok buat jaringan besar, ISP, atau kamu yang mau pisahin bandwidth berdasarkan port, protokol, VLAN, dll.
+2. **Queue Tree :** Merupakan cara buat kamu yang butuh pengaturan bandwidth lebih kompleks dan fleksibel. Cocok buat jaringan besar, ISP, atau kamu yang mau pisahin bandwidth berdasarkan port, protokol, VLAN, dll.
 
 **Ciri-cirinya:**
 - Harus pakai mangle (mark connection atau mark packet dulu).
