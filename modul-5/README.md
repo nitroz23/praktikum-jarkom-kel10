@@ -15,6 +15,8 @@ Buatlah skema Queue Tree yang lengkap:
 - Penjelasan marking
 - Prioritas dan limit rate pada masing-masing queue
 
+**Dari tiap jawaban yang kalian berikan wajib memberikan referensi**
+
 # Pengenalan Modul
 ## 1 Tunneling
 Bayangin kamu mau kirim paket dari rumah A ke rumah B, tapi jalan di antara mereka beda-beda jenis: dari jalan aspal, terus masuk ke terowongan, terus ke jalan tanah. Nah, tunneling itu kayak ngelewatin “terowongan digital” biar data dari satu jaringan bisa nyambung ke jaringan lain yang beda jenis.
