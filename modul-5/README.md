@@ -9,6 +9,7 @@
 - 30 Mbps untuk guru & staf (akses email, cloud storage)
 - 20 Mbps untuk siswa (browsing umum)
 - 10 Mbps untuk CCTV & update sistem
+
 Buatlah skema Queue Tree yang lengkap:
 - Parent dan child queue
 - Penjelasan marking
