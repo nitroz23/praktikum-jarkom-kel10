@@ -1,4 +1,18 @@
 # Tugas Pendahuluan
+1. Diberikan studi kasus untuk konfigurasi VPN IPSec. Suatu erusahaan ingin membuat koneksi aman antara kantor pusat dan cabang. Jelaskan secara detail:
+- Fase negosiasi IPSec (IKE Phase 1 dan Phase 2)
+- Parameter keamanan yang harus disepakati (algoritma enkripsi, metode autentikasi, lifetime key)
+- Konfigurasi sederhana pada sisi router untuk memulai koneksi IPSec site-to-site
+
+2. Sebuah sekolah memiliki bandwidth internet 100 Mbps yang dibagi menjadi:
+- 40 Mbps untuk e-learning
+- 30 Mbps untuk guru & staf (akses email, cloud storage)
+- 20 Mbps untuk siswa (browsing umum)
+- 10 Mbps untuk CCTV & update sistem
+Buatlah skema Queue Tree yang lengkap:
+- Parent dan child queue
+- Penjelasan marking
+- Prioritas dan limit rate pada masing-masing queue
 
 # Pengenalan Modul
 ## 1 Tunneling
