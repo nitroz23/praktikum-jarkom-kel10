@@ -59,8 +59,7 @@ Cara kerjanya? IPSec nge-enkripsi (mengacak) isi data waktu dikirim, terus nanti
 3. **Integritas:** Data dicek biar gak ada yang berubah/korup selama perjalanan.
 4. **Manajemen Kunci:** Nentuin kunci enkripsi rahasia buat komunikasi.
 5. **Tunneling:** Bisa bikin “terowongan aman” buat data lewat internet.
-6. **Fleksibel:** Bisa dipakai dari skala kecil (antar komputer) sampai besar (antar cabang perusahaan).
-7. Bisa jalan di berbagai sistem dan perangkat karena pakai standar terbuka.
+6. **Fleksibel:** Bisa dipakai dari skala kecil (antar komputer) sampai besar (antar cabang perusahaan). Bisa jalan di berbagai sistem dan perangkat karena pakai standar terbuka.
 
 ### 2.2 Cara Kerja IPSec
 ![Cara Kerja IPSec](images/2.2_CaraKerjaIPSec.png)
