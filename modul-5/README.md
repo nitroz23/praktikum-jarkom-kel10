@@ -19,28 +19,28 @@ Proses bungkus-membungkus data ini yang disebut **encapsulation**. Jadi satu pak
 ![Encapsulation](images/1.1_Encapsulation.jpg)
 
 ### 1.2 Jenis-Jenis Protokol Tunneling
-1. GRE (Generic Routing Encapsulation)<d>
+1. **GRE (Generic Routing Encapsulation)**<br>
 Bungkus IP packet dengan header tambahan dan ngirim lewat “terowongan”. Cuma router tertentu yang bisa ngerti isi bungkusan ini.
 
-2. IPSec (Internet Protocol Security) <d>
+2. **IPSec (Internet Protocol Security)** <br>
 Tunneling yang aman banget. Pake enkripsi biar data nggak bisa dibaca orang iseng, cocok buat koneksi sensitif.
 
-3. IP-in-IP <d>
+3. **IP-in-IP** <br>
 IP dimasukin ke dalam IP. Simpel tapi efektif buat ngelewatin jaringan beda.
 
-4. SSH (Secure Shell) <d>
+4. **SSH (Secure Shell)** <br>
 Buat akses jarak jauh secara aman, kayak kamu login ke server tapi datanya dienkripsi.
 
-5. PPTP (Point-to-Point Tunneling Protocol) <d>
+5. **PPTP (Point-to-Point Tunneling Protocol)** <br>
 Salah satu protokol VPN paling awal. Udah lama dipakai di Windows, juga bisa jalan di Mac dan Linux.
 
-6. SSTP (Secure Socket Tunneling Protocol) <d>
+6. **SSTP (Secure Socket Tunneling Protocol)** <br>
 Punya Microsoft. Pakai SSL untuk jamin keamanan koneksi, tapi cuma buat Windows.
 
-7. L2TP (Layer 2 Tunneling Protocol) <d>
+7. **L2TP (Layer 2 Tunneling Protocol)** <br>
 Gabungan kekuatan dari PPTP-nya Microsoft dan L2F-nya Cisco. Cocok buat VPN di banyak sistem.
 
-8. VXLAN (Virtual Extensible LAN) <d>
+8. **VXLAN (Virtual Extensible LAN)** <br>
 Ini buat virtualisasi jaringan, cocok buat lingkungan cloud atau data center besar. Bisa bikin jaringan virtual seolah-olah menyatu meskipun fisiknya berjauhan.
 
 ### 1.3 Apa itu SSL Tunneling?
