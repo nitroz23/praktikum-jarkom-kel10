@@ -177,4 +177,175 @@ Kalau nggak bisa nambah kecepatan internet atau bikin jalur baru, kita bisa atur
 
 # Tahapan Modul
 
+PC->Router->Internet->PC
+
+Konfigurasi Router PPTP PC dengan Router
+
+1. Reset Konfigurasi Router 🔄
+Langkah pertama adalah mengembalikan router ke pengaturan pabrik untuk menghindari konflik konfigurasi.
+```bash
+- Buka aplikasi Winbox dan hubungkan ke router Anda.
+- Masuk ke menu System > Reset Configuration.
+- Beri tanda centang pada opsi "No Default Configuration".
+- Klik tombol "Reset Configuration" dan tunggu router memulai ulang.
+```
+![Reset Router](images/Reset_Router.png)
+
+2. Login ke Router 🚪
+Setelah router selesai di-reset, hubungkan kembali untuk memulai konfigurasi.
+```bash
+- Buka kembali Winbox.
+- Navigasikan ke tab Neighbors dan temukan MAC Address router Anda, lalu klik untuk menghubungkannya.
+- Isi detail login sebagai berikut:
+- Login: admin
+- Password: (kosongkan)
+- Klik Connect.
+```
+![Login Router](images/Login_Winbox.png)
+
+3. Konfigurasi DHCP Client (Koneksi Internet) 🌐
+Langkah ini bertujuan agar router mendapatkan koneksi internet dari sumber (ISP).
+```bash
+- Buka menu IP > DHCP Client.
+- Klik tombol + (Add) untuk menambahkan.
+- Pada jendela baru:
+- Interface: Pilih ether3 (atau interface yang terhubung ke sumber internet).
+- Pastikan opsi "Use Peer DNS" dan "Use Peer NTP" tercentang.
+- Klik Apply lalu OK. Router sekarang seharusnya sudah mendapatkan alamat IP dari ISP.
+```
+![alt text](<images/DHCP Client.png>)
+
+4. Konfigurasi Firewall NAT 🔥
+Langkah ini sangat penting agar semua perangkat di jaringan lokal (ether7) dapat terhubung ke internet.
+```bash
+- Buka menu IP > Firewall.
+- Pindah ke tab NAT.
+- Klik tombol + (Add) untuk membuat aturan baru.
+- Pada tab General:
+- Chain: srcnat
+- Out. Interface: ether3 (interface yang terhubung ke internet)
+- Pindah ke tab Action:
+- Action: masquerade
+- Klik Apply lalu OK.
+```
+![alt text](<images/NAT 1.png>)
+![alt text](<images/NAT.png>)
+
+5. Konfigurasi Alamat IP Lokal (LAN) 🏠
+Tambahkan alamat IP untuk jaringan lokal yang akan terhubung ke ether7.
+```bash
+- Buka menu IP > Addresses.
+- Klik tombol + (Add).
+- Isi form sebagai berikut:
+- Address: 192.168.10.2/24
+- Interface: ether1
+- Klik Apply lalu OK.
+```
+![alt text](<images/IP add.png>)
+
+Abaikan untuk interface pptp-ppp1 yang ada di gambar, jika anda sudah menkoneksikan laptop dengan vpn maka akan otomatis ada interface tersebut di router
+
+6. Konfigurasi DHCP Server (Distribusi IP ke Klien) 📡
+Atur server DHCP agar perangkat klien (laptop/PC) yang terhubung ke ether1 mendapatkan IP secara otomatis.
+```bash
+Buka menu IP > DHCP Server.
+Klik tombol "DHCP Setup".
+DHCP Server Interface: Pilih ether1 > Next.
+DHCP Address Space: Verifikasi network 192.168.10.0/24 > Next.
+Gateway for DHCP Network: Verifikasi gateway 192.168.10.2 > Next.
+Addresses to Give Out: Tentukan rentang IP untuk klien, misalnya 192.168.10.1-192.168.10.254 > Next.
+DNS Servers: Alamat DNS akan terisi otomatis dari DHCP Client (sumber internet). Klik Next.
+Lease Time: Atur durasi sewa IP, misalnya 00:10:00 > Next.
+Jika muncul pesan "Setup has completed successfully", klik OK.
+```
+![alt text](<images/DHCP Server.png>)
+
+7. Mengaktifkan Proxy ARP 🔗
+Ubah mode ARP pada interface yang terhubung ke internet untuk membantu proses bridging dan routing.
+```bash
+Buka menu Interfaces.
+Klik dua kali pada interface ether1.
+Pada tab General, ubah pengaturan ARP dari enabled menjadi proxy-arp.
+Klik OK.
+```
+![alt text](images/ARP_Interface.png)
+
+7. Konfigurasi PPTP Server VPN
+a. Mengaktifkan PPTP Server
+```bash
+Buka menu PPP.
+Pada tab Interface, klik tombol "PPTP Server".
+Centang kotak Enabled.
+Klik OK.
+```
+
+![alt text](<images/Enable PPTP.png>)
+
+b. Membuat User & Password (Secrets)
+Kredensial ini akan digunakan oleh klien untuk login VPN.
+```bash
+Di jendela PPP, buka tab Secrets.
+Klik tombol + (Add) untuk menambah user baru.
+Isi form sebagai berikut:
+Name: mahasiswa
+Password: praktikum123
+Service: pptp
+Local Address: 192.168.10.2 (IP ini akan menjadi IP gateway tunnel untuk klien)
+Remot Address: 192.168.10.5
+Klik OK.
+```
+
+![alt text](images/Secret.png)
+
+8. Konfigurasi PPTP Client di Laptop (Windows) 💻
+Sekarang, siapkan laptop untuk terhubung ke PPTP Server yang telah dibuat.
+```bash
+Buka Settings → Network & Internet → VPN.
+Klik "Add a VPN connection".
+Isi detail koneksi:
+VPN provider: Pilih Windows (built-in).
+Connection name: VPN Router Praktikum
+Server name or address: Masukkan IP Address ether3 yang didapat dari DHCP Client.
+VPN type: Point to Point Tunneling Protocol (PPTP).
+Type of sign-in info: User name and password.
+User name: mahasiswa
+Password: praktikum123
+Centang "Remember my sign-in info" dan klik Save.
+Hubungkan ke VPN yang baru dibuat.
+```
+![alt text](images/SetVPN.png)
+![alt text](images/SetVPN1.png)
+
+9. Verifikasi dan Pengujian ✅
+Pastikan semua konfigurasi berjalan dengan benar.
+
+a. Verifikasi di PC 1 (Yang terhubung VPN)
+```bash
+Buka Command Prompt (CMD).
+Ketik ipconfig dan periksa apakah ada interface PPP baru dengan alamat IP yang sesuai dengan konfigurasi secrets.
+```
+![alt text](<images/Cek Interface.png>)
+
+```bash
+Lakukan ping ke alamat IP lokal router:
+ping 192.168.10.2
+```
+![alt text](<images/Ping Gateway.png>)
+
+```bash
+b. Verifikasi di PC 2 (Yang terhubung ke ether1)
+Hubungkan PC 2 ke Router.
+Buka Command Prompt (CMD) di PC 2.
+Ketik ipconfig untuk melihat IP yang didapat dari DHCP Server (misal: 192.168.10.1).
+
+c. Uji Ping Antar PC
+Dari PC 1, lakukan ping ke alamat IP PC 2:
+ping [alamat_ip_pc_2]
+Dari PC2, lakukan ping ke alamat IP Wireless PC 1
+ping [alamat_wireless_pc_1]
+Jika semua ping berhasil, konfigurasi Anda telah selesai dengan sukses! 🎉
+```
+![alt text](<images/Ping Alamat PC2.png>)
+
+
 # Tugas Modul
