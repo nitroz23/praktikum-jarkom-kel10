@@ -179,7 +179,7 @@ Kalau nggak bisa nambah kecepatan internet atau bikin jalur baru, kita bisa atur
 
 PC->Router->Internet->PC
 
-Konfigurasi Router PPTP PC dengan Router
+## Konfigurasi Router VPN PPTP PC dengan Router
 
 1. Reset Konfigurasi Router 🔄
 Langkah pertama adalah mengembalikan router ke pengaturan pabrik untuk menghindari konflik konfigurasi.
@@ -344,6 +344,54 @@ ping [alamat_ip_pc_2]
 Jika semua ping berhasil, konfigurasi Anda telah selesai dengan sukses! 🎉
 ```
 ![alt text](<images/Ping Alamat PC2.png>)
+
+
+## Konfigurasi QOS PC dengan Router (Router Tidak perlu di Reset)
+
+1. Membuat Aturan Simple Queue
+Langkah ini bertujuan untuk membatasi kecepatan upload dan download untuk klien yang terhubung ke jaringan.
+```bash
+Buka menu Queues di Winbox.
+Di dalam tab Simple Queues, klik tombol + (Add) untuk membuat aturan baru.
+
+Pada tab General, konfigurasikan sebagai berikut:
+Name: Beri nama yang deskriptif, contoh: Limit-PC-Klien
+Target: Masukkan alamat IP atau network klien yang ingin dibatasi. Contoh: 192.168.10.0/24 (untuk membatasi semua klien di jaringan ether1 yang dibuat sebelumnya).
+Max Limit (Upload): 1M
+Max Limit (Download): 1M
+Klik Apply lalu OK.
+```
+
+![alt text](images/QOS.png)
+
+2. Memantau Penggunaan Traffic 📊
+Anda dapat melihat lalu lintas data secara real-time untuk memastikan queue berfungsi.
+```bash
+Buka kembali menu Queues dan pilih tab Simple Queues.
+Klik dua kali pada aturan queue yang baru saja Anda buat (Limit-PC-Klien).
+Pindah ke tab Traffic. Di sini, Anda akan melihat grafik real-time untuk upload dan download yang melewati aturan ini saat klien sedang menggunakan internet.
+```
+![alt text](<images/Trafik QOS.png>)
+
+3. Pengujian Efektivitas Queue ⚙️
+Lakukan pengujian untuk membandingkan kecepatan internet sebelum dan sesudah queue diaktifkan.
+```bash
+a. Tes Saat Queue Tidak Aktif
+Di jendela Simple Queues, pilih aturan Limit-PC-Klien.
+Klik tombol X (Disable) untuk menonaktifkan sementara aturan tersebut. Aturan akan berubah warna menjadi abu-abu.
+Buka browser di PC klien dan jalankan tes kecepatan internet (misalnya di speedtest.net). Catat hasil kecepatan download dan upload maksimalnya.
+```
+![alt text](<images/QOS Mati.png>)
+
+b. Tes Saat Queue Aktif
+```bash
+Kembali ke Winbox di jendela Simple Queues.
+Pilih kembali aturan Limit-PC-Klien yang nonaktif.
+Klik tombol centang ✓ (Enable) untuk mengaktifkannya kembali.
+Jalankan kembali tes kecepatan di PC klien.
+Bandingkan hasilnya. Anda seharusnya melihat kecepatan download dan upload sekarang terbatas di sekitar 1 Mbps, sesuai dengan aturan yang telah dibuat.
+```
+![alt text](<images/QOS Nyala.png>)
 
 
 # Tugas Modul
