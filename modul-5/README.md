@@ -338,11 +338,9 @@ Hubungkan PC 2 ke Router.
 Buka Command Prompt (CMD) di PC 2.
 Ketik ipconfig untuk melihat IP yang didapat dari DHCP Server (misal: 192.168.10.1).
 
-c. Uji Ping Antar PC
+c. Uji Ping PC
 Dari PC 1, lakukan ping ke alamat IP PC 2:
 ping [alamat_ip_pc_2]
-Dari PC2, lakukan ping ke alamat IP Wireless PC 1
-ping [alamat_wireless_pc_1]
 Jika semua ping berhasil, konfigurasi Anda telah selesai dengan sukses! 🎉
 ```
 ![alt text](<images/Ping Alamat PC2.png>)
