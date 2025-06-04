@@ -216,7 +216,7 @@ Langkah ini bertujuan agar router mendapatkan koneksi internet dari sumber (ISP)
 ![alt text](<images/DHCP Client.png>)
 
 4. Konfigurasi Firewall NAT 🔥
-Langkah ini sangat penting agar semua perangkat di jaringan lokal (ether7) dapat terhubung ke internet.
+Langkah ini sangat penting agar semua perangkat di jaringan lokal (ether3) dapat terhubung ke internet.
 ```bash
 - Buka menu IP > Firewall.
 - Pindah ke tab NAT.
@@ -232,7 +232,7 @@ Langkah ini sangat penting agar semua perangkat di jaringan lokal (ether7) dapat
 ![alt text](<images/NAT.png>)
 
 5. Konfigurasi Alamat IP Lokal (LAN) 🏠
-Tambahkan alamat IP untuk jaringan lokal yang akan terhubung ke ether7.
+Tambahkan alamat IP untuk jaringan lokal yang akan terhubung ke ether1
 ```bash
 - Buka menu IP > Addresses.
 - Klik tombol + (Add).
